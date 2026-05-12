@@ -492,7 +492,9 @@ def check_duplicate_submission_id(packet_dir: Path, report: ValidationReport) ->
 
 def write_markdown_report(report: ValidationReport, packet_dir: Path, out: Path) -> None:
     """Write a sticky-PR-comment-friendly Markdown summary."""
-    lines = [f"## Submission validation — `{packet_dir.name}`", ""]
+    # In CI mode, packet_dir is the repo root (no useful name); fall back to a label.
+    title_suffix = packet_dir.name if packet_dir.name and packet_dir.name != "." else "PR diff"
+    lines = [f"## Submission validation — `{title_suffix}`", ""]
     if report.has_errors():
         lines.append(f"❌ **{len(report.errors)} error(s)** — PR cannot merge as-is.\n")
         for e in report.errors:
