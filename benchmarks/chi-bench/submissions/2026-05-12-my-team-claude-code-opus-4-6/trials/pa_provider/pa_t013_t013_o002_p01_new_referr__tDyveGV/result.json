@@ -1,0 +1,110 @@
+{
+    "id": "dbc9a89b-dfea-4b06-b205-cc26c509fe6b",
+    "task_name": "pa_t013_t013_o002_p01_new_referral_provider",
+    "trial_name": "pa_t013_t013_o002_p01_new_referr__tDyveGV",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/my-team-claude-code-opus-4-6/pa_provider/my-team-claude-code-opus-4-6__pa_provider/pa_t013_t013_o002_p01_new_referr__tDyveGV",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-no62_01m/pa_t013_t013_o002_p01_new_referral_provider"
+    },
+    "source": "chi_bench-modal-no62_01m",
+    "task_checksum": "7b6573425cc516a236af95a149e4fb8a1b0c3416dc5952e22f37a2586864c072",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-no62_01m/pa_t013_t013_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-no62_01m"
+        },
+        "trial_name": "pa_t013_t013_o002_p01_new_referr__tDyveGV",
+        "trials_dir": "logs/submissions/my-team-claude-code-opus-4-6/pa_provider/my-team-claude-code-opus-4-6__pa_provider",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "791de7c3-3b99-48a2-83f4-ff6d19910086"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.139",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1854591,
+        "n_cache_tokens": 1730364,
+        "n_output_tokens": 15203,
+        "cost_usd": 2.01998325,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T10:41:21.480775Z",
+    "finished_at": "2026-05-12T10:48:50.299728Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T10:41:21.481902Z",
+        "finished_at": "2026-05-12T10:42:09.178822Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T10:42:09.178866Z",
+        "finished_at": "2026-05-12T10:42:23.260621Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T10:42:23.260762Z",
+        "finished_at": "2026-05-12T10:47:37.212637Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T10:47:44.820242Z",
+        "finished_at": "2026-05-12T10:48:48.291897Z"
+    },
+    "step_results": null
+}

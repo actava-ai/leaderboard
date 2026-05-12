@@ -1,0 +1,128 @@
+{
+  "binary_reward": 1.0,
+  "fractional_reward": 1.0,
+  "passed_checks": 31,
+  "total_checks": 31,
+  "check_scores": {
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 1.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "outcome.determination_decision_matches": 1.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:doc_eval_report": 1.0,
+    "judge.nurse_review:doc_plan_of_care": 1.0,
+    "judge.nurse_review:svc_not_excluded": 1.0,
+    "judge.nurse_review:svc_codes_match": 1.0,
+    "judge.nurse_review:svc_no_redundant_modalities": 1.0,
+    "judge.nurse_review:mn_skilled_care": 1.0,
+    "judge.nurse_review:mn_rehab_potential": 1.0,
+    "judge.nurse_review:mn_measurable_goals": 1.0,
+    "judge.nurse_review:mn_frequency_duration": 1.0,
+    "judge.nurse_review:recommendation": 1.0
+  },
+  "checks": {
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": true,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "outcome.determination_decision_matches": true,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:doc_eval_report": true,
+    "judge.nurse_review:doc_plan_of_care": true,
+    "judge.nurse_review:svc_not_excluded": true,
+    "judge.nurse_review:svc_codes_match": true,
+    "judge.nurse_review:svc_no_redundant_modalities": true,
+    "judge.nurse_review:mn_skilled_care": true,
+    "judge.nurse_review:mn_rehab_potential": true,
+    "judge.nurse_review:mn_measurable_goals": true,
+    "judge.nurse_review:mn_frequency_duration": true,
+    "judge.nurse_review:recommendation": true
+  },
+  "failed_checks": [],
+  "not_applicable_checks": [],
+  "stages": {
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": true,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": true,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true,
+        "outcome.determination_decision_matches": true,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 15,
+      "total_count": 15,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-180824DF"
+      }
+    }
+  }
+}

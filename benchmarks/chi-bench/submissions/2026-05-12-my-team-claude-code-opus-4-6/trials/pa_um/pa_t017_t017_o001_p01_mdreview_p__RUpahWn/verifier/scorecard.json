@@ -1,0 +1,122 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.96,
+  "passed_checks": 24,
+  "total_checks": 25,
+  "check_scores": {
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.denial_rationale_present": null,
+    "md.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 1.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "outcome.determination_decision_matches": 1.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.md_review:osa_severity_psg": 1.0,
+    "judge.md_review:osa_sleepiness_ess": 0.0,
+    "judge.md_review:pap_therapy_failure": 1.0,
+    "judge.md_review:final_decision": 1.0,
+    "judge.md_review:decision_rationale": 1.0
+  },
+  "checks": {
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.denial_rationale_present": "not_applicable",
+    "md.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": true,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "outcome.determination_decision_matches": true,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.md_review:osa_severity_psg": true,
+    "judge.md_review:osa_sleepiness_ess": false,
+    "judge.md_review:pap_therapy_failure": true,
+    "judge.md_review:final_decision": true,
+    "judge.md_review:decision_rationale": true
+  },
+  "failed_checks": [
+    "judge.md_review:osa_sleepiness_ess"
+  ],
+  "not_applicable_checks": [
+    "md.denial_rationale_present"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": true,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.denial_rationale_present": "not_applicable",
+        "md.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 3,
+      "not_applicable_count": 1,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": true,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": true,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true,
+        "outcome.determination_decision_matches": true,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 15,
+      "total_count": 15,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-C9824F3A"
+      }
+    }
+  }
+}
