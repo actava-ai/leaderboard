@@ -84,3 +84,82 @@ def test_plan_submission_detects_existing_target(tmp_path: Path) -> None:
 
     plan = plan_submission(pkt, repo_root=repo_root)
     assert plan.target_exists is True
+
+
+# ── git + fork + gh plumbing ─────────────────────────────────────────────────
+
+import subprocess
+
+from submit import (  # noqa: E402
+    commit_packet,
+    preflight_tools,
+    resolve_conflict,
+)
+
+
+def test_preflight_tools_reports_missing(monkeypatch: pytest.MonkeyPatch) -> None:
+    """If a required tool is absent, preflight returns a non-empty diagnostic list."""
+    monkeypatch.setattr("shutil.which", lambda x: None)
+    diagnostics = preflight_tools()
+    assert any("git" in d for d in diagnostics)
+    assert any("gh" in d for d in diagnostics)
+
+
+def test_resolve_conflict_abandon() -> None:
+    assert resolve_conflict(True, "abandon", interactive=False) == "abandon"
+
+
+def test_resolve_conflict_replace() -> None:
+    assert resolve_conflict(True, "replace", interactive=False) == "replace"
+
+
+def test_resolve_conflict_no_conflict() -> None:
+    assert resolve_conflict(False, None, interactive=False) == "proceed"
+
+
+def test_resolve_conflict_requires_choice_in_noninteractive() -> None:
+    with pytest.raises(SubmitError, match="on-conflict"):
+        resolve_conflict(True, None, interactive=False)
+
+
+def test_commit_packet_in_git_repo(tmp_path: Path) -> None:
+    """Smoke test of the git plumbing inside a throwaway repo."""
+    repo = tmp_path / "lb"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q", "-b", "main"], cwd=repo, check=True)
+    subprocess.run(["git", "config", "user.email", "t@t.test"], cwd=repo, check=True)
+    subprocess.run(["git", "config", "user.name", "T"], cwd=repo, check=True)
+    (repo / ".gitkeep").touch()
+    subprocess.run(["git", "add", "."], cwd=repo, check=True)
+    subprocess.run(["git", "commit", "-q", "-m", "init"], cwd=repo, check=True)
+
+    target = repo / "benchmarks" / "chi-bench" / "submissions" / "2026-05-12-x"
+    shutil.copytree(FIXTURE_VALID, target)
+
+    plan = SubmissionPlan(
+        packet=target,
+        benchmark="chi-bench",
+        target_dir=target,
+        branch_name="sub/chi-bench/2026-05-12-x",
+        submission_id="x",
+        target_exists=False,
+        commit_subject="chi-bench: T",
+        commit_body="body",
+    )
+    commit_packet(plan, repo_root=repo)
+    log = subprocess.run(
+        ["git", "log", "-1", "--format=%s"],
+        cwd=repo,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    assert log == "chi-bench: T"
+    branch = subprocess.run(
+        ["git", "branch", "--show-current"],
+        cwd=repo,
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+    assert branch == "sub/chi-bench/2026-05-12-x"
