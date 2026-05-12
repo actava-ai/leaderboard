@@ -1,0 +1,110 @@
+{
+    "id": "1cdfd309-6ab8-467b-923a-ad70fdf9137d",
+    "task_name": "pa_t027_t027_o002_p01_nurse_review_payer",
+    "trial_name": "pa_t027_t027_o002_p01_nurse_revi__tr5ggEX",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/my-team-claude-code-sonnet-4-6/pa_um/my-team-claude-code-sonnet-4-6__pa_um/pa_t027_t027_o002_p01_nurse_revi__tr5ggEX",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-842de6eg/pa_t027_t027_o002_p01_nurse_review_payer"
+    },
+    "source": "chi_bench-modal-842de6eg",
+    "task_checksum": "dfa072ce8f48a4f0979363ac18d281624c9f75463a8dd52afee8b03ca898ddbd",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-842de6eg/pa_t027_t027_o002_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-842de6eg"
+        },
+        "trial_name": "pa_t027_t027_o002_p01_nurse_revi__tr5ggEX",
+        "trials_dir": "logs/submissions/my-team-claude-code-sonnet-4-6/pa_um/my-team-claude-code-sonnet-4-6__pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7e09747f-9066-47c4-8f63-869a54a69800"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.139",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3809407,
+        "n_cache_tokens": 3670184,
+        "n_output_tokens": 27285,
+        "cost_usd": 2.0323759500000005,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T17:39:47.794727Z",
+    "finished_at": "2026-05-12T17:55:12.640425Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T17:39:47.796168Z",
+        "finished_at": "2026-05-12T17:43:15.104290Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T17:43:15.104315Z",
+        "finished_at": "2026-05-12T17:43:30.780152Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T17:43:30.780286Z",
+        "finished_at": "2026-05-12T17:52:19.609891Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T17:52:36.226668Z",
+        "finished_at": "2026-05-12T17:54:56.566085Z"
+    },
+    "step_results": null
+}

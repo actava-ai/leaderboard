@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "my-team-claude-code-sonnet-4-6",
+    "team": "My Team",
+    "contact": "you@example.com",
+    "agent": "claude-code",
+    "model": "anthropic/claude-sonnet-4-6",
+    "notes": "Default config; no custom prompting.\n",
+    "submitted_at": "2026-05-12T22:20:35Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.2,
+      "mean_cost_usd": 0.623312568,
+      "mean_walltime_s": 0.0
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.2,
+        "mean_cost_usd": 0.597957672,
+        "mean_walltime_s": 0.0
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.24,
+        "mean_cost_usd": 0.544977504,
+        "mean_walltime_s": 0.0
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.16,
+        "mean_cost_usd": 0.727002528,
+        "mean_walltime_s": 0.0
+      }
+    },
+    "mean_cost_usd": 0.623312568,
+    "mean_walltime_s": 0.0
+  },
+  "provenance": {
+    "chi_bench_git_sha": "f926f8f47a748872644646416d2e504d079da7ff",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": true,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-05-12T17:24:37Z",
+    "finished_at": "2026-05-12T18:18:50Z",
+    "host": "Weirans-MacBook-Pro.local",
+    "python_version": "3.13.12",
+    "platform": "macOS-15.5-arm64-arm-64bit-Mach-O"
+  }
+}

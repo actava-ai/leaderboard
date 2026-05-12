@@ -1,0 +1,110 @@
+{
+    "id": "446ccc02-700b-470d-a086-a3d14983febf",
+    "task_name": "cm_post_mi_hard_refuses_002",
+    "trial_name": "cm_post_mi_hard_refuses_002__2iGEnJV",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/my-team-claude-code-sonnet-4-6/cm/my-team-claude-code-sonnet-4-6__cm/cm_post_mi_hard_refuses_002__2iGEnJV",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-u7132z6r/cm_post_mi_hard_refuses_002"
+    },
+    "source": "chi_bench-modal-u7132z6r",
+    "task_checksum": "58dabe154176792f74a7755e47b500bf54632b78a5d582c7d51371e7edfdbf48",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-u7132z6r/cm_post_mi_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u7132z6r"
+        },
+        "trial_name": "cm_post_mi_hard_refuses_002__2iGEnJV",
+        "trials_dir": "logs/submissions/my-team-claude-code-sonnet-4-6/cm/my-team-claude-code-sonnet-4-6__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "387f8eca-1ce2-4323-bbce-761b62d9e675"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.139",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2740483,
+        "n_cache_tokens": 2601219,
+        "n_output_tokens": 31971,
+        "cost_usd": 1.7780547,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T17:57:09.505895Z",
+    "finished_at": "2026-05-12T18:15:16.877440Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T17:57:09.506313Z",
+        "finished_at": "2026-05-12T18:01:02.911704Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T18:01:02.911738Z",
+        "finished_at": "2026-05-12T18:01:22.981407Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T18:01:22.981484Z",
+        "finished_at": "2026-05-12T18:11:55.703652Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T18:12:03.070825Z",
+        "finished_at": "2026-05-12T18:15:15.152017Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,110 @@
+{
+    "id": "eb79d3b6-4641-42a7-8f5f-d1f7832402b7",
+    "task_name": "cm_parkinson_hard_refuses_001",
+    "trial_name": "cm_parkinson_hard_refuses_001__bZoFq2L",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/my-team-claude-code-sonnet-4-6/cm/my-team-claude-code-sonnet-4-6__cm/cm_parkinson_hard_refuses_001__bZoFq2L",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-u7132z6r/cm_parkinson_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-u7132z6r",
+    "task_checksum": "f48152114599af352c463cbba64b308d8a319fa11c70e7709086c4182b45dc05",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-u7132z6r/cm_parkinson_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u7132z6r"
+        },
+        "trial_name": "cm_parkinson_hard_refuses_001__bZoFq2L",
+        "trials_dir": "logs/submissions/my-team-claude-code-sonnet-4-6/cm/my-team-claude-code-sonnet-4-6__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "387f8eca-1ce2-4323-bbce-761b62d9e675"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.139",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2822052,
+        "n_cache_tokens": 2692159,
+        "n_output_tokens": 38085,
+        "cost_usd": 1.86546195,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T17:57:09.515613Z",
+    "finished_at": "2026-05-12T18:17:17.176466Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T17:57:09.516093Z",
+        "finished_at": "2026-05-12T18:00:58.514257Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T18:00:58.514282Z",
+        "finished_at": "2026-05-12T18:01:15.220631Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T18:01:15.220688Z",
+        "finished_at": "2026-05-12T18:13:49.769193Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T18:13:57.895790Z",
+        "finished_at": "2026-05-12T18:17:15.530516Z"
+    },
+    "step_results": null
+}

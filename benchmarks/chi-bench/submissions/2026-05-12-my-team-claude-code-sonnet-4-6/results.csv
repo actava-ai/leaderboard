@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,my-team-claude-code-sonnet-4-6,My Team,claude-code,anthropic/claude-sonnet-4-6,overall,0.2,75,75,0.623312568,0.0,2026-05-12T22:20:35Z
+chi-bench,chi-bench-v1.0.0,my-team-claude-code-sonnet-4-6,My Team,claude-code,anthropic/claude-sonnet-4-6,pa_provider,0.2,25,25,0.597957672,0.0,2026-05-12T22:20:35Z
+chi-bench,chi-bench-v1.0.0,my-team-claude-code-sonnet-4-6,My Team,claude-code,anthropic/claude-sonnet-4-6,pa_um,0.24,25,25,0.544977504,0.0,2026-05-12T22:20:35Z
+chi-bench,chi-bench-v1.0.0,my-team-claude-code-sonnet-4-6,My Team,claude-code,anthropic/claude-sonnet-4-6,cm,0.16,25,25,0.727002528,0.0,2026-05-12T22:20:35Z
