@@ -435,6 +435,92 @@ def check_size_limits(packet_dir: Path, report: ValidationReport) -> None:
         report.warn(f"Total packet size {total} bytes over soft limit ({SOFT_LIMITS['total']})")
 
 
+def check_known_dataset_version(
+    packet_dir: Path, report: ValidationReport, repo_root: Path
+) -> None:
+    """Rule 12 (soft): dataset.version is listed in benchmarks/<bench>/schema/known-versions.txt."""
+    manifest = _read_manifest(packet_dir)
+    if manifest is None:
+        return
+    ds = manifest.get("dataset") or {}
+    bench = ds.get("name")
+    version = ds.get("version")
+    if not isinstance(bench, str) or not isinstance(version, str):
+        return
+    kv = repo_root / "benchmarks" / bench / "schema" / "known-versions.txt"
+    if not kv.is_file():
+        report.warn(
+            f"No known-versions.txt for benchmark '{bench}'; cannot verify dataset version"
+        )
+        return
+    known = {line.strip() for line in kv.read_text(encoding="utf-8").splitlines() if line.strip()}
+    if version not in known:
+        report.warn(
+            f"Dataset version '{version}' not listed in {kv.relative_to(repo_root)} "
+            f"(known: {sorted(known)}). Reviewer please confirm; the version list "
+            f"can be updated in a follow-up PR."
+        )
+
+
+def check_duplicate_submission_id(packet_dir: Path, report: ValidationReport) -> None:
+    """Rule 13 (soft): another submission directory has the same submission.id."""
+    manifest = _read_manifest(packet_dir)
+    if manifest is None:
+        return
+    sid = (manifest.get("submission") or {}).get("id")
+    if not isinstance(sid, str):
+        return
+    submissions_root = packet_dir.parent
+    if not submissions_root.is_dir():
+        return
+    matches: list[str] = []
+    for sibling in submissions_root.iterdir():
+        if not sibling.is_dir() or sibling == packet_dir:
+            continue
+        sibling_mf = _read_manifest(sibling)
+        if sibling_mf is None:
+            continue
+        sibling_id = (sibling_mf.get("submission") or {}).get("id")
+        if sibling_id == sid:
+            matches.append(sibling.name)
+    if matches:
+        report.warn(
+            f"Possible resubmission of '{sid}' — same submission.id present in: "
+            f"{', '.join(matches)}. Reviewer please confirm intent."
+        )
+
+
+def write_markdown_report(report: ValidationReport, packet_dir: Path, out: Path) -> None:
+    """Write a sticky-PR-comment-friendly Markdown summary."""
+    lines = [f"## Submission validation — `{packet_dir.name}`", ""]
+    if report.has_errors():
+        lines.append(f"❌ **{len(report.errors)} error(s)** — PR cannot merge as-is.\n")
+        for e in report.errors:
+            lines.append(f"- ❌ {e}")
+        lines.append("")
+    else:
+        lines.append("✅ **All checks passed.**\n")
+    if report.warnings:
+        lines.append(f"⚠️ **{len(report.warnings)} warning(s)** — reviewer judgment call:\n")
+        for w in report.warnings:
+            lines.append(f"- ⚠️ {w}")
+        lines.append("")
+    out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_json_report(report: ValidationReport, packet_dir: Path, out: Path) -> None:
+    """Write a machine-readable JSON report (consumed by the PR-labeller action)."""
+    data = {
+        "packet": packet_dir.name,
+        "status": "invalid"
+        if report.has_errors()
+        else ("needs-review" if report.warnings else "valid"),
+        "errors": report.errors,
+        "warnings": report.warnings,
+    }
+    out.write_text(json.dumps(data, indent=2), encoding="utf-8")
+
+
 def _resolve_repo_root(packet_dir: Path) -> Path:
     """Walk up from packet_dir to find the leaderboard repo root (contains 'benchmarks/')."""
     cur = packet_dir.resolve()
@@ -469,6 +555,8 @@ def validate_packet(packet_dir: Path, repo_root: Path | None = None) -> Validati
     check_provenance(packet_dir, report)
     check_per_trial_integrity(packet_dir, report)
     check_size_limits(packet_dir, report)
+    check_known_dataset_version(packet_dir, report, repo_root=rr)
+    check_duplicate_submission_id(packet_dir, report)
     return report
 
 

@@ -286,3 +286,68 @@ def test_size_limits_soft_warns_on_large_trajectory(valid_packet: Path) -> None:
         "trajectory" in w.lower() and "soft limit" in w.lower() for w in report.warnings
     )
     assert not any("trajectory" in e.lower() for e in report.errors)
+
+
+# ── Soft warnings + reporting ───────────────────────────────────────────────
+
+from validate_submission import (  # noqa: E402
+    check_duplicate_submission_id,
+    check_known_dataset_version,
+    write_json_report,
+    write_markdown_report,
+)
+
+
+def test_known_version_warns_on_unknown(valid_packet: Path) -> None:
+    mf = valid_packet / "submission.json"
+    data = json.loads(mf.read_text())
+    data["dataset"]["version"] = "chi-bench-v9.9.9"
+    mf.write_text(json.dumps(data))
+    report = ValidationReport()
+    check_known_dataset_version(valid_packet, report, repo_root=REPO_ROOT)
+    assert any("v9.9.9" in w and "known" in w.lower() for w in report.warnings)
+    assert not report.has_errors()
+
+
+def test_known_version_no_warn_on_known(valid_packet: Path) -> None:
+    report = ValidationReport()
+    check_known_dataset_version(valid_packet, report, repo_root=REPO_ROOT)
+    assert not report.warnings
+
+
+def test_duplicate_submission_id_warns(valid_packet: Path, tmp_path: Path) -> None:
+    """Simulate an existing submission with the same id under the submissions root."""
+    sibling_root = tmp_path / "benchmarks" / "chi-bench" / "submissions"
+    sibling_root.mkdir(parents=True)
+    sibling = sibling_root / "2026-04-01-fixture"
+    shutil.copytree(valid_packet, sibling)
+    new_packet = sibling_root / "2026-05-12-fixture"
+    shutil.copytree(valid_packet, new_packet)
+
+    report = ValidationReport()
+    check_duplicate_submission_id(new_packet, report)
+    assert any(
+        "resubmission" in w.lower() or "duplicate" in w.lower() for w in report.warnings
+    )
+
+
+def test_write_markdown_report(valid_packet: Path, tmp_path: Path) -> None:
+    report = ValidationReport()
+    report.warn("test warning")
+    out = tmp_path / "report.md"
+    write_markdown_report(report, valid_packet, out)
+    text = out.read_text()
+    assert "validation" in text.lower()
+    assert "test warning" in text
+
+
+def test_write_json_report(valid_packet: Path, tmp_path: Path) -> None:
+    report = ValidationReport()
+    report.err("e1")
+    report.warn("w1")
+    out = tmp_path / "report.json"
+    write_json_report(report, valid_packet, out)
+    data = json.loads(out.read_text())
+    assert data["status"] == "invalid"
+    assert "e1" in data["errors"]
+    assert "w1" in data["warnings"]
