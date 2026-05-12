@@ -1,0 +1,3 @@
+schema: chi-bench/submission/v1
+submission:
+  id: fixture

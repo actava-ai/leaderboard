@@ -1,0 +1,26 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "fixture",
+    "team": "Fixture Team",
+    "contact": "fixture@example.com",
+    "agent": "claude-code",
+    "model": "anthropic/claude-opus-4-6",
+    "submitted_at": "2026-05-12T12:00:00Z"
+  },
+  "dataset": {
+    "name": "chi-bench",
+    "version": "chi-bench-v1.0.0",
+    "domains": ["pa_provider"]
+  },
+  "results": {
+    "overall": {"pass_at_1": 1.0, "n_trials": 1, "n_tasks": 1},
+    "per_domain": {"pa_provider": {"pass_at_1": 1.0, "n_trials": 1, "n_tasks": 1}}
+  },
+  "provenance": {
+    "chi_bench_git_sha": "abc123",
+    "image_digest": "sha256:def",
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "1.0.0"
+  }
+}
