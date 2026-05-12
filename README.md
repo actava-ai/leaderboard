@@ -23,7 +23,7 @@ Two repos, one handoff:
 
    See chi-bench's [submission packet contract](https://github.com/actava-ai/chi-bench/blob/main/docs/submission-packet.md) for the directory shape.
 
-2. **Leaderboard** (this repo) — open a PR adding that packet. Two paths below ([Quick](#quick-helper) / [Manual](#manual)) run the same CI validation (`.github/workflows/validate.yml`).
+2. **Leaderboard** (this repo) — fork this repo and open a PR adding that packet. Two paths below ([Quick](#quick-helper) / [Manual](#manual)) run the same CI validation (`.github/workflows/validate.yml`).
 
 3. CI labels the PR `valid-submission` / `invalid-submission` / `needs-review` and posts a sticky report; a maintainer reviews and merges.
 
