@@ -133,11 +133,167 @@ def _load_manifest_id(packet_dir: Path) -> str | None:
     return sid if isinstance(sid, str) else None
 
 
-def validate_packet(packet_dir: Path) -> ValidationReport:
+def _read_manifest(packet_dir: Path) -> dict | None:
+    try:
+        return json.loads((packet_dir / "submission.json").read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+
+
+def check_schema(packet_dir: Path, report: ValidationReport, repo_root: Path) -> None:
+    """Rule 5: submission.json validates against benchmarks/<bench>/schema/submission-v<N>.json."""
+    import jsonschema
+
+    manifest = _read_manifest(packet_dir)
+    if manifest is None:
+        report.err("submission.json is missing or malformed JSON")
+        return
+    schema_field = manifest.get("schema")
+    if not isinstance(schema_field, str) or schema_field.count("/") != 2:
+        report.err(
+            f"submission.json:schema must be '<bench>/submission/v<N>'; got {schema_field!r}"
+        )
+        return
+    bench, kind, vname = schema_field.split("/", 2)
+    if kind != "submission":
+        report.err(f"Only 'submission' schemas supported at this validator version; got '{kind}'")
+        return
+    schema_path = repo_root / "benchmarks" / bench / "schema" / f"submission-{vname}.json"
+    if not schema_path.is_file():
+        report.err(f"Schema file not found for '{schema_field}': expected {schema_path}")
+        return
+    try:
+        schema = json.loads(schema_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        report.err(f"Schema file {schema_path} is malformed JSON: {e}")
+        return
+    validator = jsonschema.Draft202012Validator(schema)
+    errors = sorted(validator.iter_errors(manifest), key=lambda e: list(e.absolute_path))
+    for err in errors:
+        path = "/".join(str(p) for p in err.absolute_path) or "<root>"
+        report.err(f"submission.json schema violation at {path}: {err.message}")
+
+
+def check_results_csv_consistency(packet_dir: Path, report: ValidationReport) -> None:
+    """Rule 6: results.csv rows exactly match the manifest's results.overall / results.per_domain."""
+    import csv as _csv
+
+    manifest = _read_manifest(packet_dir)
+    if manifest is None:
+        return
+    csv_path = packet_dir / "results.csv"
+    if not csv_path.is_file():
+        report.err("results.csv missing")
+        return
+
+    sub_id = (manifest.get("submission") or {}).get("id")
+    results = manifest.get("results") or {}
+    per_domain = results.get("per_domain") or {}
+    overall = results.get("overall") or {}
+
+    expected_rows = 1 + len(per_domain)
+    with csv_path.open(encoding="utf-8") as fh:
+        rows = list(_csv.DictReader(fh))
+
+    if len(rows) != expected_rows:
+        report.err(
+            f"results.csv has {len(rows)} rows, expected {expected_rows} "
+            f"(1 overall + {len(per_domain)} per_domain)"
+        )
+
+    seen_domains: set[str] = set()
+    for row in rows:
+        row_sub_id = row.get("submission_id")
+        if row_sub_id != sub_id:
+            report.err(
+                f"results.csv row submission_id={row_sub_id!r} does not match "
+                f"submission.json id={sub_id!r}"
+            )
+        domain = row.get("domain")
+        if domain == "overall":
+            _compare_score_row(row, overall, "overall", report)
+            seen_domains.add("overall")
+        elif domain in per_domain:
+            _compare_score_row(row, per_domain[domain], domain, report)
+            seen_domains.add(domain)
+        else:
+            report.err(f"results.csv has unexpected domain row: {domain!r}")
+
+    if "overall" not in seen_domains:
+        report.err("results.csv missing the overall row")
+    for d in per_domain:
+        if d not in seen_domains:
+            report.err(f"results.csv missing row for domain '{d}'")
+
+
+def _compare_score_row(row: dict, score: dict, label: str, report: ValidationReport) -> None:
+    for field in ("pass_at_1", "n_trials", "n_tasks"):
+        if field not in score:
+            continue
+        csv_val = row.get(field)
+        if csv_val is None:
+            report.err(f"results.csv row '{label}' missing field '{field}'")
+            continue
+        manifest_val = score[field]
+        try:
+            if isinstance(manifest_val, int):
+                csv_typed: float | int = int(csv_val)
+            else:
+                csv_typed = float(csv_val)
+        except ValueError:
+            report.err(f"results.csv row '{label}' field '{field}' is not numeric: {csv_val!r}")
+            continue
+        if isinstance(manifest_val, float):
+            if abs(csv_typed - manifest_val) > 1e-9:
+                report.err(
+                    f"results.csv row '{label}' field '{field}' = {csv_typed} "
+                    f"!= manifest {manifest_val}"
+                )
+        else:
+            if csv_typed != manifest_val:
+                report.err(
+                    f"results.csv row '{label}' field '{field}' = {csv_typed} "
+                    f"!= manifest {manifest_val}"
+                )
+
+
+def check_provenance(packet_dir: Path, report: ValidationReport) -> None:
+    """Rule 7: provenance.json present with required keys."""
+    pf = packet_dir / "provenance.json"
+    if not pf.is_file():
+        report.err("provenance.json missing")
+        return
+    try:
+        data = json.loads(pf.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        report.err(f"provenance.json malformed: {e}")
+        return
+    if not isinstance(data, dict):
+        report.err("provenance.json must be a JSON object")
+        return
+    required = ("chi_bench_git_sha", "image_digest", "judge_model", "harness_version")
+    for k in required:
+        if k not in data:
+            report.err(f"provenance.json missing required key: {k}")
+
+
+def _resolve_repo_root(packet_dir: Path) -> Path:
+    """Walk up from packet_dir to find the leaderboard repo root (contains 'benchmarks/')."""
+    cur = packet_dir.resolve()
+    for parent in (cur, *cur.parents):
+        if (parent / "benchmarks").is_dir() and (parent / ".github").is_dir():
+            return parent
+    return cur.parent.parent.parent.parent
+
+
+def validate_packet(packet_dir: Path, repo_root: Path | None = None) -> ValidationReport:
     """Top-level entry point — runs all checks against a single packet directory.
 
-    Subsequent tasks extend this with schema, results.csv consistency,
-    per-trial integrity, and soft warnings.
+    ``repo_root`` is the leaderboard repo root (the one containing
+    ``benchmarks/`` and ``.github/``). When omitted, it's resolved by walking
+    up from ``packet_dir``; pass it explicitly when the packet lives outside
+    the repo tree (e.g. in tests or pre-PR validation of a freshly-prepared
+    packet).
     """
     report = ValidationReport()
     if not packet_dir.is_dir():
@@ -145,9 +301,14 @@ def validate_packet(packet_dir: Path) -> ValidationReport:
         return report
 
     manifest_id = _load_manifest_id(packet_dir)
+    rr = repo_root if repo_root is not None else _resolve_repo_root(packet_dir)
+
     check_directory_naming(packet_dir, report, manifest_id)
     check_required_files(packet_dir, report)
     check_no_unexpected_files(packet_dir, report)
+    check_schema(packet_dir, report, repo_root=rr)
+    check_results_csv_consistency(packet_dir, report)
+    check_provenance(packet_dir, report)
     return report
 
 
