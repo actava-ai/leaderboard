@@ -219,3 +219,70 @@ def test_provenance_missing_required_key(valid_packet: Path) -> None:
     report = ValidationReport()
     check_provenance(valid_packet, report)
     assert any("chi_bench_git_sha" in e for e in report.errors)
+
+
+# ── Per-trial integrity + size limits ───────────────────────────────────────
+
+from validate_submission import (  # noqa: E402
+    HARD_LIMITS,
+    SOFT_LIMITS,
+    check_per_trial_integrity,
+    check_size_limits,
+)
+
+
+def test_per_trial_accepts_valid(valid_packet: Path) -> None:
+    report = ValidationReport()
+    check_per_trial_integrity(valid_packet, report)
+    assert not report.has_errors(), report.errors
+
+
+def test_per_trial_missing_scorecard(valid_packet: Path) -> None:
+    (valid_packet / "trials/pa_provider/trial_1/verifier/scorecard.json").unlink()
+    report = ValidationReport()
+    check_per_trial_integrity(valid_packet, report)
+    assert any("scorecard.json" in e for e in report.errors)
+
+
+def test_per_trial_corrupt_trajectory(valid_packet: Path) -> None:
+    traj = valid_packet / "trials/pa_provider/trial_1/agent/trajectory.jsonl.zst"
+    traj.write_bytes(b"not valid zstd")
+    report = ValidationReport()
+    check_per_trial_integrity(valid_packet, report)
+    assert any("zstd" in e.lower() or "trajectory" in e.lower() for e in report.errors)
+
+
+def test_per_trial_count_mismatch(valid_packet: Path) -> None:
+    """Manifest claims more trials than actually present."""
+    mf = valid_packet / "submission.json"
+    data = json.loads(mf.read_text())
+    data["results"]["per_domain"]["pa_provider"]["n_trials"] = 99
+    mf.write_text(json.dumps(data))
+    report = ValidationReport()
+    check_per_trial_integrity(valid_packet, report)
+    assert any("n_trials" in e for e in report.errors)
+
+
+def test_size_limits_clean(valid_packet: Path) -> None:
+    report = ValidationReport()
+    check_size_limits(valid_packet, report)
+    assert not report.has_errors()
+
+
+def test_size_limits_hard_fail_on_oversize_manifest(valid_packet: Path) -> None:
+    mf = valid_packet / "submission.json"
+    mf.write_bytes(b"x" * (HARD_LIMITS["small_json"] + 1))
+    report = ValidationReport()
+    check_size_limits(valid_packet, report)
+    assert any("submission.json" in e and "exceeds hard limit" in e for e in report.errors)
+
+
+def test_size_limits_soft_warns_on_large_trajectory(valid_packet: Path) -> None:
+    traj = valid_packet / "trials/pa_provider/trial_1/agent/trajectory.jsonl.zst"
+    traj.write_bytes(b"x" * (SOFT_LIMITS["trajectory_zst"] + 1))
+    report = ValidationReport()
+    check_size_limits(valid_packet, report)
+    assert any(
+        "trajectory" in w.lower() and "soft limit" in w.lower() for w in report.warnings
+    )
+    assert not any("trajectory" in e.lower() for e in report.errors)

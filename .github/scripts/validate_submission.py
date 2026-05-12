@@ -277,6 +277,164 @@ def check_provenance(packet_dir: Path, report: ValidationReport) -> None:
             report.err(f"provenance.json missing required key: {k}")
 
 
+# Spec §2.4 size budget
+SOFT_LIMITS = {
+    "small_json": 100 * 1024,  # submission.json, results.csv, sub.yaml, provenance.json
+    "trial_json": 200 * 1024,  # scorecard, reward, result
+    "trajectory_zst": 10 * 1024 * 1024,
+    "total": 100 * 1024 * 1024,
+}
+HARD_LIMITS = {
+    "small_json": 1 * 1024 * 1024,
+    "trial_json": 2 * 1024 * 1024,
+    "trajectory_zst": 50 * 1024 * 1024,
+    "total": 500 * 1024 * 1024,
+}
+
+_TOP_LEVEL_SMALL = ("submission.json", "results.csv", "sub.yaml", "provenance.json")
+_TRIAL_FILES_REQUIRED = (
+    "result.json",
+    "verifier/scorecard.json",
+    "verifier/reward.json",
+    "agent/trajectory.jsonl.zst",
+)
+
+
+def check_per_trial_integrity(packet_dir: Path, report: ValidationReport) -> None:
+    """Rules 8–10: each trial dir has the expected files; trajectory decodes; counts match."""
+    import zstandard as zstd
+
+    manifest = _read_manifest(packet_dir)
+    per_domain_expected: dict[str, int] = {}
+    if manifest is not None:
+        per_dom = (manifest.get("results") or {}).get("per_domain") or {}
+        for dom, score in per_dom.items():
+            n = score.get("n_trials")
+            if isinstance(n, int):
+                per_domain_expected[dom] = n
+
+    trials_dir = packet_dir / "trials"
+    if not trials_dir.is_dir():
+        return
+
+    per_domain_actual: dict[str, int] = {}
+    for domain_dir in sorted(trials_dir.iterdir()):
+        if not domain_dir.is_dir():
+            report.err(f"Unexpected non-directory under trials/: {domain_dir.name}")
+            continue
+        trial_dirs = [p for p in domain_dir.iterdir() if p.is_dir()]
+        per_domain_actual[domain_dir.name] = len(trial_dirs)
+        for trial_dir in trial_dirs:
+            for rel in _TRIAL_FILES_REQUIRED:
+                tp = trial_dir / rel
+                if not tp.is_file():
+                    report.err(f"trial {domain_dir.name}/{trial_dir.name}: missing {rel}")
+            actual = {
+                str(p.relative_to(trial_dir)) for p in trial_dir.rglob("*") if p.is_file()
+            }
+            expected = set(_TRIAL_FILES_REQUIRED)
+            extras = actual - expected
+            for x in sorted(extras):
+                report.err(
+                    f"trial {domain_dir.name}/{trial_dir.name}: unexpected file {x}"
+                )
+            traj = trial_dir / "agent" / "trajectory.jsonl.zst"
+            if traj.is_file():
+                try:
+                    decompressor = zstd.ZstdDecompressor()
+                    with traj.open("rb") as fh, decompressor.stream_reader(fh) as reader:
+                        buf = b""
+                        line_count = 0
+                        while True:
+                            chunk = reader.read(65536)
+                            if not chunk:
+                                if buf.strip():
+                                    json.loads(buf)
+                                    line_count += 1
+                                break
+                            buf += chunk
+                            while b"\n" in buf:
+                                line, buf = buf.split(b"\n", 1)
+                                if line.strip():
+                                    json.loads(line)
+                                    line_count += 1
+                        if line_count < 1:
+                            report.err(
+                                f"trial {domain_dir.name}/{trial_dir.name}: trajectory is empty"
+                            )
+                except zstd.ZstdError as e:
+                    report.err(
+                        f"trial {domain_dir.name}/{trial_dir.name}: "
+                        f"trajectory is not valid zstd: {e}"
+                    )
+                except json.JSONDecodeError as e:
+                    report.err(
+                        f"trial {domain_dir.name}/{trial_dir.name}: "
+                        f"trajectory has malformed JSON line: {e}"
+                    )
+
+    for dom, expected_n in per_domain_expected.items():
+        actual_n = per_domain_actual.get(dom, 0)
+        if actual_n != expected_n:
+            report.err(
+                f"Trial count mismatch for domain '{dom}': "
+                f"found {actual_n}, manifest says n_trials={expected_n}"
+            )
+    for dom in per_domain_actual:
+        if dom not in per_domain_expected:
+            report.warn(
+                f"Domain '{dom}' has trials on disk but no per_domain entry in manifest"
+            )
+
+
+def check_size_limits(packet_dir: Path, report: ValidationReport) -> None:
+    """Rule 11: per-file and total size budget."""
+    total = 0
+    for path in packet_dir.rglob("*"):
+        if not path.is_file():
+            continue
+        size = path.stat().st_size
+        total += size
+        rel = str(path.relative_to(packet_dir))
+
+        if path.name in _TOP_LEVEL_SMALL and path.parent == packet_dir:
+            soft, hard, label = (
+                SOFT_LIMITS["small_json"],
+                HARD_LIMITS["small_json"],
+                "small_json",
+            )
+        elif rel.startswith("trials/") and path.name in (
+            "result.json",
+            "scorecard.json",
+            "reward.json",
+        ):
+            soft, hard, label = (
+                SOFT_LIMITS["trial_json"],
+                HARD_LIMITS["trial_json"],
+                "trial_json",
+            )
+        elif path.name == "trajectory.jsonl.zst":
+            soft, hard, label = (
+                SOFT_LIMITS["trajectory_zst"],
+                HARD_LIMITS["trajectory_zst"],
+                "trajectory_zst",
+            )
+        else:
+            continue
+
+        if size > hard:
+            report.err(f"{rel} ({size} bytes) exceeds hard limit for {label} ({hard} bytes)")
+        elif size > soft:
+            report.warn(f"{rel} ({size} bytes) over soft limit for {label} ({soft} bytes)")
+
+    if total > HARD_LIMITS["total"]:
+        report.err(
+            f"Total packet size {total} bytes exceeds hard limit ({HARD_LIMITS['total']})"
+        )
+    elif total > SOFT_LIMITS["total"]:
+        report.warn(f"Total packet size {total} bytes over soft limit ({SOFT_LIMITS['total']})")
+
+
 def _resolve_repo_root(packet_dir: Path) -> Path:
     """Walk up from packet_dir to find the leaderboard repo root (contains 'benchmarks/')."""
     cur = packet_dir.resolve()
@@ -309,6 +467,8 @@ def validate_packet(packet_dir: Path, repo_root: Path | None = None) -> Validati
     check_schema(packet_dir, report, repo_root=rr)
     check_results_csv_consistency(packet_dir, report)
     check_provenance(packet_dir, report)
+    check_per_trial_integrity(packet_dir, report)
+    check_size_limits(packet_dir, report)
     return report
 
 
