@@ -86,12 +86,14 @@ Both flows go through the same CI validation (`.github/workflows/validate.yml`).
 
 This repo ships a [`submit-to-leaderboard`](.claude/skills/submit-to-leaderboard/SKILL.md) skill that wraps the helper flow above with preflight checks, partial-failure recovery, and pointers to producer-side fixes when the validator complains. Open the repo in Claude Code, point it at your packet, and ask it to submit — it invokes the skill automatically.
 
+> /submit-to-leaderboard /abs/path/to/packet/2026-05-12-<slug>/ to the leaderboard
+
 ### Codex
 
 Codex reads [`AGENTS.md`](AGENTS.md) at the repo root, which points at the same [`submit-to-leaderboard`](.claude/skills/submit-to-leaderboard/SKILL.md) skill (the file is plain markdown — instructions are platform-agnostic; only the helper tool names differ from Claude Code's). From a Codex session in the repo:
 
 ```
-> /submit-to-leaderboard /abs/path/to/packet/2026-05-12-<slug>/ to the leaderboard
+> submit /abs/path/to/packet/2026-05-12-<slug>/ to the leaderboard
 ```
 
 Codex picks up the AGENTS.md pointer, reads the skill, and follows the same flow.
