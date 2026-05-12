@@ -521,6 +521,62 @@ def write_json_report(report: ValidationReport, packet_dir: Path, out: Path) -> 
     out.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
 
+def _git_diff_paths(repo_root: Path, base_ref: str, head_ref: str) -> list[Path]:
+    """Return the list of paths added/modified between base..head."""
+    import subprocess
+
+    out = subprocess.run(
+        ["git", "-C", str(repo_root), "diff", "--name-only", f"{base_ref}..{head_ref}"],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout
+    return [Path(line) for line in out.splitlines() if line.strip()]
+
+
+def validate_pr_diff(repo_root: Path, base_ref: str, head_ref: str) -> ValidationReport:
+    """CI entry point: enforce diff scope (rule 1) and validate any touched packets."""
+    report = ValidationReport()
+    paths = _git_diff_paths(repo_root, base_ref, head_ref)
+    if not paths:
+        report.warn("PR has no file changes")
+        return report
+
+    submission_dirs: set[Path] = set()
+    non_submission_paths: list[Path] = []
+    for p in paths:
+        parts = p.parts
+        if len(parts) >= 4 and parts[0] == "benchmarks" and parts[2] == "submissions":
+            submission_dirs.add(repo_root / parts[0] / parts[1] / parts[2] / parts[3])
+        else:
+            non_submission_paths.append(p)
+
+    if non_submission_paths:
+        listed = "\n".join(f"  - {p}" for p in non_submission_paths[:20])
+        report.err(
+            "PR touches files outside benchmarks/*/submissions/*/ — submissions and "
+            "meta-changes must land in separate PRs (or a maintainer applies the 'meta:' "
+            "label to bypass this check):\n" + listed
+        )
+
+    if len(submission_dirs) > 1:
+        listed = ", ".join(sorted(d.name for d in submission_dirs))
+        report.err(
+            f"PR touches multiple submission directories ({listed}); expected exactly one"
+        )
+
+    for d in sorted(submission_dirs):
+        if not d.is_dir():
+            report.err(f"Submission directory missing on head ref: {d.name}")
+            continue
+        sub_report = validate_packet(d, repo_root=repo_root)
+        for e in sub_report.errors:
+            report.err(f"[{d.name}] {e}")
+        for w in sub_report.warnings:
+            report.warn(f"[{d.name}] {w}")
+    return report
+
+
 def _resolve_repo_root(packet_dir: Path) -> Path:
     """Walk up from packet_dir to find the leaderboard repo root (contains 'benchmarks/')."""
     cur = packet_dir.resolve()
@@ -584,17 +640,44 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "path", nargs="?", type=Path, help="Path to a single submission directory."
     )
-    parser.add_argument("--base-ref", help="(CI) PR base SHA — used to compute diff scope.")
-    parser.add_argument("--head-ref", help="(CI) PR head SHA — used to compute diff scope.")
-    parser.add_argument("--report-md", type=Path, help="(CI) write Markdown report to this path.")
+    parser.add_argument("--base-ref", help="(CI) PR base SHA — required with --head-ref.")
+    parser.add_argument("--head-ref", help="(CI) PR head SHA — required with --base-ref.")
     parser.add_argument(
-        "--report-json", type=Path, help="(CI) write structured JSON report to this path."
+        "--repo-root", type=Path, default=Path("."), help="(CI) repo root; default cwd."
+    )
+    parser.add_argument("--report-md", type=Path, help="Write Markdown report to this path.")
+    parser.add_argument(
+        "--report-json", type=Path, help="Write structured JSON report to this path."
     )
     args = parser.parse_args(argv)
 
-    if args.path is None:
-        parser.error("path is required (CI mode arrives in a later task)")
-    return _main_single(args.path)
+    if args.base_ref and args.head_ref:
+        report = validate_pr_diff(args.repo_root, args.base_ref, args.head_ref)
+        label = "PR diff"
+        report_dir = args.repo_root
+    elif args.path:
+        report = validate_packet(args.path)
+        label = args.path.name
+        report_dir = args.path
+    else:
+        parser.error("provide either a path or --base-ref/--head-ref")
+        return 2
+
+    if args.report_md:
+        write_markdown_report(report, report_dir, args.report_md)
+    if args.report_json:
+        write_json_report(report, report_dir, args.report_json)
+
+    print(
+        f"{'❌' if report.has_errors() else '✅'} {label}: "
+        f"{len(report.errors)} error(s), {len(report.warnings)} warning(s)",
+        file=sys.stderr,
+    )
+    for e in report.errors:
+        print(f"  ❌ {e}", file=sys.stderr)
+    for w in report.warnings:
+        print(f"  ⚠️ {w}", file=sys.stderr)
+    return 1 if report.has_errors() else 0
 
 
 if __name__ == "__main__":

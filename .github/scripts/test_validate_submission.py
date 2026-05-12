@@ -351,3 +351,73 @@ def test_write_json_report(valid_packet: Path, tmp_path: Path) -> None:
     assert data["status"] == "invalid"
     assert "e1" in data["errors"]
     assert "w1" in data["warnings"]
+
+
+# ── CI mode (diff scope + multi-packet handling) ────────────────────────────
+
+import subprocess
+
+
+def _git(cwd: Path, *args: str) -> str:
+    return subprocess.run(
+        ["git", *args], cwd=cwd, check=True, capture_output=True, text=True
+    ).stdout
+
+
+@pytest.fixture
+def lb_repo(tmp_path: Path) -> Path:
+    """A throwaway git repo mirroring the leaderboard layout, with one starting commit."""
+    repo = tmp_path / "lb"
+    repo.mkdir()
+    _git(repo, "init", "-q", "-b", "main")
+    _git(repo, "config", "user.email", "t@t.test")
+    _git(repo, "config", "user.name", "T")
+    (repo / "benchmarks" / "chi-bench" / "schema").mkdir(parents=True)
+    shutil.copy(
+        REPO_ROOT / "benchmarks" / "chi-bench" / "schema" / "submission-v1.json",
+        repo / "benchmarks" / "chi-bench" / "schema" / "submission-v1.json",
+    )
+    shutil.copy(
+        REPO_ROOT / "benchmarks" / "chi-bench" / "schema" / "known-versions.txt",
+        repo / "benchmarks" / "chi-bench" / "schema" / "known-versions.txt",
+    )
+    (repo / "benchmarks" / "chi-bench" / "submissions").mkdir(parents=True)
+    (repo / ".github" / "scripts").mkdir(parents=True)
+    _git(repo, "add", ".")
+    _git(repo, "commit", "-q", "-m", "init")
+    return repo
+
+
+def test_ci_mode_validates_added_packet(lb_repo: Path) -> None:
+    """A PR that adds a new submission directory should validate that directory."""
+    from validate_submission import validate_pr_diff
+
+    target = lb_repo / "benchmarks" / "chi-bench" / "submissions" / "2026-05-12-fixture"
+    shutil.copytree(FIXTURE_VALID, target)
+    _git(lb_repo, "checkout", "-q", "-b", "feature")
+    _git(lb_repo, "add", ".")
+    _git(lb_repo, "commit", "-q", "-m", "add fixture")
+
+    base = _git(lb_repo, "rev-parse", "main").strip()
+    head = _git(lb_repo, "rev-parse", "HEAD").strip()
+
+    report = validate_pr_diff(lb_repo, base_ref=base, head_ref=head)
+    assert not report.has_errors(), report.errors
+
+
+def test_ci_mode_rejects_pr_touching_other_files(lb_repo: Path) -> None:
+    """Rule 1: PR may only touch one new submission dir."""
+    from validate_submission import validate_pr_diff
+
+    target = lb_repo / "benchmarks" / "chi-bench" / "submissions" / "2026-05-12-fixture"
+    shutil.copytree(FIXTURE_VALID, target)
+    (lb_repo / "README.md").write_text("# changed\n")
+    _git(lb_repo, "checkout", "-q", "-b", "feature2")
+    _git(lb_repo, "add", ".")
+    _git(lb_repo, "commit", "-q", "-m", "add fixture + readme")
+
+    base = _git(lb_repo, "rev-parse", "main").strip()
+    head = _git(lb_repo, "rev-parse", "HEAD").strip()
+
+    report = validate_pr_diff(lb_repo, base_ref=base, head_ref=head)
+    assert any("README.md" in e or "outside" in e.lower() for e in report.errors)
