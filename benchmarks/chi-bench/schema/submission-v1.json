@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/actava-ai/leaderboard/benchmarks/chi-bench/schema/submission-v1.json",
+  "title": "chi-bench submission v1",
+  "type": "object",
+  "required": ["schema", "submission", "dataset", "results", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": "chi-bench/submission/v1" },
+    "submission": {
+      "type": "object",
+      "required": ["id", "team", "contact", "agent", "model", "submitted_at"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]{0,63}$" },
+        "team": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "contact": { "type": "string", "minLength": 3 },
+        "agent": { "type": "string", "minLength": 1 },
+        "model": { "type": "string", "minLength": 1 },
+        "notes": { "type": "string" },
+        "submitted_at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "dataset": {
+      "type": "object",
+      "required": ["name", "version", "domains"],
+      "additionalProperties": true,
+      "properties": {
+        "name": { "const": "chi-bench" },
+        "version": { "type": "string", "pattern": "^chi-bench-v[0-9]+\\.[0-9]+\\.[0-9]+$" },
+        "domains": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["pa_provider", "pa_um", "cm"] }
+        }
+      }
+    },
+    "results": {
+      "type": "object",
+      "required": ["overall", "per_domain"],
+      "additionalProperties": true,
+      "properties": {
+        "overall": { "$ref": "#/$defs/score" },
+        "per_domain": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": { "$ref": "#/$defs/score" }
+        },
+        "mean_cost_usd": { "type": "number", "minimum": 0 },
+        "mean_walltime_s": { "type": "number", "minimum": 0 }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["chi_bench_git_sha", "image_digest", "judge_model", "harness_version"],
+      "additionalProperties": true,
+      "properties": {
+        "chi_bench_git_sha": { "type": ["string", "null"] },
+        "image_digest": { "type": ["string", "null"] },
+        "judge_model": { "type": "string" },
+        "judge_num_votes": { "type": "integer", "minimum": 1 },
+        "harness_version": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "score": {
+      "type": "object",
+      "required": ["pass_at_1", "n_trials", "n_tasks"],
+      "additionalProperties": true,
+      "properties": {
+        "pass_at_1": { "type": "number", "minimum": 0, "maximum": 1 },
+        "pass_at_1_lo": { "type": "number", "minimum": 0, "maximum": 1 },
+        "pass_at_1_hi": { "type": "number", "minimum": 0, "maximum": 1 },
+        "n_trials": { "type": "integer", "minimum": 0 },
+        "n_tasks": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}
