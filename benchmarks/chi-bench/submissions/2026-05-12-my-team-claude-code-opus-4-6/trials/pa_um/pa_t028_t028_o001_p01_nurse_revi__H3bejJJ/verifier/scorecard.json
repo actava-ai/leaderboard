@@ -1,0 +1,176 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.4166666666666667,
+  "passed_checks": 10,
+  "total_checks": 24,
+  "check_scores": {
+    "md.decision_exists": 0.0,
+    "md.rationale_present": null,
+    "md.signed_off": null,
+    "md.audit": 0.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 0.0,
+    "outcome.letter_types": 0.0,
+    "outcome.determination_exists": null,
+    "outcome.determination_source_exists": null,
+    "outcome.source_recommendation_consistent": null,
+    "outcome.review_decision_exists": null,
+    "outcome.review_decision_matches": null,
+    "outcome.terminal_transition_exists": null,
+    "outcome.determination_stage_trace": null,
+    "outcome.determination_finalize_audit": null,
+    "outcome.clean_determination": null,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:nurse_psg_indication_01": 1.0,
+    "judge.nurse_review:nurse_pathway_01": 0.0,
+    "judge.nurse_review:nurse_non_osa_01": 0.0,
+    "judge.nurse_review:nurse_protocol_01": 1.0,
+    "judge.nurse_review:recommendation": 0.0,
+    "judge.md_review:md_psg_indication_01": 0.0,
+    "judge.md_review:md_pathway_01": 0.0,
+    "judge.md_review:md_psg_necessity_hsat": 0.0,
+    "judge.md_review:md_psg_necessity_pediatric": 0.0,
+    "judge.md_review:md_psg_necessity_comorbidity": 0.0,
+    "judge.md_review:final_decision": 0.0,
+    "judge.md_review:decision_rationale": 0.0
+  },
+  "checks": {
+    "md.decision_exists": false,
+    "md.rationale_present": "not_applicable",
+    "md.signed_off": "not_applicable",
+    "md.audit": false,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": false,
+    "outcome.letter_types": false,
+    "outcome.determination_exists": "not_applicable",
+    "outcome.determination_source_exists": "not_applicable",
+    "outcome.source_recommendation_consistent": "not_applicable",
+    "outcome.review_decision_exists": "not_applicable",
+    "outcome.review_decision_matches": "not_applicable",
+    "outcome.terminal_transition_exists": "not_applicable",
+    "outcome.determination_stage_trace": "not_applicable",
+    "outcome.determination_finalize_audit": "not_applicable",
+    "outcome.clean_determination": "not_applicable",
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:nurse_psg_indication_01": true,
+    "judge.nurse_review:nurse_pathway_01": false,
+    "judge.nurse_review:nurse_non_osa_01": false,
+    "judge.nurse_review:nurse_protocol_01": true,
+    "judge.nurse_review:recommendation": false,
+    "judge.md_review:md_psg_indication_01": false,
+    "judge.md_review:md_pathway_01": false,
+    "judge.md_review:md_psg_necessity_hsat": false,
+    "judge.md_review:md_psg_necessity_pediatric": false,
+    "judge.md_review:md_psg_necessity_comorbidity": false,
+    "judge.md_review:final_decision": false,
+    "judge.md_review:decision_rationale": false
+  },
+  "failed_checks": [
+    "md.decision_exists",
+    "md.audit",
+    "outcome.target_status",
+    "outcome.letter_types",
+    "judge.nurse_review:nurse_pathway_01",
+    "judge.nurse_review:nurse_non_osa_01",
+    "judge.nurse_review:recommendation",
+    "judge.md_review:md_psg_indication_01",
+    "judge.md_review:md_pathway_01",
+    "judge.md_review:md_psg_necessity_hsat",
+    "judge.md_review:md_psg_necessity_pediatric",
+    "judge.md_review:md_psg_necessity_comorbidity",
+    "judge.md_review:final_decision",
+    "judge.md_review:decision_rationale"
+  ],
+  "not_applicable_checks": [
+    "md.rationale_present",
+    "md.signed_off",
+    "outcome.determination_exists",
+    "outcome.determination_source_exists",
+    "outcome.source_recommendation_consistent",
+    "outcome.review_decision_exists",
+    "outcome.review_decision_matches",
+    "outcome.terminal_transition_exists",
+    "outcome.determination_stage_trace",
+    "outcome.determination_finalize_audit",
+    "outcome.clean_determination"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": false,
+      "checks": {
+        "md.decision_exists": false,
+        "md.rationale_present": "not_applicable",
+        "md.signed_off": "not_applicable",
+        "md.audit": false
+      },
+      "passed_count": 0,
+      "total_count": 2,
+      "not_applicable_count": 2,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": false,
+      "checks": {
+        "outcome.target_status": false,
+        "outcome.letter_types": false,
+        "outcome.determination_exists": "not_applicable",
+        "outcome.determination_source_exists": "not_applicable",
+        "outcome.source_recommendation_consistent": "not_applicable",
+        "outcome.review_decision_exists": "not_applicable",
+        "outcome.review_decision_matches": "not_applicable",
+        "outcome.terminal_transition_exists": "not_applicable",
+        "outcome.determination_stage_trace": "not_applicable",
+        "outcome.determination_finalize_audit": "not_applicable",
+        "outcome.clean_determination": "not_applicable",
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true
+      },
+      "passed_count": 2,
+      "total_count": 4,
+      "not_applicable_count": 9,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-0EAA0F45"
+      }
+    }
+  }
+}

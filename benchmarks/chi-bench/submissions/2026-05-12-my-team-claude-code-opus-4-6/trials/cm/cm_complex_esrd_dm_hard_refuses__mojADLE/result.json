@@ -1,0 +1,110 @@
+{
+    "id": "71aec2ee-8467-4056-8762-fb54d2d6a6a2",
+    "task_name": "cm_complex_esrd_dm_hard_refuses_001",
+    "trial_name": "cm_complex_esrd_dm_hard_refuses__mojADLE",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/my-team-claude-code-opus-4-6/cm/my-team-claude-code-opus-4-6__cm/cm_complex_esrd_dm_hard_refuses__mojADLE",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-b83o1t3w/cm_complex_esrd_dm_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-b83o1t3w",
+    "task_checksum": "28bc726a5c39c4e96f00a2d467b2645351501c459df41ecc1b7b26ee92809ebe",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-b83o1t3w/cm_complex_esrd_dm_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-b83o1t3w"
+        },
+        "trial_name": "cm_complex_esrd_dm_hard_refuses__mojADLE",
+        "trials_dir": "logs/submissions/my-team-claude-code-opus-4-6/cm/my-team-claude-code-opus-4-6__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "036c1cce-dda9-4451-9cc2-915a75591a3c"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.139",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2089823,
+        "n_cache_tokens": 1966875,
+        "n_output_tokens": 29131,
+        "cost_usd": 2.479220000000001,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:27:17.113081Z",
+    "finished_at": "2026-05-12T12:41:46.427118Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:27:17.115425Z",
+        "finished_at": "2026-05-12T12:27:41.375810Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:27:41.375837Z",
+        "finished_at": "2026-05-12T12:27:59.406461Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:27:59.406540Z",
+        "finished_at": "2026-05-12T12:38:06.017846Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:38:13.052667Z",
+        "finished_at": "2026-05-12T12:41:44.783815Z"
+    },
+    "step_results": null
+}

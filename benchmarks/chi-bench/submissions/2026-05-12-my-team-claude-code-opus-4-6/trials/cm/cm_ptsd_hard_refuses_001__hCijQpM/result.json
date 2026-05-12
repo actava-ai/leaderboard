@@ -1,0 +1,110 @@
+{
+    "id": "92388197-7826-46d5-a505-7e609b309130",
+    "task_name": "cm_ptsd_hard_refuses_001",
+    "trial_name": "cm_ptsd_hard_refuses_001__hCijQpM",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/my-team-claude-code-opus-4-6/cm/my-team-claude-code-opus-4-6__cm/cm_ptsd_hard_refuses_001__hCijQpM",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-b83o1t3w/cm_ptsd_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-b83o1t3w",
+    "task_checksum": "00706c77a523c14abba6bd34832ec3cec60655347177ce89562de33f3cc551e2",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-b83o1t3w/cm_ptsd_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-b83o1t3w"
+        },
+        "trial_name": "cm_ptsd_hard_refuses_001__hCijQpM",
+        "trials_dir": "logs/submissions/my-team-claude-code-opus-4-6/cm/my-team-claude-code-opus-4-6__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "036c1cce-dda9-4451-9cc2-915a75591a3c"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.139",
+        "model_info": {
+            "name": "claude-opus-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2500775,
+        "n_cache_tokens": 2365165,
+        "n_output_tokens": 28929,
+        "cost_usd": 2.7377787500000004,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-12T12:15:02.856234Z",
+    "finished_at": "2026-05-12T12:30:44.846853Z",
+    "environment_setup": {
+        "started_at": "2026-05-12T12:15:02.856639Z",
+        "finished_at": "2026-05-12T12:15:48.683450Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-12T12:15:48.683490Z",
+        "finished_at": "2026-05-12T12:16:07.490794Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-12T12:16:07.490887Z",
+        "finished_at": "2026-05-12T12:26:56.941546Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-12T12:27:12.550116Z",
+        "finished_at": "2026-05-12T12:30:41.783935Z"
+    },
+    "step_results": null
+}
