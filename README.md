@@ -1,6 +1,6 @@
-# actava-ai/leaderboard
+# CHI-Bench Leaderboard
 
-Public, data-only record of benchmark submissions for actava-ai benchmarks.
+Public, data-only record of benchmark submissions for CHI-Bench.
 
 This repo accepts submissions via pull request. The full audit packet (manifest + per-trial verifier evidence + compressed trajectories) lives in git so reviewers can inspect any submission directly from the PR diff. The rendered leaderboard lives elsewhere — at [actava.ai/benchmarks](https://actava.ai/benchmarks) — and reads `results.csv` files out of this repo.
 
@@ -10,17 +10,34 @@ This repo accepts submissions via pull request. The full audit packet (manifest 
 |---|---|---|---|
 | [chi-bench](benchmarks/chi-bench/) | [actava-ai/chi-bench](https://github.com/actava-ai/chi-bench) | `chi-bench-v1.0.0` | see [submissions/](benchmarks/chi-bench/submissions/) |
 
-To add a new benchmark, see [`benchmarks/README.md`](benchmarks/README.md).
-
 ## Submit a result
 
 You produce a **packet** on the producer side (e.g. `cb submission prepare` for chi-bench) and open a PR adding it to this repo. Two paths, both equivalent.
 
+### One-time setup
+
+Before your first submission you need a fork of this repo. Either:
+
+```bash
+# Option A — via the gh CLI (recommended; also handles auth)
+gh auth login                          # authenticate to GitHub
+gh repo fork actava-ai/leaderboard --clone=false
+git config --global user.email "you@example.com"   # if not already set
+```
+
+…or open <https://github.com/actava-ai/leaderboard> in your browser and click **Fork** at the top-right.
+
+After forking, clone *your* fork (not actava-ai's directly):
+
+```bash
+git clone https://github.com/<you>/leaderboard && cd leaderboard
+```
+
+Subsequent submissions reuse this same fork — no need to re-fork.
+
 ### Quick (helper)
 
 ```bash
-# Prereqs: gh CLI authenticated; git user.email configured; you forked this repo on GitHub.
-git clone https://github.com/<you>/leaderboard && cd leaderboard
 python scripts/submit.py /path/to/packet/2026-05-12-<slug>/
 ```
 
@@ -36,15 +53,16 @@ Flags: `--no-fork`, `--no-open-pr`, `--on-conflict {abandon,replace,bump-date}`,
 
 ### Manual
 
+From your fork clone (see [One-time setup](#one-time-setup) above):
+
 ```bash
-git clone https://github.com/<you>/leaderboard && cd leaderboard
 cp -r /path/to/packet/2026-05-12-<slug>/ benchmarks/<bench>/submissions/
 python scripts/validate.py benchmarks/<bench>/submissions/2026-05-12-<slug>/
 git checkout -b sub/<bench>/2026-05-12-<slug>
 git add benchmarks/<bench>/submissions/2026-05-12-<slug>/
 git commit -m "<bench>: <team> · <agent> · <model>"
 git push origin sub/<bench>/2026-05-12-<slug>
-gh pr create --base main
+gh pr create -R actava-ai/leaderboard --base main
 ```
 
 Both flows go through the same CI validation (`.github/workflows/validate.yml`).
