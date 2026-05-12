@@ -1,0 +1,14 @@
+# Local scratch from submit.py dry-runs
+/tmp/
+
+# Legacy zip artifact — never tracked
+*.zip
+
+# Backups
+*.bak
+*.json.bak
+
+# Python caches (validator + tests)
+__pycache__/
+*.pyc
+.pytest_cache/
