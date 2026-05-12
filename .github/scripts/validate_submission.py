@@ -522,11 +522,16 @@ def write_json_report(report: ValidationReport, packet_dir: Path, out: Path) -> 
 
 
 def _git_diff_paths(repo_root: Path, base_ref: str, head_ref: str) -> list[Path]:
-    """Return the list of paths added/modified between base..head."""
+    """Return the list of paths added/modified by commits unique to head.
+
+    Uses three-dot syntax (base...head = merge-base..head) so a stale base SHA
+    captured at PR-open time doesn't bleed in commits that have since landed on
+    the base branch. This matches GitHub's own "Files changed" diff.
+    """
     import subprocess
 
     out = subprocess.run(
-        ["git", "-C", str(repo_root), "diff", "--name-only", f"{base_ref}..{head_ref}"],
+        ["git", "-C", str(repo_root), "diff", "--name-only", f"{base_ref}...{head_ref}"],
         check=True,
         capture_output=True,
         text=True,
