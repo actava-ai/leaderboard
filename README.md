@@ -12,7 +12,22 @@ This repo accepts submissions via pull request. The full audit packet (manifest 
 
 ## Submit a result
 
-You produce a **packet** on the producer side (e.g. `cb submission prepare` for chi-bench) and open a PR adding it to this repo. Two paths, both equivalent.
+Two repos, one handoff:
+
+1. **Producer** — run your trials and produce a packet with the benchmark's tooling. For chi-bench (see [actava-ai/chi-bench](https://github.com/actava-ai/chi-bench) for the full lifecycle):
+
+   ```bash
+   uv run cb submission prepare -f configs/submissions/<id>.yaml
+   # → logs/submissions/<id>/packet/YYYY-MM-DD-<id>/
+   ```
+
+   See chi-bench's [submission packet contract](https://github.com/actava-ai/chi-bench/blob/main/docs/submission-packet.md) for the directory shape.
+
+2. **Leaderboard** (this repo) — open a PR adding that packet. Two paths below ([Quick](#quick-helper) / [Manual](#manual)) run the same CI validation (`.github/workflows/validate.yml`).
+
+3. CI labels the PR `valid-submission` / `invalid-submission` / `needs-review` and posts a sticky report; a maintainer reviews and merges.
+
+> Each submission PR must touch **only** one new directory under `benchmarks/<bench>/submissions/<YYYY-MM-DD>-<slug>/`. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the scope rule and reviewer policy.
 
 ### One-time setup
 
@@ -76,7 +91,7 @@ This repo ships a [`submit-to-leaderboard`](.claude/skills/submit-to-leaderboard
 Codex reads [`AGENTS.md`](AGENTS.md) at the repo root, which points at the same [`submit-to-leaderboard`](.claude/skills/submit-to-leaderboard/SKILL.md) skill (the file is plain markdown — instructions are platform-agnostic; only the helper tool names differ from Claude Code's). From a Codex session in the repo:
 
 ```
-> submit /abs/path/to/packet/2026-05-12-<slug>/ to the leaderboard
+> /submit-to-leaderboard /abs/path/to/packet/2026-05-12-<slug>/ to the leaderboard
 ```
 
 Codex picks up the AGENTS.md pointer, reads the skill, and follows the same flow.
