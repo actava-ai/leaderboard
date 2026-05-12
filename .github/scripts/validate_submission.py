@@ -656,7 +656,10 @@ def main(argv: list[str] | None = None) -> int:
         label = "PR diff"
         report_dir = args.repo_root
     elif args.path:
-        report = validate_packet(args.path)
+        # Pass repo_root only if explicitly set (not the cwd default), so
+        # _resolve_repo_root can still walk up for in-repo packets.
+        repo_root_arg = args.repo_root if args.repo_root != Path(".") else None
+        report = validate_packet(args.path, repo_root=repo_root_arg)
         label = args.path.name
         report_dir = args.path
     else:
