@@ -1,8 +1,14 @@
 # CHI-Bench Leaderboard
 
+[![Live Leaderboard](https://img.shields.io/badge/Live_Leaderboard-actava.ai-blue?style=for-the-badge)](https://actava.ai/benchmarks/leaderboards)
+[![Submit Guide](https://img.shields.io/badge/Submit_Guide-walkthrough-ff5baf?style=for-the-badge)](https://actava.ai/benchmarks/submit)
+[![Docs](https://img.shields.io/badge/Read_the_Docs-chi--bench-ff5baf?style=for-the-badge&logo=readthedocs&logoColor=white)](https://actava.ai/benchmarks/docs/leaderboard)
+[![Producer Repo](https://img.shields.io/badge/Producer-actava--ai/chi--bench-181717?style=for-the-badge&logo=github)](https://github.com/actava-ai/chi-bench)
+[![License](https://img.shields.io/badge/License-Apache_2.0-purple?style=for-the-badge)](LICENSE)
+
 Public, data-only record of benchmark submissions for CHI-Bench.
 
-This repo accepts submissions via pull request. The full audit packet (manifest + per-trial verifier evidence + compressed trajectories) lives in git so reviewers can inspect any submission directly from the PR diff. The rendered leaderboard lives elsewhere — at [actava.ai/benchmarks](https://actava.ai/benchmarks) — and reads `results.csv` files out of this repo.
+This repo accepts submissions via pull request. The full audit packet (manifest + per-trial verifier evidence + compressed trajectories) lives in git so reviewers can inspect any submission directly from the PR diff. The rendered leaderboard lives elsewhere — at **[actava.ai/benchmarks/leaderboards](https://actava.ai/benchmarks/leaderboards)** — and reads `results.csv` files out of this repo.
 
 ## Benchmarks tracked
 
@@ -12,9 +18,11 @@ This repo accepts submissions via pull request. The full audit packet (manifest 
 
 ## Submit a result
 
+> Prefer reading on the web? The same flow with collapsible step UI lives at **[actava.ai/benchmarks/submit](https://actava.ai/benchmarks/submit)**, and a deeper reference is at **[actava.ai/benchmarks/docs/leaderboard](https://actava.ai/benchmarks/docs/leaderboard)**.
+
 Two repos, one handoff:
 
-1. **Producer** — run your trials and produce a packet with the benchmark's tooling. For chi-bench (see [actava-ai/chi-bench](https://github.com/actava-ai/chi-bench) for the full lifecycle):
+1. **Producer** — run your trials and produce a packet with the benchmark's tooling. For chi-bench (see [actava-ai/chi-bench](https://github.com/actava-ai/chi-bench) for the full lifecycle, or [the web docs](https://actava.ai/benchmarks/docs/run)):
 
    ```bash
    uv run cb submission prepare -f configs/submissions/<id>.yaml
@@ -25,7 +33,7 @@ Two repos, one handoff:
 
 2. **Leaderboard** (this repo) — fork this repo and open a PR adding that packet. Two paths below ([Quick](#quick-helper) / [Manual](#manual)) run the same CI validation (`.github/workflows/validate.yml`).
 
-3. CI labels the PR `valid-submission` / `invalid-submission` / `needs-review` and posts a sticky report; a maintainer reviews and merges.
+3. CI labels the PR `valid-submission` / `invalid-submission` / `needs-review` and posts a sticky report; a maintainer reviews and merges. Verified runs land on the **[live leaderboard](https://actava.ai/benchmarks/leaderboards)** within one business day.
 
 > Each submission PR must touch **only** one new directory under `benchmarks/<bench>/submissions/<YYYY-MM-DD>-<slug>/`. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the scope rule and reviewer policy.
 
@@ -111,7 +119,7 @@ Exit 0 = validation passed. Exit 1 = errors (printed); fix and rerun.
 
 ## Inspecting a submission
 
-Submission directories are plain files. Click into any one on GitHub to see the manifest, headline metrics (in the auto-generated README), and the per-trial tree.
+Submission directories are plain files. Click into any one on GitHub to see the manifest, headline metrics (in the auto-generated README), and the per-trial tree. For a sortable, filterable view of every merged submission with PA/UM/CM breakdown columns, see the **[live leaderboard at actava.ai/benchmarks/leaderboards](https://actava.ai/benchmarks/leaderboards)**.
 
 Trajectories are zstd-compressed JSONL:
 
@@ -122,6 +130,16 @@ zstdcat benchmarks/chi-bench/submissions/<dir>/trials/<domain>/<trial_id>/agent/
 ## Reviewer / maintainer notes
 
 See [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
+## See also
+
+- **[Live leaderboard](https://actava.ai/benchmarks/leaderboards)** — sortable table of every merged submission.
+- **[CHI-Bench overview & authors](https://actava.ai/benchmarks/chi-bench)** — what the benchmark measures and why.
+- **[Submission walkthrough](https://actava.ai/benchmarks/submit)** — the producer + leaderboard flow with collapsible step UI.
+- **[Web docs · Leaderboard repo](https://actava.ai/benchmarks/docs/leaderboard)** — the same workflow this README describes, with deeper reviewer notes.
+- **[Web docs · Run experiments](https://actava.ai/benchmarks/docs/run)** — producer-side commands that build the packet you submit here.
+- **[Browse all 75 tasks](https://actava.ai/benchmarks/tasks)** — the task explorer.
+- **[Producer repo (actava-ai/chi-bench)](https://github.com/actava-ai/chi-bench)** — the benchmark code that produces packets accepted here.
 
 ## License
 
