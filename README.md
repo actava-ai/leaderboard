@@ -2,8 +2,10 @@
 
 [![Live Leaderboard](https://img.shields.io/badge/Live_Leaderboard-actava.ai-blue?style=for-the-badge)](https://actava.ai/benchmarks/leaderboards)
 [![Submit Guide](https://img.shields.io/badge/Submit_Guide-walkthrough-ff5baf?style=for-the-badge)](https://actava.ai/benchmarks/submit)
-[![Producer Repo](https://img.shields.io/badge/Producer-actava--ai/chi--bench-181717?style=for-the-badge&logo=github)](https://github.com/actava-ai/chi-bench)
 [![License](https://img.shields.io/badge/License-Apache_2.0-purple?style=for-the-badge)](LICENSE)
+
+[![Discord](https://img.shields.io/badge/Join_Our_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/eQfMpUQtda)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-actava-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/actava/)
 
 Public, data-only record of benchmark submissions for CHI-Bench.
 
