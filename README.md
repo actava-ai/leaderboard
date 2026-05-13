@@ -2,13 +2,14 @@
 
 [![Live Leaderboard](https://img.shields.io/badge/Live_Leaderboard-actava.ai-blue?style=for-the-badge)](https://actava.ai/benchmarks/leaderboards)
 [![Submit Guide](https://img.shields.io/badge/Submit_Guide-walkthrough-ff5baf?style=for-the-badge)](https://actava.ai/benchmarks/submit)
-[![Docs](https://img.shields.io/badge/Read_the_Docs-chi--bench-ff5baf?style=for-the-badge&logo=readthedocs&logoColor=white)](https://actava.ai/benchmarks/docs/leaderboard)
 [![Producer Repo](https://img.shields.io/badge/Producer-actava--ai/chi--bench-181717?style=for-the-badge&logo=github)](https://github.com/actava-ai/chi-bench)
 [![License](https://img.shields.io/badge/License-Apache_2.0-purple?style=for-the-badge)](LICENSE)
 
 Public, data-only record of benchmark submissions for CHI-Bench.
 
-This repo accepts submissions via pull request. The full audit packet (manifest + per-trial verifier evidence + compressed trajectories) lives in git so reviewers can inspect any submission directly from the PR diff. The rendered leaderboard lives elsewhere — at **[actava.ai/benchmarks/leaderboards](https://actava.ai/benchmarks/leaderboards)** — and reads `results.csv` files out of this repo.
+We accept submissions via pull request. The full audit packet (manifest + per-trial verifier evidence + compressed trajectories) lives in git so reviewers can inspect any submission directly from the PR diff. 
+
+The rendered leaderboard lives at **[actava.ai/benchmarks/leaderboards](https://actava.ai/benchmarks/leaderboards)** — and reads `results.csv` files out of this repo.
 
 ## Benchmarks tracked
 
@@ -18,6 +19,7 @@ This repo accepts submissions via pull request. The full audit packet (manifest 
 
 ## Submit a result
 
+> [!TIP]
 > Prefer reading on the web? The same flow with collapsible step UI lives at **[actava.ai/benchmarks/submit](https://actava.ai/benchmarks/submit)**, and a deeper reference is at **[actava.ai/benchmarks/docs/leaderboard](https://actava.ai/benchmarks/docs/leaderboard)**.
 
 Two repos, one handoff:
@@ -35,6 +37,7 @@ Two repos, one handoff:
 
 3. CI labels the PR `valid-submission` / `invalid-submission` / `needs-review` and posts a sticky report; a maintainer reviews and merges. Verified runs land on the **[live leaderboard](https://actava.ai/benchmarks/leaderboards)** within one business day.
 
+> [!IMPORTANT]
 > Each submission PR must touch **only** one new directory under `benchmarks/<bench>/submissions/<YYYY-MM-DD>-<slug>/`. See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the scope rule and reviewer policy.
 
 ### One-time setup
