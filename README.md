@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-purple?style=for-the-badge)](LICENSE)
 
 [![Discord](https://img.shields.io/badge/Join_Our_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/eQfMpUQtda)
+[![Slack](https://img.shields.io/badge/Join_Our_Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/share/enQtMTExMTE4MDYyNTMzOTktMzZiMGE2MjYxYjRmNzYyMTFiMDVkZmJiNzZiYWUwNWMwNzJkMGRiZDIwYmU5ZWM5NDQyY2E2ZDEyNTcxZWQ1ZA)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-actava-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/actava/)
 
 Public, data-only record of benchmark submissions for CHI-Bench.
