@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openai-agents,deepseek/deepseek-v4-pro,overall,0.14222222222222225,225,75,0.55238095224,1036.578426991111,2026-05-04T06:59:15Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openai-agents,deepseek/deepseek-v4-pro,pa_provider,0.10666666666666666,75,25,0.53116702216,844.2988425466666,2026-05-04T06:59:15Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openai-agents,deepseek/deepseek-v4-pro,pa_um,0.28,75,25,0.6482144568,1090.5256180133333,2026-05-04T06:59:15Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openai-agents,deepseek/deepseek-v4-pro,cm,0.04,75,25,0.47776137776000005,1174.9108204133333,2026-05-04T06:59:15Z

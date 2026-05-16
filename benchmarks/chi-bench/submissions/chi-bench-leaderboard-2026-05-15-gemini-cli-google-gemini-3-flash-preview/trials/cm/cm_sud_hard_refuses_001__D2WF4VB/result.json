@@ -1,0 +1,109 @@
+{
+    "id": "fd8621fd-ff9c-4656-a1aa-505c4923184c",
+    "task_name": "cm_sud_hard_refuses_001",
+    "trial_name": "cm_sud_hard_refuses_001__D2WF4VB",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_flash_preview/cm/gemini_cli__gemini_gemini_3_flash_preview__cm/cm_sud_hard_refuses_001__D2WF4VB",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-1ybz0iln/cm_sud_hard_refuses_001"
+    },
+    "source": "healthverse-modal-1ybz0iln",
+    "task_checksum": "b96114cd428f0ea364ef0528114d6dad185af69518e59fdd308421f5f4ad9855",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-1ybz0iln/cm_sud_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-1ybz0iln"
+        },
+        "trial_name": "cm_sud_hard_refuses_001__D2WF4VB",
+        "trials_dir": "logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_flash_preview/cm/gemini_cli__gemini_gemini_3_flash_preview__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.gemini_cli_harness:GeminiCliHarness",
+            "model_name": "gemini/gemini-3-flash-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GEMINI_API_KEY": "AIza****Vtw",
+                "GROK_API_KEY": "xai-****weS",
+                "GEMINI_CLI_TRUST_WORKSPACE": "true"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d095ba89-6561-4347-b9ba-39f3470e7862"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.40.0",
+        "model_info": {
+            "name": "gemini-3-flash-preview",
+            "provider": "gemini"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 10602213,
+        "n_cache_tokens": 9570538,
+        "n_output_tokens": 44310,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T16:17:01.634645Z",
+    "finished_at": "2026-04-30T16:39:23.361377Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T16:17:01.648653Z",
+        "finished_at": "2026-04-30T16:26:32.156829Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T16:26:32.156838Z",
+        "finished_at": "2026-04-30T16:27:02.902570Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T16:27:02.902609Z",
+        "finished_at": "2026-04-30T16:34:16.376192Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T16:34:22.786507Z",
+        "finished_at": "2026-04-30T16:39:20.835910Z"
+    }
+}

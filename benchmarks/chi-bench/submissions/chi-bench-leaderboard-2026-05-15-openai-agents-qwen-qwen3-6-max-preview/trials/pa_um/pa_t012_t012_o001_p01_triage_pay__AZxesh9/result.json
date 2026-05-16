@@ -1,0 +1,108 @@
+{
+    "id": "b016b42d-540d-404a-ba03-bbebcac554a1",
+    "task_name": "pa_t012_t012_o001_p01_triage_payer",
+    "trial_name": "pa_t012_t012_o001_p01_triage_pay__AZxesh9",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__qwen_qwen3_6_max_preview/pa_um/openai_agents__qwen_qwen3_6_max_preview__pa_um/pa_t012_t012_o001_p01_triage_pay__AZxesh9",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-7njy_d8l/pa_t012_t012_o001_p01_triage_payer"
+    },
+    "source": "healthverse-modal-7njy_d8l",
+    "task_checksum": "b49b3ff56ff63da846dfd0df871ceead2a6dcd5559e348e49eac563b539a8d72",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-7njy_d8l/pa_t012_t012_o001_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-7njy_d8l"
+        },
+        "trial_name": "pa_t012_t012_o001_p01_triage_pay__AZxesh9",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__qwen_qwen3_6_max_preview/pa_um/openai_agents__qwen_qwen3_6_max_preview__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d4c",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0933e9d1-6db2-4a63-a4d0-9d2dacbd73ce"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "qwen3.6-max-preview",
+            "provider": "qwen"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 500615,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3805,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T04:44:37.196479Z",
+    "finished_at": "2026-05-04T04:58:10.163550Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T04:44:37.197406Z",
+        "finished_at": "2026-05-04T04:51:54.820341Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T04:51:54.820351Z",
+        "finished_at": "2026-05-04T04:51:59.811135Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T04:51:59.811176Z",
+        "finished_at": "2026-05-04T04:57:33.615857Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T04:57:42.585816Z",
+        "finished_at": "2026-05-04T04:57:51.045775Z"
+    }
+}

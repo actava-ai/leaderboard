@@ -1,0 +1,108 @@
+{
+    "id": "0be970e0-3e4c-44c3-ac9c-4f98d6175618",
+    "task_name": "cm_complex_hf_afib_ckd_hard_refuses_001",
+    "trial_name": "cm_complex_hf_afib_ckd_hard_refu__fSoPejw",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm/cm_complex_hf_afib_ckd_hard_refu__fSoPejw",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-efoo7xiv/cm_complex_hf_afib_ckd_hard_refuses_001"
+    },
+    "source": "healthverse-modal-efoo7xiv",
+    "task_checksum": "18cd503fe46aafdcc3dd9067fac426887843fb83cd5f2fb69a44e798139aab2c",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-efoo7xiv/cm_complex_hf_afib_ckd_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-efoo7xiv"
+        },
+        "trial_name": "cm_complex_hf_afib_ckd_hard_refu__fSoPejw",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e5f",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "c81f178e-cc2a-4d42-ba14-b7fef2a5e07f"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2855313,
+        "n_cache_tokens": 1999328,
+        "n_output_tokens": 30287,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T02:07:32.850148Z",
+    "finished_at": "2026-05-04T02:40:18.633415Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T02:07:32.850493Z",
+        "finished_at": "2026-05-04T02:14:30.048118Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T02:14:30.048133Z",
+        "finished_at": "2026-05-04T02:14:34.681850Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T02:14:34.681882Z",
+        "finished_at": "2026-05-04T02:36:20.210552Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T02:36:28.159938Z",
+        "finished_at": "2026-05-04T02:40:15.370157Z"
+    }
+}

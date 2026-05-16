@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openai-agents,moonshotai/kimi-k2.6,overall,0.15111111111111108,225,75,1.2181144675555555,1422.9322827777778,2026-05-04T07:47:06Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openai-agents,moonshotai/kimi-k2.6,pa_provider,0.1733333333333333,75,25,1.4488802114666666,1210.6539233066667,2026-05-04T07:47:06Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openai-agents,moonshotai/kimi-k2.6,pa_um,0.2533333333333333,75,25,1.1204133075466667,1351.8375677733334,2026-05-04T07:47:06Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openai-agents,moonshotai/kimi-k2.6,cm,0.026666666666666665,75,25,1.0850498836533333,1706.3053572533333,2026-05-04T07:47:06Z

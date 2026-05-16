@@ -1,0 +1,108 @@
+{
+    "id": "8d4bde44-d4e0-4dd8-8bdc-9a66b5dd5701",
+    "task_name": "cm_dm_hard_refuses_002",
+    "trial_name": "cm_dm_hard_refuses_002__DpvLo5w",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/hermes__openrouter_z_ai_glm_5_1/cm/hermes__openrouter_z_ai_glm_5_1__cm/cm_dm_hard_refuses_002__DpvLo5w",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-btc45ujf/cm_dm_hard_refuses_002"
+    },
+    "source": "healthverse-modal-btc45ujf",
+    "task_checksum": "78f7df1325317a49c6bf218072e8740c5c4f4353dd8ef21273314f79cd6a6958",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-btc45ujf/cm_dm_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-btc45ujf"
+        },
+        "trial_name": "cm_dm_hard_refuses_002__DpvLo5w",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/hermes__openrouter_z_ai_glm_5_1/cm/hermes__openrouter_z_ai_glm_5_1__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****f0d",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "e66f4ed8-7068-4c1b-95cf-4244023e8d55"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.12.0 (2026.4.30)\nProject: /usr/local/lib/hermes-agent\nPython: 3.11.15\nOpenAI SDK: 2.32.0\nUp to date",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T00:04:00.926945Z",
+    "finished_at": "2026-05-04T00:27:02.438510Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T00:04:00.927339Z",
+        "finished_at": "2026-05-04T00:10:56.399252Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T00:10:56.399259Z",
+        "finished_at": "2026-05-04T00:12:48.521103Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T00:12:48.521137Z",
+        "finished_at": "2026-05-04T00:23:34.694190Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T00:23:38.179323Z",
+        "finished_at": "2026-05-04T00:26:59.355069Z"
+    }
+}

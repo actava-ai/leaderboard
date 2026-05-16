@@ -1,0 +1,109 @@
+{
+    "id": "d6b6b387-7fb6-4f95-aa76-14dde8b04b27",
+    "task_name": "pa_t029_t029_o001_p01_nurse_review_payer",
+    "trial_name": "pa_t029_t029_o001_p01_nurse_revi__vpddvXc",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_pro_preview/pa_um/gemini_cli__gemini_gemini_3_pro_preview__pa_um/pa_t029_t029_o001_p01_nurse_revi__vpddvXc",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-vy5cdqk0/pa_t029_t029_o001_p01_nurse_review_payer"
+    },
+    "source": "healthverse-modal-vy5cdqk0",
+    "task_checksum": "c2ee89e9e2ec49d31fd2a32382f24284672e77f0510502aa92ba8d5c1deb858a",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-vy5cdqk0/pa_t029_t029_o001_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-vy5cdqk0"
+        },
+        "trial_name": "pa_t029_t029_o001_p01_nurse_revi__vpddvXc",
+        "trials_dir": "logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_pro_preview/pa_um/gemini_cli__gemini_gemini_3_pro_preview__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.gemini_cli_harness:GeminiCliHarness",
+            "model_name": "gemini/gemini-3-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GEMINI_API_KEY": "AIza****-OI",
+                "GROK_API_KEY": "xai-****weS",
+                "GEMINI_CLI_TRUST_WORKSPACE": "true"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "a292c77a-1cff-4dc6-8f6d-994edbfb7976"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.40.0",
+        "model_info": {
+            "name": "gemini-3-pro-preview",
+            "provider": "gemini"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 8978528,
+        "n_cache_tokens": 8330568,
+        "n_output_tokens": 17983,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T01:56:25.117806Z",
+    "finished_at": "2026-04-30T02:12:49.723423Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T01:56:25.131388Z",
+        "finished_at": "2026-04-30T02:01:14.232026Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T02:01:14.232036Z",
+        "finished_at": "2026-04-30T02:02:03.468113Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T02:02:03.468156Z",
+        "finished_at": "2026-04-30T02:08:34.753462Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T02:08:40.795916Z",
+        "finished_at": "2026-04-30T02:12:43.259173Z"
+    }
+}

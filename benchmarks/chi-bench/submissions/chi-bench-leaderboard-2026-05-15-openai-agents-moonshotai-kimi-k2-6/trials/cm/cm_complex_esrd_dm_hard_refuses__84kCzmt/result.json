@@ -1,0 +1,108 @@
+{
+    "id": "85c9c767-12d0-4b61-8a23-c5e70e349fc5",
+    "task_name": "cm_complex_esrd_dm_hard_refuses_001",
+    "trial_name": "cm_complex_esrd_dm_hard_refuses__84kCzmt",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm/cm_complex_esrd_dm_hard_refuses__84kCzmt",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-efoo7xiv/cm_complex_esrd_dm_hard_refuses_001"
+    },
+    "source": "healthverse-modal-efoo7xiv",
+    "task_checksum": "bdcbf86b40060019e75c3bdeafcfae3132deac113701fb63e10ff38516d7920c",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-efoo7xiv/cm_complex_esrd_dm_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-efoo7xiv"
+        },
+        "trial_name": "cm_complex_esrd_dm_hard_refuses__84kCzmt",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e5f",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "c81f178e-cc2a-4d42-ba14-b7fef2a5e07f"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1941069,
+        "n_cache_tokens": 959872,
+        "n_output_tokens": 21994,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T02:54:44.505197Z",
+    "finished_at": "2026-05-04T03:25:27.461952Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T02:54:44.505647Z",
+        "finished_at": "2026-05-04T02:55:20.042898Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T02:55:20.042907Z",
+        "finished_at": "2026-05-04T02:55:25.088631Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T02:55:25.088667Z",
+        "finished_at": "2026-05-04T03:20:02.497105Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T03:20:05.635960Z",
+        "finished_at": "2026-05-04T03:25:24.814932Z"
+    }
+}

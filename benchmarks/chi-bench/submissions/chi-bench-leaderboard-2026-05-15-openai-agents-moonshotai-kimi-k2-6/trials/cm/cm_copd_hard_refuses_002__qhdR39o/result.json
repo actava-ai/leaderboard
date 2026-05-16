@@ -1,0 +1,113 @@
+{
+    "id": "69615961-e586-4fa7-b023-c0d66b8d1d51",
+    "task_name": "cm_copd_hard_refuses_002",
+    "trial_name": "cm_copd_hard_refuses_002__qhdR39o",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm/cm_copd_hard_refuses_002__qhdR39o",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-1uery94m/cm_copd_hard_refuses_002"
+    },
+    "source": "healthverse-modal-1uery94m",
+    "task_checksum": "285162fa9e706ec197f40943dba2a90d45e07480ecc371b840cea857446e729a",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-1uery94m/cm_copd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-1uery94m"
+        },
+        "trial_name": "cm_copd_hard_refuses_002__qhdR39o",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e5f",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "6d7c6ce1-3884-4392-80a5-9a43fe52026f"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "NonZeroAgentExitCodeError",
+        "exception_message": "Command failed (exit 1): echo '# Care Management Intake Handoff\n\nMr. Rafael Delgado is a 52-year-old male referred by his primary care provider for chronic disease care management related to COPD. The referral notes severe-stage COPD with two exacerbation-related acute-care visits in the past year, declining FEV1, active tobacco use, intermittent housing instability, and rising symptom scores.\n\nThe case is in the care management intake queue for initial outreach and enrollment determination. Use the chart and referral record to complete outreach, document the outcome, and proceed according to the care management workflow.\n\n## 🧰 Workspace\n\n| Resource | Location |\n|----------|----------|\n| Patient data & care-manager tools | `healthverse` MCP server |\n| Handbook | `/workspace/skills/managed-care-operations-handbook/SKILL.md` |\n| Working files | `/logs/artifacts/workspaces/<case-id>/care-manager/` |\n| Shared handoff | `/logs/artifacts/workspaces/<case-id>/shared/` |\n| Tool reference | `/opt/healthverse-task-assets/tool_reference.md` |\n\n## 📋 Rules\n\n- Use only care-manager namespaces: `cm_intake`, `cm_chart`, `cm_outreach`, `cm_assessment`, `cm_care_plan`\n- Do not inspect simulator source, tests, solution, or expectations files\n- Do not fabricate evidence — every structured field must be grounded in the chart or the outreach transcript\n- Mark `consent_obtained` true only after the consent script was actually performed in the transcript\n' > /tmp/instruction.md && python -m healthverse.experiment.agents.openai_agents_runner --instruction-file /tmp/instruction.md --mcp-url http://healthverse-server:8200/mcp 2>&1 | tee /logs/agent/run_log.txt\nstdout: Running agent with model=moonshotai/kimi-k2.6, max_turns=50\nMCP server: http://healthverse-server:8200/mcp\nInstruction length: 1425 chars\n---\nMCP tool cm_outreach.send_message on server 'healthverse' returned an error: Timed out while waiting for response to ClientRequest. Waited 5.0 seconds.\nMCP tool cm_outreach.send_message on server 'healthverse' returned an error: Timed out while waiting for response to ClientRequest. Waited 5.0 seconds.\nError getting response: Expecting value: line 471 column 1 (char 2585). (request_id: None)\nAgent error: JSONDecodeError: Expecting value: line 471 column 1 (char 2585)\n\nstderr: None",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 547, in run\n    await self._execute_agent()\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 285, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 41, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/src/healthverse/experiment/agents/openai_agents_harness.py\", line 221, in run\n    await self.exec_as_agent(\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 379, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 342, in _exec\n    raise NonZeroAgentExitCodeError(\nharbor.agents.installed.base.NonZeroAgentExitCodeError: Command failed (exit 1): echo '# Care Management Intake Handoff\n\nMr. Rafael Delgado is a 52-year-old male referred by his primary care provider for chronic disease care management related to COPD. The referral notes severe-stage COPD with two exacerbation-related acute-care visits in the past year, declining FEV1, active tobacco use, intermittent housing instability, and rising symptom scores.\n\nThe case is in the care management intake queue for initial outreach and enrollment determination. Use the chart and referral record to complete outreach, document the outcome, and proceed according to the care management workflow.\n\n## 🧰 Workspace\n\n| Resource | Location |\n|----------|----------|\n| Patient data & care-manager tools | `healthverse` MCP server |\n| Handbook | `/workspace/skills/managed-care-operations-handbook/SKILL.md` |\n| Working files | `/logs/artifacts/workspaces/<case-id>/care-manager/` |\n| Shared handoff | `/logs/artifacts/workspaces/<case-id>/shared/` |\n| Tool reference | `/opt/healthverse-task-assets/tool_reference.md` |\n\n## 📋 Rules\n\n- Use only care-manager namespaces: `cm_intake`, `cm_chart`, `cm_outreach`, `cm_assessment`, `cm_care_plan`\n- Do not inspect simulator source, tests, solution, or expectations files\n- Do not fabricate evidence — every structured field must be grounded in the chart or the outreach transcript\n- Mark `consent_obtained` true only after the consent script was actually performed in the transcript\n' > /tmp/instruction.md && python -m healthverse.experiment.agents.openai_agents_runner --instruction-file /tmp/instruction.md --mcp-url http://healthverse-server:8200/mcp 2>&1 | tee /logs/agent/run_log.txt\nstdout: Running agent with model=moonshotai/kimi-k2.6, max_turns=50\nMCP server: http://healthverse-server:8200/mcp\nInstruction length: 1425 chars\n---\nMCP tool cm_outreach.send_message on server 'healthverse' returned an error: Timed out while waiting for response to ClientRequest. Waited 5.0 seconds.\nMCP tool cm_outreach.send_message on server 'healthverse' returned an error: Timed out while waiting for response to ClientRequest. Waited 5.0 seconds.\nError getting response: Expecting value: line 471 column 1 (char 2585). (request_id: None)\nAgent error: JSONDecodeError: Expecting value: line 471 column 1 (char 2585)\n\nstderr: None\n",
+        "occurred_at": "2026-05-03T11:57:05.863367"
+    },
+    "started_at": "2026-05-03T18:37:19.272118Z",
+    "finished_at": "2026-05-03T19:00:14.408476Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T18:37:19.272743Z",
+        "finished_at": "2026-05-03T18:37:52.196720Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T18:37:52.196729Z",
+        "finished_at": "2026-05-03T18:37:59.844022Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T18:37:59.844058Z",
+        "finished_at": "2026-05-03T18:57:05.863105Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T18:57:13.676856Z",
+        "finished_at": "2026-05-03T19:00:08.057370Z"
+    }
+}

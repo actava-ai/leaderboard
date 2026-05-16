@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-claude-code-anthropic-claude-haiku-4-5,chi-Bench Leaderboard,claude-code,anthropic/claude-haiku-4-5,overall,0.062222222222222213,225,75,1.282121592888889,723.7559795111111,2026-04-30T19:34:41Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-claude-code-anthropic-claude-haiku-4-5,chi-Bench Leaderboard,claude-code,anthropic/claude-haiku-4-5,pa_provider,0.0,75,25,0.042702356000000004,542.0779257199999,2026-04-30T19:34:41Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-claude-code-anthropic-claude-haiku-4-5,chi-Bench Leaderboard,claude-code,anthropic/claude-haiku-4-5,pa_um,0.14666666666666667,75,25,1.32371662,572.52581612,2026-04-30T19:34:41Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-claude-code-anthropic-claude-haiku-4-5,chi-Bench Leaderboard,claude-code,anthropic/claude-haiku-4-5,cm,0.04,75,25,2.4799458026666668,1056.6641966933335,2026-04-30T19:34:41Z

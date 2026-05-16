@@ -1,0 +1,109 @@
+{
+    "id": "b883847d-32ea-4517-bf82-b3a7eb1931a7",
+    "task_name": "cm_dm_low_coop_001",
+    "trial_name": "cm_dm_low_coop_001__KVUg29n",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_flash_preview/cm/gemini_cli__gemini_gemini_3_flash_preview__cm/cm_dm_low_coop_001__KVUg29n",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-1ybz0iln/cm_dm_low_coop_001"
+    },
+    "source": "healthverse-modal-1ybz0iln",
+    "task_checksum": "2725045e1c4f386d5e4e30f2d8fc036be8aa8d2c7636f268512dbe4b051fead5",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-1ybz0iln/cm_dm_low_coop_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-1ybz0iln"
+        },
+        "trial_name": "cm_dm_low_coop_001__KVUg29n",
+        "trials_dir": "logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_flash_preview/cm/gemini_cli__gemini_gemini_3_flash_preview__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.gemini_cli_harness:GeminiCliHarness",
+            "model_name": "gemini/gemini-3-flash-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GEMINI_API_KEY": "AIza****Vtw",
+                "GROK_API_KEY": "xai-****weS",
+                "GEMINI_CLI_TRUST_WORKSPACE": "true"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d095ba89-6561-4347-b9ba-39f3470e7862"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.40.1",
+        "model_info": {
+            "name": "gemini-3-flash-preview",
+            "provider": "gemini"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3560722,
+        "n_cache_tokens": 2969544,
+        "n_output_tokens": 19742,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T19:38:25.206689Z",
+    "finished_at": "2026-04-30T19:52:26.783745Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T19:38:25.209960Z",
+        "finished_at": "2026-04-30T19:41:15.134887Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T19:41:15.134896Z",
+        "finished_at": "2026-04-30T19:41:52.804794Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T19:41:52.804837Z",
+        "finished_at": "2026-04-30T19:44:52.677085Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T19:44:59.423058Z",
+        "finished_at": "2026-04-30T19:52:23.595106Z"
+    }
+}

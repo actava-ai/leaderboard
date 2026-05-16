@@ -1,0 +1,109 @@
+{
+    "id": "e2204d90-62c8-4803-a637-62cc70fda377",
+    "task_name": "cm_mdd_moderate_reluctant_001",
+    "trial_name": "cm_mdd_moderate_reluctant_001__YwRueYc",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_pro_preview/cm/gemini_cli__gemini_gemini_3_pro_preview__cm/cm_mdd_moderate_reluctant_001__YwRueYc",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-p32vkawr/cm_mdd_moderate_reluctant_001"
+    },
+    "source": "healthverse-modal-p32vkawr",
+    "task_checksum": "59b7a2aaf5cc7c2b348ea47d188fb66bfb80f0062d2761770649c3ec2f98adba",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-p32vkawr/cm_mdd_moderate_reluctant_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-p32vkawr"
+        },
+        "trial_name": "cm_mdd_moderate_reluctant_001__YwRueYc",
+        "trials_dir": "logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_pro_preview/cm/gemini_cli__gemini_gemini_3_pro_preview__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.gemini_cli_harness:GeminiCliHarness",
+            "model_name": "gemini/gemini-3-pro-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GEMINI_API_KEY": "AIza****-OI",
+                "GROK_API_KEY": "xai-****weS",
+                "GEMINI_CLI_TRUST_WORKSPACE": "true"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7ab65fe9-1aec-45e7-a110-f4a1e4d6c168"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.40.0",
+        "model_info": {
+            "name": "gemini-3-pro-preview",
+            "provider": "gemini"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 5962798,
+        "n_cache_tokens": 5608320,
+        "n_output_tokens": 25109,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T08:25:16.179593Z",
+    "finished_at": "2026-04-30T08:40:07.668243Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T08:25:16.179979Z",
+        "finished_at": "2026-04-30T08:26:55.693450Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T08:26:55.693458Z",
+        "finished_at": "2026-04-30T08:27:21.137835Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T08:27:21.137874Z",
+        "finished_at": "2026-04-30T08:35:27.591671Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T08:35:35.643839Z",
+        "finished_at": "2026-04-30T08:40:05.127651Z"
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "id": "2591daae-f3c5-4b08-953d-f59c4879fc8f",
+    "task_name": "pa_t027_t027_o002_p01_nurse_review_payer",
+    "trial_name": "pa_t027_t027_o002_p01_nurse_revi__b2sC24T",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/hermes__openrouter_z_ai_glm_5_1/pa_um/hermes__openrouter_z_ai_glm_5_1__pa_um/pa_t027_t027_o002_p01_nurse_revi__b2sC24T",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-cvwopsb2/pa_t027_t027_o002_p01_nurse_review_payer"
+    },
+    "source": "healthverse-modal-cvwopsb2",
+    "task_checksum": "8a4e7f1465fddf7610e63f304e17cf3edb0ecf6e05f0b3bc1af6899dc4b1f563",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-cvwopsb2/pa_t027_t027_o002_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-cvwopsb2"
+        },
+        "trial_name": "pa_t027_t027_o002_p01_nurse_revi__b2sC24T",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/hermes__openrouter_z_ai_glm_5_1/pa_um/hermes__openrouter_z_ai_glm_5_1__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****f0d",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "6ff2ca44-1e2d-4520-859a-37ecfcfc68c4"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.12.0 (2026.4.30)\nProject: /usr/local/lib/hermes-agent\nPython: 3.11.15\nOpenAI SDK: 2.32.0\nUp to date",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T19:14:59.367767Z",
+    "finished_at": "2026-05-03T19:34:05.863864Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T19:14:59.380632Z",
+        "finished_at": "2026-05-03T19:16:10.679493Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T19:16:10.679503Z",
+        "finished_at": "2026-05-03T19:19:10.866385Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T19:19:10.866424Z",
+        "finished_at": "2026-05-03T19:30:28.319797Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T19:30:31.792726Z",
+        "finished_at": "2026-05-03T19:33:57.262499Z"
+    }
+}

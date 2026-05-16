@@ -1,0 +1,107 @@
+{
+    "id": "2d9dacec-9862-426e-aa67-4ce4d28c38e8",
+    "task_name": "pa_t033_t033_o001_p01_triage_payer",
+    "trial_name": "pa_t033_t033_o001_p01_triage_pay__cQbHDcR",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_openclaw_first_party/openclaw__anthropic_claude_opus_4_7/pa_um/openclaw__anthropic_claude_opus_4_7__pa_um/pa_t033_t033_o001_p01_triage_pay__cQbHDcR",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-exbbj80h/pa_t033_t033_o001_p01_triage_payer"
+    },
+    "source": "healthverse-modal-exbbj80h",
+    "task_checksum": "82885079a5976e07c2be4d921291bf71f5f056cdcaed4d9fd5f8514b1be1e738",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-exbbj80h/pa_t033_t033_o001_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-exbbj80h"
+        },
+        "trial_name": "pa_t033_t033_o001_p01_triage_pay__cQbHDcR",
+        "trials_dir": "logs/experiments/curated25_openclaw_first_party/openclaw__anthropic_claude_opus_4_7/pa_um/openclaw__anthropic_claude_opus_4_7__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0613e540-2049-441f-87c6-e8d4e9fde2bc"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.3-1 (2eae30e)",
+        "model_info": {
+            "name": "claude-opus-4-7",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3156007,
+        "n_cache_tokens": 3039872,
+        "n_output_tokens": 16530,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T14:31:21.591461Z",
+    "finished_at": "2026-05-04T14:44:25.764194Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T14:31:21.600896Z",
+        "finished_at": "2026-05-04T14:32:24.610421Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T14:32:24.610429Z",
+        "finished_at": "2026-05-04T14:33:19.252727Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T14:33:19.252773Z",
+        "finished_at": "2026-05-04T14:40:38.209291Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T14:40:44.730407Z",
+        "finished_at": "2026-05-04T14:44:13.620508Z"
+    }
+}

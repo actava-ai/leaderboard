@@ -1,0 +1,108 @@
+{
+    "id": "ba551db9-eb4a-4e67-8403-481d7ccba08a",
+    "task_name": "cm_post_pna_moderate_tentative_001",
+    "trial_name": "cm_post_pna_moderate_tentative_0__5E83rF6",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm/cm_post_pna_moderate_tentative_0__5E83rF6",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-xsf91njq/cm_post_pna_moderate_tentative_001"
+    },
+    "source": "healthverse-modal-xsf91njq",
+    "task_checksum": "b5381070e5edc59ee26e3c7948cf549f140234a5a5d3e22704b76f4da33f7874",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-xsf91njq/cm_post_pna_moderate_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-xsf91njq"
+        },
+        "trial_name": "cm_post_pna_moderate_tentative_0__5E83rF6",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****c47",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "a258e290-f68a-442c-b08e-7a946206076b"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1714991,
+        "n_cache_tokens": 1604416,
+        "n_output_tokens": 11024,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T01:41:12.445324Z",
+    "finished_at": "2026-05-04T01:55:40.405600Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T01:41:12.449274Z",
+        "finished_at": "2026-05-04T01:41:47.941305Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T01:41:47.941314Z",
+        "finished_at": "2026-05-04T01:42:19.721342Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T01:42:19.721376Z",
+        "finished_at": "2026-05-04T01:51:17.534627Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T01:51:20.718202Z",
+        "finished_at": "2026-05-04T01:55:38.775880Z"
+    }
+}

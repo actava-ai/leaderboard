@@ -1,0 +1,108 @@
+{
+    "id": "5762d01a-014d-4f67-80bd-e349dbade82b",
+    "task_name": "pa_t021_t021_o003_p01_mdreview_payer",
+    "trial_name": "pa_t021_t021_o003_p01_mdreview_p__ciHcWLr",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openai_agents__moonshotai_kimi_k2_6/pa_um/openai_agents__moonshotai_kimi_k2_6__pa_um/pa_t021_t021_o003_p01_mdreview_p__ciHcWLr",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-tmxt9v07/pa_t021_t021_o003_p01_mdreview_payer"
+    },
+    "source": "healthverse-modal-tmxt9v07",
+    "task_checksum": "4fcdb006041c9c5758757738afa7586d80d54714cfeabd96dad690c7038ebeca",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-tmxt9v07/pa_t021_t021_o003_p01_mdreview_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-tmxt9v07"
+        },
+        "trial_name": "pa_t021_t021_o003_p01_mdreview_p__ciHcWLr",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openai_agents__moonshotai_kimi_k2_6/pa_um/openai_agents__moonshotai_kimi_k2_6__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e5f",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "3430fcdb-8fd4-4fe5-abc2-f2a59c8d936e"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 970480,
+        "n_cache_tokens": 688832,
+        "n_output_tokens": 20430,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T20:59:52.042864Z",
+    "finished_at": "2026-05-03T21:28:24.121806Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T20:59:52.043964Z",
+        "finished_at": "2026-05-03T21:00:27.096379Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T21:00:27.096388Z",
+        "finished_at": "2026-05-03T21:00:30.064855Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T21:00:30.064891Z",
+        "finished_at": "2026-05-03T21:20:04.528069Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T21:20:08.726333Z",
+        "finished_at": "2026-05-03T21:28:15.234844Z"
+    }
+}

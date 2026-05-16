@@ -1,0 +1,108 @@
+{
+    "id": "fcb7debd-41a1-4491-9f84-4ed0034229e1",
+    "task_name": "cm_htn_low_tentative_001",
+    "trial_name": "cm_htn_low_tentative_001__TqDVJ8V",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/hermes__openrouter_x_ai_grok_4_3/cm/hermes__openrouter_x_ai_grok_4_3__cm/cm_htn_low_tentative_001__TqDVJ8V",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-5o933k5c/cm_htn_low_tentative_001"
+    },
+    "source": "healthverse-modal-5o933k5c",
+    "task_checksum": "2e56d71c4e05610f5f63c8ae23d9b1ee0798d649c0cc73379c3e8f58b1918463",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-5o933k5c/cm_htn_low_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-5o933k5c"
+        },
+        "trial_name": "cm_htn_low_tentative_001__TqDVJ8V",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/hermes__openrouter_x_ai_grok_4_3/cm/hermes__openrouter_x_ai_grok_4_3__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openrouter/x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d75",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "6f2abb69-4daa-4ce5-9078-840b77729c77"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.12.0 (2026.4.30)\nProject: /usr/local/lib/hermes-agent\nPython: 3.11.15\nOpenAI SDK: 2.32.0\nUp to date",
+        "model_info": {
+            "name": "x-ai/grok-4.3",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T16:17:00.199695Z",
+    "finished_at": "2026-05-03T16:34:52.040850Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T16:17:00.200011Z",
+        "finished_at": "2026-05-03T16:23:45.193717Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T16:23:45.193726Z",
+        "finished_at": "2026-05-03T16:25:28.894607Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T16:25:28.894657Z",
+        "finished_at": "2026-05-03T16:28:54.523112Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T16:28:56.467331Z",
+        "finished_at": "2026-05-03T16:34:50.031043Z"
+    }
+}

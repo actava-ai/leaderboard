@@ -1,0 +1,107 @@
+{
+    "id": "d69c2457-8ba1-479c-b857-0bd637e79b3a",
+    "task_name": "cm_complex_parkinson_dep_moderate_tentative_001",
+    "trial_name": "cm_complex_parkinson_dep_moderat__Xody4rc",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/claude_code__anthropic_claude_sonnet_4_6/cm/claude_code__anthropic_claude_sonnet_4_6__cm/cm_complex_parkinson_dep_moderat__Xody4rc",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-7fiofxw5/cm_complex_parkinson_dep_moderate_tentative_001"
+    },
+    "source": "healthverse-modal-7fiofxw5",
+    "task_checksum": "6f46fbf2cd2af26ecfe014895e9c477199299ecb679dd06b8c5822e0f8560a6a",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-7fiofxw5/cm_complex_parkinson_dep_moderate_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-7fiofxw5"
+        },
+        "trial_name": "cm_complex_parkinson_dep_moderat__Xody4rc",
+        "trials_dir": "logs/experiments/curated25_full_matrix/claude_code__anthropic_claude_sonnet_4_6/cm/claude_code__anthropic_claude_sonnet_4_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-4-6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****QAA",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "052a3fa6-b3ea-40ed-8ae3-76f873e3cbfd"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.123",
+        "model_info": {
+            "name": "claude-sonnet-4-6",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1958544,
+        "n_cache_tokens": 1831191,
+        "n_output_tokens": 34478,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T10:00:05.444156Z",
+    "finished_at": "2026-04-30T10:30:06.349796Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T10:00:05.444463Z",
+        "finished_at": "2026-04-30T10:14:39.556158Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T10:14:39.556170Z",
+        "finished_at": "2026-04-30T10:14:58.380643Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T10:14:58.380702Z",
+        "finished_at": "2026-04-30T10:25:42.998449Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T10:25:57.517532Z",
+        "finished_at": "2026-04-30T10:30:03.523243Z"
+    }
+}

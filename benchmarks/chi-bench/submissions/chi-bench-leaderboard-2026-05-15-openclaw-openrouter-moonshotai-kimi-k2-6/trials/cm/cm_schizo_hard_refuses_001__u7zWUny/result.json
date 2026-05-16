@@ -1,0 +1,108 @@
+{
+    "id": "368caaae-7dd0-4c29-84b1-fba4e52793bd",
+    "task_name": "cm_schizo_hard_refuses_001",
+    "trial_name": "cm_schizo_hard_refuses_001__u7zWUny",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_moonshotai_kimi_k2_6/cm/openclaw__openrouter_moonshotai_kimi_k2_6__cm/cm_schizo_hard_refuses_001__u7zWUny",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-z4i80_tm/cm_schizo_hard_refuses_001"
+    },
+    "source": "healthverse-modal-z4i80_tm",
+    "task_checksum": "8025d171714ab091640b24219e7f37cca674a5d372dc5bc383b5573bb6ed764c",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-z4i80_tm/cm_schizo_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-z4i80_tm"
+        },
+        "trial_name": "cm_schizo_hard_refuses_001__u7zWUny",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_moonshotai_kimi_k2_6/cm/openclaw__openrouter_moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****b10",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "426e8e1d-f1a2-45be-89c6-ea07437b8f0b"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "moonshotai/kimi-k2.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2048304,
+        "n_cache_tokens": 1644736,
+        "n_output_tokens": 13681,
+        "cost_usd": 0.57665005,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T00:12:21.324294Z",
+    "finished_at": "2026-05-04T00:25:11.800896Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T00:12:21.328000Z",
+        "finished_at": "2026-05-04T00:13:36.907313Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T00:13:36.907322Z",
+        "finished_at": "2026-05-04T00:14:20.144396Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T00:14:20.144430Z",
+        "finished_at": "2026-05-04T00:21:37.627153Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T00:21:42.623225Z",
+        "finished_at": "2026-05-04T00:25:09.210462Z"
+    }
+}

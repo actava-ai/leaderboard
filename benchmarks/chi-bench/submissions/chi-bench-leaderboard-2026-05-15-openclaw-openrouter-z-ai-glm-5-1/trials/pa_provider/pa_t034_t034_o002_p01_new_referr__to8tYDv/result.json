@@ -1,0 +1,109 @@
+{
+    "id": "8d67765d-a8f8-4df2-8053-e66bae299916",
+    "task_name": "pa_t034_t034_o002_p01_new_referral_provider",
+    "trial_name": "pa_t034_t034_o002_p01_new_referr__to8tYDv",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/openclaw__openrouter_z_ai_glm_5_1/pa_provider/openclaw__openrouter_z_ai_glm_5_1__pa_provider/pa_t034_t034_o002_p01_new_referr__to8tYDv",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-6dz3u9kd/pa_t034_t034_o002_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-6dz3u9kd",
+    "task_checksum": "3908f40d7d712576726924462ddb4d2d37578c227792f9b6836be077e0668cba",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-6dz3u9kd/pa_t034_t034_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-6dz3u9kd"
+        },
+        "trial_name": "pa_t034_t034_o002_p01_new_referr__to8tYDv",
+        "trials_dir": "logs/experiments/curated25_full_matrix/openclaw__openrouter_z_ai_glm_5_1/pa_provider/openclaw__openrouter_z_ai_glm_5_1__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e60",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "6c3ede25-6e01-46e8-8198-a56c8dd28cf2"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.4.29 (a448042)",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 6524513,
+        "n_cache_tokens": 6376512,
+        "n_output_tokens": 28383,
+        "cost_usd": 3.602410349999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RewardFileNotFoundError",
+        "exception_message": "No reward file found at logs/experiments/curated25_full_matrix/openclaw__openrouter_z_ai_glm_5_1/pa_provider/openclaw__openrouter_z_ai_glm_5_1__pa_provider/pa_t034_t034_o002_p01_new_referr__to8tYDv/verifier/reward.txt or logs/experiments/curated25_full_matrix/openclaw__openrouter_z_ai_glm_5_1/pa_provider/openclaw__openrouter_z_ai_glm_5_1__pa_provider/pa_t034_t034_o002_p01_new_referr__to8tYDv/verifier/reward.json",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 571, in run\n    await self._run_verification()\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 306, in _run_verification\n    await self._verify_with_retry()\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 193, in async_wrapped\n    return await copy(fn, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 112, in __call__\n    do = await self.iter(retry_state=retry_state)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 157, in iter\n    result = await action(retry_state)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/tenacity/_utils.py\", line 111, in inner\n    return call(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/tenacity/__init__.py\", line 393, in <lambda>\n    self._add_action_func(lambda rs: rs.outcome.result())\n                                     ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 449, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/tenacity/asyncio/__init__.py\", line 116, in __call__\n    result = await fn(*args, **kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 325, in _verify_with_retry\n    self.result.verifier_result = await asyncio.wait_for(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/verifier/verifier.py\", line 148, in verify\n    raise RewardFileNotFoundError(\nharbor.verifier.verifier.RewardFileNotFoundError: No reward file found at logs/experiments/curated25_full_matrix/openclaw__openrouter_z_ai_glm_5_1/pa_provider/openclaw__openrouter_z_ai_glm_5_1__pa_provider/pa_t034_t034_o002_p01_new_referr__to8tYDv/verifier/reward.txt or logs/experiments/curated25_full_matrix/openclaw__openrouter_z_ai_glm_5_1/pa_provider/openclaw__openrouter_z_ai_glm_5_1__pa_provider/pa_t034_t034_o002_p01_new_referr__to8tYDv/verifier/reward.json\n",
+        "occurred_at": "2026-05-02T03:11:47.943138"
+    },
+    "started_at": "2026-05-02T09:43:35.102863Z",
+    "finished_at": "2026-05-02T10:11:51.213192Z",
+    "environment_setup": {
+        "started_at": "2026-05-02T09:43:35.103698Z",
+        "finished_at": "2026-05-02T09:43:58.982501Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-02T09:43:58.982511Z",
+        "finished_at": "2026-05-02T09:44:25.698162Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-02T09:44:25.698198Z",
+        "finished_at": "2026-05-02T10:11:33.810790Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-02T10:11:43.539718Z",
+        "finished_at": "2026-05-02T10:11:47.942522Z"
+    }
+}

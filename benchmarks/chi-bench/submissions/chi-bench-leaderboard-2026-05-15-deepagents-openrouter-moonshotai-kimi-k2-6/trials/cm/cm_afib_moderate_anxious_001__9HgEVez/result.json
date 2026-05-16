@@ -1,0 +1,113 @@
+{
+    "id": "dee3856e-562c-4d38-bfc2-cdafdc1b54ce",
+    "task_name": "cm_afib_moderate_anxious_001",
+    "trial_name": "cm_afib_moderate_anxious_001__9HgEVez",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_moonshotai_kimi_k2_6/cm/deepagents__openrouter_moonshotai_kimi_k2_6__cm/cm_afib_moderate_anxious_001__9HgEVez",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-oiq1dqsy/cm_afib_moderate_anxious_001"
+    },
+    "source": "healthverse-modal-oiq1dqsy",
+    "task_checksum": "ddea0a72eee5ef9c6d57f944a55f9f58d47452b34103747999b1c6d9dbdc4c27",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-oiq1dqsy/cm_afib_moderate_anxious_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-oiq1dqsy"
+        },
+        "trial_name": "cm_afib_moderate_anxious_001__9HgEVez",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_moonshotai_kimi_k2_6/cm/deepagents__openrouter_moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d0e",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "894b0e40-3eca-4905-92a1-547b8e243935"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "moonshotai/kimi-k2.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 1800.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/synchronicity/synchronizer.py\", line 519, in _run_function_async\n    value = await asyncio.shield(a_fut)\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 41, in wrapper\n    return await fn(self, instruction, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/src/healthverse/experiment/agents/deepagents_harness.py\", line 833, in run\n    await self.exec_as_agent(\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 379, in exec_as_agent\n    return await self._exec(\n           ^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/agents/installed/base.py\", line 326, in _exec\n    result = await environment.exec(\n             ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/environments/modal.py\", line 1108, in exec\n    return await self._strategy.exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/environments/modal.py\", line 191, in exec\n    return await self._env._sdk_exec(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/environments/modal.py\", line 960, in _sdk_exec\n    stdout = await process.stdout.read.aio()\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/synchronicity/async_wrap.py\", line 30, in wrapper\n    return await user_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/synchronicity/async_wrap.py\", line 30, in wrapper\n    return await user_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/synchronicity/async_wrap.py\", line 30, in wrapper\n    return await user_wrapper(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/synchronicity/synchronizer.py\", line 534, in _run_function_async\n    await a_fut  # wait for cancellation logic to complete - this *normally* raises CancelledError\n    ^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 285, in _execute_agent\n    await asyncio.wait_for(\n  File \"/usr/lib/python3.12/asyncio/tasks.py\", line 519, in wait_for\n    async with timeouts.timeout(timeout):\n  File \"/usr/lib/python3.12/asyncio/timeouts.py\", line 115, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 547, in run\n    await self._execute_agent()\n  File \"/home/hlnchen/actava-bench/.venv/lib/python3.12/site-packages/harbor/trial/trial.py\", line 294, in _execute_agent\n    raise AgentTimeoutError(\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 1800.0 seconds\n",
+        "occurred_at": "2026-05-04T05:01:33.649773"
+    },
+    "started_at": "2026-05-04T11:28:39.804583Z",
+    "finished_at": "2026-05-04T12:02:50.351671Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T11:28:39.805012Z",
+        "finished_at": "2026-05-04T11:29:06.281236Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T11:29:06.281244Z",
+        "finished_at": "2026-05-04T11:29:37.914965Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T11:29:37.914996Z",
+        "finished_at": "2026-05-04T12:01:33.649238Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T12:01:36.072213Z",
+        "finished_at": "2026-05-04T12:02:48.691016Z"
+    }
+}

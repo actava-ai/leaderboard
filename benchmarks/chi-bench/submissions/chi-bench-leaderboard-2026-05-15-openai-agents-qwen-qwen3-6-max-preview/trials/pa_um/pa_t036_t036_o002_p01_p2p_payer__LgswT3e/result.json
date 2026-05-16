@@ -1,0 +1,108 @@
+{
+    "id": "93dda677-037c-48eb-b0a3-927e6d5bde80",
+    "task_name": "pa_t036_t036_o002_p01_p2p_payer",
+    "trial_name": "pa_t036_t036_o002_p01_p2p_payer__LgswT3e",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openai_agents__qwen_qwen3_6_max_preview/pa_um/openai_agents__qwen_qwen3_6_max_preview__pa_um/pa_t036_t036_o002_p01_p2p_payer__LgswT3e",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-p_nqt3ub/pa_t036_t036_o002_p01_p2p_payer"
+    },
+    "source": "healthverse-modal-p_nqt3ub",
+    "task_checksum": "304ee2cb4f3e46f605fbe466c0601819ad114f5392508aeead57045191a1cb12",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-p_nqt3ub/pa_t036_t036_o002_p01_p2p_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-p_nqt3ub"
+        },
+        "trial_name": "pa_t036_t036_o002_p01_p2p_payer__LgswT3e",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openai_agents__qwen_qwen3_6_max_preview/pa_um/openai_agents__qwen_qwen3_6_max_preview__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d4c",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "086c153d-21f5-420a-98ac-9ac383a1ef70"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "qwen3.6-max-preview",
+            "provider": "qwen"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 799286,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 5048,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T21:07:14.348424Z",
+    "finished_at": "2026-05-03T21:13:01.520688Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T21:07:14.349546Z",
+        "finished_at": "2026-05-03T21:08:09.376547Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T21:08:09.376558Z",
+        "finished_at": "2026-05-03T21:08:14.719470Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T21:08:14.719506Z",
+        "finished_at": "2026-05-03T21:11:21.328779Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T21:11:30.087838Z",
+        "finished_at": "2026-05-03T21:12:42.302910Z"
+    }
+}

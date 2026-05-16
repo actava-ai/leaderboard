@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openai-agents,qwen/qwen3-6-max-preview,overall,0.15555555555555556,225,75,1.3452698064,933.0799179244443,2026-05-04T07:25:50Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openai-agents,qwen/qwen3-6-max-preview,pa_provider,0.16,75,25,1.5810682368000002,757.8139079866667,2026-05-04T07:25:50Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openai-agents,qwen/qwen3-6-max-preview,pa_um,0.26666666666666666,75,25,1.1707223008,761.6669362133333,2026-05-04T07:25:50Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openai-agents,qwen/qwen3-6-max-preview,cm,0.04,75,25,1.2840188816,1279.7589095733333,2026-05-04T07:25:50Z

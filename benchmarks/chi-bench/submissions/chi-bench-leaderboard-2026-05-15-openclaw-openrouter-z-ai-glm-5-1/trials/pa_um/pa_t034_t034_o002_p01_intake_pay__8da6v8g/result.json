@@ -1,0 +1,108 @@
+{
+    "id": "dfe6a2e7-cf89-4299-b670-a92f2f8e22d9",
+    "task_name": "pa_t034_t034_o002_p01_intake_payer",
+    "trial_name": "pa_t034_t034_o002_p01_intake_pay__8da6v8g",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openclaw__openrouter_z_ai_glm_5_1/pa_um/openclaw__openrouter_z_ai_glm_5_1__pa_um/pa_t034_t034_o002_p01_intake_pay__8da6v8g",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-kb17owj9/pa_t034_t034_o002_p01_intake_payer"
+    },
+    "source": "healthverse-modal-kb17owj9",
+    "task_checksum": "ea19a0677f79a17f831d545d800030cb9cb0c9adbc77355fa98fab8ee4c82f2c",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-kb17owj9/pa_t034_t034_o002_p01_intake_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-kb17owj9"
+        },
+        "trial_name": "pa_t034_t034_o002_p01_intake_pay__8da6v8g",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openclaw__openrouter_z_ai_glm_5_1/pa_um/openclaw__openrouter_z_ai_glm_5_1__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e60",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "b81813f7-5aec-44f9-a3f7-3099ad40360e"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1502948,
+        "n_cache_tokens": 1459904,
+        "n_output_tokens": 3465,
+        "cost_usd": 0.8237733,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T18:12:22.613190Z",
+    "finished_at": "2026-05-03T18:34:56.541811Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T18:12:22.614808Z",
+        "finished_at": "2026-05-03T18:20:48.673426Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T18:20:48.673435Z",
+        "finished_at": "2026-05-03T18:21:30.373340Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T18:21:30.373374Z",
+        "finished_at": "2026-05-03T18:32:00.171902Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T18:32:10.507778Z",
+        "finished_at": "2026-05-03T18:34:46.737608Z"
+    }
+}

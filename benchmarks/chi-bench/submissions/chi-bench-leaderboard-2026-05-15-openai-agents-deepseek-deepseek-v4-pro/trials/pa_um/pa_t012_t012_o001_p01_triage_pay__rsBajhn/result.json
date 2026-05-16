@@ -1,0 +1,108 @@
+{
+    "id": "80618481-1563-47b7-8e13-1d620381ffd3",
+    "task_name": "pa_t012_t012_o001_p01_triage_payer",
+    "trial_name": "pa_t012_t012_o001_p01_triage_pay__rsBajhn",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_1/openai_agents__deepseek_deepseek_v4_pro/pa_um/openai_agents__deepseek_deepseek_v4_pro__pa_um/pa_t012_t012_o001_p01_triage_pay__rsBajhn",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-_6d5cimn/pa_t012_t012_o001_p01_triage_payer"
+    },
+    "source": "healthverse-modal-_6d5cimn",
+    "task_checksum": "b49b3ff56ff63da846dfd0df871ceead2a6dcd5559e348e49eac563b539a8d72",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-_6d5cimn/pa_t012_t012_o001_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-_6d5cimn"
+        },
+        "trial_name": "pa_t012_t012_o001_p01_triage_pay__rsBajhn",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_1/openai_agents__deepseek_deepseek_v4_pro/pa_um/openai_agents__deepseek_deepseek_v4_pro__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "deepseek/deepseek-v4-pro",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d6e",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0d85baad-9da0-49d8-8946-7314fd81f67e"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "deepseek-v4-pro",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 805674,
+        "n_cache_tokens": 414080,
+        "n_output_tokens": 6217,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T11:24:01.735267Z",
+    "finished_at": "2026-05-03T11:37:05.588864Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T11:24:01.736152Z",
+        "finished_at": "2026-05-03T11:31:34.179131Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T11:31:34.179139Z",
+        "finished_at": "2026-05-03T11:31:37.486627Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T11:31:37.486658Z",
+        "finished_at": "2026-05-03T11:36:44.076144Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T11:36:49.265849Z",
+        "finished_at": "2026-05-03T11:36:54.355678Z"
+    }
+}

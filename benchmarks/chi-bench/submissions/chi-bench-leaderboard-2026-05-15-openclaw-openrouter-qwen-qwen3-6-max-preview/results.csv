@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openclaw,openrouter/qwen/qwen3-6-max-preview,overall,0.048888888888888885,225,75,3.9311238257777776,1538.9839462533334,2026-05-04T03:15:50Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openclaw,openrouter/qwen/qwen3-6-max-preview,pa_provider,0.10666666666666666,75,25,4.3089091135999995,1463.8615100266666,2026-05-04T03:15:50Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openclaw,openrouter/qwen/qwen3-6-max-preview,pa_um,0.04,75,25,2.102089658933333,1200.5998643466667,2026-05-04T03:15:50Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,openclaw,openrouter/qwen/qwen3-6-max-preview,cm,0.0,75,25,5.3823727048,1952.4904643866669,2026-05-04T03:15:50Z

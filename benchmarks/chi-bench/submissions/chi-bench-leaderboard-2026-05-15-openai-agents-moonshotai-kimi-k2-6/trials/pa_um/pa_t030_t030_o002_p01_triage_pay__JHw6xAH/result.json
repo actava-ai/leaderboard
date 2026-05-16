@@ -1,0 +1,108 @@
+{
+    "id": "98fd3c95-f48c-4059-a7eb-68ae95689040",
+    "task_name": "pa_t030_t030_o002_p01_triage_payer",
+    "trial_name": "pa_t030_t030_o002_p01_triage_pay__JHw6xAH",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/pa_um/openai_agents__moonshotai_kimi_k2_6__pa_um/pa_t030_t030_o002_p01_triage_pay__JHw6xAH",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-vw3g4r1u/pa_t030_t030_o002_p01_triage_payer"
+    },
+    "source": "healthverse-modal-vw3g4r1u",
+    "task_checksum": "2ddb7aa13c524f55bee5854f2e605a3e2f8a0558fa4d6c903a2d979ac5fa84e6",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-vw3g4r1u/pa_t030_t030_o002_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-vw3g4r1u"
+        },
+        "trial_name": "pa_t030_t030_o002_p01_triage_pay__JHw6xAH",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/pa_um/openai_agents__moonshotai_kimi_k2_6__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e5f",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1e05d6bb-f5fc-4a67-8880-29368fdd135d"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1752539,
+        "n_cache_tokens": 1419680,
+        "n_output_tokens": 23408,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T04:38:33.086377Z",
+    "finished_at": "2026-05-04T05:08:05.238823Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T04:38:33.087293Z",
+        "finished_at": "2026-05-04T04:45:47.887452Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T04:45:47.887463Z",
+        "finished_at": "2026-05-04T04:45:51.100688Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T04:45:51.100737Z",
+        "finished_at": "2026-05-04T05:05:58.974767Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T05:06:01.829324Z",
+        "finished_at": "2026-05-04T05:07:59.547762Z"
+    }
+}

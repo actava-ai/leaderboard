@@ -1,0 +1,107 @@
+{
+    "id": "d1cbe4b7-5d54-458e-815a-7536d26b4497",
+    "task_name": "cm_afib_moderate_anxious_001",
+    "trial_name": "cm_afib_moderate_anxious_001__XEcDNue",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/claude_code__anthropic_claude_opus_4_7/cm/claude_code__anthropic_claude_opus_4_7__cm/cm_afib_moderate_anxious_001__XEcDNue",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-mi1mu1ws/cm_afib_moderate_anxious_001"
+    },
+    "source": "healthverse-modal-mi1mu1ws",
+    "task_checksum": "ddea0a72eee5ef9c6d57f944a55f9f58d47452b34103747999b1c6d9dbdc4c27",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-mi1mu1ws/cm_afib_moderate_anxious_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-mi1mu1ws"
+        },
+        "trial_name": "cm_afib_moderate_anxious_001__XEcDNue",
+        "trials_dir": "logs/experiments/curated25_full_matrix/claude_code__anthropic_claude_opus_4_7/cm/claude_code__anthropic_claude_opus_4_7__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****gAA",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "b648cb57-96bd-4822-ab8b-9e56f72af857"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.123",
+        "model_info": {
+            "name": "claude-opus-4-7",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3729903,
+        "n_cache_tokens": 3541408,
+        "n_output_tokens": 35688,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T07:11:17.634382Z",
+    "finished_at": "2026-04-30T07:28:47.390019Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T07:11:17.634771Z",
+        "finished_at": "2026-04-30T07:12:51.511629Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T07:12:51.511638Z",
+        "finished_at": "2026-04-30T07:13:11.161073Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T07:13:11.161108Z",
+        "finished_at": "2026-04-30T07:24:35.093286Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T07:24:44.191129Z",
+        "finished_at": "2026-04-30T07:28:44.800174Z"
+    }
+}

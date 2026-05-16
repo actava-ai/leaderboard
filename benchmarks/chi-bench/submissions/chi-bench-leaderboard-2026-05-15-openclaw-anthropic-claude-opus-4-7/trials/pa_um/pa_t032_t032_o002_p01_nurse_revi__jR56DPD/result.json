@@ -1,0 +1,107 @@
+{
+    "id": "a3081a6a-51a3-42a7-b8a9-157ab0085936",
+    "task_name": "pa_t032_t032_o002_p01_nurse_review_payer",
+    "trial_name": "pa_t032_t032_o002_p01_nurse_revi__jR56DPD",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_openclaw_first_party/openclaw__anthropic_claude_opus_4_7/pa_um/openclaw__anthropic_claude_opus_4_7__pa_um/pa_t032_t032_o002_p01_nurse_revi__jR56DPD",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-exbbj80h/pa_t032_t032_o002_p01_nurse_review_payer"
+    },
+    "source": "healthverse-modal-exbbj80h",
+    "task_checksum": "5880699424f45a063b66f2dd348d085d942f74946bc9be3256eb363382f55638",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-exbbj80h/pa_t032_t032_o002_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-exbbj80h"
+        },
+        "trial_name": "pa_t032_t032_o002_p01_nurse_revi__jR56DPD",
+        "trials_dir": "logs/experiments/curated25_openclaw_first_party/openclaw__anthropic_claude_opus_4_7/pa_um/openclaw__anthropic_claude_opus_4_7__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0613e540-2049-441f-87c6-e8d4e9fde2bc"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.3-1 (2eae30e)",
+        "model_info": {
+            "name": "claude-opus-4-7",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 5211891,
+        "n_cache_tokens": 5021287,
+        "n_output_tokens": 36667,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T14:04:26.369569Z",
+    "finished_at": "2026-05-04T14:20:51.265149Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T14:04:26.370552Z",
+        "finished_at": "2026-05-04T14:05:54.458840Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T14:05:54.458848Z",
+        "finished_at": "2026-05-04T14:06:26.506052Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T14:06:26.506085Z",
+        "finished_at": "2026-05-04T14:18:23.297380Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T14:18:37.007501Z",
+        "finished_at": "2026-05-04T14:20:30.932839Z"
+    }
+}

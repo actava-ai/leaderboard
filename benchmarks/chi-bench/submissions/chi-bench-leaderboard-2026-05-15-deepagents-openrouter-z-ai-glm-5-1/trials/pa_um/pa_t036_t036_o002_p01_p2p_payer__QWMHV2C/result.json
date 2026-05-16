@@ -1,0 +1,108 @@
+{
+    "id": "d3c93352-7db4-4c89-be2a-68b2b2b048eb",
+    "task_name": "pa_t036_t036_o002_p01_p2p_payer",
+    "trial_name": "pa_t036_t036_o002_p01_p2p_payer__QWMHV2C",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_z_ai_glm_5_1/pa_um/deepagents__openrouter_z_ai_glm_5_1__pa_um/pa_t036_t036_o002_p01_p2p_payer__QWMHV2C",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-rivpzpai/pa_t036_t036_o002_p01_p2p_payer"
+    },
+    "source": "healthverse-modal-rivpzpai",
+    "task_checksum": "304ee2cb4f3e46f605fbe466c0601819ad114f5392508aeead57045191a1cb12",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-rivpzpai/pa_t036_t036_o002_p01_p2p_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-rivpzpai"
+        },
+        "trial_name": "pa_t036_t036_o002_p01_p2p_payer__QWMHV2C",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_z_ai_glm_5_1/pa_um/deepagents__openrouter_z_ai_glm_5_1__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****c47",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "cb496196-c83a-4826-9653-6d75da9c8969"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1474899,
+        "n_cache_tokens": 1406912,
+        "n_output_tokens": 6618,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T12:19:43.591176Z",
+    "finished_at": "2026-05-04T12:28:19.901421Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T12:19:43.620626Z",
+        "finished_at": "2026-05-04T12:20:59.231801Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T12:20:59.231813Z",
+        "finished_at": "2026-05-04T12:21:28.631581Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T12:21:28.631614Z",
+        "finished_at": "2026-05-04T12:26:50.914130Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T12:26:54.247710Z",
+        "finished_at": "2026-05-04T12:28:11.168652Z"
+    }
+}

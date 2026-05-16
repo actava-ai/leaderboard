@@ -1,0 +1,109 @@
+{
+    "id": "61065549-8bdd-4077-bfd4-581323b649f3",
+    "task_name": "pa_t029_t029_o001_p01_new_referral_provider",
+    "trial_name": "pa_t029_t029_o001_p01_new_referr__cnwL2Po",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/claude_code__anthropic_claude_opus_4_7/pa_provider/claude_code__anthropic_claude_opus_4_7__pa_provider/pa_t029_t029_o001_p01_new_referr__cnwL2Po",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-6gbggqpx/pa_t029_t029_o001_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-6gbggqpx",
+    "task_checksum": "53e2c8e41cb92cdc4f513c8ca115cab9cf3fb32bc6de5d3b7ba66d59284a5d27",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-6gbggqpx/pa_t029_t029_o001_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-6gbggqpx"
+        },
+        "trial_name": "pa_t029_t029_o001_p01_new_referr__cnwL2Po",
+        "trials_dir": "logs/experiments/curated25_full_matrix/claude_code__anthropic_claude_opus_4_7/pa_provider/claude_code__anthropic_claude_opus_4_7__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-7",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "sk-p****zMA",
+                "ANTHROPIC_API_KEY": "sk-a****gAA",
+                "GEMINI_API_KEY": "AIza****pwk",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "cf3427d3-432d-4b6e-b9b5-5ee9192251a3"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.123",
+        "model_info": {
+            "name": "claude-opus-4-7",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2608961,
+        "n_cache_tokens": 2438052,
+        "n_output_tokens": 18844,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-29T07:45:40.365647Z",
+    "finished_at": "2026-04-29T07:52:12.385606Z",
+    "environment_setup": {
+        "started_at": "2026-04-29T07:45:40.371688Z",
+        "finished_at": "2026-04-29T07:46:14.125076Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-29T07:46:14.125084Z",
+        "finished_at": "2026-04-29T07:46:29.696473Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-29T07:46:29.696506Z",
+        "finished_at": "2026-04-29T07:51:58.374545Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-29T07:52:04.799795Z",
+        "finished_at": "2026-04-29T07:52:10.442875Z"
+    }
+}

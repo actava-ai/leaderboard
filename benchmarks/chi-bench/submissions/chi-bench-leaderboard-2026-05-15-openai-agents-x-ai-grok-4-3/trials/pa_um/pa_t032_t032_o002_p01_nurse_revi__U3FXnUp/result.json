@@ -1,0 +1,108 @@
+{
+    "id": "67eab3e1-8bab-4347-8110-e247a7f8c8bd",
+    "task_name": "pa_t032_t032_o002_p01_nurse_review_payer",
+    "trial_name": "pa_t032_t032_o002_p01_nurse_revi__U3FXnUp",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openai_agents__x_ai_grok_4_3/pa_um/openai_agents__x_ai_grok_4_3__pa_um/pa_t032_t032_o002_p01_nurse_revi__U3FXnUp",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-9l2e_s5d/pa_t032_t032_o002_p01_nurse_review_payer"
+    },
+    "source": "healthverse-modal-9l2e_s5d",
+    "task_checksum": "5880699424f45a063b66f2dd348d085d942f74946bc9be3256eb363382f55638",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-9l2e_s5d/pa_t032_t032_o002_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-9l2e_s5d"
+        },
+        "trial_name": "pa_t032_t032_o002_p01_nurse_revi__U3FXnUp",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openai_agents__x_ai_grok_4_3/pa_um/openai_agents__x_ai_grok_4_3__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****8a2",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "ff10db49-184d-404c-8cbe-a94973f473e9"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "grok-4.3",
+            "provider": "x-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 648813,
+        "n_cache_tokens": 506112,
+        "n_output_tokens": 7699,
+        "cost_usd": 0.830264,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T21:09:17.831107Z",
+    "finished_at": "2026-05-03T21:16:37.431739Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T21:09:17.832461Z",
+        "finished_at": "2026-05-03T21:10:04.853162Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T21:10:04.853172Z",
+        "finished_at": "2026-05-03T21:10:07.977128Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T21:10:07.977167Z",
+        "finished_at": "2026-05-03T21:12:24.987226Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T21:12:29.076910Z",
+        "finished_at": "2026-05-03T21:16:28.020331Z"
+    }
+}

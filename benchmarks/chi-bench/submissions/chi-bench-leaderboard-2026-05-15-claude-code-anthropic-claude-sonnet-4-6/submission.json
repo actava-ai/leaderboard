@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "chi-bench-leaderboard-2026-05-15-claude-code-anthropic-claude-sonnet-4-6",
+    "team": "chi-Bench Leaderboard",
+    "contact": "leaderboard@actava.ai",
+    "agent": "claude-code",
+    "model": "anthropic/claude-sonnet-4-6",
+    "notes": "Paper-baseline submission generated from the curated25 full-matrix experiment logs. Trials are the latest available run per (domain, task).\n",
+    "submitted_at": "2026-04-30T15:00:19Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 225,
+      "n_tasks": 75,
+      "pass_at_1": 0.2622222222222222,
+      "mean_cost_usd": 7.164047335999999,
+      "mean_walltime_s": 843.7293068577778
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.24,
+        "mean_cost_usd": 6.592221491999999,
+        "mean_walltime_s": 626.7345970933334
+      },
+      "pa_um": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.3466666666666666,
+        "mean_cost_usd": 6.568763359999999,
+        "mean_walltime_s": 724.38982976
+      },
+      "cm": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.2,
+        "mean_cost_usd": 8.331157156,
+        "mean_walltime_s": 1180.06349372
+      }
+    },
+    "mean_cost_usd": 7.164047335999999,
+    "mean_walltime_s": 843.7293068577778
+  },
+  "provenance": {
+    "chi_bench_git_sha": "a077ad96e11b813b20e0adf7065ebd52e524159d",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-04-29T14:43:27Z",
+    "finished_at": "2026-04-30T15:00:19Z",
+    "host": "modal",
+    "python_version": "3.12.3",
+    "platform": "linux"
+  }
+}

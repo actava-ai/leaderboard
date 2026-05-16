@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-codex-openai-gpt-5-4,chi-Bench Leaderboard,codex,openai/gpt-5.4,overall,0.16,225,75,6.32767762,871.9561289333334,2026-04-30T22:58:31Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-codex-openai-gpt-5-4,chi-Bench Leaderboard,codex,openai/gpt-5.4,pa_provider,0.24,75,25,4.74742724,549.1077797733334,2026-04-30T22:58:31Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-codex-openai-gpt-5-4,chi-Bench Leaderboard,codex,openai/gpt-5.4,pa_um,0.1733333333333333,75,25,5.208834593333333,786.5429478533333,2026-04-30T22:58:31Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-codex-openai-gpt-5-4,chi-Bench Leaderboard,codex,openai/gpt-5.4,cm,0.06666666666666667,75,25,9.026771026666667,1280.2176591733332,2026-04-30T22:58:31Z

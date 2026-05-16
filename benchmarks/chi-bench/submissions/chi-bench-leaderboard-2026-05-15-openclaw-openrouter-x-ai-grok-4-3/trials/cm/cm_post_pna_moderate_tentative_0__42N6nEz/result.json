@@ -1,0 +1,108 @@
+{
+    "id": "cf8d21b3-96eb-4d42-8a8d-c9cd85b00b76",
+    "task_name": "cm_post_pna_moderate_tentative_001",
+    "trial_name": "cm_post_pna_moderate_tentative_0__42N6nEz",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_x_ai_grok_4_3/cm/openclaw__openrouter_x_ai_grok_4_3__cm/cm_post_pna_moderate_tentative_0__42N6nEz",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-7s0kwji1/cm_post_pna_moderate_tentative_001"
+    },
+    "source": "healthverse-modal-7s0kwji1",
+    "task_checksum": "b5381070e5edc59ee26e3c7948cf549f140234a5a5d3e22704b76f4da33f7874",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-7s0kwji1/cm_post_pna_moderate_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-7s0kwji1"
+        },
+        "trial_name": "cm_post_pna_moderate_tentative_0__42N6nEz",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_x_ai_grok_4_3/cm/openclaw__openrouter_x_ai_grok_4_3__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****437",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "70bb4fea-e40c-4590-a2b4-359a85cb862b"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "x-ai/grok-4.3",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1691705,
+        "n_cache_tokens": 1610240,
+        "n_output_tokens": 13942,
+        "cost_usd": 0.45873424999999995,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T23:48:09.612591Z",
+    "finished_at": "2026-05-03T23:57:35.662644Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T23:48:09.612960Z",
+        "finished_at": "2026-05-03T23:48:55.841772Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T23:48:55.841781Z",
+        "finished_at": "2026-05-03T23:49:29.922555Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T23:49:29.922589Z",
+        "finished_at": "2026-05-03T23:53:44.723643Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T23:53:58.837141Z",
+        "finished_at": "2026-05-03T23:57:31.992630Z"
+    }
+}

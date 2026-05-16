@@ -1,0 +1,108 @@
+{
+    "id": "20e5b92d-071d-4839-9043-e97f0c3b477d",
+    "task_name": "cm_dm_hard_refuses_002",
+    "trial_name": "cm_dm_hard_refuses_002__Jh5FHPv",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_1/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm/cm_dm_hard_refuses_002__Jh5FHPv",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-xiwakham/cm_dm_hard_refuses_002"
+    },
+    "source": "healthverse-modal-xiwakham",
+    "task_checksum": "78f7df1325317a49c6bf218072e8740c5c4f4353dd8ef21273314f79cd6a6958",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-xiwakham/cm_dm_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-xiwakham"
+        },
+        "trial_name": "cm_dm_hard_refuses_002__Jh5FHPv",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_1/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****c47",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "b54d4768-7118-4645-a28b-34947d9c1141"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1904233,
+        "n_cache_tokens": 1747520,
+        "n_output_tokens": 18563,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T07:59:06.056459Z",
+    "finished_at": "2026-05-04T08:21:55.410971Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T07:59:06.056774Z",
+        "finished_at": "2026-05-04T08:07:53.052916Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T08:07:53.052942Z",
+        "finished_at": "2026-05-04T08:08:23.954091Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T08:08:23.954143Z",
+        "finished_at": "2026-05-04T08:17:56.161716Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T08:18:02.512146Z",
+        "finished_at": "2026-05-04T08:21:52.476906Z"
+    }
+}

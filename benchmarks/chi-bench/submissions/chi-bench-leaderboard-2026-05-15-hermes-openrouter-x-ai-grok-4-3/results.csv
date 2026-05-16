@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-hermes-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,hermes,openrouter/x-ai/grok-4.3,overall,0.044444444444444446,225,75,0.0,864.2690688933334,2026-05-04T06:20:37Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-hermes-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,hermes,openrouter/x-ai/grok-4.3,pa_provider,0.0,75,25,0.0,869.4024678,2026-05-04T06:20:37Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-hermes-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,hermes,openrouter/x-ai/grok-4.3,pa_um,0.13333333333333333,75,25,0.0,783.0599704666666,2026-05-04T06:20:37Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-hermes-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,hermes,openrouter/x-ai/grok-4.3,cm,0.0,75,25,0.0,940.3447684133334,2026-05-04T06:20:37Z

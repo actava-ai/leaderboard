@@ -1,0 +1,108 @@
+{
+    "id": "82f5d6a8-d622-48ce-a356-b6a9234ea9c0",
+    "task_name": "pa_t012_t012_o001_p01_triage_payer",
+    "trial_name": "pa_t012_t012_o001_p01_triage_pay__t4jQ5Xz",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_z_ai_glm_5_1/pa_um/deepagents__openrouter_z_ai_glm_5_1__pa_um/pa_t012_t012_o001_p01_triage_pay__t4jQ5Xz",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-rivpzpai/pa_t012_t012_o001_p01_triage_payer"
+    },
+    "source": "healthverse-modal-rivpzpai",
+    "task_checksum": "b49b3ff56ff63da846dfd0df871ceead2a6dcd5559e348e49eac563b539a8d72",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-rivpzpai/pa_t012_t012_o001_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-rivpzpai"
+        },
+        "trial_name": "pa_t012_t012_o001_p01_triage_pay__t4jQ5Xz",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_z_ai_glm_5_1/pa_um/deepagents__openrouter_z_ai_glm_5_1__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****c47",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "cb496196-c83a-4826-9653-6d75da9c8969"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1275750,
+        "n_cache_tokens": 1200000,
+        "n_output_tokens": 8709,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T12:01:33.488321Z",
+    "finished_at": "2026-05-04T12:16:30.710535Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T12:01:33.489185Z",
+        "finished_at": "2026-05-04T12:09:29.294582Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T12:09:29.294591Z",
+        "finished_at": "2026-05-04T12:10:05.930820Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T12:10:05.930860Z",
+        "finished_at": "2026-05-04T12:16:11.992237Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T12:16:15.100298Z",
+        "finished_at": "2026-05-04T12:16:20.959470Z"
+    }
+}

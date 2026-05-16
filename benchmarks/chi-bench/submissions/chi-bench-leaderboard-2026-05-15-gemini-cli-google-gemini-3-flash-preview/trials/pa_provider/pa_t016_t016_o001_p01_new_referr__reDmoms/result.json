@@ -1,0 +1,109 @@
+{
+    "id": "d4e9d505-a887-49c0-ac5d-9a0e03b752bb",
+    "task_name": "pa_t016_t016_o001_p01_new_referral_provider",
+    "trial_name": "pa_t016_t016_o001_p01_new_referr__reDmoms",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_flash_preview/pa_provider/gemini_cli__gemini_gemini_3_flash_preview__pa_provider/pa_t016_t016_o001_p01_new_referr__reDmoms",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-n5hm3qv4/pa_t016_t016_o001_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-n5hm3qv4",
+    "task_checksum": "776e94cec8ab3c7382f2c551f3d5ceb28b41502e968a8be682bb796d44a7c29b",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-n5hm3qv4/pa_t016_t016_o001_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-n5hm3qv4"
+        },
+        "trial_name": "pa_t016_t016_o001_p01_new_referr__reDmoms",
+        "trials_dir": "logs/experiments/curated25_full_matrix/gemini_cli__gemini_gemini_3_flash_preview/pa_provider/gemini_cli__gemini_gemini_3_flash_preview__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.gemini_cli_harness:GeminiCliHarness",
+            "model_name": "gemini/gemini-3-flash-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GEMINI_API_KEY": "AIza****Vtw",
+                "GROK_API_KEY": "xai-****weS",
+                "GEMINI_CLI_TRUST_WORKSPACE": "true"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "70f28b5f-6bb5-44e6-b832-d36512b1aecd"
+    },
+    "agent_info": {
+        "name": "gemini-cli",
+        "version": "0.40.0",
+        "model_info": {
+            "name": "gemini-3-flash-preview",
+            "provider": "gemini"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 17132940,
+        "n_cache_tokens": 13654276,
+        "n_output_tokens": 40981,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T09:50:23.711391Z",
+    "finished_at": "2026-04-30T10:02:18.689992Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T09:50:23.731397Z",
+        "finished_at": "2026-04-30T09:56:44.261549Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T09:56:44.261568Z",
+        "finished_at": "2026-04-30T09:57:29.191190Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T09:57:29.191236Z",
+        "finished_at": "2026-04-30T10:01:59.481549Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T10:02:08.960370Z",
+        "finished_at": "2026-04-30T10:02:16.858232Z"
+    }
+}

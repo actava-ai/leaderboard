@@ -1,0 +1,108 @@
+{
+    "id": "9ce8b199-8e86-4e36-8254-d04539c6248f",
+    "task_name": "pa_t008_t008_o002_p01_new_referral_provider",
+    "trial_name": "pa_t008_t008_o002_p01_new_referr__kkqNjyW",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openai_agents__z_ai_glm_5_1/pa_provider/openai_agents__z_ai_glm_5_1__pa_provider/pa_t008_t008_o002_p01_new_referr__kkqNjyW",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-xl28luyg/pa_t008_t008_o002_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-xl28luyg",
+    "task_checksum": "c4c948bdb3f385033efd5fd0f06a4faa51eaeb6f6e8c379332d91f54cb752264",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-xl28luyg/pa_t008_t008_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-xl28luyg"
+        },
+        "trial_name": "pa_t008_t008_o002_p01_new_referr__kkqNjyW",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openai_agents__z_ai_glm_5_1/pa_provider/openai_agents__z_ai_glm_5_1__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****686",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "56a6d56f-56fe-4c0a-a12e-39a9ed149603"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.1",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1967254,
+        "n_cache_tokens": 1785728,
+        "n_output_tokens": 8780,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T22:35:44.685856Z",
+    "finished_at": "2026-05-03T22:48:00.507782Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T22:35:44.686702Z",
+        "finished_at": "2026-05-03T22:43:16.619594Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T22:43:16.619601Z",
+        "finished_at": "2026-05-03T22:43:21.324911Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T22:43:21.324944Z",
+        "finished_at": "2026-05-03T22:47:37.159460Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T22:47:48.563791Z",
+        "finished_at": "2026-05-03T22:47:57.045743Z"
+    }
+}
