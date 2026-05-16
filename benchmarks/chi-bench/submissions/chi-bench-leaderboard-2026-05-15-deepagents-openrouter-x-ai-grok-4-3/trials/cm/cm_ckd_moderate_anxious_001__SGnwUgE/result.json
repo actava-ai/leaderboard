@@ -1,0 +1,108 @@
+{
+    "id": "ffb0047c-2374-4e87-aa60-c1cdb6823bd5",
+    "task_name": "cm_ckd_moderate_anxious_001",
+    "trial_name": "cm_ckd_moderate_anxious_001__SGnwUgE",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_x_ai_grok_4_3/cm/deepagents__openrouter_x_ai_grok_4_3__cm/cm_ckd_moderate_anxious_001__SGnwUgE",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-_o1l3wlb/cm_ckd_moderate_anxious_001"
+    },
+    "source": "healthverse-modal-_o1l3wlb",
+    "task_checksum": "3c2da860c052360276e8f44309026d44cb55aaab182c106876640760158fc69c",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-_o1l3wlb/cm_ckd_moderate_anxious_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-_o1l3wlb"
+        },
+        "trial_name": "cm_ckd_moderate_anxious_001__SGnwUgE",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_2/deepagents__openrouter_x_ai_grok_4_3/cm/deepagents__openrouter_x_ai_grok_4_3__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****388",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "40c82edb-673f-4ba3-85a7-776f0a00149c"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "x-ai/grok-4.3",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1776982,
+        "n_cache_tokens": 1321392,
+        "n_output_tokens": 15083,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T11:46:21.204408Z",
+    "finished_at": "2026-05-04T11:58:20.280347Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T11:46:21.204824Z",
+        "finished_at": "2026-05-04T11:46:56.857705Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T11:46:56.857717Z",
+        "finished_at": "2026-05-04T11:47:32.621804Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T11:47:32.621835Z",
+        "finished_at": "2026-05-04T11:53:15.757983Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T11:53:22.674689Z",
+        "finished_at": "2026-05-04T11:58:15.306374Z"
+    }
+}

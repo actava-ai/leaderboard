@@ -1,0 +1,108 @@
+{
+    "id": "97ef4a31-470e-44e2-b1a8-2d3d79184801",
+    "task_name": "pa_t021_t021_o003_p01_mdreview_payer",
+    "trial_name": "pa_t021_t021_o003_p01_mdreview_p__vHEnKjh",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_z_ai_glm_5_1/pa_um/openclaw__openrouter_z_ai_glm_5_1__pa_um/pa_t021_t021_o003_p01_mdreview_p__vHEnKjh",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-h7uk33qp/pa_t021_t021_o003_p01_mdreview_payer"
+    },
+    "source": "healthverse-modal-h7uk33qp",
+    "task_checksum": "4fcdb006041c9c5758757738afa7586d80d54714cfeabd96dad690c7038ebeca",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-h7uk33qp/pa_t021_t021_o003_p01_mdreview_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-h7uk33qp"
+        },
+        "trial_name": "pa_t021_t021_o003_p01_mdreview_p__vHEnKjh",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_z_ai_glm_5_1/pa_um/openclaw__openrouter_z_ai_glm_5_1__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e60",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "9520d7ad-64ff-4b64-8a4c-b83b65d45acc"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 571870,
+        "n_cache_tokens": 542144,
+        "n_output_tokens": 2585,
+        "cost_usd": 0.3248854,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T02:29:43.200166Z",
+    "finished_at": "2026-05-04T02:44:10.767628Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T02:29:43.211901Z",
+        "finished_at": "2026-05-04T02:31:00.976620Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T02:31:00.976629Z",
+        "finished_at": "2026-05-04T02:31:43.544545Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T02:31:43.544578Z",
+        "finished_at": "2026-05-04T02:39:49.564321Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T02:39:57.463259Z",
+        "finished_at": "2026-05-04T02:44:00.727095Z"
+    }
+}

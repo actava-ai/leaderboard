@@ -1,5 +1,0 @@
-benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
-chi-bench,chi-bench-v1.0.0,my-team-claude-code-opus-4-6,My Team,claude-code,anthropic/claude-opus-4-6,overall,0.28,150,75,1.0094868733333333,0.0,2026-05-12T22:39:33Z
-chi-bench,chi-bench-v1.0.0,my-team-claude-code-opus-4-6,My Team,claude-code,anthropic/claude-opus-4-6,pa_provider,0.2,25,25,0.8373129,0.0,2026-05-12T22:39:33Z
-chi-bench,chi-bench-v1.0.0,my-team-claude-code-opus-4-6,My Team,claude-code,anthropic/claude-opus-4-6,pa_um,0.36,25,25,1.00361896,0.0,2026-05-12T22:39:33Z
-chi-bench,chi-bench-v1.0.0,my-team-claude-code-opus-4-6,My Team,claude-code,anthropic/claude-opus-4-6,cm,0.28,25,25,1.18752876,0.0,2026-05-12T22:39:33Z

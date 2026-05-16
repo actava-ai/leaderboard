@@ -1,0 +1,30 @@
+# chi-Bench submission (regenerated from paper-baseline experiment logs).
+# Run via the standard CLI:
+#
+#   cb submission validate -f <this-file>
+#   cb submission run      -f <this-file>
+#   cb submission status   -f <this-file>
+#   cb submission package  -f <this-file>
+
+schema: chi-bench/submission/v1
+
+submission:
+  id: chi-bench-leaderboard-2026-05-15-hermes-openrouter-z-ai-glm-5-1
+  team: "chi-Bench Leaderboard"
+  contact: "leaderboard@actava.ai"
+  agent: hermes
+  model: openrouter/z-ai/glm-5.1
+  notes: |
+    Paper-baseline submission for paper Table 2 row "hermes + openrouter/z-ai/glm-5.1".
+
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 5
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]

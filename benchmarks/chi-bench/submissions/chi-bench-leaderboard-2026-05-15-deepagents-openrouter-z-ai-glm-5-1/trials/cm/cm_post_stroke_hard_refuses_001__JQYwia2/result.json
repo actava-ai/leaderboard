@@ -1,0 +1,108 @@
+{
+    "id": "11ba31ee-d3f5-4793-bf7b-71b424180903",
+    "task_name": "cm_post_stroke_hard_refuses_001",
+    "trial_name": "cm_post_stroke_hard_refuses_001__JQYwia2",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm/cm_post_stroke_hard_refuses_001__JQYwia2",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-xsf91njq/cm_post_stroke_hard_refuses_001"
+    },
+    "source": "healthverse-modal-xsf91njq",
+    "task_checksum": "1e11d222984a80ee598633a595c33ff627612dbde8035161407df9c8739a4d4f",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-xsf91njq/cm_post_stroke_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-xsf91njq"
+        },
+        "trial_name": "cm_post_stroke_hard_refuses_001__JQYwia2",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****c47",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "a258e290-f68a-442c-b08e-7a946206076b"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2075869,
+        "n_cache_tokens": 1907776,
+        "n_output_tokens": 16829,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T01:16:07.402910Z",
+    "finished_at": "2026-05-04T01:29:01.038063Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T01:16:07.414585Z",
+        "finished_at": "2026-05-04T01:16:52.146931Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T01:16:52.146943Z",
+        "finished_at": "2026-05-04T01:17:25.550278Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T01:17:25.550308Z",
+        "finished_at": "2026-05-04T01:25:36.617024Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T01:25:39.219081Z",
+        "finished_at": "2026-05-04T01:28:59.492545Z"
+    }
+}

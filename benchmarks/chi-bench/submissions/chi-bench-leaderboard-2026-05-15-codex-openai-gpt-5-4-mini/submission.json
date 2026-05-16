@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "chi-bench-leaderboard-2026-05-15-codex-openai-gpt-5-4-mini",
+    "team": "chi-Bench Leaderboard",
+    "contact": "leaderboard@actava.ai",
+    "agent": "codex",
+    "model": "openai/gpt-5.4-mini",
+    "notes": "Paper-baseline submission generated from the curated25 full-matrix experiment logs. Trials are the latest available run per (domain, task).\n",
+    "submitted_at": "2026-05-01T03:47:25Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 225,
+      "n_tasks": 75,
+      "pass_at_1": 0.08444444444444445,
+      "mean_cost_usd": 2.2181996326666664,
+      "mean_walltime_s": 771.4414450444445
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.10666666666666666,
+        "mean_cost_usd": 1.9616485259999998,
+        "mean_walltime_s": 596.2138429066667
+      },
+      "pa_um": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.13333333333333333,
+        "mean_cost_usd": 1.764658304,
+        "mean_walltime_s": 718.9213703733334
+      },
+      "cm": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.013333333333333332,
+        "mean_cost_usd": 2.9282920679999997,
+        "mean_walltime_s": 999.1891218533334
+      }
+    },
+    "mean_cost_usd": 2.2181996326666664,
+    "mean_walltime_s": 771.4414450444445
+  },
+  "provenance": {
+    "chi_bench_git_sha": "a077ad96e11b813b20e0adf7065ebd52e524159d",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-04-29T19:36:29Z",
+    "finished_at": "2026-05-01T03:47:25Z",
+    "host": "modal",
+    "python_version": "3.12.3",
+    "platform": "linux"
+  }
+}

@@ -1,0 +1,108 @@
+{
+    "id": "b5a7df70-108b-43c0-b050-c5543291e675",
+    "task_name": "cm_complex_parkinson_dep_moderate_tentative_001",
+    "trial_name": "cm_complex_parkinson_dep_moderat__XnjR9td",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_1/openai_agents__x_ai_grok_4_3/cm/openai_agents__x_ai_grok_4_3__cm/cm_complex_parkinson_dep_moderat__XnjR9td",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-gtbwpvdg/cm_complex_parkinson_dep_moderate_tentative_001"
+    },
+    "source": "healthverse-modal-gtbwpvdg",
+    "task_checksum": "6f46fbf2cd2af26ecfe014895e9c477199299ecb679dd06b8c5822e0f8560a6a",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-gtbwpvdg/cm_complex_parkinson_dep_moderate_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-gtbwpvdg"
+        },
+        "trial_name": "cm_complex_parkinson_dep_moderat__XnjR9td",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_1/openai_agents__x_ai_grok_4_3/cm/openai_agents__x_ai_grok_4_3__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****8a2",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "4f481fbd-84ba-48e4-851d-bb54d2c4fb6f"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "grok-4.3",
+            "provider": "x-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1713670,
+        "n_cache_tokens": 1432304,
+        "n_output_tokens": 16277,
+        "cost_usd": 2.18278,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T09:26:38.587228Z",
+    "finished_at": "2026-05-03T09:46:31.012904Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T09:26:38.587687Z",
+        "finished_at": "2026-05-03T09:33:44.267254Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T09:33:44.267260Z",
+        "finished_at": "2026-05-03T09:33:47.759472Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T09:33:47.759509Z",
+        "finished_at": "2026-05-03T09:39:29.122107Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T09:39:33.918497Z",
+        "finished_at": "2026-05-03T09:46:28.939476Z"
+    }
+}

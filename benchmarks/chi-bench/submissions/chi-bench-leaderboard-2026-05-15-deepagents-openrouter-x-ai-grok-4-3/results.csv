@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,deepagents,openrouter/x-ai/grok-4.3,overall,0.02222222222222222,225,75,1.4842026427555557,493.1555111644444,2026-05-04T13:19:20Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,deepagents,openrouter/x-ai/grok-4.3,pa_provider,0.0,75,25,1.1444860594666666,371.08909156,2026-05-04T13:19:20Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,deepagents,openrouter/x-ai/grok-4.3,pa_um,0.05333333333333333,75,25,1.4559389977333335,501.28186664,2026-05-04T13:19:20Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-x-ai-grok-4-3,chi-Bench Leaderboard,deepagents,openrouter/x-ai/grok-4.3,cm,0.013333333333333332,75,25,1.8521828710666668,607.0955752933332,2026-05-04T13:19:20Z

@@ -1,0 +1,108 @@
+{
+    "id": "fd07fa09-4460-4aea-8467-0f1effe8bcd7",
+    "task_name": "cm_asthma_low_coop_001",
+    "trial_name": "cm_asthma_low_coop_001__XmoaHgN",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_deepseek_deepseek_v4_pro/cm/deepagents__openrouter_deepseek_deepseek_v4_pro__cm/cm_asthma_low_coop_001__XmoaHgN",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-_kex6paj/cm_asthma_low_coop_001"
+    },
+    "source": "healthverse-modal-_kex6paj",
+    "task_checksum": "87c41a4fd9b90ac8324666f012fd4ef5af1488d3465adb3af4b05bb1a30be8b8",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-_kex6paj/cm_asthma_low_coop_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-_kex6paj"
+        },
+        "trial_name": "cm_asthma_low_coop_001__XmoaHgN",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_deepseek_deepseek_v4_pro/cm/deepagents__openrouter_deepseek_deepseek_v4_pro__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/deepseek/deepseek-v4-pro",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****08b",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "bf86b63d-ef31-4195-bc8e-1f3a87b03459"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "deepseek/deepseek-v4-pro",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1043310,
+        "n_cache_tokens": 680192,
+        "n_output_tokens": 8787,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T00:34:31.431362Z",
+    "finished_at": "2026-05-04T00:51:40.336126Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T00:34:31.431675Z",
+        "finished_at": "2026-05-04T00:41:28.352790Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T00:41:28.352798Z",
+        "finished_at": "2026-05-04T00:42:13.787304Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T00:42:13.787340Z",
+        "finished_at": "2026-05-04T00:48:05.480279Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T00:48:09.220838Z",
+        "finished_at": "2026-05-04T00:51:38.441390Z"
+    }
+}

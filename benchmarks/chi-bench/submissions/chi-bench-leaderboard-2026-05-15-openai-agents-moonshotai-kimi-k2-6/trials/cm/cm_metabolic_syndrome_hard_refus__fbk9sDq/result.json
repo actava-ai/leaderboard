@@ -1,0 +1,108 @@
+{
+    "id": "6e75bc86-5cb7-49a6-9c90-767e505809c8",
+    "task_name": "cm_metabolic_syndrome_hard_refuses_001",
+    "trial_name": "cm_metabolic_syndrome_hard_refus__fbk9sDq",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm/cm_metabolic_syndrome_hard_refus__fbk9sDq",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-efoo7xiv/cm_metabolic_syndrome_hard_refuses_001"
+    },
+    "source": "healthverse-modal-efoo7xiv",
+    "task_checksum": "dc6273c718f791ae5f393ad216c3abbab7d2411fdfc1fb53de3e0c1a167b7cb4",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-efoo7xiv/cm_metabolic_syndrome_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-efoo7xiv"
+        },
+        "trial_name": "cm_metabolic_syndrome_hard_refus__fbk9sDq",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__moonshotai_kimi_k2_6/cm/openai_agents__moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e5f",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "c81f178e-cc2a-4d42-ba14-b7fef2a5e07f"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "moonshotai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1351728,
+        "n_cache_tokens": 1155904,
+        "n_output_tokens": 16575,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T02:41:20.339524Z",
+    "finished_at": "2026-05-04T02:57:34.409147Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T02:41:20.339937Z",
+        "finished_at": "2026-05-04T02:41:50.147741Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T02:41:50.147751Z",
+        "finished_at": "2026-05-04T02:41:54.650239Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T02:41:54.650275Z",
+        "finished_at": "2026-05-04T02:54:47.753927Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T02:54:50.751642Z",
+        "finished_at": "2026-05-04T02:57:29.189884Z"
+    }
+}

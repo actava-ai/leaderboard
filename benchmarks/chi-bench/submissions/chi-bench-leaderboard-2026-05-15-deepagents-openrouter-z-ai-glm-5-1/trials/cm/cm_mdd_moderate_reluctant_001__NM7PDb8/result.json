@@ -1,0 +1,108 @@
+{
+    "id": "bd75ccbd-6f7a-4cc2-868d-15d4d54211bf",
+    "task_name": "cm_mdd_moderate_reluctant_001",
+    "trial_name": "cm_mdd_moderate_reluctant_001__NM7PDb8",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_1/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm/cm_mdd_moderate_reluctant_001__NM7PDb8",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-xiwakham/cm_mdd_moderate_reluctant_001"
+    },
+    "source": "healthverse-modal-xiwakham",
+    "task_checksum": "59b7a2aaf5cc7c2b348ea47d188fb66bfb80f0062d2761770649c3ec2f98adba",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-xiwakham/cm_mdd_moderate_reluctant_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-xiwakham"
+        },
+        "trial_name": "cm_mdd_moderate_reluctant_001__NM7PDb8",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_1/deepagents__openrouter_z_ai_glm_5_1/cm/deepagents__openrouter_z_ai_glm_5_1__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****c47",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "b54d4768-7118-4645-a28b-34947d9c1141"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2584711,
+        "n_cache_tokens": 2500160,
+        "n_output_tokens": 15866,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T08:22:23.694059Z",
+    "finished_at": "2026-05-04T08:37:50.324011Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T08:22:23.706222Z",
+        "finished_at": "2026-05-04T08:23:12.021058Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T08:23:12.021067Z",
+        "finished_at": "2026-05-04T08:23:55.404336Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T08:23:55.404365Z",
+        "finished_at": "2026-05-04T08:32:58.955668Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T08:33:01.479201Z",
+        "finished_at": "2026-05-04T08:37:46.797822Z"
+    }
+}

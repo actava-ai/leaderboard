@@ -1,0 +1,108 @@
+{
+    "id": "9b4d3189-1f94-4b47-9241-36e830e16c87",
+    "task_name": "cm_mdd_hard_refuses_002",
+    "trial_name": "cm_mdd_hard_refuses_002__FsGrsnp",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_qwen_qwen3_6_max_preview/cm/deepagents__openrouter_qwen_qwen3_6_max_preview__cm/cm_mdd_hard_refuses_002__FsGrsnp",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-9dsb61d6/cm_mdd_hard_refuses_002"
+    },
+    "source": "healthverse-modal-9dsb61d6",
+    "task_checksum": "6abdb2b9f482818a230c9d115d357486be83725b9a8c600acfd4e363249e7fc3",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-9dsb61d6/cm_mdd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-9dsb61d6"
+        },
+        "trial_name": "cm_mdd_hard_refuses_002__FsGrsnp",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_qwen_qwen3_6_max_preview/cm/deepagents__openrouter_qwen_qwen3_6_max_preview__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e9e",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "6aeaf4ed-f805-4664-a202-db963134304b"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "qwen/qwen3.6-max-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2284897,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 16438,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T01:00:23.291203Z",
+    "finished_at": "2026-05-04T01:24:12.661114Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T01:00:23.292389Z",
+        "finished_at": "2026-05-04T01:07:15.256870Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T01:07:15.256883Z",
+        "finished_at": "2026-05-04T01:07:44.481305Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T01:07:44.481380Z",
+        "finished_at": "2026-05-04T01:18:40.010072Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T01:18:41.716799Z",
+        "finished_at": "2026-05-04T01:24:10.987248Z"
+    }
+}

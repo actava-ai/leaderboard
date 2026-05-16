@@ -1,0 +1,108 @@
+{
+    "id": "24417b77-98be-4de1-8260-6b7cdadc074e",
+    "task_name": "pa_t031_t031_o001_p01_p2p_payer",
+    "trial_name": "pa_t031_t031_o001_p01_p2p_payer__6pTCt74",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_1/openclaw__openrouter_z_ai_glm_5_1/pa_um/openclaw__openrouter_z_ai_glm_5_1__pa_um/pa_t031_t031_o001_p01_p2p_payer__6pTCt74",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-5bt28_n6/pa_t031_t031_o001_p01_p2p_payer"
+    },
+    "source": "healthverse-modal-5bt28_n6",
+    "task_checksum": "9c96473c824d67f10df51741a9559702dfff5ed5216ad4591cdd64350510c1af",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-5bt28_n6/pa_t031_t031_o001_p01_p2p_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-5bt28_n6"
+        },
+        "trial_name": "pa_t031_t031_o001_p01_p2p_payer__6pTCt74",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_1/openclaw__openrouter_z_ai_glm_5_1/pa_um/openclaw__openrouter_z_ai_glm_5_1__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e60",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "565ed7f5-35ad-45fe-855b-9db8be5fbf2c"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 360299,
+        "n_cache_tokens": 333376,
+        "n_output_tokens": 1495,
+        "cost_usd": 0.20852404999999996,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T09:32:09.339298Z",
+    "finished_at": "2026-05-03T09:50:39.580683Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T09:32:09.340298Z",
+        "finished_at": "2026-05-03T09:39:35.792777Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T09:39:35.792784Z",
+        "finished_at": "2026-05-03T09:40:12.868551Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T09:40:12.868581Z",
+        "finished_at": "2026-05-03T09:49:03.751102Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T09:49:15.472361Z",
+        "finished_at": "2026-05-03T09:50:29.957350Z"
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "id": "2c6d8f53-62a4-40cb-bddf-28588b3bc58c",
+    "task_name": "pa_t030_t030_o002_p01_new_referral_provider",
+    "trial_name": "pa_t030_t030_o002_p01_new_referr__fQwkPPP",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_1/openai_agents__x_ai_grok_4_3/pa_provider/openai_agents__x_ai_grok_4_3__pa_provider/pa_t030_t030_o002_p01_new_referr__fQwkPPP",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-7q4fqw2p/pa_t030_t030_o002_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-7q4fqw2p",
+    "task_checksum": "e012f70400d8bbbbf1c4a3f68dc37e603248b07417658b1953a8b804621310ff",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-7q4fqw2p/pa_t030_t030_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-7q4fqw2p"
+        },
+        "trial_name": "pa_t030_t030_o002_p01_new_referr__fQwkPPP",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_1/openai_agents__x_ai_grok_4_3/pa_provider/openai_agents__x_ai_grok_4_3__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****8a2",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "06a52012-e528-4ca8-b416-0eb8b76e3b0f"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "grok-4.3",
+            "provider": "x-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1239198,
+        "n_cache_tokens": 933696,
+        "n_output_tokens": 8304,
+        "cost_usd": 1.569758,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T14:09:12.067919Z",
+    "finished_at": "2026-05-03T14:19:00.321186Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T14:09:12.068666Z",
+        "finished_at": "2026-05-03T14:16:12.857108Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T14:16:12.857115Z",
+        "finished_at": "2026-05-03T14:16:16.162013Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T14:16:16.162031Z",
+        "finished_at": "2026-05-03T14:18:50.405838Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T14:18:54.568490Z",
+        "finished_at": "2026-05-03T14:18:58.807773Z"
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "id": "ff0debef-8ca9-4d4c-9c8d-1369a9173d75",
+    "task_name": "pa_t016_t016_o001_p01_p2p_payer",
+    "trial_name": "pa_t016_t016_o001_p01_p2p_payer__KArVFQY",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__qwen_qwen3_6_max_preview/pa_um/openai_agents__qwen_qwen3_6_max_preview__pa_um/pa_t016_t016_o001_p01_p2p_payer__KArVFQY",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-7njy_d8l/pa_t016_t016_o001_p01_p2p_payer"
+    },
+    "source": "healthverse-modal-7njy_d8l",
+    "task_checksum": "bca2fbb019f8580bd57c000898348c35c1356a806032bda02420feaefc6ab794",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-7njy_d8l/pa_t016_t016_o001_p01_p2p_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-7njy_d8l"
+        },
+        "trial_name": "pa_t016_t016_o001_p01_p2p_payer__KArVFQY",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__qwen_qwen3_6_max_preview/pa_um/openai_agents__qwen_qwen3_6_max_preview__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d4c",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0933e9d1-6db2-4a63-a4d0-9d2dacbd73ce"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "qwen3.6-max-preview",
+            "provider": "qwen"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 862232,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 5286,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T04:44:37.187080Z",
+    "finished_at": "2026-05-04T05:02:49.238297Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T04:44:37.188066Z",
+        "finished_at": "2026-05-04T04:51:47.760057Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T04:51:47.760064Z",
+        "finished_at": "2026-05-04T04:51:51.261756Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T04:51:51.261795Z",
+        "finished_at": "2026-05-04T05:01:38.450849Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T05:01:41.337666Z",
+        "finished_at": "2026-05-04T05:02:44.016793Z"
+    }
+}

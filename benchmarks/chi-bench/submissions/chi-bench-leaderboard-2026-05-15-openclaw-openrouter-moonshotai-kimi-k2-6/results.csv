@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openclaw,openrouter/moonshotai/kimi-k2.6,overall,0.10222222222222221,225,75,1.3734933893777774,1629.79009476,2026-05-04T05:50:33Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openclaw,openrouter/moonshotai/kimi-k2.6,pa_provider,0.12,75,25,0.8558089844266665,1271.9747495866666,2026-05-04T05:50:33Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openclaw,openrouter/moonshotai/kimi-k2.6,pa_um,0.18666666666666665,75,25,1.11570562304,1455.5730626266668,2026-05-04T05:50:33Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-moonshotai-kimi-k2-6,chi-Bench Leaderboard,openclaw,openrouter/moonshotai/kimi-k2.6,cm,0.0,75,25,2.1489655606666664,2161.8224720666667,2026-05-04T05:50:33Z

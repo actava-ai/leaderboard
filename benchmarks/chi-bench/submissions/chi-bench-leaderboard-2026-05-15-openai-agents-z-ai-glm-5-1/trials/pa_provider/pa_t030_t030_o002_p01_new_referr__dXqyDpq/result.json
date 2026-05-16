@@ -1,0 +1,108 @@
+{
+    "id": "7117d41a-5306-402a-abf1-5a9e0ea85fe5",
+    "task_name": "pa_t030_t030_o002_p01_new_referral_provider",
+    "trial_name": "pa_t030_t030_o002_p01_new_referr__dXqyDpq",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__z_ai_glm_5_1/pa_provider/openai_agents__z_ai_glm_5_1__pa_provider/pa_t030_t030_o002_p01_new_referr__dXqyDpq",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-7whww_p4/pa_t030_t030_o002_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-7whww_p4",
+    "task_checksum": "e012f70400d8bbbbf1c4a3f68dc37e603248b07417658b1953a8b804621310ff",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-7whww_p4/pa_t030_t030_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-7whww_p4"
+        },
+        "trial_name": "pa_t030_t030_o002_p01_new_referr__dXqyDpq",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__z_ai_glm_5_1/pa_provider/openai_agents__z_ai_glm_5_1__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****686",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "83bd3968-a25f-4977-b9b6-8ce2cb767ace"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.1",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1338907,
+        "n_cache_tokens": 1211904,
+        "n_output_tokens": 8974,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T06:35:46.600781Z",
+    "finished_at": "2026-05-04T06:47:57.097713Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T06:35:46.601358Z",
+        "finished_at": "2026-05-04T06:43:13.751930Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T06:43:13.751942Z",
+        "finished_at": "2026-05-04T06:43:16.709201Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T06:43:16.709238Z",
+        "finished_at": "2026-05-04T06:47:44.041046Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T06:47:49.975930Z",
+        "finished_at": "2026-05-04T06:47:54.776512Z"
+    }
+}

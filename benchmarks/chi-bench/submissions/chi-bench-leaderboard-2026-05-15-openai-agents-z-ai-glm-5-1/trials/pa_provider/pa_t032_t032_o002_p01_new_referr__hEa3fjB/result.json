@@ -1,0 +1,108 @@
+{
+    "id": "0daec6e6-2143-4665-8b0e-ec55b0fbcfd3",
+    "task_name": "pa_t032_t032_o002_p01_new_referral_provider",
+    "trial_name": "pa_t032_t032_o002_p01_new_referr__hEa3fjB",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openai_agents__z_ai_glm_5_1/pa_provider/openai_agents__z_ai_glm_5_1__pa_provider/pa_t032_t032_o002_p01_new_referr__hEa3fjB",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-xl28luyg/pa_t032_t032_o002_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-xl28luyg",
+    "task_checksum": "a15415a74d1e232b6b8aa4bdd8b845b01de996cfc740bd2126fef1534c4ff832",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-xl28luyg/pa_t032_t032_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-xl28luyg"
+        },
+        "trial_name": "pa_t032_t032_o002_p01_new_referr__hEa3fjB",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openai_agents__z_ai_glm_5_1/pa_provider/openai_agents__z_ai_glm_5_1__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****686",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "56a6d56f-56fe-4c0a-a12e-39a9ed149603"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.1",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1445543,
+        "n_cache_tokens": 1068800,
+        "n_output_tokens": 12116,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T22:48:37.639480Z",
+    "finished_at": "2026-05-03T22:57:36.396738Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T22:48:37.708570Z",
+        "finished_at": "2026-05-03T22:51:41.527142Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T22:51:41.527151Z",
+        "finished_at": "2026-05-03T22:51:45.023025Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T22:51:45.023061Z",
+        "finished_at": "2026-05-03T22:57:25.634774Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T22:57:29.665540Z",
+        "finished_at": "2026-05-03T22:57:34.666015Z"
+    }
+}

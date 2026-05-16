@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openclaw,openrouter/deepseek/deepseek-v4-pro,overall,0.11111111111111112,225,75,0.8405204290533334,1383.2273546177778,2026-05-04T03:00:01Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openclaw,openrouter/deepseek/deepseek-v4-pro,pa_provider,0.14666666666666667,75,25,1.07144155488,1458.8741607066668,2026-05-04T03:00:01Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openclaw,openrouter/deepseek/deepseek-v4-pro,pa_um,0.12,75,25,0.56780436972,1076.0184150133332,2026-05-04T03:00:01Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-deepseek-deepseek-v4-pro,chi-Bench Leaderboard,openclaw,openrouter/deepseek/deepseek-v4-pro,cm,0.06666666666666667,75,25,0.8823153625600001,1614.7894881333334,2026-05-04T03:00:01Z

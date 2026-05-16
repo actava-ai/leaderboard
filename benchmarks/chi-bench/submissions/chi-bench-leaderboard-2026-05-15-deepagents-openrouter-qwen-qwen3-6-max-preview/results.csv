@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,deepagents,openrouter/qwen/qwen3-6-max-preview,overall,0.09333333333333334,225,75,1.1204395314666666,917.4314679822222,2026-05-04T13:19:53Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,deepagents,openrouter/qwen/qwen3-6-max-preview,pa_provider,0.12,75,25,1.4841392384,782.61740908,2026-05-04T13:19:53Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,deepagents,openrouter/qwen/qwen3-6-max-preview,pa_um,0.10666666666666666,75,25,0.3017829568,630.9106507866667,2026-05-04T13:19:53Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-qwen-qwen3-6-max-preview,chi-Bench Leaderboard,deepagents,openrouter/qwen/qwen3-6-max-preview,cm,0.05333333333333333,75,25,1.5753963992,1338.76634408,2026-05-04T13:19:53Z

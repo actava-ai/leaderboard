@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-x-ai-grok-4-3,chi-Bench Leaderboard,openai-agents,x-ai/grok-4.3,overall,0.057777777777777775,225,75,1.5294126444444445,615.0426251733332,2026-05-04T07:18:48Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-x-ai-grok-4-3,chi-Bench Leaderboard,openai-agents,x-ai/grok-4.3,pa_provider,0.0,75,25,1.4736159866666667,537.8743912799999,2026-05-04T07:18:48Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-x-ai-grok-4-3,chi-Bench Leaderboard,openai-agents,x-ai/grok-4.3,pa_um,0.16,75,25,1.67779272,577.5321680533333,2026-05-04T07:18:48Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openai-agents-x-ai-grok-4-3,chi-Bench Leaderboard,openai-agents,x-ai/grok-4.3,cm,0.013333333333333332,75,25,1.4368292266666667,729.7213161866666,2026-05-04T07:18:48Z

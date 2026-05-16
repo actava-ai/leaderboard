@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,openclaw,openrouter/z-ai/glm-5.1,overall,0.1688888888888889,225,75,1.4719175281777777,1478.7724229733335,2026-05-04T02:49:29Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,openclaw,openrouter/z-ai/glm-5.1,pa_provider,0.13333333333333333,75,25,2.3737683412,1768.4659487866668,2026-05-04T02:49:29Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,openclaw,openrouter/z-ai/glm-5.1,pa_um,0.26666666666666666,75,25,0.7451186097333333,948.0398831466667,2026-05-04T02:49:29Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,openclaw,openrouter/z-ai/glm-5.1,cm,0.10666666666666666,75,25,1.2968656336,1719.8114369866666,2026-05-04T02:49:29Z

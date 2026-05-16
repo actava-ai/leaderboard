@@ -1,0 +1,108 @@
+{
+    "id": "8d54cc15-51a6-43d2-bd6f-c4023601a797",
+    "task_name": "pa_t029_t029_o001_p01_new_referral_provider",
+    "trial_name": "pa_t029_t029_o001_p01_new_referr__85aHfAm",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/openclaw__openrouter_qwen_qwen3_6_max_preview/pa_provider/openclaw__openrouter_qwen_qwen3_6_max_preview__pa_provider/pa_t029_t029_o001_p01_new_referr__85aHfAm",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-iexkx4c0/pa_t029_t029_o001_p01_new_referral_provider"
+    },
+    "source": "healthverse-modal-iexkx4c0",
+    "task_checksum": "53e2c8e41cb92cdc4f513c8ca115cab9cf3fb32bc6de5d3b7ba66d59284a5d27",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-iexkx4c0/pa_t029_t029_o001_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-iexkx4c0"
+        },
+        "trial_name": "pa_t029_t029_o001_p01_new_referr__85aHfAm",
+        "trials_dir": "logs/experiments/curated25_full_matrix/openclaw__openrouter_qwen_qwen3_6_max_preview/pa_provider/openclaw__openrouter_qwen_qwen3_6_max_preview__pa_provider",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****1a3",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "62f8be98-4b85-4ef7-b4b1-7b7d875af9eb"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.4.29 (a448042)",
+        "model_info": {
+            "name": "qwen/qwen3.6-max-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2709398,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 9761,
+        "cost_usd": 2.8786825599999997,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-02T12:01:19.207275Z",
+    "finished_at": "2026-05-02T12:21:30.696940Z",
+    "environment_setup": {
+        "started_at": "2026-05-02T12:01:19.208064Z",
+        "finished_at": "2026-05-02T12:02:30.683748Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-02T12:02:30.683756Z",
+        "finished_at": "2026-05-02T12:03:10.445920Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-02T12:03:10.445949Z",
+        "finished_at": "2026-05-02T12:21:10.390547Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-02T12:21:22.192017Z",
+        "finished_at": "2026-05-02T12:21:28.180382Z"
+    }
+}

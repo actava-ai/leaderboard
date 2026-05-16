@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-gemini-cli-google-gemini-3-pro-preview,chi-Bench Leaderboard,gemini-cli,google/gemini-3-pro-preview,overall,0.07111111111111111,225,75,10.819630091555556,818.5461762444445,2026-04-30T09:24:35Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-gemini-cli-google-gemini-3-pro-preview,chi-Bench Leaderboard,gemini-cli,google/gemini-3-pro-preview,pa_provider,0.14666666666666667,75,25,10.518582010666668,675.5020416666666,2026-04-30T09:24:35Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-gemini-cli-google-gemini-3-pro-preview,chi-Bench Leaderboard,gemini-cli,google/gemini-3-pro-preview,pa_um,0.06666666666666667,75,25,9.409948618666668,729.3389516000001,2026-04-30T09:24:35Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-gemini-cli-google-gemini-3-pro-preview,chi-Bench Leaderboard,gemini-cli,google/gemini-3-pro-preview,cm,0.0,75,25,12.530359645333332,1050.7975354666667,2026-04-30T09:24:35Z

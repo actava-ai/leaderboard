@@ -1,0 +1,108 @@
+{
+    "id": "72ff822b-851c-412b-9f17-d1f4ddd1c79a",
+    "task_name": "pa_t012_t012_o001_p01_triage_payer",
+    "trial_name": "pa_t012_t012_o001_p01_triage_pay__UFsmAVQ",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/openclaw__openrouter_x_ai_grok_4_3/pa_um/openclaw__openrouter_x_ai_grok_4_3__pa_um/pa_t012_t012_o001_p01_triage_pay__UFsmAVQ",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-zb6s2lnv/pa_t012_t012_o001_p01_triage_payer"
+    },
+    "source": "healthverse-modal-zb6s2lnv",
+    "task_checksum": "b49b3ff56ff63da846dfd0df871ceead2a6dcd5559e348e49eac563b539a8d72",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-zb6s2lnv/pa_t012_t012_o001_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-zb6s2lnv"
+        },
+        "trial_name": "pa_t012_t012_o001_p01_triage_pay__UFsmAVQ",
+        "trials_dir": "logs/experiments/curated25_full_matrix/openclaw__openrouter_x_ai_grok_4_3/pa_um/openclaw__openrouter_x_ai_grok_4_3__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****437",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2276981c-a7f6-4712-88e6-d3f8b995969c"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.4.29 (a448042)",
+        "model_info": {
+            "name": "x-ai/grok-4.3",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1172267,
+        "n_cache_tokens": 1038144,
+        "n_output_tokens": 9258,
+        "cost_usd": 0.39842755,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-02T12:19:17.777982Z",
+    "finished_at": "2026-05-02T12:28:35.679514Z",
+    "environment_setup": {
+        "started_at": "2026-05-02T12:19:17.778920Z",
+        "finished_at": "2026-05-02T12:20:10.805872Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-02T12:20:10.805884Z",
+        "finished_at": "2026-05-02T12:20:53.630456Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-02T12:20:53.630501Z",
+        "finished_at": "2026-05-02T12:28:10.253354Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-02T12:28:19.090261Z",
+        "finished_at": "2026-05-02T12:28:24.973659Z"
+    }
+}

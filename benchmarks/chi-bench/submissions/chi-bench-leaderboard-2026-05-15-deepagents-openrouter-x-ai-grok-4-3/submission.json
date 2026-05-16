@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "chi-bench-leaderboard-2026-05-15-deepagents-openrouter-x-ai-grok-4-3",
+    "team": "chi-Bench Leaderboard",
+    "contact": "leaderboard@actava.ai",
+    "agent": "deepagents",
+    "model": "openrouter/x-ai/grok-4.3",
+    "notes": "Paper-baseline submission generated from the curated25 full-matrix experiment logs. Trials are the latest available run per (domain, task).\n",
+    "submitted_at": "2026-05-04T13:19:20Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 225,
+      "n_tasks": 75,
+      "pass_at_1": 0.02222222222222222,
+      "mean_cost_usd": 1.4842026427555557,
+      "mean_walltime_s": 493.1555111644444
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.0,
+        "mean_cost_usd": 1.1444860594666666,
+        "mean_walltime_s": 371.08909156
+      },
+      "pa_um": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.05333333333333333,
+        "mean_cost_usd": 1.4559389977333335,
+        "mean_walltime_s": 501.28186664
+      },
+      "cm": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.013333333333333332,
+        "mean_cost_usd": 1.8521828710666668,
+        "mean_walltime_s": 607.0955752933332
+      }
+    },
+    "mean_cost_usd": 1.4842026427555557,
+    "mean_walltime_s": 493.1555111644444
+  },
+  "provenance": {
+    "chi_bench_git_sha": "a077ad96e11b813b20e0adf7065ebd52e524159d",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-05-03T22:19:46Z",
+    "finished_at": "2026-05-04T13:19:20Z",
+    "host": "modal",
+    "python_version": "3.12.3",
+    "platform": "linux"
+  }
+}

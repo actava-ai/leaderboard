@@ -1,0 +1,108 @@
+{
+    "id": "823c9434-2b3f-46f8-815c-cfa532cccec2",
+    "task_name": "cm_sud_hard_refuses_001",
+    "trial_name": "cm_sud_hard_refuses_001__HHGkr7c",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/hermes__openrouter_x_ai_grok_4_3/cm/hermes__openrouter_x_ai_grok_4_3__cm/cm_sud_hard_refuses_001__HHGkr7c",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-2b_kkbju/cm_sud_hard_refuses_001"
+    },
+    "source": "healthverse-modal-2b_kkbju",
+    "task_checksum": "b96114cd428f0ea364ef0528114d6dad185af69518e59fdd308421f5f4ad9855",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-2b_kkbju/cm_sud_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-2b_kkbju"
+        },
+        "trial_name": "cm_sud_hard_refuses_001__HHGkr7c",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/hermes__openrouter_x_ai_grok_4_3/cm/hermes__openrouter_x_ai_grok_4_3__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openrouter/x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d75",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "26ff4fbf-b829-4599-a312-9440ff84ac72"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.12.0 (2026.4.30)\nProject: /usr/local/lib/hermes-agent\nPython: 3.11.15\nOpenAI SDK: 2.32.0\nUp to date",
+        "model_info": {
+            "name": "x-ai/grok-4.3",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T00:28:46.967599Z",
+    "finished_at": "2026-05-04T00:49:29.647848Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T00:28:46.967923Z",
+        "finished_at": "2026-05-04T00:36:20.355381Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T00:36:20.355389Z",
+        "finished_at": "2026-05-04T00:39:39.102181Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T00:39:39.102218Z",
+        "finished_at": "2026-05-04T00:43:44.918804Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T00:43:51.372620Z",
+        "finished_at": "2026-05-04T00:49:25.379151Z"
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "id": "7e57b4ef-6111-4275-9f62-5b4475bf69ff",
+    "task_name": "pa_t011_t011_o003_p01_intake_payer",
+    "trial_name": "pa_t011_t011_o003_p01_intake_pay__FyMa9dA",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openai_agents__deepseek_deepseek_v4_pro/pa_um/openai_agents__deepseek_deepseek_v4_pro__pa_um/pa_t011_t011_o003_p01_intake_pay__FyMa9dA",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-x03ca34o/pa_t011_t011_o003_p01_intake_payer"
+    },
+    "source": "healthverse-modal-x03ca34o",
+    "task_checksum": "4ba4b8fc78b3480c7cccb801674e4a43e6540a76739018e7970fbc8b3d794296",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-x03ca34o/pa_t011_t011_o003_p01_intake_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-x03ca34o"
+        },
+        "trial_name": "pa_t011_t011_o003_p01_intake_pay__FyMa9dA",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openai_agents__deepseek_deepseek_v4_pro/pa_um/openai_agents__deepseek_deepseek_v4_pro__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "deepseek/deepseek-v4-pro",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d6e",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "121ce836-b768-41e1-98bf-9f69366ae8cf"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "deepseek-v4-pro",
+            "provider": "deepseek"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2182917,
+        "n_cache_tokens": 1678976,
+        "n_output_tokens": 10946,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T04:25:44.821025Z",
+    "finished_at": "2026-05-04T04:34:01.596668Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T04:25:44.822089Z",
+        "finished_at": "2026-05-04T04:26:41.522860Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T04:26:41.522869Z",
+        "finished_at": "2026-05-04T04:26:47.581438Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T04:26:47.581472Z",
+        "finished_at": "2026-05-04T04:31:30.434008Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T04:31:34.219804Z",
+        "finished_at": "2026-05-04T04:33:54.514873Z"
+    }
+}

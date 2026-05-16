@@ -1,0 +1,108 @@
+{
+    "id": "5163ecb4-27de-4d10-99d4-da477e682f8a",
+    "task_name": "pa_t019_t019_o001_p01_p2p_payer",
+    "trial_name": "pa_t019_t019_o001_p01_p2p_payer__xhFtMFM",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_2/openclaw__openrouter_qwen_qwen3_6_max_preview/pa_um/openclaw__openrouter_qwen_qwen3_6_max_preview__pa_um/pa_t019_t019_o001_p01_p2p_payer__xhFtMFM",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-76mn71eo/pa_t019_t019_o001_p01_p2p_payer"
+    },
+    "source": "healthverse-modal-76mn71eo",
+    "task_checksum": "b21f16c6545705e1250e3862ff95fcd75886befb746a81162a2890604df42af9",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-76mn71eo/pa_t019_t019_o001_p01_p2p_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-76mn71eo"
+        },
+        "trial_name": "pa_t019_t019_o001_p01_p2p_payer__xhFtMFM",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_2/openclaw__openrouter_qwen_qwen3_6_max_preview/pa_um/openclaw__openrouter_qwen_qwen3_6_max_preview__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****1a3",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "cd66f6a3-bb5c-4d52-8822-cdb2427c993d"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "qwen/qwen3.6-max-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1395699,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3977,
+        "cost_usd": 1.47634344,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T19:02:56.325033Z",
+    "finished_at": "2026-05-03T19:09:32.658453Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T19:02:56.332426Z",
+        "finished_at": "2026-05-03T19:03:58.261938Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T19:03:58.261946Z",
+        "finished_at": "2026-05-03T19:04:37.796071Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T19:04:37.796105Z",
+        "finished_at": "2026-05-03T19:07:39.139515Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T19:07:53.231772Z",
+        "finished_at": "2026-05-03T19:09:14.575958Z"
+    }
+}

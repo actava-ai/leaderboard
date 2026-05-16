@@ -1,0 +1,108 @@
+{
+    "id": "87faffe3-8d95-462c-9ff6-734910b0bbac",
+    "task_name": "cm_asthma_low_coop_001",
+    "trial_name": "cm_asthma_low_coop_001__quajs88",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_1/openclaw__openrouter_qwen_qwen3_6_max_preview/cm/openclaw__openrouter_qwen_qwen3_6_max_preview__cm/cm_asthma_low_coop_001__quajs88",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-q_qhwrss/cm_asthma_low_coop_001"
+    },
+    "source": "healthverse-modal-q_qhwrss",
+    "task_checksum": "87c41a4fd9b90ac8324666f012fd4ef5af1488d3465adb3af4b05bb1a30be8b8",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-q_qhwrss/cm_asthma_low_coop_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-q_qhwrss"
+        },
+        "trial_name": "cm_asthma_low_coop_001__quajs88",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_1/openclaw__openrouter_qwen_qwen3_6_max_preview/cm/openclaw__openrouter_qwen_qwen3_6_max_preview__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****1a3",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2465bc41-cdaa-4265-bb82-2c4c3c461e1b"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "qwen/qwen3.6-max-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 628567,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 3286,
+        "cost_usd": 0.6742143199999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T06:28:45.205904Z",
+    "finished_at": "2026-05-03T07:09:52.602630Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T06:28:45.206213Z",
+        "finished_at": "2026-05-03T06:37:07.055882Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T06:37:07.055890Z",
+        "finished_at": "2026-05-03T06:37:43.340938Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-03T06:37:43.340977Z",
+        "finished_at": "2026-05-03T07:07:47.018568Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-03T07:08:01.864113Z",
+        "finished_at": "2026-05-03T07:09:47.215185Z"
+    }
+}

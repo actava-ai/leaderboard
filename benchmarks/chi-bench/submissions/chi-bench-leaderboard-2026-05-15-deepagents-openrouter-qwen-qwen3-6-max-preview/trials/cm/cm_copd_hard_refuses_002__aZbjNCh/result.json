@@ -1,0 +1,108 @@
+{
+    "id": "9ce9306f-f54d-4bd1-b87e-2942a6cddc7c",
+    "task_name": "cm_copd_hard_refuses_002",
+    "trial_name": "cm_copd_hard_refuses_002__aZbjNCh",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_qwen_qwen3_6_max_preview/cm/deepagents__openrouter_qwen_qwen3_6_max_preview__cm/cm_copd_hard_refuses_002__aZbjNCh",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-9dsb61d6/cm_copd_hard_refuses_002"
+    },
+    "source": "healthverse-modal-9dsb61d6",
+    "task_checksum": "285162fa9e706ec197f40943dba2a90d45e07480ecc371b840cea857446e729a",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-9dsb61d6/cm_copd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-9dsb61d6"
+        },
+        "trial_name": "cm_copd_hard_refuses_002__aZbjNCh",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_qwen_qwen3_6_max_preview/cm/deepagents__openrouter_qwen_qwen3_6_max_preview__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/qwen/qwen3.6-max-preview",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e9e",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "6aeaf4ed-f805-4664-a202-db963134304b"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "qwen/qwen3.6-max-preview",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1297269,
+        "n_cache_tokens": 0,
+        "n_output_tokens": 8692,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T01:00:23.299493Z",
+    "finished_at": "2026-05-04T01:17:53.788928Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T01:00:23.299898Z",
+        "finished_at": "2026-05-04T01:07:23.310503Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T01:07:23.310511Z",
+        "finished_at": "2026-05-04T01:08:08.538807Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T01:08:08.538839Z",
+        "finished_at": "2026-05-04T01:14:27.526080Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T01:14:31.105480Z",
+        "finished_at": "2026-05-04T01:17:51.247109Z"
+    }
+}

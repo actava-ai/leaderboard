@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,deepagents,openrouter/z-ai/glm-5.1,overall,0.11111111111111109,225,75,1.0264914193777779,841.5835730000001,2026-05-04T13:10:34Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,deepagents,openrouter/z-ai/glm-5.1,pa_provider,0.1733333333333333,75,25,1.3490828864,896.3995174,2026-05-04T13:10:34Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,deepagents,openrouter/z-ai/glm-5.1,pa_um,0.10666666666666666,75,25,0.38520006506666665,613.8531777866667,2026-05-04T13:10:34Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-deepagents-openrouter-z-ai-glm-5-1,chi-Bench Leaderboard,deepagents,openrouter/z-ai/glm-5.1,cm,0.05333333333333333,75,25,1.3451913066666668,1014.4980238133334,2026-05-04T13:10:34Z

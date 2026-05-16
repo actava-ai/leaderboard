@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-anthropic-claude-opus-4-7,chi-Bench Leaderboard,openclaw,anthropic/claude-opus-4-7,overall,0.17333333333333334,225,75,28.14887881888889,912.8442898266667,2026-05-04T15:47:22Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-anthropic-claude-opus-4-7,chi-Bench Leaderboard,openclaw,anthropic/claude-opus-4-7,pa_provider,0.18666666666666665,75,25,7.762486866666666,554.38678264,2026-05-04T15:47:22Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-anthropic-claude-opus-4-7,chi-Bench Leaderboard,openclaw,anthropic/claude-opus-4-7,pa_um,0.13333333333333333,75,25,22.129379916666668,835.24381336,2026-05-04T15:47:22Z
+chi-bench,chi-bench-v1.0.0,chi-bench-leaderboard-2026-05-15-openclaw-anthropic-claude-opus-4-7,chi-Bench Leaderboard,openclaw,anthropic/claude-opus-4-7,cm,0.2,75,25,54.55476967333333,1348.90227348,2026-05-04T15:47:22Z

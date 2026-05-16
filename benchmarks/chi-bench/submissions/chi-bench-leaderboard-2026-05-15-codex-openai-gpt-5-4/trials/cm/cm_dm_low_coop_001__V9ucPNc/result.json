@@ -1,0 +1,108 @@
+{
+    "id": "8d9f0dab-0459-40cc-b00f-1584724f2113",
+    "task_name": "cm_dm_low_coop_001",
+    "trial_name": "cm_dm_low_coop_001__V9ucPNc",
+    "trial_uri": "file:///home/hlnchen/actava-bench/logs/experiments/curated25_full_matrix/codex__openai_gpt_5_4/cm/codex__openai_gpt_5_4__cm/cm_dm_low_coop_001__V9ucPNc",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-hfbbv3cq/cm_dm_low_coop_001"
+    },
+    "source": "healthverse-modal-hfbbv3cq",
+    "task_checksum": "2725045e1c4f386d5e4e30f2d8fc036be8aa8d2c7636f268512dbe4b051fead5",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-hfbbv3cq/cm_dm_low_coop_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-hfbbv3cq"
+        },
+        "trial_name": "cm_dm_low_coop_001__V9ucPNc",
+        "trials_dir": "logs/experiments/curated25_full_matrix/codex__openai_gpt_5_4/cm/codex__openai_gpt_5_4__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "openai/gpt-5.4",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "sk-p****jMA",
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": true,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "376feb1a-c23a-41d7-b9fd-223fd539faac"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "0.125.0",
+        "model_info": {
+            "name": "gpt-5.4",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2941915,
+        "n_cache_tokens": 2782976,
+        "n_output_tokens": 18154,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-30T11:01:58.589064Z",
+    "finished_at": "2026-04-30T11:23:33.481681Z",
+    "environment_setup": {
+        "started_at": "2026-04-30T11:01:58.592395Z",
+        "finished_at": "2026-04-30T11:06:46.804275Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-30T11:06:46.804285Z",
+        "finished_at": "2026-04-30T11:07:21.111551Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-30T11:07:21.111587Z",
+        "finished_at": "2026-04-30T11:16:01.272883Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-30T11:16:41.038650Z",
+        "finished_at": "2026-04-30T11:23:31.654950Z"
+    }
+}

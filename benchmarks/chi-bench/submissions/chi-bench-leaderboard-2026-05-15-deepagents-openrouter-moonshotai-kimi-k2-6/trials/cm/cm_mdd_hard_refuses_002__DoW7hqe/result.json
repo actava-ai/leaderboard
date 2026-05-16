@@ -1,0 +1,108 @@
+{
+    "id": "baedc011-bc21-4f7f-80a6-9b4367c17f53",
+    "task_name": "cm_mdd_hard_refuses_002",
+    "trial_name": "cm_mdd_hard_refuses_002__DoW7hqe",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/supplemental_1/deepagents__openrouter_moonshotai_kimi_k2_6/cm/deepagents__openrouter_moonshotai_kimi_k2_6__cm/cm_mdd_hard_refuses_002__DoW7hqe",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-t7h6tfto/cm_mdd_hard_refuses_002"
+    },
+    "source": "healthverse-modal-t7h6tfto",
+    "task_checksum": "6abdb2b9f482818a230c9d115d357486be83725b9a8c600acfd4e363249e7fc3",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-t7h6tfto/cm_mdd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-t7h6tfto"
+        },
+        "trial_name": "cm_mdd_hard_refuses_002__DoW7hqe",
+        "trials_dir": "logs/experiments/curated25_full_matrix/supplemental_1/deepagents__openrouter_moonshotai_kimi_k2_6/cm/deepagents__openrouter_moonshotai_kimi_k2_6__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/moonshotai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****d0e",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "05301733-24da-4f4a-9662-e5d305004304"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "moonshotai/kimi-k2.6",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1935108,
+        "n_cache_tokens": 1684608,
+        "n_output_tokens": 12457,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T07:59:06.140728Z",
+    "finished_at": "2026-05-04T08:29:59.704942Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T07:59:06.141751Z",
+        "finished_at": "2026-05-04T08:07:55.636634Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T08:07:55.636641Z",
+        "finished_at": "2026-05-04T08:08:37.219431Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T08:08:37.219457Z",
+        "finished_at": "2026-05-04T08:28:31.318249Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T08:28:34.069936Z",
+        "finished_at": "2026-05-04T08:29:58.062434Z"
+    }
+}

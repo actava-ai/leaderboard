@@ -1,0 +1,108 @@
+{
+    "id": "bbe63992-f3c3-4e48-9d0f-47d15b0a698f",
+    "task_name": "cm_mdd_hard_refuses_002",
+    "trial_name": "cm_mdd_hard_refuses_002__PFKnCco",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_deepseek_deepseek_v4_pro/cm/deepagents__openrouter_deepseek_deepseek_v4_pro__cm/cm_mdd_hard_refuses_002__PFKnCco",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-_kex6paj/cm_mdd_hard_refuses_002"
+    },
+    "source": "healthverse-modal-_kex6paj",
+    "task_checksum": "6abdb2b9f482818a230c9d115d357486be83725b9a8c600acfd4e363249e7fc3",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-_kex6paj/cm_mdd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-_kex6paj"
+        },
+        "trial_name": "cm_mdd_hard_refuses_002__PFKnCco",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/deepagents__openrouter_deepseek_deepseek_v4_pro/cm/deepagents__openrouter_deepseek_deepseek_v4_pro__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.deepagents_harness:DeepAgentsHarness",
+            "model_name": "openrouter/deepseek/deepseek-v4-pro",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****08b",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "bf86b63d-ef31-4195-bc8e-1f3a87b03459"
+    },
+    "agent_info": {
+        "name": "deepagents",
+        "version": "deepagents-cli 0.0.48",
+        "model_info": {
+            "name": "deepseek/deepseek-v4-pro",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 244472,
+        "n_cache_tokens": 107264,
+        "n_output_tokens": 3725,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-04T00:53:46.328617Z",
+    "finished_at": "2026-05-04T00:58:20.945618Z",
+    "environment_setup": {
+        "started_at": "2026-05-04T00:53:46.329009Z",
+        "finished_at": "2026-05-04T00:54:16.089205Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-04T00:54:16.089214Z",
+        "finished_at": "2026-05-04T00:54:55.112882Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T00:54:55.112915Z",
+        "finished_at": "2026-05-04T00:56:52.897545Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T00:56:57.851719Z",
+        "finished_at": "2026-05-04T00:58:18.588760Z"
+    }
+}

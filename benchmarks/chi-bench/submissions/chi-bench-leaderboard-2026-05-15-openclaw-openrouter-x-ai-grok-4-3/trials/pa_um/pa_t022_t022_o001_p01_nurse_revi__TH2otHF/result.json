@@ -1,0 +1,108 @@
+{
+    "id": "cee269f8-4a31-4b7a-ae09-4462c801d43d",
+    "task_name": "pa_t022_t022_o001_p01_nurse_review_payer",
+    "trial_name": "pa_t022_t022_o001_p01_nurse_revi__TH2otHF",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/openclaw__openrouter_x_ai_grok_4_3/pa_um/openclaw__openrouter_x_ai_grok_4_3__pa_um/pa_t022_t022_o001_p01_nurse_revi__TH2otHF",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-zb6s2lnv/pa_t022_t022_o001_p01_nurse_review_payer"
+    },
+    "source": "healthverse-modal-zb6s2lnv",
+    "task_checksum": "30bc0a4a096eccc250e4ef30817748f20a0ad69ff78e5c585bd33f366fc59a46",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-zb6s2lnv/pa_t022_t022_o001_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-zb6s2lnv"
+        },
+        "trial_name": "pa_t022_t022_o001_p01_nurse_revi__TH2otHF",
+        "trials_dir": "logs/experiments/curated25_full_matrix/openclaw__openrouter_x_ai_grok_4_3/pa_um/openclaw__openrouter_x_ai_grok_4_3__pa_um",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/x-ai/grok-4.3",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****437",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2276981c-a7f6-4712-88e6-d3f8b995969c"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.4.29 (a448042)",
+        "model_info": {
+            "name": "x-ai/grok-4.3",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2210343,
+        "n_cache_tokens": 1968988,
+        "n_output_tokens": 11443,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-02T12:57:36.378554Z",
+    "finished_at": "2026-05-02T13:10:10.201998Z",
+    "environment_setup": {
+        "started_at": "2026-05-02T12:57:36.387228Z",
+        "finished_at": "2026-05-02T12:58:42.509959Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-02T12:58:42.509966Z",
+        "finished_at": "2026-05-02T12:59:28.791437Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-02T12:59:28.791477Z",
+        "finished_at": "2026-05-02T13:08:39.071642Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-02T13:08:45.553673Z",
+        "finished_at": "2026-05-02T13:10:00.966856Z"
+    }
+}

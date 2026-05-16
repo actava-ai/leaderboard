@@ -1,0 +1,108 @@
+{
+    "id": "456dc26c-6405-4ec0-9a3d-2ec7cd009b97",
+    "task_name": "cm_post_pna_moderate_tentative_001",
+    "trial_name": "cm_post_pna_moderate_tentative_0__3aooQvi",
+    "trial_uri": "file:///home/hlnchen/actava-bench-logs-backup/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_z_ai_glm_5_1/cm/openclaw__openrouter_z_ai_glm_5_1__cm/cm_post_pna_moderate_tentative_0__3aooQvi",
+    "task_id": {
+        "path": "/tmp/healthverse-modal-aboo3vyh/cm_post_pna_moderate_tentative_001"
+    },
+    "source": "healthverse-modal-aboo3vyh",
+    "task_checksum": "b5381070e5edc59ee26e3c7948cf549f140234a5a5d3e22704b76f4da33f7874",
+    "config": {
+        "task": {
+            "path": "/tmp/healthverse-modal-aboo3vyh/cm_post_pna_moderate_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "healthverse-modal-aboo3vyh"
+        },
+        "trial_name": "cm_post_pna_moderate_tentative_0__3aooQvi",
+        "trials_dir": "logs/experiments/curated25_full_matrix/wave_3/openclaw__openrouter_z_ai_glm_5_1/cm/openclaw__openrouter_z_ai_glm_5_1__cm",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "healthverse.experiment.agents.openclaw_harness:OpenClawHarness",
+            "model_name": "openrouter/z-ai/glm-5.1",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "ANTHROPIC_API_KEY": "sk-a****AAA",
+                "OPENROUTER_API_KEY": "sk-o****e60",
+                "GROK_API_KEY": "xai-****weS"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "healthverse.experiment.modal_env:HealthverseModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "4c0ca0f5-dfc0-43e7-bce6-6653de44febc"
+    },
+    "agent_info": {
+        "name": "openclaw",
+        "version": "OpenClaw 2026.5.2 (8b2a6e5)",
+        "model_info": {
+            "name": "z-ai/glm-5.1",
+            "provider": "openrouter"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2264549,
+        "n_cache_tokens": 2212352,
+        "n_output_tokens": 21305,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-03T23:59:12.475295Z",
+    "finished_at": "2026-05-04T00:27:57.468112Z",
+    "environment_setup": {
+        "started_at": "2026-05-03T23:59:12.477954Z",
+        "finished_at": "2026-05-03T23:59:51.002753Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-03T23:59:51.002763Z",
+        "finished_at": "2026-05-04T00:00:48.696889Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-04T00:00:48.696925Z",
+        "finished_at": "2026-05-04T00:21:10.356133Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-04T00:21:15.943511Z",
+        "finished_at": "2026-05-04T00:27:55.085895Z"
+    }
+}

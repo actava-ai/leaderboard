@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "chi-bench-leaderboard-2026-05-15-openclaw-anthropic-claude-opus-4-7",
+    "team": "chi-Bench Leaderboard",
+    "contact": "leaderboard@actava.ai",
+    "agent": "openclaw",
+    "model": "anthropic/claude-opus-4-7",
+    "notes": "Paper-baseline submission generated from the curated25 full-matrix experiment logs. Trials are the latest available run per (domain, task).\n",
+    "submitted_at": "2026-05-04T15:47:22Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 225,
+      "n_tasks": 75,
+      "pass_at_1": 0.17333333333333334,
+      "mean_cost_usd": 28.14887881888889,
+      "mean_walltime_s": 912.8442898266667
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.18666666666666665,
+        "mean_cost_usd": 7.762486866666666,
+        "mean_walltime_s": 554.38678264
+      },
+      "pa_um": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.13333333333333333,
+        "mean_cost_usd": 22.129379916666668,
+        "mean_walltime_s": 835.24381336
+      },
+      "cm": {
+        "n_trials": 75,
+        "n_tasks": 25,
+        "pass_at_1": 0.2,
+        "mean_cost_usd": 54.55476967333333,
+        "mean_walltime_s": 1348.90227348
+      }
+    },
+    "mean_cost_usd": 28.14887881888889,
+    "mean_walltime_s": 912.8442898266667
+  },
+  "provenance": {
+    "chi_bench_git_sha": "a077ad96e11b813b20e0adf7065ebd52e524159d",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-05-04T13:50:05Z",
+    "finished_at": "2026-05-04T15:47:22Z",
+    "host": "modal",
+    "python_version": "3.12.3",
+    "platform": "linux"
+  }
+}
