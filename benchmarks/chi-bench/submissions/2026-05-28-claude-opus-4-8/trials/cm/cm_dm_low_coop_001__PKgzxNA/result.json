@@ -1,0 +1,110 @@
+{
+    "id": "cf767346-db5d-4442-9be0-2d98b17b8a6b",
+    "task_name": "cm_dm_low_coop_001",
+    "trial_name": "cm_dm_low_coop_001__PKgzxNA",
+    "trial_uri": "file:///Users/weiran/Github/chi-bench/logs/submissions/claude-opus-4-8/cm/claude-opus-4-8__cm/cm_dm_low_coop_001__PKgzxNA",
+    "task_id": {
+        "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-_2ayzp29/cm_dm_low_coop_001"
+    },
+    "source": "chi_bench-modal-_2ayzp29",
+    "task_checksum": "25769e9a63096b25c02360ab35d53104a1901562a1e00e991b1b8e0c4f73cab4",
+    "config": {
+        "task": {
+            "path": "/var/folders/_c/gz8p8d1s7tz_xbm57qwtnc_00000gn/T/chi_bench-modal-_2ayzp29/cm_dm_low_coop_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-_2ayzp29"
+        },
+        "trial_name": "cm_dm_low_coop_001__PKgzxNA",
+        "trials_dir": "logs/submissions/claude-opus-4-8/cm/claude-opus-4-8__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-opus-4-8",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "f0f669e4-e4e3-4e23-957e-255408b68306"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.154",
+        "model_info": {
+            "name": "claude-opus-4-8",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3393702,
+        "n_cache_tokens": 3245840,
+        "n_output_tokens": 35566,
+        "cost_usd": 3.4330449999999995,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-05-28T20:13:16.931477Z",
+    "finished_at": "2026-05-28T20:31:08.137387Z",
+    "environment_setup": {
+        "started_at": "2026-05-28T20:13:16.937041Z",
+        "finished_at": "2026-05-28T20:14:44.954326Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-05-28T20:14:44.954367Z",
+        "finished_at": "2026-05-28T20:15:01.915295Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-05-28T20:15:01.915477Z",
+        "finished_at": "2026-05-28T20:24:46.866872Z"
+    },
+    "verifier": {
+        "started_at": "2026-05-28T20:25:12.652089Z",
+        "finished_at": "2026-05-28T20:31:05.455845Z"
+    },
+    "step_results": null
+}

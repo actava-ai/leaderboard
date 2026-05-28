@@ -1,0 +1,203 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.696969696969697,
+  "passed_checks": 23,
+  "total_checks": 33,
+  "check_scores": {
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.signed_off": 0.0,
+    "md.denial_rationale_present": null,
+    "md.audit": 1.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 0.0,
+    "outcome.letter_types": 0.0,
+    "outcome.determination_exists": null,
+    "outcome.determination_source_exists": null,
+    "outcome.source_recommendation_consistent": null,
+    "outcome.review_decision_exists": null,
+    "outcome.review_decision_matches": null,
+    "outcome.terminal_transition_exists": null,
+    "outcome.determination_stage_trace": null,
+    "outcome.determination_finalize_audit": null,
+    "outcome.clean_determination": null,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "triage.record_exists": 1.0,
+    "triage.disposition_matches": 1.0,
+    "triage.urgency_matches": 1.0,
+    "triage.gold_card_matches": 1.0,
+    "triage.route_matches": 1.0,
+    "triage.audit": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:nurse_qualifying_amputation": 0.0,
+    "judge.nurse_review:nurse_prosthetic_replaces_limb": 0.0,
+    "judge.nurse_review:nurse_functional_restoration": 0.0,
+    "judge.nurse_review:recommendation": 1.0,
+    "judge.md_review:md_indication_qualifying_amputation": 1.0,
+    "judge.md_review:md_amputation_level_classification": 1.0,
+    "judge.md_review:md_functional_assessment": 1.0,
+    "judge.md_review:md_training_willingness": 1.0,
+    "judge.md_review:md_myoelectric_operability": 1.0,
+    "judge.md_review:md_device_prosthetist_eval": 0.0,
+    "judge.md_review:md_device_physician_order": 0.0,
+    "judge.md_review:final_decision": 0.0,
+    "judge.md_review:decision_rationale": 0.0
+  },
+  "checks": {
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.signed_off": false,
+    "md.denial_rationale_present": "not_applicable",
+    "md.audit": true,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": false,
+    "outcome.letter_types": false,
+    "outcome.determination_exists": "not_applicable",
+    "outcome.determination_source_exists": "not_applicable",
+    "outcome.source_recommendation_consistent": "not_applicable",
+    "outcome.review_decision_exists": "not_applicable",
+    "outcome.review_decision_matches": "not_applicable",
+    "outcome.terminal_transition_exists": "not_applicable",
+    "outcome.determination_stage_trace": "not_applicable",
+    "outcome.determination_finalize_audit": "not_applicable",
+    "outcome.clean_determination": "not_applicable",
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "triage.record_exists": true,
+    "triage.disposition_matches": true,
+    "triage.urgency_matches": true,
+    "triage.gold_card_matches": true,
+    "triage.route_matches": true,
+    "triage.audit": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:nurse_qualifying_amputation": false,
+    "judge.nurse_review:nurse_prosthetic_replaces_limb": false,
+    "judge.nurse_review:nurse_functional_restoration": false,
+    "judge.nurse_review:recommendation": true,
+    "judge.md_review:md_indication_qualifying_amputation": true,
+    "judge.md_review:md_amputation_level_classification": true,
+    "judge.md_review:md_functional_assessment": true,
+    "judge.md_review:md_training_willingness": true,
+    "judge.md_review:md_myoelectric_operability": true,
+    "judge.md_review:md_device_prosthetist_eval": false,
+    "judge.md_review:md_device_physician_order": false,
+    "judge.md_review:final_decision": false,
+    "judge.md_review:decision_rationale": false
+  },
+  "failed_checks": [
+    "md.signed_off",
+    "outcome.target_status",
+    "outcome.letter_types",
+    "judge.nurse_review:nurse_qualifying_amputation",
+    "judge.nurse_review:nurse_prosthetic_replaces_limb",
+    "judge.nurse_review:nurse_functional_restoration",
+    "judge.md_review:md_device_prosthetist_eval",
+    "judge.md_review:md_device_physician_order",
+    "judge.md_review:final_decision",
+    "judge.md_review:decision_rationale"
+  ],
+  "not_applicable_checks": [
+    "md.denial_rationale_present",
+    "outcome.determination_exists",
+    "outcome.determination_source_exists",
+    "outcome.source_recommendation_consistent",
+    "outcome.review_decision_exists",
+    "outcome.review_decision_matches",
+    "outcome.terminal_transition_exists",
+    "outcome.determination_stage_trace",
+    "outcome.determination_finalize_audit",
+    "outcome.clean_determination"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": false,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.signed_off": false,
+        "md.denial_rationale_present": "not_applicable",
+        "md.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 4,
+      "not_applicable_count": 1,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": false,
+      "checks": {
+        "outcome.target_status": false,
+        "outcome.letter_types": false,
+        "outcome.determination_exists": "not_applicable",
+        "outcome.determination_source_exists": "not_applicable",
+        "outcome.source_recommendation_consistent": "not_applicable",
+        "outcome.review_decision_exists": "not_applicable",
+        "outcome.review_decision_matches": "not_applicable",
+        "outcome.terminal_transition_exists": "not_applicable",
+        "outcome.determination_stage_trace": "not_applicable",
+        "outcome.determination_finalize_audit": "not_applicable",
+        "outcome.clean_determination": "not_applicable",
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true
+      },
+      "passed_count": 2,
+      "total_count": 4,
+      "not_applicable_count": 9,
+      "details": {}
+    },
+    "triage": {
+      "passed": true,
+      "checks": {
+        "triage.record_exists": true,
+        "triage.disposition_matches": true,
+        "triage.urgency_matches": true,
+        "triage.gold_card_matches": true,
+        "triage.route_matches": true,
+        "triage.audit": true
+      },
+      "passed_count": 6,
+      "total_count": 6,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-7C158C7A"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+# chi-Bench submission for claude-opus-4-8 via the claude-code harness.
+# Lifecycle:
+#   uv run cb submission validate -f configs/submissions/claude-opus-4-8.yaml
+#   uv run cb submission run      -f configs/submissions/claude-opus-4-8.yaml
+#   uv run cb submission status   -f configs/submissions/claude-opus-4-8.yaml
+#   uv run cb submission prepare  -f configs/submissions/claude-opus-4-8.yaml
+
+schema: chi-bench/submission/v1
+
+submission:
+  id: claude-opus-4-8
+  team: Actava
+  contact: weirayao@gmail.com
+  agent: claude-code
+  model: anthropic/claude-opus-4-8
+  notes: |
+    Default claude-code harness, no custom prompting. Run on release day of
+    claude-opus-4-8.
+
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 5
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
