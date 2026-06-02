@@ -1,0 +1,29 @@
+# Erius × CHI-Bench submission — GAMPO-governed agent on Opus 4.8 (Claude Max sub).
+#   uv run cb submission validate -f configs/submissions/erius.yaml
+#   uv run cb submission run      -f configs/submissions/erius.yaml
+#   uv run cb submission package  -f configs/submissions/erius.yaml
+
+schema: chi-bench/submission/v1
+
+submission:
+  id: erius
+  team: Michael Johnson (MJ)
+  contact: johnson.michael@gmail.com
+  agent: erius                       # alias for the GAMPO 9-capability harness
+  model: anthropic/claude-opus-4-8
+  notes: |
+    Erius: a Governed Autotelic Multi-agent Product Organization (GAMPO) operating
+    procedure layered on Opus 4.8, run via the Claude Max subscription (CLI auth,
+    no ANTHROPIC_API_KEY). Judge pinned to claude-opus-4-7 per leaderboard policy.
+
+run:
+  environment: docker        # local single-image; 'modal' for cloud-parallel
+  n_attempts: 1              # leaderboard policy: pass@1
+  concurrency: 4
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: /Users/mjohnson/Downloads/gampo-chibench/.env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]

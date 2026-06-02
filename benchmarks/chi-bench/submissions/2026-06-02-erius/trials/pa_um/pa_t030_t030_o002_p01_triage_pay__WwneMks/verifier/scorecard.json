@@ -1,0 +1,182 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.6060606060606061,
+  "passed_checks": 20,
+  "total_checks": 33,
+  "check_scores": {
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.signed_off": 0.0,
+    "md.denial_rationale_present": null,
+    "md.audit": 1.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 0.0,
+    "outcome.letter_types": 0.0,
+    "outcome.determination_exists": 0.0,
+    "outcome.review_decision_exists": 0.0,
+    "outcome.determination_stage_trace": 0.0,
+    "outcome.determination_finalize_audit": 0.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 0.0,
+    "outcome.source_recommendation_consistent": 0.0,
+    "outcome.review_decision_matches": 0.0,
+    "outcome.determination_decision_matches": null,
+    "outcome.determination_has_rationale": null,
+    "outcome.clean_determination": 0.0,
+    "triage.record_exists": 1.0,
+    "triage.route_matches": 1.0,
+    "triage.audit": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:nurse_dx_imaging": 1.0,
+    "judge.nurse_review:nurse_severity_match": 1.0,
+    "judge.nurse_review:nurse_conservative_tx": 0.0,
+    "judge.nurse_review:recommendation": 1.0,
+    "judge.md_review:md_dx_imaging_confirmation": 1.0,
+    "judge.md_review:md_severity_procedure_match": 1.0,
+    "judge.md_review:md_conservative_treatment_adequacy": 1.0,
+    "judge.md_review:final_decision": 0.0,
+    "judge.md_review:decision_rationale": 1.0
+  },
+  "checks": {
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.signed_off": false,
+    "md.denial_rationale_present": "not_applicable",
+    "md.audit": true,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": false,
+    "outcome.letter_types": false,
+    "outcome.determination_exists": false,
+    "outcome.review_decision_exists": false,
+    "outcome.determination_stage_trace": false,
+    "outcome.determination_finalize_audit": false,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": false,
+    "outcome.source_recommendation_consistent": false,
+    "outcome.review_decision_matches": false,
+    "outcome.determination_decision_matches": "not_applicable",
+    "outcome.determination_has_rationale": "not_applicable",
+    "outcome.clean_determination": false,
+    "triage.record_exists": true,
+    "triage.route_matches": true,
+    "triage.audit": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:nurse_dx_imaging": true,
+    "judge.nurse_review:nurse_severity_match": true,
+    "judge.nurse_review:nurse_conservative_tx": false,
+    "judge.nurse_review:recommendation": true,
+    "judge.md_review:md_dx_imaging_confirmation": true,
+    "judge.md_review:md_severity_procedure_match": true,
+    "judge.md_review:md_conservative_treatment_adequacy": true,
+    "judge.md_review:final_decision": false,
+    "judge.md_review:decision_rationale": true
+  },
+  "failed_checks": [
+    "md.signed_off",
+    "outcome.target_status",
+    "outcome.letter_types",
+    "outcome.determination_exists",
+    "outcome.review_decision_exists",
+    "outcome.determination_stage_trace",
+    "outcome.determination_finalize_audit",
+    "outcome.determination_source_exists",
+    "outcome.source_recommendation_consistent",
+    "outcome.review_decision_matches",
+    "outcome.clean_determination",
+    "judge.nurse_review:nurse_conservative_tx",
+    "judge.md_review:final_decision"
+  ],
+  "not_applicable_checks": [
+    "md.denial_rationale_present",
+    "outcome.determination_decision_matches",
+    "outcome.determination_has_rationale"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": false,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.signed_off": false,
+        "md.denial_rationale_present": "not_applicable",
+        "md.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 4,
+      "not_applicable_count": 1,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": false,
+      "checks": {
+        "outcome.target_status": false,
+        "outcome.letter_types": false,
+        "outcome.determination_exists": false,
+        "outcome.review_decision_exists": false,
+        "outcome.determination_stage_trace": false,
+        "outcome.determination_finalize_audit": false,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": false,
+        "outcome.source_recommendation_consistent": false,
+        "outcome.review_decision_matches": false,
+        "outcome.determination_decision_matches": "not_applicable",
+        "outcome.determination_has_rationale": "not_applicable",
+        "outcome.clean_determination": false
+      },
+      "passed_count": 1,
+      "total_count": 11,
+      "not_applicable_count": 2,
+      "details": {}
+    },
+    "triage": {
+      "passed": true,
+      "checks": {
+        "triage.record_exists": true,
+        "triage.route_matches": true,
+        "triage.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 3,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-226FC81E"
+      }
+    }
+  }
+}
