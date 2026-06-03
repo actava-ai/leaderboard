@@ -106,7 +106,9 @@ edit only `.github/scripts/validate_submission.py`.
 │   ├── validate.py                       # local shim → .github/scripts/validate_submission.py
 │   └── test_submit.py
 ├── .github/
-│   ├── workflows/validate.yml            # PR-time validator + labeller
+│   ├── workflows/
+│   │   ├── validate.yml                  # PR-time validator (read-only); uploads report artifact
+│   │   └── pr-comment.yml                # workflow_run: posts comment + applies label (read-write)
 │   └── scripts/
 │       ├── validate_submission.py        # CI entry point + all check functions
 │       ├── test_validate_submission.py
@@ -120,8 +122,12 @@ Submission flow:
 2. `scripts/submit.py` reads `submission.json:dataset.name` to route into `benchmarks/<bench>/submissions/`.
 3. Branch `sub/<bench>/<dir>` is created, packet committed, branch pushed to user's fork.
 4. PR opened with head `<fork-owner>:<branch>` (cross-fork PRs require the `owner:branch` form).
-5. CI re-runs the same validator (`.github/workflows/validate.yml` → `validate_submission.py`)
-   and labels the PR; a sticky comment with the report is posted/updated.
+5. CI re-runs the same validator (`.github/workflows/validate.yml` → `validate_submission.py`),
+   which uploads a `pr-comment-payload` artifact (report.md/json + PR number). A second workflow
+   (`pr-comment.yml`, `on: workflow_run`) downloads it and posts the sticky comment + applies the
+   label. The split is mandatory: a `pull_request` run from a **fork** only gets a read-only
+   GITHUB_TOKEN, so commenting/labelling from `validate.yml` fails with `Resource not accessible
+   by integration` (only `workflow_run`, running trusted default-branch code, gets a write token).
 
 The PR-diff scope check (`validate_pr_diff` in `validate_submission.py`) uses **three-dot diff**
 (`base...head`) so a stale PR base SHA can't bleed in commits that have since landed on main.
@@ -131,6 +137,12 @@ The PR-diff scope check (`validate_pr_diff` in `validate_submission.py`) uses **
 - **Packets are copied verbatim**, never hand-edited. If validation surfaces a producer-side
   issue (e.g. wrong dataset version pin, missing provenance key), fix it in the producer repo
   and re-prepare the packet. See `.claude/skills/submit-to-leaderboard/references/producer-side-fixes.md`.
+- **Fork PRs need the two-workflow split (`validate.yml` + `pr-comment.yml`).** `workflow_run`
+  always runs the **default-branch** copy of `pr-comment.yml`, so any change to the comment/label
+  logic only takes effect once merged to `main`, and never comments retroactively on a run that
+  finished before the merge. To label/comment an existing PR after a fix lands, re-run its validate
+  workflow (`gh run rerun <id>`) or push a commit. If you rename `validate.yml`'s `name:`, update
+  `pr-comment.yml`'s `workflows: ["validate submission"]` to match or the trigger silently breaks.
 - **PR scope = exactly one submission dir.** PRs that touch schemas, READMEs, workflows, or
   multiple submissions fail the scope check. Meta-changes go in separate PRs (maintainers can
   apply the `meta:` label to bypass — there's no automation for that, it's a manual override

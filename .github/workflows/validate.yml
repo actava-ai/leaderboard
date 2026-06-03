@@ -6,10 +6,14 @@ on:
       - "benchmarks/**"
       - ".github/scripts/validate_submission.py"
 
+# A `pull_request` run triggered from a fork only ever gets a READ-ONLY
+# GITHUB_TOKEN — declaring `pull-requests: write` here is silently ignored by
+# GitHub, so this job must not try to comment or label (that's what broke on
+# the first external fork PR). It validates (read-only) and uploads the report
+# as an artifact; the privileged comment/label step lives in pr-comment.yml
+# (`workflow_run`), which runs trusted base-repo code with a read-write token.
 permissions:
   contents: read
-  pull-requests: write
-  issues: write
 
 jobs:
   validate:
@@ -26,63 +30,32 @@ jobs:
       - name: Install validator deps
         run: pip install --quiet jsonschema zstandard pyyaml
 
+      - name: Stage PR number for the comment workflow
+        run: |
+          mkdir -p /tmp/pr
+          echo "${{ github.event.pull_request.number }}" > /tmp/pr/number
+
+      # No continue-on-error: the validator exits 1 on `invalid`, which fails
+      # this job and surfaces a red check on the PR. The steps below run with
+      # `if: always()` so the report is still uploaded for the comment workflow.
       - name: Run validator
-        id: validate
-        continue-on-error: true
         run: |
           python .github/scripts/validate_submission.py \
             --base-ref "${{ github.event.pull_request.base.sha }}" \
             --head-ref "${{ github.event.pull_request.head.sha }}" \
             --repo-root . \
-            --report-md /tmp/report.md \
-            --report-json /tmp/report.json
-          echo "exit_code=$?" >> $GITHUB_OUTPUT
+            --report-md /tmp/pr/report.md \
+            --report-json /tmp/pr/report.json
 
       - name: Append report to job summary
         if: always()
-        run: cat /tmp/report.md >> $GITHUB_STEP_SUMMARY || true
+        run: cat /tmp/pr/report.md >> "$GITHUB_STEP_SUMMARY" || true
 
-      - name: Comment on PR and apply label
+      - name: Upload PR comment payload
         if: always()
-        uses: actions/github-script@v7
+        uses: actions/upload-artifact@v4
         with:
-          script: |
-            const fs = require('fs');
-            let report;
-            try { report = JSON.parse(fs.readFileSync('/tmp/report.json', 'utf8')); }
-            catch (e) {
-              core.warning('No JSON report — validator probably crashed.');
-              return;
-            }
-            const md = fs.readFileSync('/tmp/report.md', 'utf8');
-
-            const marker = '<!-- leaderboard-validate -->';
-            const body = marker + '\n' + md;
-            const { owner, repo, number: issue_number } = context.issue;
-            const comments = await github.rest.issues.listComments({ owner, repo, issue_number, per_page: 100 });
-            const existing = comments.data.find(c => c.body && c.body.includes(marker));
-            if (existing) {
-              await github.rest.issues.updateComment({ owner, repo, comment_id: existing.id, body });
-            } else {
-              await github.rest.issues.createComment({ owner, repo, issue_number, body });
-            }
-
-            const statusToLabel = {
-              valid: 'valid-submission',
-              invalid: 'invalid-submission',
-              'needs-review': 'needs-review',
-            };
-            const target = statusToLabel[report.status];
-            const allLabels = Object.values(statusToLabel);
-            for (const lbl of allLabels) {
-              if (lbl === target) continue;
-              try { await github.rest.issues.removeLabel({ owner, repo, issue_number, name: lbl }); }
-              catch (e) { /* not present, ignore */ }
-            }
-            if (target) {
-              await github.rest.issues.addLabels({ owner, repo, issue_number, labels: [target] });
-            }
-
-            if (report.status === 'invalid') {
-              core.setFailed('Submission validation failed; see PR comment.');
-            }
+          name: pr-comment-payload
+          path: /tmp/pr/
+          retention-days: 1
+          if-no-files-found: warn
