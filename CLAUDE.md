@@ -140,9 +140,13 @@ The PR-diff scope check (`validate_pr_diff` in `validate_submission.py`) uses **
 - **Fork PRs need the two-workflow split (`validate.yml` + `pr-comment.yml`).** `workflow_run`
   always runs the **default-branch** copy of `pr-comment.yml`, so any change to the comment/label
   logic only takes effect once merged to `main`, and never comments retroactively on a run that
-  finished before the merge. To label/comment an existing PR after a fix lands, re-run its validate
-  workflow (`gh run rerun <id>`) or push a commit. If you rename `validate.yml`'s `name:`, update
-  `pr-comment.yml`'s `workflows: ["validate submission"]` to match or the trigger silently breaks.
+  finished before the merge. `gh run rerun` does NOT help — it replays the original SHAs (the old
+  workflow file), and `pull_request` runs use `refs/pull/<n>/merge`, which is only recomputed
+  against current `main` by a *new* event. To re-evaluate an open PR under a fixed flow, push a
+  commit or "Update branch" so a fresh merge ref runs the new `validate.yml` (and uploads the
+  artifact `pr-comment.yml` consumes); if validation already passed, just merge/label it manually.
+  If you rename `validate.yml`'s `name:`, update `pr-comment.yml`'s `workflows: ["validate
+  submission"]` to match or the trigger silently breaks.
 - **PR scope = exactly one submission dir.** PRs that touch schemas, READMEs, workflows, or
   multiple submissions fail the scope check. Meta-changes go in separate PRs (maintainers can
   apply the `meta:` label to bypass — there's no automation for that, it's a manual override
