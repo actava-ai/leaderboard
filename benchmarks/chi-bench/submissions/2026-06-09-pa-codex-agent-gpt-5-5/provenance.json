@@ -1,0 +1,14 @@
+{
+  "chi_bench_git_sha": "ee1e16d60afd8bc59a6d90a480fede19593ea84f",
+  "image_digest": "sha256:ebd9025ae8698beecf176e4ce78d038a743b3f8913b5786522404c67273f8033",
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "docker",
+  "started_at": "2026-06-09T00:57:52Z",
+  "finished_at": "2026-06-09T03:25:28Z",
+  "host": "Jiajuns-MacBook-Pro.local",
+  "python_version": "3.14.3",
+  "platform": "macOS-26.5-arm64-arm-64bit-Mach-O"
+}

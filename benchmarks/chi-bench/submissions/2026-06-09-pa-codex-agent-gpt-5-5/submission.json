@@ -1,0 +1,53 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "pa-codex-agent-gpt-5-5",
+    "team": "MedArise",
+    "contact": "founder@medarise.com",
+    "agent": "pa-codex-agent",
+    "model": "openai/gpt-5.5",
+    "notes": "Provider-PA Codex agent with case-agnostic operating guidance. The agent\nuses the original task instruction, live MCP tool schemas/results, exposed\nhandbook/tool references, and current-run artifacts only. It does not inject\ntask-specific answers, prior outcomes, hidden expectations, or rubric values.\n",
+    "submitted_at": "2026-06-09T03:37:43Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 50,
+      "n_tasks": 25,
+      "pass_at_1": 0.68,
+      "mean_cost_usd": 0.0,
+      "mean_walltime_s": 0.0
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.68,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 0.0
+      }
+    },
+    "mean_cost_usd": 0.0,
+    "mean_walltime_s": 0.0
+  },
+  "provenance": {
+    "chi_bench_git_sha": "ee1e16d60afd8bc59a6d90a480fede19593ea84f",
+    "image_digest": "sha256:ebd9025ae8698beecf176e4ce78d038a743b3f8913b5786522404c67273f8033",
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": true,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "docker",
+    "started_at": "2026-06-09T00:57:52Z",
+    "finished_at": "2026-06-09T03:25:28Z",
+    "host": "Jiajuns-MacBook-Pro.local",
+    "python_version": "3.14.3",
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O"
+  }
+}
