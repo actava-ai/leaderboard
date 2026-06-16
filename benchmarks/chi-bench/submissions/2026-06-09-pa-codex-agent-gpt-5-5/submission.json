@@ -18,7 +18,7 @@
   },
   "results": {
     "overall": {
-      "n_trials": 50,
+      "n_trials": 25,
       "n_tasks": 25,
       "pass_at_1": 0.68,
       "mean_cost_usd": 0.0,
