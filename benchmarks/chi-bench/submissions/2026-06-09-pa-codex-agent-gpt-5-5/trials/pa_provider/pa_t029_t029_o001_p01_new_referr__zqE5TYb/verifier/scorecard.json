@@ -1,0 +1,111 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.09090909090909091,
+  "passed_checks": 1,
+  "total_checks": 11,
+  "check_scores": {
+    "new_referral.service_request_created": 0.0,
+    "new_referral.procedure_code": 0.0,
+    "new_referral.required_diagnosis_codes": 0.0,
+    "new_referral.service_type": 0.0,
+    "new_referral.site_of_service": 0.0,
+    "new_referral.case_created": 0.0,
+    "new_referral.case_status": 0.0,
+    "provider_pre_submission.provider_determination_present": 0.0,
+    "provider_pre_submission.final_action": 0.0,
+    "provider_pre_submission.packet_absent": 1.0,
+    "provider_pre_submission.required_documents_present": null,
+    "cross.forward_transitions": 0.0
+  },
+  "checks": {
+    "new_referral.service_request_created": false,
+    "new_referral.procedure_code": false,
+    "new_referral.required_diagnosis_codes": false,
+    "new_referral.service_type": false,
+    "new_referral.site_of_service": false,
+    "new_referral.case_created": false,
+    "new_referral.case_status": false,
+    "provider_pre_submission.provider_determination_present": false,
+    "provider_pre_submission.final_action": false,
+    "provider_pre_submission.packet_absent": true,
+    "provider_pre_submission.required_documents_present": "not_applicable",
+    "cross.forward_transitions": false
+  },
+  "failed_checks": [
+    "new_referral.service_request_created",
+    "new_referral.procedure_code",
+    "new_referral.required_diagnosis_codes",
+    "new_referral.service_type",
+    "new_referral.site_of_service",
+    "new_referral.case_created",
+    "new_referral.case_status",
+    "provider_pre_submission.provider_determination_present",
+    "provider_pre_submission.final_action",
+    "cross.forward_transitions"
+  ],
+  "not_applicable_checks": [
+    "provider_pre_submission.required_documents_present"
+  ],
+  "stages": {
+    "new_referral": {
+      "passed": false,
+      "checks": {
+        "new_referral.service_request_created": false,
+        "new_referral.procedure_code": false,
+        "new_referral.required_diagnosis_codes": false,
+        "new_referral.service_type": false,
+        "new_referral.site_of_service": false,
+        "new_referral.case_created": false,
+        "new_referral.case_status": false
+      },
+      "passed_count": 0,
+      "total_count": 7,
+      "not_applicable_count": 0,
+      "details": {
+        "service_request_id": null,
+        "service_request_candidate_count": 0,
+        "service_request_resolution": "missing",
+        "case_id": null,
+        "case_candidate_count": 0,
+        "case_resolution": "unresolved_service_request"
+      }
+    },
+    "provider_pre_submission": {
+      "passed": false,
+      "checks": {
+        "provider_pre_submission.provider_determination_present": false,
+        "provider_pre_submission.final_action": false,
+        "provider_pre_submission.packet_absent": true,
+        "provider_pre_submission.required_documents_present": "not_applicable"
+      },
+      "passed_count": 1,
+      "total_count": 3,
+      "not_applicable_count": 1,
+      "details": {
+        "case_id": null,
+        "service_request_id": null,
+        "service_request_candidate_count": 0,
+        "service_request_resolution": "missing",
+        "case_candidate_count": 0,
+        "case_resolution": "unresolved_service_request"
+      }
+    },
+    "cross_stage": {
+      "passed": false,
+      "checks": {
+        "cross.forward_transitions": false
+      },
+      "passed_count": 0,
+      "total_count": 1,
+      "not_applicable_count": 0,
+      "details": {
+        "service_request_id": null,
+        "service_request_candidate_count": 0,
+        "service_request_resolution": "missing",
+        "case_id": null,
+        "case_candidate_count": 0,
+        "case_resolution": "unresolved_service_request"
+      }
+    }
+  }
+}

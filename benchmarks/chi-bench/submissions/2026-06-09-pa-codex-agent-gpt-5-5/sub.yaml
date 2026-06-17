@@ -1,0 +1,28 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: pa-codex-agent-gpt-5-5
+  team: MedArise
+  contact: founder@medarise.com
+  agent: pa-codex-agent
+  model: openai/gpt-5.5
+  notes: |
+    Provider-PA Codex agent with case-agnostic operating guidance. The agent
+    uses the original task instruction, live MCP tool schemas/results, exposed
+    handbook/tool references, and current-run artifacts only. It does not inject
+    task-specific answers, prior outcomes, hidden expectations, or rubric values.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 1
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider]
+
+paths:
+  output_root: logs/submissions/pa-codex-agent-gpt-5-5-20260609

@@ -1,0 +1,107 @@
+{
+  "id": "289ad60c-9093-4649-ba19-95026bea5b43",
+  "task_name": "actava-ai/pa_t014_t014_o001_p01_new_referral_provider",
+  "trial_name": "pa_t014_t014_o001_p01_new_referr__FMaZwZj",
+  "trial_uri": "file:///Users/jiajunxu/Documents/GitHub/pa-agent/vendor/chi-bench/logs/submissions/pa-codex-agent-gpt-5-5-20260609/pa_provider/pa-codex-agent-gpt-5-5__pa_provider/pa_t014_t014_o001_p01_new_referr__FMaZwZj",
+  "task_id": {
+    "path": "/var/folders/kn/mk_13vqx7579tb8ntsgcsb600000gn/T/chi_bench-modal-cwqid_k_/pa_t014_t014_o001_p01_new_referral_provider"
+  },
+  "source": "chi_bench-modal-cwqid_k_",
+  "task_checksum": "1774dfdc3763b724df558c5198a5d510fabd5f9b7edb4f5777f987fd7167bee1",
+  "config": {
+    "task": {
+      "path": "/var/folders/kn/mk_13vqx7579tb8ntsgcsb600000gn/T/chi_bench-modal-cwqid_k_/pa_t014_t014_o001_p01_new_referral_provider",
+      "git_url": null,
+      "git_commit_id": null,
+      "name": null,
+      "ref": null,
+      "overwrite": false,
+      "download_dir": null,
+      "source": "chi_bench-modal-cwqid_k_"
+    },
+    "trial_name": "pa_t014_t014_o001_p01_new_referr__FMaZwZj",
+    "trials_dir": "logs/submissions/pa-codex-agent-gpt-5-5-20260609/pa_provider/pa-codex-agent-gpt-5-5__pa_provider",
+    "timeout_multiplier": 2.0,
+    "agent_timeout_multiplier": null,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": null,
+      "import_path": "chi_bench.experiment.agents.pa_codex_agent_harness:PACodexAgentHarness",
+      "model_name": "openai/gpt-5.5",
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "kwargs": {},
+      "env": {
+        "CODEX_FORCE_AUTH_JSON": "${CODEX_FORCE_AUTH_JSON}",
+        "CODEX_AUTH_JSON_PATH": "${CODEX_AUTH_JSON_PATH}",
+        "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+      }
+    },
+    "environment": {
+      "type": null,
+      "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+      "force_build": false,
+      "delete": true,
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "suppress_override_warnings": false,
+      "mounts_json": null,
+      "env": {},
+      "kwargs": {}
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "env": {},
+      "disable": false
+    },
+    "artifacts": [],
+    "job_id": "2a3a19c6-343c-4351-8d75-2a0fdce3e874"
+  },
+  "agent_info": {
+    "name": "pa-codex-agent",
+    "version": "0.139.0",
+    "model_info": {
+      "name": "gpt-5.5",
+      "provider": "openai"
+    }
+  },
+  "agent_result": {
+    "n_input_tokens": 2227946,
+    "n_cache_tokens": 2039296,
+    "n_output_tokens": 6999,
+    "cost_usd": 2.1728680000000002,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 1.0
+    }
+  },
+  "exception_info": null,
+  "started_at": "2026-06-09T01:18:55.548487Z",
+  "finished_at": "2026-06-09T01:24:18.895150Z",
+  "environment_setup": {
+    "started_at": "2026-06-09T01:19:17.804927Z",
+    "finished_at": "2026-06-09T01:19:26.864599Z"
+  },
+  "agent_setup": {
+    "started_at": "2026-06-09T01:19:26.864718Z",
+    "finished_at": "2026-06-09T01:19:47.797048Z"
+  },
+  "agent_execution": {
+    "started_at": "2026-06-09T01:19:47.797346Z",
+    "finished_at": "2026-06-09T01:23:30.019626Z"
+  },
+  "verifier": {
+    "started_at": "2026-06-09T01:23:30.207744Z",
+    "finished_at": "2026-06-09T01:24:18.209163Z"
+  },
+  "step_results": null
+}
