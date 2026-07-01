@@ -1,0 +1,103 @@
+{
+    "id": "ef312582-b2a1-4380-adbc-1062a91cc2c7",
+    "task_name": "actava-ai/cm_hf_hard_refuses_002",
+    "trial_name": "cm_hf_hard_refuses_002__cbsPpqF",
+    "trial_uri": "file:///fs-ift/med/unisound/chi-bench/logs/submissions/unisound-hermes-qwen35-27b-sft-0609/cm/unisound-hermes-qwen35-27b-sft-0609__cm/cm_hf_hard_refuses_002__cbsPpqF",
+    "task_id": {
+        "path": "data/care_management/tasks/cm_hf_hard_refuses_002"
+    },
+    "source": null,
+    "task_checksum": "2d4f133551f4886c51f072434e7186a456a8b0aaf786478566b535b06781cc67",
+    "config": {
+        "task": {
+            "path": "data/care_management/tasks/cm_hf_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "cm_hf_hard_refuses_002__cbsPpqF",
+        "trials_dir": "logs/submissions/unisound-hermes-qwen35-27b-sft-0609/cm/unisound-hermes-qwen35-27b-sft-0609__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0609",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "225a943a-4c3c-43fb-ab8a-e5220f6e883b"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0\nUp to date",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0609",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T08:07:36.137646Z",
+    "finished_at": "2026-07-01T08:10:54.683028Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T08:07:36.143248Z",
+        "finished_at": "2026-07-01T08:07:45.852092Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T08:07:45.852108Z",
+        "finished_at": "2026-07-01T08:07:51.958028Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T08:07:51.958087Z",
+        "finished_at": "2026-07-01T08:10:50.244604Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T08:10:50.688255Z",
+        "finished_at": "2026-07-01T08:10:54.093649Z"
+    },
+    "step_results": null
+}
