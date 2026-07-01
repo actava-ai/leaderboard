@@ -1,0 +1,103 @@
+{
+    "id": "51824f93-700b-466e-846f-5306da71f996",
+    "task_name": "actava-ai/cm_metabolic_syndrome_hard_refuses_001",
+    "trial_name": "cm_metabolic_syndrome_hard_refus__yAFPZ6t",
+    "trial_uri": "file:///fs-ift/med/unisound/chi-bench/logs/submissions/unisound-hermes-qwen35-27b-sft-0609/cm/unisound-hermes-qwen35-27b-sft-0609__cm/cm_metabolic_syndrome_hard_refus__yAFPZ6t",
+    "task_id": {
+        "path": "data/care_management/tasks/cm_metabolic_syndrome_hard_refuses_001"
+    },
+    "source": null,
+    "task_checksum": "65274bb698785d6cc3ab40bcd45690f26cfa95fdbf3e2fa0c341b6ba6417fe83",
+    "config": {
+        "task": {
+            "path": "data/care_management/tasks/cm_metabolic_syndrome_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "cm_metabolic_syndrome_hard_refus__yAFPZ6t",
+        "trials_dir": "logs/submissions/unisound-hermes-qwen35-27b-sft-0609/cm/unisound-hermes-qwen35-27b-sft-0609__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0609",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "225a943a-4c3c-43fb-ab8a-e5220f6e883b"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0\nUp to date",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0609",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T08:09:56.533019Z",
+    "finished_at": "2026-07-01T08:11:47.663838Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T08:09:56.538079Z",
+        "finished_at": "2026-07-01T08:10:06.397874Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T08:10:06.397890Z",
+        "finished_at": "2026-07-01T08:10:10.863841Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T08:10:10.863900Z",
+        "finished_at": "2026-07-01T08:11:43.504955Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T08:11:43.927059Z",
+        "finished_at": "2026-07-01T08:11:47.278134Z"
+    },
+    "step_results": null
+}

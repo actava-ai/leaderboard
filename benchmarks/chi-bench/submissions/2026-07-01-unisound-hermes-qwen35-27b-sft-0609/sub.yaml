@@ -1,0 +1,23 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: unisound-hermes-qwen35-27b-sft-0609
+  team: unisound
+  contact: gechengze@unisound.com
+  agent: hermes
+  model: openai/qwen3.5_27b_sft_0609
+  notes: |
+    Local Hermes harness evaluation for qwen3.5_27b_sft_0609 against an OpenAI-compatible model endpoint
+    configured in .env.qwen35-27b-sft-0609 via OPENAI_API_KEY and OPENAI_BASE_URL.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 4
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env.qwen35-27b-sft-0609
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]

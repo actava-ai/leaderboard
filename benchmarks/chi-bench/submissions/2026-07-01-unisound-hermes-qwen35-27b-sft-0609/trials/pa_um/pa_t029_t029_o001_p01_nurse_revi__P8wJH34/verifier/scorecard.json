@@ -1,0 +1,152 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.9583333333333334,
+  "passed_checks": 23,
+  "total_checks": 24,
+  "check_scores": {
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.signed_off": 1.0,
+    "md.denial_rationale_present": 1.0,
+    "md.audit": 1.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 0.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.determination_decision_matches": 1.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:surgical_plan_proven_procedure": null,
+    "judge.nurse_review:recommendation": null,
+    "judge.md_review:spinal_fusion_proven_procedure": null,
+    "judge.md_review:qualifying_diagnosis_imaging_correlation": null,
+    "judge.md_review:radicular_signs": null,
+    "judge.md_review:final_decision": null,
+    "judge.md_review:decision_rationale": null
+  },
+  "checks": {
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.signed_off": true,
+    "md.denial_rationale_present": true,
+    "md.audit": true,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": false,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.determination_decision_matches": true,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:surgical_plan_proven_procedure": "not_applicable",
+    "judge.nurse_review:recommendation": "not_applicable",
+    "judge.md_review:spinal_fusion_proven_procedure": "not_applicable",
+    "judge.md_review:qualifying_diagnosis_imaging_correlation": "not_applicable",
+    "judge.md_review:radicular_signs": "not_applicable",
+    "judge.md_review:final_decision": "not_applicable",
+    "judge.md_review:decision_rationale": "not_applicable"
+  },
+  "failed_checks": [
+    "outcome.letter_types"
+  ],
+  "not_applicable_checks": [
+    "judge.nurse_review:surgical_plan_proven_procedure",
+    "judge.nurse_review:recommendation",
+    "judge.md_review:spinal_fusion_proven_procedure",
+    "judge.md_review:qualifying_diagnosis_imaging_correlation",
+    "judge.md_review:radicular_signs",
+    "judge.md_review:final_decision",
+    "judge.md_review:decision_rationale"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": true,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.signed_off": true,
+        "md.denial_rationale_present": true,
+        "md.audit": true
+      },
+      "passed_count": 5,
+      "total_count": 5,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": false,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": false,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.determination_decision_matches": true,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 12,
+      "total_count": 13,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-4BCF1471"
+      }
+    }
+  }
+}

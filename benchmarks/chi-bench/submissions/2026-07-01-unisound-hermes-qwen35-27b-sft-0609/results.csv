@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,unisound-hermes-qwen35-27b-sft-0609,unisound,hermes,openai/qwen3.5_27b_sft_0609,overall,0.22666666666666666,75,75,0.0,0.0,2026-07-01T13:11:34Z
+chi-bench,chi-bench-v1.0.0,unisound-hermes-qwen35-27b-sft-0609,unisound,hermes,openai/qwen3.5_27b_sft_0609,pa_provider,0.04,25,25,0.0,0.0,2026-07-01T13:11:34Z
+chi-bench,chi-bench-v1.0.0,unisound-hermes-qwen35-27b-sft-0609,unisound,hermes,openai/qwen3.5_27b_sft_0609,pa_um,0.04,25,25,0.0,0.0,2026-07-01T13:11:34Z
+chi-bench,chi-bench-v1.0.0,unisound-hermes-qwen35-27b-sft-0609,unisound,hermes,openai/qwen3.5_27b_sft_0609,cm,0.6,25,25,0.0,0.0,2026-07-01T13:11:34Z
