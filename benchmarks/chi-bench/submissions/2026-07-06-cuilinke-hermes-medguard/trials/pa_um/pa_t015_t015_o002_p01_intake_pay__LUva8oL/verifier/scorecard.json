@@ -1,0 +1,223 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.868421052631579,
+  "passed_checks": 33,
+  "total_checks": 38,
+  "check_scores": {
+    "intake.case_exists": 1.0,
+    "intake.diagnoses_match": 1.0,
+    "intake.provider_npi_matches": 1.0,
+    "intake.line_items_populated": 1.0,
+    "intake.decision_request_complete": 1.0,
+    "intake.decision_member_eligible": 1.0,
+    "intake.decision_service_covered": 1.0,
+    "intake.audit": 1.0,
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.signed_off": 1.0,
+    "md.denial_rationale_present": null,
+    "md.audit": 1.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 0.0,
+    "outcome.letter_types": 0.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "outcome.determination_decision_matches": 0.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "triage.record_exists": 1.0,
+    "triage.disposition_matches": 0.0,
+    "triage.urgency_matches": 0.0,
+    "triage.route_matches": 1.0,
+    "triage.audit": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:mmp109_18_qualifying_indication": null,
+    "judge.nurse_review:mmp109_18_prior_cardiac_workup": null,
+    "judge.nurse_review:mmp109_18_fda_clearance": null,
+    "judge.nurse_review:mmp109_18_device_type_appropriateness": null,
+    "judge.nurse_review:recommendation": null,
+    "judge.md_review:mmp109_18_device_type_appropriateness_md": null,
+    "judge.md_review:final_decision": null,
+    "judge.md_review:decision_rationale": null
+  },
+  "checks": {
+    "intake.case_exists": true,
+    "intake.diagnoses_match": true,
+    "intake.provider_npi_matches": true,
+    "intake.line_items_populated": true,
+    "intake.decision_request_complete": true,
+    "intake.decision_member_eligible": true,
+    "intake.decision_service_covered": true,
+    "intake.audit": true,
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.signed_off": true,
+    "md.denial_rationale_present": "not_applicable",
+    "md.audit": true,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": false,
+    "outcome.letter_types": false,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "outcome.determination_decision_matches": false,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "triage.record_exists": true,
+    "triage.disposition_matches": false,
+    "triage.urgency_matches": false,
+    "triage.route_matches": true,
+    "triage.audit": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:mmp109_18_qualifying_indication": "not_applicable",
+    "judge.nurse_review:mmp109_18_prior_cardiac_workup": "not_applicable",
+    "judge.nurse_review:mmp109_18_fda_clearance": "not_applicable",
+    "judge.nurse_review:mmp109_18_device_type_appropriateness": "not_applicable",
+    "judge.nurse_review:recommendation": "not_applicable",
+    "judge.md_review:mmp109_18_device_type_appropriateness_md": "not_applicable",
+    "judge.md_review:final_decision": "not_applicable",
+    "judge.md_review:decision_rationale": "not_applicable"
+  },
+  "failed_checks": [
+    "outcome.target_status",
+    "outcome.letter_types",
+    "outcome.determination_decision_matches",
+    "triage.disposition_matches",
+    "triage.urgency_matches"
+  ],
+  "not_applicable_checks": [
+    "md.denial_rationale_present",
+    "judge.nurse_review:mmp109_18_qualifying_indication",
+    "judge.nurse_review:mmp109_18_prior_cardiac_workup",
+    "judge.nurse_review:mmp109_18_fda_clearance",
+    "judge.nurse_review:mmp109_18_device_type_appropriateness",
+    "judge.nurse_review:recommendation",
+    "judge.md_review:mmp109_18_device_type_appropriateness_md",
+    "judge.md_review:final_decision",
+    "judge.md_review:decision_rationale"
+  ],
+  "stages": {
+    "intake": {
+      "passed": true,
+      "checks": {
+        "intake.case_exists": true,
+        "intake.diagnoses_match": true,
+        "intake.provider_npi_matches": true,
+        "intake.line_items_populated": true,
+        "intake.decision_request_complete": true,
+        "intake.decision_member_eligible": true,
+        "intake.decision_service_covered": true,
+        "intake.audit": true
+      },
+      "passed_count": 8,
+      "total_count": 8,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "md_review": {
+      "passed": true,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.signed_off": true,
+        "md.denial_rationale_present": "not_applicable",
+        "md.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 1,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": false,
+      "checks": {
+        "outcome.target_status": false,
+        "outcome.letter_types": false,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true,
+        "outcome.determination_decision_matches": false,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 12,
+      "total_count": 15,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "triage": {
+      "passed": false,
+      "checks": {
+        "triage.record_exists": true,
+        "triage.disposition_matches": false,
+        "triage.urgency_matches": false,
+        "triage.route_matches": true,
+        "triage.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 5,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-31CD4E92"
+      }
+    }
+  }
+}

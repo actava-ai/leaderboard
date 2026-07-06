@@ -1,0 +1,25 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: cuilinke-hermes-medguard
+  team: cuilinke
+  contact: 13856240901@163.com
+  agent: hermes
+  model: MedGuard
+  notes: |
+    Local Hermes harness evaluation for MedGuard against an OpenAI-compatible model endpoint
+    configured in .env.MedGuard via OPENAI_API_KEY and OPENAI_BASE_URL.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 4
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env.MedGuard
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+paths:
+  output_root: logs/submissions/cuilinke-hermes-medguard
