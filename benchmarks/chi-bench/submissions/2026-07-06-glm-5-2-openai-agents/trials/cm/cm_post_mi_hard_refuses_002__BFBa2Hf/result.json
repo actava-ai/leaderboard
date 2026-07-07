@@ -1,0 +1,110 @@
+{
+    "id": "b0c161e1-91c2-4e67-8e56-1af7e0da5cb8",
+    "task_name": "actava-ai/cm_post_mi_hard_refuses_002",
+    "trial_name": "cm_post_mi_hard_refuses_002__BFBa2Hf",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm/cm_post_mi_hard_refuses_002__BFBa2Hf",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_post_mi_hard_refuses_002"
+    },
+    "source": "chi_bench-modal-6j58jq1l",
+    "task_checksum": "846529ef39eb20c45e8bf03ce8eab7568c12d7df35786b7d90c515948aac8aee",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_post_mi_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-6j58jq1l"
+        },
+        "trial_name": "cm_post_mi_hard_refuses_002__BFBa2Hf",
+        "trials_dir": "logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7f8507e8-bc58-487f-893c-ccbe7ab8dabe"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.2",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1161137,
+        "n_cache_tokens": 1052032,
+        "n_output_tokens": 14270,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T22:40:55.340819Z",
+    "finished_at": "2026-07-01T22:49:57.877056Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T22:40:55.341282Z",
+        "finished_at": "2026-07-01T22:41:43.069812Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T22:41:43.070888Z",
+        "finished_at": "2026-07-01T22:41:46.181077Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T22:41:46.181406Z",
+        "finished_at": "2026-07-01T22:47:42.681691Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T22:47:47.377220Z",
+        "finished_at": "2026-07-01T22:49:56.428442Z"
+    },
+    "step_results": null
+}

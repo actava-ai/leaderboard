@@ -1,0 +1,110 @@
+{
+    "id": "8be254c7-cf12-4c7d-81e7-78cdc110deb1",
+    "task_name": "actava-ai/cm_mdd_hard_refuses_002",
+    "trial_name": "cm_mdd_hard_refuses_002__j2u9rNr",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm/cm_mdd_hard_refuses_002__j2u9rNr",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_mdd_hard_refuses_002"
+    },
+    "source": "chi_bench-modal-6j58jq1l",
+    "task_checksum": "c28140e4fa1dc32b4418693fe4e955a5ed183bb3c242df4a9feefd7f93df73b6",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_mdd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-6j58jq1l"
+        },
+        "trial_name": "cm_mdd_hard_refuses_002__j2u9rNr",
+        "trials_dir": "logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7f8507e8-bc58-487f-893c-ccbe7ab8dabe"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.2",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2301989,
+        "n_cache_tokens": 2187328,
+        "n_output_tokens": 37894,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T23:13:41.042183Z",
+    "finished_at": "2026-07-01T23:35:58.262765Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T23:13:41.044642Z",
+        "finished_at": "2026-07-01T23:14:04.667799Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T23:14:04.667826Z",
+        "finished_at": "2026-07-01T23:14:18.787121Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T23:14:18.787244Z",
+        "finished_at": "2026-07-01T23:32:44.847206Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T23:32:48.929744Z",
+        "finished_at": "2026-07-01T23:35:56.790667Z"
+    },
+    "step_results": null
+}
