@@ -1,0 +1,110 @@
+{
+    "id": "aa6bf9a8-4c28-488d-8922-9f939b50d03f",
+    "task_name": "actava-ai/cm_complex_esrd_dm_hard_refuses_001",
+    "trial_name": "cm_complex_esrd_dm_hard_refuses__znUh8tU",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm/cm_complex_esrd_dm_hard_refuses__znUh8tU",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_complex_esrd_dm_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-u9yoogrd",
+    "task_checksum": "28d94ea87b2041276359ae0d377447469c027787678a573cba18615697166617",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_complex_esrd_dm_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u9yoogrd"
+        },
+        "trial_name": "cm_complex_esrd_dm_hard_refuses__znUh8tU",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d81d6424-e322-49aa-a243-6b488baa7183"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.198",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3520783,
+        "n_cache_tokens": 3393367,
+        "n_output_tokens": 20981,
+        "cost_usd": 1.8074120999999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-02T01:51:53.390463Z",
+    "finished_at": "2026-07-02T02:00:34.854439Z",
+    "environment_setup": {
+        "started_at": "2026-07-02T01:51:53.392104Z",
+        "finished_at": "2026-07-02T01:52:17.517119Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-02T01:52:17.517145Z",
+        "finished_at": "2026-07-02T01:52:34.966990Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-02T01:52:34.967131Z",
+        "finished_at": "2026-07-02T01:57:49.493988Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-02T01:58:05.038743Z",
+        "finished_at": "2026-07-02T02:00:33.399726Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,110 @@
+{
+    "id": "1b9f8e98-de79-4127-a9e6-7ef0ede2d373",
+    "task_name": "actava-ai/cm_dm_low_coop_001",
+    "trial_name": "cm_dm_low_coop_001__5EZeqL6",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm/cm_dm_low_coop_001__5EZeqL6",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_dm_low_coop_001"
+    },
+    "source": "chi_bench-modal-u9yoogrd",
+    "task_checksum": "af1011e52a8dbce4dcd9abed78ff80ee8fd784d6718cda3d759e37e7135cd5e8",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_dm_low_coop_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u9yoogrd"
+        },
+        "trial_name": "cm_dm_low_coop_001__5EZeqL6",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d81d6424-e322-49aa-a243-6b488baa7183"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.198",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3689492,
+        "n_cache_tokens": 3556734,
+        "n_output_tokens": 27243,
+        "cost_usd": 1.9705864500000005,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-02T02:23:32.703693Z",
+    "finished_at": "2026-07-02T02:36:14.687799Z",
+    "environment_setup": {
+        "started_at": "2026-07-02T02:23:32.706156Z",
+        "finished_at": "2026-07-02T02:23:48.958040Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-02T02:23:48.958078Z",
+        "finished_at": "2026-07-02T02:24:02.011065Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-02T02:24:02.011200Z",
+        "finished_at": "2026-07-02T02:30:26.355135Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-02T02:30:40.321439Z",
+        "finished_at": "2026-07-02T02:36:13.259925Z"
+    },
+    "step_results": null
+}

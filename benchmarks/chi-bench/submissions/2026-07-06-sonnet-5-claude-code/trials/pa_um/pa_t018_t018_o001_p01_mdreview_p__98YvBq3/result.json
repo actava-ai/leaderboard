@@ -1,0 +1,110 @@
+{
+    "id": "6b5ec61e-6844-463d-8ed8-b9015cb7c7b6",
+    "task_name": "actava-ai/pa_t018_t018_o001_p01_mdreview_payer",
+    "trial_name": "pa_t018_t018_o001_p01_mdreview_p__98YvBq3",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/pa_um/sonnet-5-claude-code__pa_um/pa_t018_t018_o001_p01_mdreview_p__98YvBq3",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zf401ogs/pa_t018_t018_o001_p01_mdreview_payer"
+    },
+    "source": "chi_bench-modal-zf401ogs",
+    "task_checksum": "cd5e1cac37fb1c7d9e6cd15b697fc4d1e08d2f5088dda037dccccb24d8bf285c",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zf401ogs/pa_t018_t018_o001_p01_mdreview_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-zf401ogs"
+        },
+        "trial_name": "pa_t018_t018_o001_p01_mdreview_p__98YvBq3",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/pa_um/sonnet-5-claude-code__pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "225e04db-d014-4dfc-9c76-57d6199e9709"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.197",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1783268,
+        "n_cache_tokens": 1675354,
+        "n_output_tokens": 13334,
+        "cost_usd": 1.1043252000000003,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-06-30T23:06:11.493499Z",
+    "finished_at": "2026-06-30T23:13:01.043872Z",
+    "environment_setup": {
+        "started_at": "2026-06-30T23:06:11.494878Z",
+        "finished_at": "2026-06-30T23:07:17.966037Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-06-30T23:07:17.966075Z",
+        "finished_at": "2026-06-30T23:07:36.295595Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-06-30T23:07:36.295639Z",
+        "finished_at": "2026-06-30T23:10:36.280816Z"
+    },
+    "verifier": {
+        "started_at": "2026-06-30T23:10:45.978010Z",
+        "finished_at": "2026-06-30T23:12:52.377567Z"
+    },
+    "step_results": null
+}

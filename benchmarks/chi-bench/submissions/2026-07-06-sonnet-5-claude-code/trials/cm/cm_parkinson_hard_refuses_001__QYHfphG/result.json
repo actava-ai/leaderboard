@@ -1,0 +1,110 @@
+{
+    "id": "0ed9c66b-4a2a-445c-b19a-f1fb34e894fe",
+    "task_name": "actava-ai/cm_parkinson_hard_refuses_001",
+    "trial_name": "cm_parkinson_hard_refuses_001__QYHfphG",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm/cm_parkinson_hard_refuses_001__QYHfphG",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_parkinson_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-u9yoogrd",
+    "task_checksum": "9145fccc99b0b0a0c680a223ca0f62c8c38b8e4f8559533437c8ef6425ef7cf5",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_parkinson_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u9yoogrd"
+        },
+        "trial_name": "cm_parkinson_hard_refuses_001__QYHfphG",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d81d6424-e322-49aa-a243-6b488baa7183"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.198",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 5240036,
+        "n_cache_tokens": 5062667,
+        "n_output_tokens": 45108,
+        "cost_usd": 2.8573798499999996,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-02T02:00:34.864029Z",
+    "finished_at": "2026-07-02T02:16:57.517696Z",
+    "environment_setup": {
+        "started_at": "2026-07-02T02:00:34.866821Z",
+        "finished_at": "2026-07-02T02:00:52.669757Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-02T02:00:52.669775Z",
+        "finished_at": "2026-07-02T02:01:07.606048Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-02T02:01:07.606171Z",
+        "finished_at": "2026-07-02T02:11:28.306698Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-02T02:11:57.981856Z",
+        "finished_at": "2026-07-02T02:16:55.039763Z"
+    },
+    "step_results": null
+}

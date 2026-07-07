@@ -1,0 +1,14 @@
+{
+  "chi_bench_git_sha": "ee1e16d60afd8bc59a6d90a480fede19593ea84f",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-02T04:22:04Z",
+  "finished_at": "2026-07-02T04:31:46Z",
+  "host": "Haolins-MacBook-Pro.local",
+  "python_version": "3.12.12",
+  "platform": "macOS-26.5.1-arm64-arm-64bit"
+}

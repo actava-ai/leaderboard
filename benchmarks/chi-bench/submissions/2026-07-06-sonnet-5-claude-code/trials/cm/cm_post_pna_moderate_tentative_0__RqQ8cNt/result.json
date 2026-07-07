@@ -1,0 +1,110 @@
+{
+    "id": "9176467e-4d42-4586-bb30-a4eed9884f59",
+    "task_name": "actava-ai/cm_post_pna_moderate_tentative_001",
+    "trial_name": "cm_post_pna_moderate_tentative_0__RqQ8cNt",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm/cm_post_pna_moderate_tentative_0__RqQ8cNt",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_post_pna_moderate_tentative_001"
+    },
+    "source": "chi_bench-modal-u9yoogrd",
+    "task_checksum": "54606da234b4410927c19499cb72858f30aa499c7bb52f171f44fd8c27d323a6",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_post_pna_moderate_tentative_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u9yoogrd"
+        },
+        "trial_name": "cm_post_pna_moderate_tentative_0__RqQ8cNt",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d81d6424-e322-49aa-a243-6b488baa7183"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.198",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4525865,
+        "n_cache_tokens": 4342014,
+        "n_output_tokens": 47617,
+        "cost_usd": 2.70306795,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-02T01:53:16.531606Z",
+    "finished_at": "2026-07-02T02:07:59.879456Z",
+    "environment_setup": {
+        "started_at": "2026-07-02T01:53:16.533092Z",
+        "finished_at": "2026-07-02T01:53:44.650475Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-02T01:53:44.650548Z",
+        "finished_at": "2026-07-02T01:54:10.613435Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-02T01:54:10.613472Z",
+        "finished_at": "2026-07-02T02:04:21.484505Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-02T02:05:02.275718Z",
+        "finished_at": "2026-07-02T02:07:55.686667Z"
+    },
+    "step_results": null
+}

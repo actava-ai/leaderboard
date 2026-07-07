@@ -1,0 +1,110 @@
+{
+    "id": "9631844c-91e3-42ac-ac46-4b847da4ea8b",
+    "task_name": "actava-ai/pa_t023_t023_o003_p01_triage_payer",
+    "trial_name": "pa_t023_t023_o003_p01_triage_pay__zGk2LPV",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/pa_um/sonnet-5-claude-code__pa_um/pa_t023_t023_o003_p01_triage_pay__zGk2LPV",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zf401ogs/pa_t023_t023_o003_p01_triage_payer"
+    },
+    "source": "chi_bench-modal-zf401ogs",
+    "task_checksum": "c98f0960e063ff1369135b63e3502949a02ccdd571c506345cb03cefb7368b75",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zf401ogs/pa_t023_t023_o003_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-zf401ogs"
+        },
+        "trial_name": "pa_t023_t023_o003_p01_triage_pay__zGk2LPV",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/pa_um/sonnet-5-claude-code__pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "225e04db-d014-4dfc-9c76-57d6199e9709"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.197",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3077805,
+        "n_cache_tokens": 2927445,
+        "n_output_tokens": 25353,
+        "cost_usd": 1.8192982499999997,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-06-30T23:20:05.158072Z",
+    "finished_at": "2026-06-30T23:27:55.215344Z",
+    "environment_setup": {
+        "started_at": "2026-06-30T23:20:05.165784Z",
+        "finished_at": "2026-06-30T23:21:06.299925Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-06-30T23:21:06.299962Z",
+        "finished_at": "2026-06-30T23:21:22.237471Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-06-30T23:21:22.237565Z",
+        "finished_at": "2026-06-30T23:26:53.807531Z"
+    },
+    "verifier": {
+        "started_at": "2026-06-30T23:27:02.752603Z",
+        "finished_at": "2026-06-30T23:27:47.487219Z"
+    },
+    "step_results": null
+}
