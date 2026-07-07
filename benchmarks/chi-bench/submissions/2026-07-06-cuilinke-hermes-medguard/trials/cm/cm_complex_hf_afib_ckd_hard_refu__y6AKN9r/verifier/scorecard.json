@@ -1,0 +1,132 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.3333333333333333,
+  "passed_checks": 2,
+  "total_checks": 6,
+  "check_scores": {
+    "cm.assessment.record_exists": 0.0,
+    "cm.assessment.completed": null,
+    "cm.assessment.required_sections_present": null,
+    "cm.care_plan.record_exists": 0.0,
+    "cm.care_plan.finalized": null,
+    "cm.care_plan.problem_count": null,
+    "cm.care_plan.goal_structure": null,
+    "cm.care_plan.intervention_structure": null,
+    "cm.care_plan.escalation_conditions_present": null,
+    "cm.care_plan.follow_up_cadence_present": null,
+    "cm.chart_review.record_exists": 1.0,
+    "cm.cross_stage.target_status": 0.0,
+    "cm.cross_stage.audit_actions": 0.0,
+    "cm.cross_stage.no_forbidden_mutations": 1.0,
+    "judge.cm.chart_review.quality": null,
+    "judge.cm.outreach.quality": null,
+    "judge.cm.assessment.quality": null,
+    "judge.cm.care_plan.quality": null,
+    "judge.cm.stage_coherence": null
+  },
+  "checks": {
+    "cm.assessment.record_exists": false,
+    "cm.assessment.completed": "not_applicable",
+    "cm.assessment.required_sections_present": "not_applicable",
+    "cm.care_plan.record_exists": false,
+    "cm.care_plan.finalized": "not_applicable",
+    "cm.care_plan.problem_count": "not_applicable",
+    "cm.care_plan.goal_structure": "not_applicable",
+    "cm.care_plan.intervention_structure": "not_applicable",
+    "cm.care_plan.escalation_conditions_present": "not_applicable",
+    "cm.care_plan.follow_up_cadence_present": "not_applicable",
+    "cm.chart_review.record_exists": true,
+    "cm.cross_stage.target_status": false,
+    "cm.cross_stage.audit_actions": false,
+    "cm.cross_stage.no_forbidden_mutations": true,
+    "judge.cm.chart_review.quality": "not_applicable",
+    "judge.cm.outreach.quality": "not_applicable",
+    "judge.cm.assessment.quality": "not_applicable",
+    "judge.cm.care_plan.quality": "not_applicable",
+    "judge.cm.stage_coherence": "not_applicable"
+  },
+  "failed_checks": [
+    "cm.assessment.record_exists",
+    "cm.care_plan.record_exists",
+    "cm.cross_stage.target_status",
+    "cm.cross_stage.audit_actions"
+  ],
+  "not_applicable_checks": [
+    "cm.assessment.completed",
+    "cm.assessment.required_sections_present",
+    "cm.care_plan.finalized",
+    "cm.care_plan.problem_count",
+    "cm.care_plan.goal_structure",
+    "cm.care_plan.intervention_structure",
+    "cm.care_plan.escalation_conditions_present",
+    "cm.care_plan.follow_up_cadence_present",
+    "judge.cm.chart_review.quality",
+    "judge.cm.outreach.quality",
+    "judge.cm.assessment.quality",
+    "judge.cm.care_plan.quality",
+    "judge.cm.stage_coherence"
+  ],
+  "stages": {
+    "cm_assessment": {
+      "passed": false,
+      "checks": {
+        "cm.assessment.record_exists": false,
+        "cm.assessment.completed": "not_applicable",
+        "cm.assessment.required_sections_present": "not_applicable"
+      },
+      "passed_count": 0,
+      "total_count": 1,
+      "not_applicable_count": 2,
+      "details": {
+        "case_id": "CM-CASE-CM_COMPLEX_HF_AFIB_CKD_HARD_REFUSES_001",
+        "record_count": 0
+      }
+    },
+    "cm_care_plan": {
+      "passed": false,
+      "checks": {
+        "cm.care_plan.record_exists": false,
+        "cm.care_plan.finalized": "not_applicable",
+        "cm.care_plan.problem_count": "not_applicable",
+        "cm.care_plan.goal_structure": "not_applicable",
+        "cm.care_plan.intervention_structure": "not_applicable",
+        "cm.care_plan.escalation_conditions_present": "not_applicable",
+        "cm.care_plan.follow_up_cadence_present": "not_applicable"
+      },
+      "passed_count": 0,
+      "total_count": 1,
+      "not_applicable_count": 6,
+      "details": {
+        "case_id": "CM-CASE-CM_COMPLEX_HF_AFIB_CKD_HARD_REFUSES_001",
+        "record_count": 0
+      }
+    },
+    "cm_chart_review": {
+      "passed": true,
+      "checks": {
+        "cm.chart_review.record_exists": true
+      },
+      "passed_count": 1,
+      "total_count": 1,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CM-CASE-CM_COMPLEX_HF_AFIB_CKD_HARD_REFUSES_001",
+        "record_count": 1
+      }
+    },
+    "cm_cross_stage": {
+      "passed": false,
+      "checks": {
+        "cm.cross_stage.target_status": false,
+        "cm.cross_stage.audit_actions": false,
+        "cm.cross_stage.no_forbidden_mutations": true
+      },
+      "passed_count": 1,
+      "total_count": 3,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CM-CASE-CM_COMPLEX_HF_AFIB_CKD_HARD_REFUSES_001"
+      }
+    }
+  }
+}

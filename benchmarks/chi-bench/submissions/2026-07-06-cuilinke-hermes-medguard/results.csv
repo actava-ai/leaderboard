@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,cuilinke-hermes-medguard,cuilinke,hermes,MedGuard,overall,0.22666666666666666,75,75,0.0,0.0,2026-07-06T09:10:18Z
+chi-bench,chi-bench-v1.0.0,cuilinke-hermes-medguard,cuilinke,hermes,MedGuard,pa_provider,0.04,25,25,0.0,0.0,2026-07-06T09:10:18Z
+chi-bench,chi-bench-v1.0.0,cuilinke-hermes-medguard,cuilinke,hermes,MedGuard,pa_um,0.04,25,25,0.0,0.0,2026-07-06T09:10:18Z
+chi-bench,chi-bench-v1.0.0,cuilinke-hermes-medguard,cuilinke,hermes,MedGuard,cm,0.6,25,25,0.0,0.0,2026-07-06T09:10:18Z
