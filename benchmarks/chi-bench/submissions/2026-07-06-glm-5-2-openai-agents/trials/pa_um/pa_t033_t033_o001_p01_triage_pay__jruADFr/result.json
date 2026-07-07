@@ -1,0 +1,110 @@
+{
+    "id": "497be54c-4cac-4b71-8b7b-b37a4841ec17",
+    "task_name": "actava-ai/pa_t033_t033_o001_p01_triage_payer",
+    "trial_name": "pa_t033_t033_o001_p01_triage_pay__jruADFr",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/glm-5-2-openai-agents/pa_um/glm-5-2-openai-agents__pa_um/pa_t033_t033_o001_p01_triage_pay__jruADFr",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-8xxp31se/pa_t033_t033_o001_p01_triage_payer"
+    },
+    "source": "chi_bench-modal-8xxp31se",
+    "task_checksum": "6c60954919e0829b1dd84301eb7ccaa09fdc8d2d4dbe64329ac5e6675ef7828b",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-8xxp31se/pa_t033_t033_o001_p01_triage_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-8xxp31se"
+        },
+        "trial_name": "pa_t033_t033_o001_p01_triage_pay__jruADFr",
+        "trials_dir": "logs/submissions/glm-5-2-openai-agents/pa_um/glm-5-2-openai-agents__pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "b3a7f62f-cd78-431e-acd0-2aad15da9c5b"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.2",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1890660,
+        "n_cache_tokens": 1792000,
+        "n_output_tokens": 10646,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T00:08:54.349657Z",
+    "finished_at": "2026-07-01T00:16:29.952933Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T00:08:54.351532Z",
+        "finished_at": "2026-07-01T00:09:52.154675Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T00:09:52.154698Z",
+        "finished_at": "2026-07-01T00:09:55.517191Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T00:09:55.517277Z",
+        "finished_at": "2026-07-01T00:14:44.665391Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T00:14:47.446563Z",
+        "finished_at": "2026-07-01T00:16:25.523726Z"
+    },
+    "step_results": null
+}

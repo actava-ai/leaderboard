@@ -1,0 +1,110 @@
+{
+    "id": "dbb1e056-c415-4611-a425-db29009bd003",
+    "task_name": "actava-ai/cm_post_stroke_hard_refuses_001",
+    "trial_name": "cm_post_stroke_hard_refuses_001__hhVjqC5",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm/cm_post_stroke_hard_refuses_001__hhVjqC5",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_post_stroke_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-6j58jq1l",
+    "task_checksum": "43dcf90f6a4a6c37047a94a69755d68b7778b4769e9e10009046fe47e3570272",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_post_stroke_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-6j58jq1l"
+        },
+        "trial_name": "cm_post_stroke_hard_refuses_001__hhVjqC5",
+        "trials_dir": "logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7f8507e8-bc58-487f-893c-ccbe7ab8dabe"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.2",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1960161,
+        "n_cache_tokens": 1721664,
+        "n_output_tokens": 23393,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T23:13:09.094668Z",
+    "finished_at": "2026-07-01T23:32:07.500891Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T23:13:09.097222Z",
+        "finished_at": "2026-07-01T23:13:31.768727Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T23:13:31.768758Z",
+        "finished_at": "2026-07-01T23:13:35.142520Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T23:13:35.142622Z",
+        "finished_at": "2026-07-01T23:28:24.284124Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T23:28:28.080409Z",
+        "finished_at": "2026-07-01T23:32:06.188457Z"
+    },
+    "step_results": null
+}

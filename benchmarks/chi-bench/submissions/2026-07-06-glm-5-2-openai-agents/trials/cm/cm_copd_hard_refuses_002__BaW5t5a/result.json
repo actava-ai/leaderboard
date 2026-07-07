@@ -1,0 +1,110 @@
+{
+    "id": "42efbe5c-3782-483b-94f1-4f952586a288",
+    "task_name": "actava-ai/cm_copd_hard_refuses_002",
+    "trial_name": "cm_copd_hard_refuses_002__BaW5t5a",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm/cm_copd_hard_refuses_002__BaW5t5a",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_copd_hard_refuses_002"
+    },
+    "source": "chi_bench-modal-6j58jq1l",
+    "task_checksum": "54e0d6ae62cf12993e368587b943a790eb94b586b52e943bfd50260e8a564705",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-6j58jq1l/cm_copd_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-6j58jq1l"
+        },
+        "trial_name": "cm_copd_hard_refuses_002__BaW5t5a",
+        "trials_dir": "logs/submissions/glm-5-2-openai-agents/cm/glm-5-2-openai-agents__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "z-ai/glm-5.2",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "7f8507e8-bc58-487f-893c-ccbe7ab8dabe"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "glm-5.2",
+            "provider": "z-ai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1759168,
+        "n_cache_tokens": 1424064,
+        "n_output_tokens": 31359,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-01T22:40:55.337418Z",
+    "finished_at": "2026-07-01T23:01:19.869881Z",
+    "environment_setup": {
+        "started_at": "2026-07-01T22:40:55.337881Z",
+        "finished_at": "2026-07-01T22:41:54.070908Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-01T22:41:54.070918Z",
+        "finished_at": "2026-07-01T22:41:57.735119Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-01T22:41:57.735220Z",
+        "finished_at": "2026-07-01T22:57:59.384257Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-01T22:58:03.581254Z",
+        "finished_at": "2026-07-01T23:01:17.995856Z"
+    },
+    "step_results": null
+}
