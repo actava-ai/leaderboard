@@ -1,0 +1,110 @@
+{
+    "id": "1d3b1037-d18b-4d62-933a-3c06a948a481",
+    "task_name": "actava-ai/cm_anorexia_hard_refuses_001",
+    "trial_name": "cm_anorexia_hard_refuses_001__iLSFDJk",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm/cm_anorexia_hard_refuses_001__iLSFDJk",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_anorexia_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-u9yoogrd",
+    "task_checksum": "2719f5e21fde8db6b008d343256a65a117fdb46c555445acacc046c43f64fcb2",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_anorexia_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u9yoogrd"
+        },
+        "trial_name": "cm_anorexia_hard_refuses_001__iLSFDJk",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d81d6424-e322-49aa-a243-6b488baa7183"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.198",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 5484986,
+        "n_cache_tokens": 5296083,
+        "n_output_tokens": 52734,
+        "cost_usd": 3.084958649999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-02T01:54:04.309972Z",
+    "finished_at": "2026-07-02T02:08:40.192734Z",
+    "environment_setup": {
+        "started_at": "2026-07-02T01:54:04.312125Z",
+        "finished_at": "2026-07-02T01:54:28.058457Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-02T01:54:28.058493Z",
+        "finished_at": "2026-07-02T01:54:46.192487Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-02T01:54:46.192591Z",
+        "finished_at": "2026-07-02T02:05:26.888132Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-02T02:05:42.837114Z",
+        "finished_at": "2026-07-02T02:08:38.697122Z"
+    },
+    "step_results": null
+}

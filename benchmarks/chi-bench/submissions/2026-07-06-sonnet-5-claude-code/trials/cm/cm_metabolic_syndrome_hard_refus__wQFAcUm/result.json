@@ -1,0 +1,110 @@
+{
+    "id": "e3634165-ff3c-4528-9d76-e8935a58848f",
+    "task_name": "actava-ai/cm_metabolic_syndrome_hard_refuses_001",
+    "trial_name": "cm_metabolic_syndrome_hard_refus__wQFAcUm",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm/cm_metabolic_syndrome_hard_refus__wQFAcUm",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_metabolic_syndrome_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-u9yoogrd",
+    "task_checksum": "09aed450409489e36fcbac835bb42d8b00b712d51101310f9b28b8c28862523b",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-u9yoogrd/cm_metabolic_syndrome_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-u9yoogrd"
+        },
+        "trial_name": "cm_metabolic_syndrome_hard_refus__wQFAcUm",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/cm/sonnet-5-claude-code__cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d81d6424-e322-49aa-a243-6b488baa7183"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.198",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 3181318,
+        "n_cache_tokens": 3055408,
+        "n_output_tokens": 23100,
+        "cost_usd": 1.7321919000000001,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-02T02:08:40.197241Z",
+    "finished_at": "2026-07-02T02:17:20.360781Z",
+    "environment_setup": {
+        "started_at": "2026-07-02T02:08:40.200759Z",
+        "finished_at": "2026-07-02T02:09:02.567480Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-02T02:09:02.567510Z",
+        "finished_at": "2026-07-02T02:09:17.158953Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-02T02:09:17.159055Z",
+        "finished_at": "2026-07-02T02:15:09.119641Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-02T02:15:22.166637Z",
+        "finished_at": "2026-07-02T02:17:18.770551Z"
+    },
+    "step_results": null
+}

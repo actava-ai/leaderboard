@@ -1,0 +1,110 @@
+{
+    "id": "d4ca0d49-ad7d-4d4b-b10c-8800d46d2803",
+    "task_name": "actava-ai/pa_t026_t026_o003_p01_nurse_review_payer",
+    "trial_name": "pa_t026_t026_o003_p01_nurse_revi__2LwFgr4",
+    "trial_uri": "file:///Users/haolin.chen/repos/chi-bench/logs/submissions/sonnet-5-claude-code/pa_um/sonnet-5-claude-code__pa_um/pa_t026_t026_o003_p01_nurse_revi__2LwFgr4",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zf401ogs/pa_t026_t026_o003_p01_nurse_review_payer"
+    },
+    "source": "chi_bench-modal-zf401ogs",
+    "task_checksum": "9434fee3d3fea7515c59c52daa92b0d4c13003d59fab146ec0d382445d5d0459",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zf401ogs/pa_t026_t026_o003_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-zf401ogs"
+        },
+        "trial_name": "pa_t026_t026_o003_p01_nurse_revi__2LwFgr4",
+        "trials_dir": "logs/submissions/sonnet-5-claude-code/pa_um/sonnet-5-claude-code__pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-sonnet-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "225e04db-d014-4dfc-9c76-57d6199e9709"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.197",
+        "model_info": {
+            "name": "claude-sonnet-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4959907,
+        "n_cache_tokens": 4807002,
+        "n_output_tokens": 23174,
+        "cost_usd": 2.35991685,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-06-30T23:13:01.047012Z",
+    "finished_at": "2026-06-30T23:23:33.406483Z",
+    "environment_setup": {
+        "started_at": "2026-06-30T23:13:01.053118Z",
+        "finished_at": "2026-06-30T23:13:30.034128Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-06-30T23:13:30.034152Z",
+        "finished_at": "2026-06-30T23:13:45.117178Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-06-30T23:13:45.117288Z",
+        "finished_at": "2026-06-30T23:20:16.878006Z"
+    },
+    "verifier": {
+        "started_at": "2026-06-30T23:20:26.098921Z",
+        "finished_at": "2026-06-30T23:23:24.946409Z"
+    },
+    "step_results": null
+}
