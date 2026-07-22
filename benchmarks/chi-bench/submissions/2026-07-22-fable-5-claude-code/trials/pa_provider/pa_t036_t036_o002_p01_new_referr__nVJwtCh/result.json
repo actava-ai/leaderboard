@@ -1,0 +1,122 @@
+{
+    "id": "cc7c2888-c7d9-46c3-839b-302f7d662a1f",
+    "task_name": "actava-ai/pa_t036_t036_o002_p01_new_referral_provider",
+    "trial_name": "pa_t036_t036_o002_p01_new_referr__nVJwtCh",
+    "trial_uri": "file:///Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/logs/experiments/fable5_openrouter_full_2026_07/01_claude-code_anthropic-claude-fable-5_pa_provider/2026-07-22__00-16-25/pa_t036_t036_o002_p01_new_referr__nVJwtCh",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-1xpxmbsl/pa_t036_t036_o002_p01_new_referral_provider"
+    },
+    "source": "chi_bench-modal-1xpxmbsl",
+    "task_checksum": "3a74142356145cdfea1fd4ae3e51670d8e32750c2ef51e752fd5bfa10f842159",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-1xpxmbsl/pa_t036_t036_o002_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-1xpxmbsl"
+        },
+        "trial_name": "pa_t036_t036_o002_p01_new_referr__nVJwtCh",
+        "trials_dir": "logs/experiments/fable5_openrouter_full_2026_07/01_claude-code_anthropic-claude-fable-5_pa_provider/2026-07-22__00-16-25",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-fable-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "version": "2.1.216"
+            },
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${CHI_BENCH_EMPTY_AGENT_ENV:-}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+                "TINKER_API_KEY": "${TINKER_API_KEY}",
+                "ANTHROPIC_AUTH_TOKEN": "${OPENROUTER_API_KEY}",
+                "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-fable-5",
+                "ANTHROPIC_DEFAULT_OPUS_MODEL": "anthropic/claude-fable-5",
+                "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-fable-5",
+                "ANTHROPIC_MODEL": "anthropic/claude-fable-5",
+                "CLAUDE_CODE_OAUTH_TOKEN": "${CHI_BENCH_EMPTY_AGENT_ENV:-}",
+                "CLAUDE_CODE_SUBAGENT_MODEL": "anthropic/claude-fable-5"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1023d7ef-099c-4f09-93d1-6c755a0b2f5a"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.216",
+        "model_info": {
+            "name": "claude-fable-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1755740,
+        "n_cache_tokens": 1654762,
+        "n_output_tokens": 14744,
+        "cost_usd": 3.6540920000000003,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-22T07:49:21.454324Z",
+    "finished_at": "2026-07-22T07:54:39.431255Z",
+    "environment_setup": {
+        "started_at": "2026-07-22T07:49:21.461221Z",
+        "finished_at": "2026-07-22T07:49:49.221074Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-22T07:49:49.221140Z",
+        "finished_at": "2026-07-22T07:50:03.670840Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-22T07:50:03.670971Z",
+        "finished_at": "2026-07-22T07:54:26.475307Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-22T07:54:33.640626Z",
+        "finished_at": "2026-07-22T07:54:37.839738Z"
+    },
+    "step_results": null
+}

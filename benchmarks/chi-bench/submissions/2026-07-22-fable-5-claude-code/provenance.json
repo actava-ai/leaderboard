@@ -1,0 +1,12 @@
+{
+  "chi_bench_git_sha": "5b5be35d34ff06f77a2626fb20b096ee653c3962",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-22T07:16:27.207645Z",
+  "finished_at": "2026-07-22T10:25:29.658582Z",
+  "source": "fable5_openrouter_full_2026_07 experiment matrix"
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "fable-5-claude-code",
+    "team": "Actava",
+    "contact": "dark.savi@gmail.com",
+    "agent": "claude-code",
+    "model": "anthropic/claude-fable-5",
+    "notes": "Claude Fable 5 via the stock claude-code harness (MCP tools), routed through OpenRouter.\n",
+    "submitted_at": "2026-07-22T23:50:25Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.24,
+      "mean_cost_usd": 7.0079016,
+      "mean_walltime_s": 514.00465704
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.24,
+        "mean_cost_usd": 5.90429888,
+        "mean_walltime_s": 339.65884716
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.24,
+        "mean_cost_usd": 7.0953063599999995,
+        "mean_walltime_s": 482.04023800000004
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.24,
+        "mean_cost_usd": 8.02409956,
+        "mean_walltime_s": 720.31488596
+      }
+    },
+    "mean_cost_usd": 7.0079016,
+    "mean_walltime_s": 514.00465704
+  },
+  "provenance": {
+    "chi_bench_git_sha": "5b5be35d34ff06f77a2626fb20b096ee653c3962",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": true,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-07-22T07:16:27.207645Z",
+    "finished_at": "2026-07-22T10:25:29.658582Z",
+    "source": "fable5_openrouter_full_2026_07 experiment matrix"
+  }
+}
