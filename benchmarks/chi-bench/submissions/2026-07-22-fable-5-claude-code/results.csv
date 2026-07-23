@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,fable-5-claude-code,Actava,claude-code,anthropic/claude-fable-5,overall,0.24,75,75,7.0079016,514.00465704,2026-07-22T23:50:25Z
+chi-bench,chi-bench-v1.0.0,fable-5-claude-code,Actava,claude-code,anthropic/claude-fable-5,pa_provider,0.24,25,25,5.90429888,339.65884716,2026-07-22T23:50:25Z
+chi-bench,chi-bench-v1.0.0,fable-5-claude-code,Actava,claude-code,anthropic/claude-fable-5,pa_um,0.24,25,25,7.0953063599999995,482.04023800000004,2026-07-22T23:50:25Z
+chi-bench,chi-bench-v1.0.0,fable-5-claude-code,Actava,claude-code,anthropic/claude-fable-5,cm,0.24,25,25,8.02409956,720.31488596,2026-07-22T23:50:25Z

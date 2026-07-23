@@ -1,0 +1,122 @@
+{
+    "id": "88cad754-2324-4b9d-92f8-3dfd355ec5c5",
+    "task_name": "actava-ai/cm_post_hip_moderate_anxious_001",
+    "trial_name": "cm_post_hip_moderate_anxious_001__xYh6s8H",
+    "trial_uri": "file:///Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/logs/experiments/fable5_openrouter_full_2026_07/01_claude-code_anthropic-claude-fable-5_cm/2026-07-22__01-58-01/cm_post_hip_moderate_anxious_001__xYh6s8H",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zfuxkeg1/cm_post_hip_moderate_anxious_001"
+    },
+    "source": "chi_bench-modal-zfuxkeg1",
+    "task_checksum": "476e0bda9e6e364b88ebc09ace2db5508f7a61fd4e95be4b837bbe13c00686d8",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-zfuxkeg1/cm_post_hip_moderate_anxious_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-zfuxkeg1"
+        },
+        "trial_name": "cm_post_hip_moderate_anxious_001__xYh6s8H",
+        "trials_dir": "logs/experiments/fable5_openrouter_full_2026_07/01_claude-code_anthropic-claude-fable-5_cm/2026-07-22__01-58-01",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "claude-code",
+            "import_path": null,
+            "model_name": "anthropic/claude-fable-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "version": "2.1.216"
+            },
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${CHI_BENCH_EMPTY_AGENT_ENV:-}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+                "TINKER_API_KEY": "${TINKER_API_KEY}",
+                "ANTHROPIC_AUTH_TOKEN": "${OPENROUTER_API_KEY}",
+                "ANTHROPIC_BASE_URL": "https://openrouter.ai/api",
+                "ANTHROPIC_DEFAULT_HAIKU_MODEL": "anthropic/claude-fable-5",
+                "ANTHROPIC_DEFAULT_OPUS_MODEL": "anthropic/claude-fable-5",
+                "ANTHROPIC_DEFAULT_SONNET_MODEL": "anthropic/claude-fable-5",
+                "ANTHROPIC_MODEL": "anthropic/claude-fable-5",
+                "CLAUDE_CODE_OAUTH_TOKEN": "${CHI_BENCH_EMPTY_AGENT_ENV:-}",
+                "CLAUDE_CODE_SUBAGENT_MODEL": "anthropic/claude-fable-5"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "d3706c1b-8263-453a-914f-bec5f7ca1d5c"
+    },
+    "agent_info": {
+        "name": "claude-code",
+        "version": "2.1.216",
+        "model_info": {
+            "name": "claude-fable-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4115782,
+        "n_cache_tokens": 3973003,
+        "n_output_tokens": 38193,
+        "cost_usd": 7.6672205,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-22T09:50:23.815999Z",
+    "finished_at": "2026-07-22T10:05:57.188090Z",
+    "environment_setup": {
+        "started_at": "2026-07-22T09:50:23.818787Z",
+        "finished_at": "2026-07-22T09:50:44.323035Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-22T09:50:44.323059Z",
+        "finished_at": "2026-07-22T09:51:00.452662Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-22T09:51:00.452747Z",
+        "finished_at": "2026-07-22T10:02:28.589199Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-22T10:02:54.345611Z",
+        "finished_at": "2026-07-22T10:05:54.559356Z"
+    },
+    "step_results": null
+}

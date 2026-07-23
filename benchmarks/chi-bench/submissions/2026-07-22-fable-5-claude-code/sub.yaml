@@ -1,0 +1,27 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: fable-5-claude-code
+  team: Actava
+  contact: dark.savi@gmail.com
+  agent: claude-code
+  model: anthropic/claude-fable-5
+  notes: |
+    Claude Fable 5 via the stock claude-code harness (MCP tools), routed through OpenRouter.
+
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 5
+  max_retries: 2
+  timeout_multiplier: 1.0
+  agent_timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+
+paths:
+  data_root: /Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/data
+  output_root: /tmp/chi-bench-fable-5-submission.oikjEy/raw
