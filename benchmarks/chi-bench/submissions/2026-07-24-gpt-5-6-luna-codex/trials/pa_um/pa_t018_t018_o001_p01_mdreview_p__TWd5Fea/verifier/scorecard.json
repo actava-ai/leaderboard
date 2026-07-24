@@ -1,0 +1,145 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.7941176470588235,
+  "passed_checks": 27,
+  "total_checks": 34,
+  "check_scores": {
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.signed_off": 0.0,
+    "md.denial_rationale_present": null,
+    "md.audit": 1.0,
+    "outcome.target_status": 0.0,
+    "outcome.letter_types": 0.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.determination_decision_matches": 0.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.md_review:hopd_clinical_trial": 1.0,
+    "judge.md_review:hopd_24h_specialist_coordination": 1.0,
+    "judge.md_review:hopd_contrast_allergy": 1.0,
+    "judge.md_review:hopd_chronic_disease_continuity": 1.0,
+    "judge.md_review:hopd_cancer_restaging": 1.0,
+    "judge.md_review:hopd_pre_procedure_imaging": 1.0,
+    "judge.md_review:hopd_obstetric": 1.0,
+    "judge.md_review:hopd_perinatology": 1.0,
+    "judge.md_review:hopd_under_18": 1.0,
+    "judge.md_review:hopd_sedation_barrier": 1.0,
+    "judge.md_review:hopd_equipment_size": 1.0,
+    "judge.md_review:hopd_open_mri_claustrophobia": 1.0,
+    "judge.md_review:hopd_adverse_health_impact": 0.0,
+    "judge.md_review:final_decision": 0.0,
+    "judge.md_review:decision_rationale": 0.0
+  },
+  "checks": {
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.signed_off": false,
+    "md.denial_rationale_present": "not_applicable",
+    "md.audit": true,
+    "outcome.target_status": false,
+    "outcome.letter_types": false,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.determination_decision_matches": false,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.md_review:hopd_clinical_trial": true,
+    "judge.md_review:hopd_24h_specialist_coordination": true,
+    "judge.md_review:hopd_contrast_allergy": true,
+    "judge.md_review:hopd_chronic_disease_continuity": true,
+    "judge.md_review:hopd_cancer_restaging": true,
+    "judge.md_review:hopd_pre_procedure_imaging": true,
+    "judge.md_review:hopd_obstetric": true,
+    "judge.md_review:hopd_perinatology": true,
+    "judge.md_review:hopd_under_18": true,
+    "judge.md_review:hopd_sedation_barrier": true,
+    "judge.md_review:hopd_equipment_size": true,
+    "judge.md_review:hopd_open_mri_claustrophobia": true,
+    "judge.md_review:hopd_adverse_health_impact": false,
+    "judge.md_review:final_decision": false,
+    "judge.md_review:decision_rationale": false
+  },
+  "failed_checks": [
+    "md.signed_off",
+    "outcome.target_status",
+    "outcome.letter_types",
+    "outcome.determination_decision_matches",
+    "judge.md_review:hopd_adverse_health_impact",
+    "judge.md_review:final_decision",
+    "judge.md_review:decision_rationale"
+  ],
+  "not_applicable_checks": [
+    "md.denial_rationale_present"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": false,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.signed_off": false,
+        "md.denial_rationale_present": "not_applicable",
+        "md.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 4,
+      "not_applicable_count": 1,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": false,
+      "checks": {
+        "outcome.target_status": false,
+        "outcome.letter_types": false,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.determination_decision_matches": false,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 10,
+      "total_count": 13,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-89B002CC"
+      }
+    }
+  }
+}

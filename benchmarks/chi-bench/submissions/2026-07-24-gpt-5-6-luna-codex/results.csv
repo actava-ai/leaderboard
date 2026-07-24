@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,gpt-5-6-luna-codex,Actava,codex,openai/gpt-5.6-luna,overall,0.13333333333333333,75,75,0.4353979946666666,157.89079552,2026-07-24T23:01:25Z
+chi-bench,chi-bench-v1.0.0,gpt-5-6-luna-codex,Actava,codex,openai/gpt-5.6-luna,pa_provider,0.2,25,25,0.320460704,98.36180688,2026-07-24T23:01:25Z
+chi-bench,chi-bench-v1.0.0,gpt-5-6-luna-codex,Actava,codex,openai/gpt-5.6-luna,pa_um,0.16,25,25,0.4319986,152.03477772,2026-07-24T23:01:25Z
+chi-bench,chi-bench-v1.0.0,gpt-5-6-luna-codex,Actava,codex,openai/gpt-5.6-luna,cm,0.04,25,25,0.55373468,223.27580196,2026-07-24T23:01:25Z
