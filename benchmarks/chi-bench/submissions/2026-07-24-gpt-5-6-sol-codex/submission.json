@@ -1,0 +1,68 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "gpt-5-6-sol-codex",
+    "team": "Actava",
+    "contact": "dark.savi@gmail.com",
+    "agent": "codex",
+    "model": "openai/gpt-5.6-sol",
+    "notes": "GPT-5.6 Sol via the stock Codex harness with MCP tools.\nCodex CLI 0.145.0; high reasoning effort and automatic reasoning summaries.\n",
+    "submitted_at": "2026-07-24T23:01:25Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.25333333333333335,
+      "mean_cost_usd": 2.060206873333333,
+      "mean_walltime_s": 239.12849446666664
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.36,
+        "mean_cost_usd": 1.3676000799999999,
+        "mean_walltime_s": 126.57268260000001
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.28,
+        "mean_cost_usd": 1.8998682,
+        "mean_walltime_s": 198.10586116
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.12,
+        "mean_cost_usd": 2.91315234,
+        "mean_walltime_s": 392.70693964
+      }
+    },
+    "mean_cost_usd": 2.060206873333333,
+    "mean_walltime_s": 239.12849446666664
+  },
+  "provenance": {
+    "chi_bench_git_sha": "5af8d107b2d7ba56231bc4168d6bc7cb5fbb0ceb",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-07-22T02:41:32.718905Z",
+    "finished_at": "2026-07-22T04:52:39.419746Z",
+    "source": "frontier_models_full_2026_07 experiment matrix",
+    "matrix_config": "configs/experiments/frontier_models_full_2026_07.yaml"
+  }
+}
