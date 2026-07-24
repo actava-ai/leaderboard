@@ -1,0 +1,163 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.5714285714285714,
+  "passed_checks": 12,
+  "total_checks": 21,
+  "check_scores": {
+    "md.decision_exists": 0.0,
+    "md.rationale_present": null,
+    "md.signed_off": null,
+    "md.audit": 0.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 1.0,
+    "outcome.determination_exists": null,
+    "outcome.determination_source_exists": null,
+    "outcome.source_recommendation_consistent": null,
+    "outcome.review_decision_exists": null,
+    "outcome.review_decision_matches": null,
+    "outcome.terminal_transition_exists": null,
+    "outcome.determination_stage_trace": null,
+    "outcome.determination_finalize_audit": null,
+    "outcome.clean_determination": null,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:crit_ra_diagnosis": 1.0,
+    "judge.nurse_review:crit_disease_activity": 1.0,
+    "judge.nurse_review:crit_tnf_step_therapy": 1.0,
+    "judge.nurse_review:crit_methotrexate": 1.0,
+    "judge.nurse_review:crit_combination_exclusion": 0.0,
+    "judge.nurse_review:crit_dosing_attestation": 0.0,
+    "judge.nurse_review:recommendation": 0.0,
+    "judge.md_review:crit_combination_exclusion": 0.0,
+    "judge.md_review:crit_dosing_compliance": 0.0,
+    "judge.md_review:final_decision": 0.0,
+    "judge.md_review:decision_rationale": 0.0
+  },
+  "checks": {
+    "md.decision_exists": false,
+    "md.rationale_present": "not_applicable",
+    "md.signed_off": "not_applicable",
+    "md.audit": false,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": true,
+    "outcome.determination_exists": "not_applicable",
+    "outcome.determination_source_exists": "not_applicable",
+    "outcome.source_recommendation_consistent": "not_applicable",
+    "outcome.review_decision_exists": "not_applicable",
+    "outcome.review_decision_matches": "not_applicable",
+    "outcome.terminal_transition_exists": "not_applicable",
+    "outcome.determination_stage_trace": "not_applicable",
+    "outcome.determination_finalize_audit": "not_applicable",
+    "outcome.clean_determination": "not_applicable",
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:crit_ra_diagnosis": true,
+    "judge.nurse_review:crit_disease_activity": true,
+    "judge.nurse_review:crit_tnf_step_therapy": true,
+    "judge.nurse_review:crit_methotrexate": true,
+    "judge.nurse_review:crit_combination_exclusion": false,
+    "judge.nurse_review:crit_dosing_attestation": false,
+    "judge.nurse_review:recommendation": false,
+    "judge.md_review:crit_combination_exclusion": false,
+    "judge.md_review:crit_dosing_compliance": false,
+    "judge.md_review:final_decision": false,
+    "judge.md_review:decision_rationale": false
+  },
+  "failed_checks": [
+    "md.decision_exists",
+    "md.audit",
+    "judge.nurse_review:crit_combination_exclusion",
+    "judge.nurse_review:crit_dosing_attestation",
+    "judge.nurse_review:recommendation",
+    "judge.md_review:crit_combination_exclusion",
+    "judge.md_review:crit_dosing_compliance",
+    "judge.md_review:final_decision",
+    "judge.md_review:decision_rationale"
+  ],
+  "not_applicable_checks": [
+    "md.rationale_present",
+    "md.signed_off",
+    "outcome.determination_exists",
+    "outcome.determination_source_exists",
+    "outcome.source_recommendation_consistent",
+    "outcome.review_decision_exists",
+    "outcome.review_decision_matches",
+    "outcome.terminal_transition_exists",
+    "outcome.determination_stage_trace",
+    "outcome.determination_finalize_audit",
+    "outcome.clean_determination"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": false,
+      "checks": {
+        "md.decision_exists": false,
+        "md.rationale_present": "not_applicable",
+        "md.signed_off": "not_applicable",
+        "md.audit": false
+      },
+      "passed_count": 0,
+      "total_count": 2,
+      "not_applicable_count": 2,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": true,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": true,
+        "outcome.determination_exists": "not_applicable",
+        "outcome.determination_source_exists": "not_applicable",
+        "outcome.source_recommendation_consistent": "not_applicable",
+        "outcome.review_decision_exists": "not_applicable",
+        "outcome.review_decision_matches": "not_applicable",
+        "outcome.terminal_transition_exists": "not_applicable",
+        "outcome.determination_stage_trace": "not_applicable",
+        "outcome.determination_finalize_audit": "not_applicable",
+        "outcome.clean_determination": "not_applicable"
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 9,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-3F5CB30F"
+      }
+    }
+  }
+}

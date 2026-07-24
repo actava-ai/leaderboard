@@ -1,0 +1,30 @@
+schema: chi-bench/submission/v1
+submission:
+  id: inkling-256k-openai-agents
+  team: Actava
+  contact: dark.savi@gmail.com
+  agent: openai-agents
+  model: thinkingmachines/Inkling:peft:262144
+  notes: 'Inkling 256K via the OpenAI Agents SDK harness and Tinker Chat Completions,
+    with high reasoning effort and a 50-turn limit. Reported cost reflects recorded
+    token usage; 25 terminal agent failures reported zero usage and therefore contribute
+    $0 to the aggregate cost.
+
+    '
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 5
+  max_retries: 2
+  timeout_multiplier: 1.0
+  agent_timeout_multiplier: 2.0
+  env_file: .env
+dataset:
+  version: chi-bench-v1.0.0
+  domains:
+  - pa_provider
+  - pa_um
+  - cm
+paths:
+  data_root: /Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/data
+  output_root: /tmp/chi-bench-inkling-submission.YB1kvo/raw

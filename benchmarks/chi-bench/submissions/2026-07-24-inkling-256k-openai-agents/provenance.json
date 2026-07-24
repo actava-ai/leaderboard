@@ -1,0 +1,18 @@
+{
+  "chi_bench_git_sha": "4f39c1e77a90c28cd28e3f2264a8389a0dede039",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-22T14:25:50.976659Z",
+  "finished_at": "2026-07-22T16:53:02.466832Z",
+  "source": "frontier_models_full_2026_07 experiment matrix",
+  "trajectory_repair": {
+    "count": 25,
+    "reason": "Terminal agent failures completed verification but emitted no trace.jsonl.",
+    "method": "Generated ATIF-v1.2 error-only trajectories with the official openai_agents_harness._build_atif_trajectory(records=[], ...) builder from each preserved agent/run_result.json; original logs were not modified."
+  },
+  "recorded_cost_caveat": "The 25 terminal failures with error-only trajectories reported zero input/output/cache tokens and null cost; leaderboard cost is therefore a lower bound on billed execution cost."
+}
