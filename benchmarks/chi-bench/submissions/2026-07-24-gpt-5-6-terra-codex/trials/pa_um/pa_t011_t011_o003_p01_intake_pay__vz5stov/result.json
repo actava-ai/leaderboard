@@ -1,0 +1,115 @@
+{
+    "id": "d7f98ed9-2343-4ded-a751-f31b90cdc433",
+    "task_name": "actava-ai/pa_t011_t011_o003_p01_intake_payer",
+    "trial_name": "pa_t011_t011_o003_p01_intake_pay__vz5stov",
+    "trial_uri": "file:///Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/logs/experiments/frontier_models_full_2026_07/02_codex_openai-gpt-5.6-terra_pa_um/2026-07-21__22-52-59/pa_t011_t011_o003_p01_intake_pay__vz5stov",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-_3ne4vbq/pa_t011_t011_o003_p01_intake_payer"
+    },
+    "source": "chi_bench-modal-_3ne4vbq",
+    "task_checksum": "5214e7a43f86c58d6a514ac7fcce94ce6d97b208634fd58c894ed86e1af22006",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-_3ne4vbq/pa_t011_t011_o003_p01_intake_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-_3ne4vbq"
+        },
+        "trial_name": "pa_t011_t011_o003_p01_intake_pay__vz5stov",
+        "trials_dir": "logs/experiments/frontier_models_full_2026_07/02_codex_openai-gpt-5.6-terra_pa_um/2026-07-21__22-52-59",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "openai/gpt-5.6-terra",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "reasoning_summary": "auto",
+                "version": "0.145.0"
+            },
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+                "TINKER_API_KEY": "${TINKER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "67c1d44e-4e7c-42eb-a9f9-2a3d710b8589"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "0.145.0",
+        "model_info": {
+            "name": "gpt-5.6-terra",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1573106,
+        "n_cache_tokens": 1446308,
+        "n_output_tokens": 8828,
+        "cost_usd": 0.8109919999999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-22T05:59:07.622009Z",
+    "finished_at": "2026-07-22T06:03:58.607053Z",
+    "environment_setup": {
+        "started_at": "2026-07-22T05:59:07.629540Z",
+        "finished_at": "2026-07-22T05:59:37.545258Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-22T05:59:37.545280Z",
+        "finished_at": "2026-07-22T05:59:55.962090Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-22T05:59:55.962185Z",
+        "finished_at": "2026-07-22T06:01:39.188041Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-22T06:01:43.832350Z",
+        "finished_at": "2026-07-22T06:03:50.494753Z"
+    },
+    "step_results": null
+}
