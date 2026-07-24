@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,inkling-256k-openai-agents,Actava,openai-agents,thinkingmachines/Inkling:peft:262144,overall,0.08,75,75,0.9234470439466665,140.97706868,2026-07-24T23:02:07Z
+chi-bench,chi-bench-v1.0.0,inkling-256k-openai-agents,Actava,openai-agents,thinkingmachines/Inkling:peft:262144,pa_provider,0.04,25,25,0.8389722792,121.97677540000001,2026-07-24T23:02:07Z
+chi-bench,chi-bench-v1.0.0,inkling-256k-openai-agents,Actava,openai-agents,thinkingmachines/Inkling:peft:262144,pa_um,0.16,25,25,1.4461965891200002,213.6378354,2026-07-24T23:02:07Z
+chi-bench,chi-bench-v1.0.0,inkling-256k-openai-agents,Actava,openai-agents,thinkingmachines/Inkling:peft:262144,cm,0.04,25,25,0.48517226352000004,87.31659524000001,2026-07-24T23:02:07Z

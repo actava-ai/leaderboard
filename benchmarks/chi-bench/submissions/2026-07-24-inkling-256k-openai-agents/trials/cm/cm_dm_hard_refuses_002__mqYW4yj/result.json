@@ -1,0 +1,117 @@
+{
+    "id": "6c003df1-f40a-4398-b80e-429242604ea4",
+    "task_name": "actava-ai/cm_dm_hard_refuses_002",
+    "trial_name": "cm_dm_hard_refuses_002__mqYW4yj",
+    "trial_uri": "file:///Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/logs/experiments/frontier_models_full_2026_07/05_openai-agents_thinkingmachines-Inkling-peft-262144_cm/2026-07-22__07-25-49/cm_dm_hard_refuses_002__mqYW4yj",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-07a6ydly/cm_dm_hard_refuses_002"
+    },
+    "source": "chi_bench-modal-07a6ydly",
+    "task_checksum": "78fb87ea8daa25f19c3055d722a3f538cc5448fa0b1636155d1b75221116ad40",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-07a6ydly/cm_dm_hard_refuses_002",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-07a6ydly"
+        },
+        "trial_name": "cm_dm_hard_refuses_002__mqYW4yj",
+        "trials_dir": "logs/experiments/frontier_models_full_2026_07/05_openai-agents_thinkingmachines-Inkling-peft-262144_cm/2026-07-22__07-25-49",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "thinkingmachines/Inkling:peft:262144",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_mode": "chat_completions",
+                "max_retries": 10,
+                "max_tool_return_chars": 100000,
+                "max_turns": 50,
+                "reasoning_effort": "high"
+            },
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+                "TINKER_API_KEY": "${TINKER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "322e3be6-18bb-4fde-90f3-86d0b0c48ba7"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "Inkling:peft:262144",
+            "provider": "thinkingmachines"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 466264,
+        "n_cache_tokens": 422528,
+        "n_output_tokens": 2374,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-22T14:29:12.573998Z",
+    "finished_at": "2026-07-22T14:32:27.995745Z",
+    "environment_setup": {
+        "started_at": "2026-07-22T14:29:12.577316Z",
+        "finished_at": "2026-07-22T14:29:34.127772Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-22T14:29:34.127804Z",
+        "finished_at": "2026-07-22T14:29:38.529691Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-22T14:29:38.529716Z",
+        "finished_at": "2026-07-22T14:30:56.211504Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-22T14:31:03.742991Z",
+        "finished_at": "2026-07-22T14:32:25.415860Z"
+    },
+    "step_results": null
+}
