@@ -1,0 +1,115 @@
+{
+    "id": "4249719a-6324-4e23-aa00-9f69d0854b2f",
+    "task_name": "actava-ai/cm_ckd_moderate_anxious_001",
+    "trial_name": "cm_ckd_moderate_anxious_001__xZUFr4i",
+    "trial_uri": "file:///Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/logs/experiments/frontier_models_full_2026_07/01_codex_openai-gpt-5.6-sol_cm/2026-07-21__19-41-31/cm_ckd_moderate_anxious_001__xZUFr4i",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-3j10o0_t/cm_ckd_moderate_anxious_001"
+    },
+    "source": "chi_bench-modal-3j10o0_t",
+    "task_checksum": "046355aeeb18568a69b359ae737a0cb6514f1705b9c0692f2aa1751c625e186a",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-3j10o0_t/cm_ckd_moderate_anxious_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-3j10o0_t"
+        },
+        "trial_name": "cm_ckd_moderate_anxious_001__xZUFr4i",
+        "trials_dir": "logs/experiments/frontier_models_full_2026_07/01_codex_openai-gpt-5.6-sol_cm/2026-07-21__19-41-31",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "codex",
+            "import_path": null,
+            "model_name": "openai/gpt-5.6-sol",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "reasoning_effort": "high",
+                "reasoning_summary": "auto",
+                "version": "0.145.0"
+            },
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+                "TINKER_API_KEY": "${TINKER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0a4923b6-29dc-4f73-85eb-c57bb982ccbc"
+    },
+    "agent_info": {
+        "name": "codex",
+        "version": "0.145.0",
+        "model_info": {
+            "name": "gpt-5.6-sol",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4061321,
+        "n_cache_tokens": 3940926,
+        "n_output_tokens": 22737,
+        "cost_usd": 3.2545479999999998,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-22T03:09:24.871411Z",
+    "finished_at": "2026-07-22T03:22:08.997232Z",
+    "environment_setup": {
+        "started_at": "2026-07-22T03:09:24.875841Z",
+        "finished_at": "2026-07-22T03:09:41.794867Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-22T03:09:41.794893Z",
+        "finished_at": "2026-07-22T03:09:59.058673Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-22T03:09:59.058803Z",
+        "finished_at": "2026-07-22T03:17:19.013108Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-22T03:17:34.191613Z",
+        "finished_at": "2026-07-22T03:22:07.539488Z"
+    },
+    "step_results": null
+}
