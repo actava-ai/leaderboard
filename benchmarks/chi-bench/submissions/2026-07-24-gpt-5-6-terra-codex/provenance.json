@@ -1,0 +1,13 @@
+{
+  "chi_bench_git_sha": "5af8d107b2d7ba56231bc4168d6bc7cb5fbb0ceb",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": false,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-22T04:52:42.763467Z",
+  "finished_at": "2026-07-22T06:23:17.742720Z",
+  "source": "frontier_models_full_2026_07 experiment matrix",
+  "matrix_config": "configs/experiments/frontier_models_full_2026_07.yaml"
+}
