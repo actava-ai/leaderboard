@@ -1,0 +1,109 @@
+{
+    "id": "86ae3f1e-6b20-4873-af06-f96d673b8e13",
+    "task_name": "actava-ai/cm_metabolic_syndrome_hard_refuses_001",
+    "trial_name": "cm_metabolic_syndrome_hard_refus__8mzyXB3",
+    "trial_uri": "file:///Users/mjohnson/Downloads/gampo-chibench/harness/trials_cm_gadv_cm_metabolic_syndrome_hard_refuses_001_a1/cm_metabolic_syndrome_hard_refus__8mzyXB3",
+    "task_id": {
+        "path": "data/care_management/tasks/cm_metabolic_syndrome_hard_refuses_001"
+    },
+    "source": null,
+    "task_checksum": "65274bb698785d6cc3ab40bcd45690f26cfa95fdbf3e2fa0c341b6ba6417fe83",
+    "config": {
+        "task": {
+            "path": "data/care_management/tasks/cm_metabolic_syndrome_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "cm_metabolic_syndrome_hard_refus__8mzyXB3",
+        "trials_dir": "trials_cm_gadv_cm_metabolic_syndrome_hard_refuses_001_a1",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 6.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.gampo_advisory_harness:GampoAdvisoryHarness",
+            "model_name": "anthropic/claude-opus-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "CLAUDE_CODE_OAUTH_TOKEN": "${CLAUDE_CODE_OAUTH_TOKEN}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "CLAUDE_CODE_EFFORT_LEVEL": "max"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": null
+    },
+    "agent_info": {
+        "name": "gampo-advisory",
+        "version": "2.1.220",
+        "model_info": {
+            "name": "claude-opus-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4138535,
+        "n_cache_tokens": 3937350,
+        "n_output_tokens": 56878,
+        "cost_usd": 5.402175000000001,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-26T14:48:16.855012Z",
+    "finished_at": "2026-07-26T15:05:53.532435Z",
+    "environment_setup": {
+        "started_at": "2026-07-26T14:48:16.934970Z",
+        "finished_at": "2026-07-26T14:48:21.777570Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-26T14:48:21.777630Z",
+        "finished_at": "2026-07-26T14:48:48.525089Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-26T14:48:48.525195Z",
+        "finished_at": "2026-07-26T15:02:52.465684Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-26T15:02:52.580074Z",
+        "finished_at": "2026-07-26T15:05:53.399982Z"
+    },
+    "step_results": null
+}

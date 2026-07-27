@@ -1,0 +1,6 @@
+{
+  "chi_bench_git_sha": null,
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0"
+}
