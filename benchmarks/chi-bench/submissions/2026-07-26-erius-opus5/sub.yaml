@@ -1,0 +1,55 @@
+# Erius (Opus 5) × CHI-Bench submission — unified answer-blind GAMPO advisory agent on Opus 5.
+#   uv run cb submission validate -f configs/submissions/erius_opus5.yaml
+#   uv run cb submission run      -f configs/submissions/erius_opus5.yaml
+#   uv run cb submission package  -f configs/submissions/erius_opus5.yaml
+# DRAFT for review (not yet filed). Trees frozen: rsi_checkpoints/opus5_submission_2026-07-26/.
+
+schema: chi-bench/submission/v1
+
+submission:
+  id: erius-opus5
+  team: Michael Johnson (MJ)
+  contact: johnson.michael@gmail.com
+  agent: erius                       # erius brand -> GampoAdvisoryHarness (the answer-blind GAMPO advisory agent that ran)
+  model: anthropic/claude-opus-5
+  notes: |
+    Erius on Opus 5: one GAMPO-governed agent (gampo-advisory), one model (claude-opus-5),
+    strict single-attempt pass@1 (n_attempts = 1), run via the Claude Max subscription (CLI
+    auth). Judge pinned to claude-opus-4-7 per leaderboard policy; agent and judge run on Max,
+    and the ONLY component that bills the funded API key is the care-management patient
+    simulator (sonnet-4-5), which the benchmark structurally requires.
+
+    Governance is an ANSWER-BLIND, per-task definition-of-done: a specification keyed only to
+    each case's own visible policy and to published United States standards (CMS-0057-F / Da
+    Vinci PAS, NCD/LCD and NASS/InterQual criteria, CMS/AMA coding read against the chart, and
+    the CCM/APCM/GUIDE care-management programs), never the hidden answer key, rubric, or
+    solution.
+
+    Per-domain configuration (all single-attempt, same agent and model):
+      - Prior-authorization (pa_provider): answer-blind advisory with chart-documentation-
+        fidelity facts (place-of-service and diagnosis-code corrections traced to the case's
+        own chart, never the gold), default reasoning effort.  18/25 = 72%.
+      - Utilization-management (pa_um): answer-blind advisory, xhigh reasoning effort.  A
+        terminal sign-off commit lever was tested and REJECTED under a zero-regression rule
+        (it recovered one sign-off task but regressed a passing one, net 9/25), so the filed
+        UM slice is the plain advisory board.  9/25 = 36%.
+      - Care-management (cm): the GAMPO procedure only, under the same gampo-advisory agent
+        with no content-advisory file injected (the procedure beats the CMS content advisory
+        on this domain), max reasoning effort, sonnet-4-5 patient simulator.  14/25 = 56%.
+
+    Overall: 41/75 = 54.7% strict single-attempt pass@1.  Exploratory: single trial per task,
+    25 tasks per domain.  This is a cross-generation replication of the Opus 4.8 erius result
+    (filed separately at 37.3% under the generic procedure); it is not a resubmission of that
+    entry.
+
+run:
+  environment: docker        # local single-image; 'modal' for cloud-parallel
+  n_attempts: 1              # leaderboard policy: pass@1
+  concurrency: 4
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: /Users/mjohnson/Downloads/gampo-chibench/.env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]

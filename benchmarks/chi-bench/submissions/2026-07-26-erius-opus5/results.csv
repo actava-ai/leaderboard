@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,erius-opus5,Michael Johnson (MJ),erius,anthropic/claude-opus-5,overall,0.5466666666666666,75,75,0.0,0.0,2026-07-27T03:15:17Z
+chi-bench,chi-bench-v1.0.0,erius-opus5,Michael Johnson (MJ),erius,anthropic/claude-opus-5,pa_provider,0.72,25,25,0.0,0.0,2026-07-27T03:15:17Z
+chi-bench,chi-bench-v1.0.0,erius-opus5,Michael Johnson (MJ),erius,anthropic/claude-opus-5,pa_um,0.36,25,25,0.0,0.0,2026-07-27T03:15:17Z
+chi-bench,chi-bench-v1.0.0,erius-opus5,Michael Johnson (MJ),erius,anthropic/claude-opus-5,cm,0.56,25,25,0.0,0.0,2026-07-27T03:15:17Z

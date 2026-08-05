@@ -1,0 +1,106 @@
+{
+    "id": "9a14d4a4-cdde-4e50-a0f1-c6ad05bdd476",
+    "task_name": "actava-ai/pa_t021_t021_o003_p01_new_referral_provider",
+    "trial_name": "pa_t021_t021_o003_p01_new_referr__ffsxX6K",
+    "trial_uri": "file:///Users/mjohnson/Downloads/gampo-chibench/harness/trials_sub_pa_t021/pa_t021_t021_o003_p01_new_referr__ffsxX6K",
+    "task_id": {
+        "path": "data/prior_auth_provider/tasks/pa_t021_t021_o003_p01_new_referral_provider"
+    },
+    "source": null,
+    "task_checksum": "fc45aff373bb985d5c3e46fc042511645c2dd9b04a588027f948245d09107689",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_provider/tasks/pa_t021_t021_o003_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t021_t021_o003_p01_new_referr__ffsxX6K",
+        "trials_dir": "trials_sub_pa_t021",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 60.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.gampo_advisory_harness:GampoAdvisoryHarness",
+            "model_name": "anthropic/claude-opus-5",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "CLAUDE_CODE_OAUTH_TOKEN": "${CLAUDE_CODE_OAUTH_TOKEN}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": null
+    },
+    "agent_info": {
+        "name": "gampo-advisory",
+        "version": "2.1.220",
+        "model_info": {
+            "name": "claude-opus-5",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4087960,
+        "n_cache_tokens": 3894395,
+        "n_output_tokens": 29679,
+        "cost_usd": 4.6245625,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-25T12:33:46.192177Z",
+    "finished_at": "2026-07-25T12:41:54.153530Z",
+    "environment_setup": {
+        "started_at": "2026-07-25T12:33:46.266348Z",
+        "finished_at": "2026-07-25T12:33:49.939763Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-25T12:33:49.939825Z",
+        "finished_at": "2026-07-25T12:34:16.860712Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-25T12:34:16.860836Z",
+        "finished_at": "2026-07-25T12:41:53.044454Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-25T12:41:53.136819Z",
+        "finished_at": "2026-07-25T12:41:54.027717Z"
+    },
+    "step_results": null
+}
