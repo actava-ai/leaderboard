@@ -1,0 +1,22 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: opus-5-claude-code
+  team: Actava
+  contact: dark.savi@gmail.com
+  agent: claude-code
+  model: anthropic/claude-opus-5
+  notes: |
+    Claude Opus 5 via the stock claude-code harness (MCP tools).
+
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 5
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
