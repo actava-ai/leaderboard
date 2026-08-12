@@ -1,0 +1,117 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.8421052631578947,
+  "passed_checks": 16,
+  "total_checks": 19,
+  "check_scores": {
+    "cm.assessment.record_exists": 1.0,
+    "cm.assessment.completed": 1.0,
+    "cm.assessment.required_sections_present": 1.0,
+    "cm.care_plan.record_exists": 1.0,
+    "cm.care_plan.finalized": 1.0,
+    "cm.care_plan.problem_count": 1.0,
+    "cm.care_plan.goal_structure": 1.0,
+    "cm.care_plan.intervention_structure": 1.0,
+    "cm.care_plan.escalation_conditions_present": 1.0,
+    "cm.care_plan.follow_up_cadence_present": 1.0,
+    "cm.chart_review.record_exists": 1.0,
+    "cm.cross_stage.target_status": 1.0,
+    "cm.cross_stage.audit_actions": 1.0,
+    "cm.cross_stage.no_forbidden_mutations": 1.0,
+    "judge.cm.chart_review.quality": 0.0,
+    "judge.cm.outreach.quality": 1.0,
+    "judge.cm.assessment.quality": 0.0,
+    "judge.cm.care_plan.quality": 1.0,
+    "judge.cm.stage_coherence": 0.0
+  },
+  "checks": {
+    "cm.assessment.record_exists": true,
+    "cm.assessment.completed": true,
+    "cm.assessment.required_sections_present": true,
+    "cm.care_plan.record_exists": true,
+    "cm.care_plan.finalized": true,
+    "cm.care_plan.problem_count": true,
+    "cm.care_plan.goal_structure": true,
+    "cm.care_plan.intervention_structure": true,
+    "cm.care_plan.escalation_conditions_present": true,
+    "cm.care_plan.follow_up_cadence_present": true,
+    "cm.chart_review.record_exists": true,
+    "cm.cross_stage.target_status": true,
+    "cm.cross_stage.audit_actions": true,
+    "cm.cross_stage.no_forbidden_mutations": true,
+    "judge.cm.chart_review.quality": false,
+    "judge.cm.outreach.quality": true,
+    "judge.cm.assessment.quality": false,
+    "judge.cm.care_plan.quality": true,
+    "judge.cm.stage_coherence": false
+  },
+  "failed_checks": [
+    "judge.cm.chart_review.quality",
+    "judge.cm.assessment.quality",
+    "judge.cm.stage_coherence"
+  ],
+  "not_applicable_checks": [],
+  "stages": {
+    "cm_assessment": {
+      "passed": true,
+      "checks": {
+        "cm.assessment.record_exists": true,
+        "cm.assessment.completed": true,
+        "cm.assessment.required_sections_present": true
+      },
+      "passed_count": 3,
+      "total_count": 3,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CM-CASE-CM_MDD_MODERATE_RELUCTANT_001",
+        "record_count": 1
+      }
+    },
+    "cm_care_plan": {
+      "passed": true,
+      "checks": {
+        "cm.care_plan.record_exists": true,
+        "cm.care_plan.finalized": true,
+        "cm.care_plan.problem_count": true,
+        "cm.care_plan.goal_structure": true,
+        "cm.care_plan.intervention_structure": true,
+        "cm.care_plan.escalation_conditions_present": true,
+        "cm.care_plan.follow_up_cadence_present": true
+      },
+      "passed_count": 7,
+      "total_count": 7,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CM-CASE-CM_MDD_MODERATE_RELUCTANT_001",
+        "record_count": 1
+      }
+    },
+    "cm_chart_review": {
+      "passed": true,
+      "checks": {
+        "cm.chart_review.record_exists": true
+      },
+      "passed_count": 1,
+      "total_count": 1,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CM-CASE-CM_MDD_MODERATE_RELUCTANT_001",
+        "record_count": 1
+      }
+    },
+    "cm_cross_stage": {
+      "passed": true,
+      "checks": {
+        "cm.cross_stage.target_status": true,
+        "cm.cross_stage.audit_actions": true,
+        "cm.cross_stage.no_forbidden_mutations": true
+      },
+      "passed_count": 3,
+      "total_count": 3,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CM-CASE-CM_MDD_MODERATE_RELUCTANT_001"
+      }
+    }
+  }
+}

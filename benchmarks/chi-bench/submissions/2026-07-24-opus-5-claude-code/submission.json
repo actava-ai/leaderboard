@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "opus-5-claude-code",
+    "team": "Actava",
+    "contact": "dark.savi@gmail.com",
+    "agent": "claude-code",
+    "model": "anthropic/claude-opus-5",
+    "notes": "Claude Opus 5 via the stock claude-code harness (MCP tools), single attempt per task. Run executed 2026-07-24 alongside the frontier release wave; the packet was produced locally but never filed at the time (see provenance.filing_note).\n",
+    "submitted_at": "2026-08-12T20:20:00Z"
+  },
+  "dataset": {
+    "name": "chi-bench",
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ]
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.37333333333333335,
+      "mean_cost_usd": 4.790005273333334,
+      "mean_walltime_s": 770.8856552666666
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.2,
+        "mean_cost_usd": 3.44516798,
+        "mean_walltime_s": 405.74023172
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.32,
+        "mean_cost_usd": 4.3660177,
+        "mean_walltime_s": 628.4504582
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.6,
+        "mean_cost_usd": 6.55883014,
+        "mean_walltime_s": 1278.46627588
+      }
+    },
+    "mean_cost_usd": 4.790005273333334,
+    "mean_walltime_s": 770.8856552666666
+  },
+  "provenance": {
+    "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-07-24T19:08:02Z",
+    "finished_at": "2026-07-24T23:22:36Z",
+    "source": "logs/submissions/opus-5-claude-code (cb submission run)",
+    "original_run_sha": "c4c11887f95a3909eeb8afc80c4bfa41221785be",
+    "filing_note": "Run completed 2026-07-24T23:22:36Z and an infographic was produced, but the leaderboard submission was never filed. Filed 2026-08-12 from the original, unmodified run manifest; original_run_sha records the code SHA the run actually executed against."
+  }
+}

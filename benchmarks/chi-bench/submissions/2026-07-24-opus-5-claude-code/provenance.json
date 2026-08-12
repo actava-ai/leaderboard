@@ -1,0 +1,14 @@
+{
+  "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": false,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-24T19:08:02Z",
+  "finished_at": "2026-07-24T23:22:36Z",
+  "source": "logs/submissions/opus-5-claude-code (cb submission run)",
+  "original_run_sha": "c4c11887f95a3909eeb8afc80c4bfa41221785be",
+  "filing_note": "Run completed 2026-07-24T23:22:36Z and an infographic was produced, but the leaderboard submission was never filed. Filed 2026-08-12 from the original, unmodified run manifest; original_run_sha records the code SHA the run actually executed against."
+}
