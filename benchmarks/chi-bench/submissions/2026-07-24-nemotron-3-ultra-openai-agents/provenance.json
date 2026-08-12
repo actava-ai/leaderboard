@@ -1,0 +1,19 @@
+{
+  "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": false,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-22T22:31:29.302007Z",
+  "finished_at": "2026-07-22T23:37:41.111758Z",
+  "source": "nemotron3_ultra_tinker_full_2026_07 experiment matrix",
+  "cost_basis": "74 of 75 trials carry price-table-estimated cost; 1 trial reports no usage. Rate reflects the limited-time Tinker discount verified 2026-07-22.",
+  "eval_validity": "Closed per docs/superpowers/plans/2026-07-22-nemotron-tinker-eval.md: 3/3 canary, 75/75 trials and scorecards, no infrastructure exceptions.",
+  "trajectory_repair": {
+    "count": 1,
+    "reason": "1 pa_provider trial (MaxTurnsExceeded) completed verification but emitted no trace.jsonl.",
+    "method": "Generated ATIF-v1.2 error-only trajectories with the official openai_agents_harness._build_atif_trajectory(records=[], ...) builder from each preserved agent/run_result.json; original logs were not modified."
+  }
+}

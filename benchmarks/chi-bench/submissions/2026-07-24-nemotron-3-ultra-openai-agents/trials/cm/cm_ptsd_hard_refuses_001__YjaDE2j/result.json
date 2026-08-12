@@ -1,0 +1,117 @@
+{
+    "id": "0ec2dc6e-135b-419c-a2c9-2f8611807e60",
+    "task_name": "actava-ai/cm_ptsd_hard_refuses_001",
+    "trial_name": "cm_ptsd_hard_refuses_001__YjaDE2j",
+    "trial_uri": "file:///Users/haolin.chen/.config/superpowers/worktrees/chi-bench/frontier-models-smoke/logs/experiments/nemotron3_ultra_tinker_full_2026_07/01_openai-agents_nvidia-NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16-peft-262144_cm/2026-07-22__16-14-44/cm_ptsd_hard_refuses_001__YjaDE2j",
+    "task_id": {
+        "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-9xx7v_gy/cm_ptsd_hard_refuses_001"
+    },
+    "source": "chi_bench-modal-9xx7v_gy",
+    "task_checksum": "eb0077ef7a271dba2eb6f94e2364510564a070adf9b6c106787d3c4a236eeedc",
+    "config": {
+        "task": {
+            "path": "/var/folders/51/f74lzb_9073dvd740hb4qmd80000gn/T/chi_bench-modal-9xx7v_gy/cm_ptsd_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "chi_bench-modal-9xx7v_gy"
+        },
+        "trial_name": "cm_ptsd_hard_refuses_001__YjaDE2j",
+        "trials_dir": "logs/experiments/nemotron3_ultra_tinker_full_2026_07/01_openai-agents_nvidia-NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16-peft-262144_cm/2026-07-22__16-14-44",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": 2.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16:peft:262144",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {
+                "api_mode": "chat_completions",
+                "max_retries": 10,
+                "max_tool_return_chars": 100000,
+                "max_turns": 50,
+                "provider_route": "tinker"
+            },
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}",
+                "TINKER_API_KEY": "${TINKER_API_KEY}"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.modal_env:ChiBenchModalEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {
+                "sandbox_timeout_secs": 86400
+            }
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "0968fe18-aa0c-4920-9ca6-521a2348e762"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16:peft:262144",
+            "provider": "nvidia"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1338132,
+        "n_cache_tokens": 1232384,
+        "n_output_tokens": 11552,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-22T23:14:46.579016Z",
+    "finished_at": "2026-07-22T23:23:13.959250Z",
+    "environment_setup": {
+        "started_at": "2026-07-22T23:14:46.579624Z",
+        "finished_at": "2026-07-22T23:15:46.934254Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-22T23:15:46.934291Z",
+        "finished_at": "2026-07-22T23:15:49.905635Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-22T23:15:49.905690Z",
+        "finished_at": "2026-07-22T23:19:48.443903Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-22T23:19:52.241884Z",
+        "finished_at": "2026-07-22T23:23:12.595501Z"
+    },
+    "step_results": null
+}
