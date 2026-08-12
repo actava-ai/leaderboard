@@ -1,0 +1,19 @@
+{
+  "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": false,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": "2026-07-22T08:03:23.788878Z",
+  "finished_at": "2026-07-22T14:22:38.269923Z",
+  "source": "frontier_models_seven_model_full_2026_07 experiment matrix",
+  "cost_basis": "All 75 trials have price-table-estimated cost rather than provider-reported cost (cost_reported_trials = 0); 4 pa_um trials with terminal agent exceptions contribute $0.",
+  "filing_note": "Run completed 2026-07-22 as part of the 2026-07-24 frontier release wave and was published in the 4/4 results post on 2026-07-29, but the leaderboard submission was not filed at the time. Filed 2026-08-12 with the original, unmodified aggregation.",
+  "trajectory_repair": {
+    "count": 4,
+    "reason": "4 pa_um trials terminated with agent exceptions and completed verification but emitted no trace.jsonl.",
+    "method": "Generated ATIF-v1.2 error-only trajectories with the official openai_agents_harness._build_atif_trajectory(records=[], ...) builder from each preserved agent/run_result.json; original logs were not modified."
+  }
+}

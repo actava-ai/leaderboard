@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,kimi-k3-openai-agents,Actava,openai-agents,moonshotai/kimi-k3,overall,0.25333333333333335,75,75,1.27148092,854.36141916,2026-08-12T20:20:00Z
+chi-bench,chi-bench-v1.0.0,kimi-k3-openai-agents,Actava,openai-agents,moonshotai/kimi-k3,pa_provider,0.28,25,25,1.402652808,592.95700092,2026-08-12T20:20:00Z
+chi-bench,chi-bench-v1.0.0,kimi-k3-openai-agents,Actava,openai-agents,moonshotai/kimi-k3,pa_um,0.32,25,25,1.03994136,792.82956592,2026-08-12T20:20:00Z
+chi-bench,chi-bench-v1.0.0,kimi-k3-openai-agents,Actava,openai-agents,moonshotai/kimi-k3,cm,0.16,25,25,1.371848592,1177.29769064,2026-08-12T20:20:00Z

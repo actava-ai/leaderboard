@@ -1,0 +1,74 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "kimi-k3-openai-agents",
+    "team": "Actava",
+    "contact": "dark.savi@gmail.com",
+    "agent": "openai-agents",
+    "model": "moonshotai/kimi-k3",
+    "notes": "Kimi K3 via the OpenAI Agents SDK harness with a 50-turn limit. Cost is derived from the normalized price table rather than provider-reported totals: 71 of 75 trials carry estimated cost and 4 pa_um trials terminated with agent exceptions and report no usage, so leaderboard cost is a lower bound on billed execution cost. Run executed 2026-07-22; filed late (see provenance.filing_note).\n",
+    "submitted_at": "2026-08-12T20:20:00Z"
+  },
+  "dataset": {
+    "name": "chi-bench",
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ]
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.25333333333333335,
+      "mean_cost_usd": 1.27148092,
+      "mean_walltime_s": 854.36141916
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.28,
+        "mean_cost_usd": 1.402652808,
+        "mean_walltime_s": 592.95700092
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.32,
+        "mean_cost_usd": 1.03994136,
+        "mean_walltime_s": 792.82956592
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.16,
+        "mean_cost_usd": 1.371848592,
+        "mean_walltime_s": 1177.29769064
+      }
+    },
+    "mean_cost_usd": 1.27148092,
+    "mean_walltime_s": 854.36141916
+  },
+  "provenance": {
+    "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": "2026-07-22T08:03:23.788878Z",
+    "finished_at": "2026-07-22T14:22:38.269923Z",
+    "source": "frontier_models_seven_model_full_2026_07 experiment matrix",
+    "cost_basis": "All 75 trials have price-table-estimated cost rather than provider-reported cost (cost_reported_trials = 0); 4 pa_um trials with terminal agent exceptions contribute $0.",
+    "filing_note": "Run completed 2026-07-22 as part of the 2026-07-24 frontier release wave and was published in the 4/4 results post on 2026-07-29, but the leaderboard submission was not filed at the time. Filed 2026-08-12 with the original, unmodified aggregation.",
+    "trajectory_repair": {
+      "count": 4,
+      "reason": "4 pa_um trials terminated with agent exceptions and completed verification but emitted no trace.jsonl.",
+      "method": "Generated ATIF-v1.2 error-only trajectories with the official openai_agents_harness._build_atif_trajectory(records=[], ...) builder from each preserved agent/run_result.json; original logs were not modified."
+    }
+  }
+}
