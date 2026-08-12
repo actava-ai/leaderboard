@@ -1,0 +1,28 @@
+schema: chi-bench/submission/v1
+submission:
+  id: kimi-k3-openai-agents
+  team: Actava
+  contact: dark.savi@gmail.com
+  agent: openai-agents
+  model: moonshotai/kimi-k3
+  notes: 'Kimi K3 via the OpenAI Agents SDK harness with a 50-turn limit.
+
+    '
+  agent_kwargs:
+    max_turns: '50'
+    max_retries: '10'
+    max_tool_return_chars: '100000'
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 5
+  max_retries: 2
+  timeout_multiplier: 1.0
+  agent_timeout_multiplier: 2.0
+  env_file: .env
+dataset:
+  version: chi-bench-v1.0.0
+  domains:
+  - pa_provider
+  - pa_um
+  - cm
