@@ -1,0 +1,109 @@
+{
+    "id": "f3e6f2b1-4eb2-4903-8164-eb0fc3d81270",
+    "task_name": "actava-ai/pa_t023_t023_o003_p01_new_referral_provider",
+    "trial_name": "pa_t023_t023_o003_p01_new_referr__zX9Z5ZW",
+    "trial_uri": "trials/pa_provider/pa_t023_t023_o003_p01_new_referr__zX9Z5ZW",
+    "task_id": {
+        "path": "data/prior_auth_provider/tasks/pa_t023_t023_o003_p01_new_referral_provider"
+    },
+    "source": null,
+    "task_checksum": "be7399962a2566de14c86032472a6c3a16ac1269a04a10c6cf1d3bc857cd4159",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_provider/tasks/pa_t023_t023_o003_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t023_t023_o003_p01_new_referr__zX9Z5ZW",
+        "trials_dir": "trials/pa_provider",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0620",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://solotvvrh0bnp02qhk7g8.apigateway-cn-beijing.volceapi.com/v1",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "CHI_BENCH_PATIENT_SIM_MODEL": "claude-opus-4-7",
+                "CHI_BENCH_PATIENT_SIM_BASE_URL": "https://api.gpugeek.com"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "a6913700-9403-4217-a287-87e94e6c0e7c"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0\nUpdate available: 1 commit behind — run 'uv pip install --upgrade hermes-agent'",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0620",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-06T06:24:43.455977Z",
+    "finished_at": "2026-08-06T06:30:14.463074Z",
+    "environment_setup": {
+        "started_at": "2026-08-06T06:24:43.481461Z",
+        "finished_at": "2026-08-06T06:24:57.264096Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-06T06:24:57.264120Z",
+        "finished_at": "2026-08-06T06:25:08.191561Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-06T06:25:08.191642Z",
+        "finished_at": "2026-08-06T06:29:23.033522Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-06T06:29:23.466608Z",
+        "finished_at": "2026-08-06T06:30:14.023410Z"
+    },
+    "step_results": null
+}

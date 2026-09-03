@@ -1,0 +1,109 @@
+{
+    "id": "02b6b181-bf0d-485b-9ec0-7db221f3958a",
+    "task_name": "actava-ai/pa_t034_t034_o002_p01_intake_payer",
+    "trial_name": "pa_t034_t034_o002_p01_intake_pay__R9K5RNy",
+    "trial_uri": "trials/pa_um/pa_t034_t034_o002_p01_intake_pay__R9K5RNy",
+    "task_id": {
+        "path": "data/prior_auth_um/tasks/pa_t034_t034_o002_p01_intake_payer"
+    },
+    "source": null,
+    "task_checksum": "3e4e61d189a090c0dd8e57caeecc6cb2ffcec304ce2c796a8f19e525596fff0a",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_um/tasks/pa_t034_t034_o002_p01_intake_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t034_t034_o002_p01_intake_pay__R9K5RNy",
+        "trials_dir": "trials/pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0620",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://solotvvrh0bnp02qhk7g8.apigateway-cn-beijing.volceapi.com/v1",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "CHI_BENCH_PATIENT_SIM_MODEL": "claude-opus-4-7",
+                "CHI_BENCH_PATIENT_SIM_BASE_URL": "https://api.gpugeek.com"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "08713c15-56ea-4e45-b51e-762c279d7a01"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0\nUpdate available: 1 commit behind — run 'uv pip install --upgrade hermes-agent'",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0620",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-21T09:37:10.325436Z",
+    "finished_at": "2026-08-21T09:42:29.531030Z",
+    "environment_setup": {
+        "started_at": "2026-08-21T09:37:10.413894Z",
+        "finished_at": "2026-08-21T09:37:31.317112Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-21T09:37:31.317152Z",
+        "finished_at": "2026-08-21T09:37:35.129572Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-21T09:37:35.129661Z",
+        "finished_at": "2026-08-21T09:41:13.370547Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-21T09:41:13.773860Z",
+        "finished_at": "2026-08-21T09:42:28.924193Z"
+    },
+    "step_results": null
+}

@@ -1,0 +1,109 @@
+{
+    "id": "62eeefaa-03d7-4c7e-b809-f6e7cf3d4266",
+    "task_name": "actava-ai/pa_t013_t013_o002_p01_nurse_review_payer",
+    "trial_name": "pa_t013_t013_o002_p01_nurse_revi__g5rcXoC",
+    "trial_uri": "trials/pa_um/pa_t013_t013_o002_p01_nurse_revi__g5rcXoC",
+    "task_id": {
+        "path": "data/prior_auth_um/tasks/pa_t013_t013_o002_p01_nurse_review_payer"
+    },
+    "source": null,
+    "task_checksum": "7234c3c02860ae4193d2ef3b4683143c0b9cb39c434874f421246f8059dc3208",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_um/tasks/pa_t013_t013_o002_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t013_t013_o002_p01_nurse_revi__g5rcXoC",
+        "trials_dir": "trials/pa_um",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0620",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://solotvvrh0bnp02qhk7g8.apigateway-cn-beijing.volceapi.com/v1",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "CHI_BENCH_PATIENT_SIM_MODEL": "claude-opus-4-7",
+                "CHI_BENCH_PATIENT_SIM_BASE_URL": "https://api.gpugeek.com"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "2912eb0d-39dc-4306-8bdf-ce4fcfbe337c"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0\nUpdate available: 1 commit behind — run 'uv pip install --upgrade hermes-agent'",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0620",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-21T09:12:48.325352Z",
+    "finished_at": "2026-08-21T09:27:26.444145Z",
+    "environment_setup": {
+        "started_at": "2026-08-21T09:12:48.388465Z",
+        "finished_at": "2026-08-21T09:13:08.223640Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-21T09:13:08.223681Z",
+        "finished_at": "2026-08-21T09:13:11.737904Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-21T09:13:11.737998Z",
+        "finished_at": "2026-08-21T09:17:19.416598Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-21T09:17:19.824263Z",
+        "finished_at": "2026-08-21T09:27:25.804903Z"
+    },
+    "step_results": null
+}

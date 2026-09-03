@@ -1,0 +1,109 @@
+{
+    "id": "cede23de-006e-47dd-ad4f-39738aed6f03",
+    "task_name": "actava-ai/pa_t012_t012_o001_p01_new_referral_provider",
+    "trial_name": "pa_t012_t012_o001_p01_new_referr__KzDHeft",
+    "trial_uri": "trials/pa_provider/pa_t012_t012_o001_p01_new_referr__KzDHeft",
+    "task_id": {
+        "path": "data/prior_auth_provider/tasks/pa_t012_t012_o001_p01_new_referral_provider"
+    },
+    "source": null,
+    "task_checksum": "3411618ef59171df8613ba856ab55851f04339353349b61d6c74799dd83d1876",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_provider/tasks/pa_t012_t012_o001_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t012_t012_o001_p01_new_referr__KzDHeft",
+        "trials_dir": "trials/pa_provider",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0620",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://solotvvrh0bnp02qhk7g8.apigateway-cn-beijing.volceapi.com/v1",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}",
+                "CHI_BENCH_PATIENT_SIM_MODEL": "claude-opus-4-7",
+                "CHI_BENCH_PATIENT_SIM_BASE_URL": "https://api.gpugeek.com"
+            }
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "a6913700-9403-4217-a287-87e94e6c0e7c"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0620",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-08-06T06:00:51.519041Z",
+    "finished_at": "2026-08-06T06:09:39.044076Z",
+    "environment_setup": {
+        "started_at": "2026-08-06T06:00:51.541933Z",
+        "finished_at": "2026-08-06T06:01:13.665500Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-08-06T06:01:13.665541Z",
+        "finished_at": "2026-08-06T06:01:22.820524Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-08-06T06:01:22.820580Z",
+        "finished_at": "2026-08-06T06:08:04.799643Z"
+    },
+    "verifier": {
+        "started_at": "2026-08-06T06:08:05.230381Z",
+        "finished_at": "2026-08-06T06:09:38.561250Z"
+    },
+    "step_results": null
+}

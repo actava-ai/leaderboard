@@ -1,0 +1,103 @@
+{
+    "id": "c1aebed8-404f-4d57-8fd6-1da53ab9965d",
+    "task_name": "actava-ai/cm_schizo_hard_refuses_001",
+    "trial_name": "cm_schizo_hard_refuses_001__EtQtEDC",
+    "trial_uri": "trials/cm/cm_schizo_hard_refuses_001__EtQtEDC",
+    "task_id": {
+        "path": "data/care_management/tasks/cm_schizo_hard_refuses_001"
+    },
+    "source": null,
+    "task_checksum": "b08372f72c6040a88ddac6f86ff7bc2e71e40f35d2860b195e4549978c2659ed",
+    "config": {
+        "task": {
+            "path": "data/care_management/tasks/cm_schizo_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "cm_schizo_hard_refuses_001__EtQtEDC",
+        "trials_dir": "trials/cm",
+        "timeout_multiplier": 2.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hermes_harness:HermesHarness",
+            "model_name": "openai/qwen3.5_27b_sft_0609",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "mounts_json": null,
+            "env": {},
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "env": {},
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "c1dd117d-2a24-4340-8cac-98389c0ed26d"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.13\nOpenAI SDK: 2.24.0",
+        "model_info": {
+            "name": "qwen3.5_27b_sft_0609",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-07-19T06:05:18.073116Z",
+    "finished_at": "2026-07-19T06:09:12.230613Z",
+    "environment_setup": {
+        "started_at": "2026-07-19T06:05:18.075967Z",
+        "finished_at": "2026-07-19T06:05:27.629046Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-19T06:05:27.629058Z",
+        "finished_at": "2026-07-19T06:05:37.601872Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-19T06:05:37.601923Z",
+        "finished_at": "2026-07-19T06:09:08.179439Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-19T06:09:08.586204Z",
+        "finished_at": "2026-07-19T06:09:11.829599Z"
+    },
+    "step_results": null
+}

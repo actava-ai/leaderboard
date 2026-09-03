@@ -1,0 +1,64 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "u2med-u2medfellow-zzq",
+    "team": "U2Med",
+    "contact": "zhongzhiqiang-intern@example.com",
+    "agent": "U2MedFellow",
+    "model": "U2Med",
+    "notes": "Leaderboard packet integrates the results for all three benchmark domains in the current submission directory. The leaderboard identity is model U2Med with agent U2MedFellow. Trial evidence and benchmark results are included in the submission packet.",
+    "submitted_at": "2026-09-03T03:01:09Z"
+  },
+  "dataset": {
+    "name": "chi-bench",
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ]
+  },
+  "results": {
+    "overall": {
+      "pass_at_1": 0.5866666666666667,
+      "n_trials": 75,
+      "n_tasks": 75,
+      "mean_cost_usd": 0.0,
+      "mean_walltime_s": 0.0
+    },
+    "per_domain": {
+      "pa_provider": {
+        "pass_at_1": 0.52,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 0.0
+      },
+      "pa_um": {
+        "pass_at_1": 0.52,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 0.0
+      },
+      "cm": {
+        "pass_at_1": 0.72,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 0.0
+      }
+    },
+    "mean_cost_usd": 0.0,
+    "mean_walltime_s": 0.0
+  },
+  "provenance": {
+    "chi_bench_git_sha": null,
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "selection": {
+      "description": "Integrated results for all three benchmark domains in the current submission directory."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: u2med-u2medfellow-zzq
+  team: U2Med
+  contact: zhongzhiqiang-intern@example.com
+  agent: U2MedFellow
+  model: U2Med
+  notes: |
+    Leaderboard packet integrates the results for all three benchmark domains
+    in the current submission directory. The public leaderboard identity is
+    model U2Med with agent U2MedFellow. Trial evidence and benchmark results
+    are included in the submission packet.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 4
+  max_retries: 0
+  timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+
+paths:
+  data_root: data
+  output_root: logs/submissions/2026-09-03-u2med-u2medfellow-zzq

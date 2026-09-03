@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,u2med-u2medfellow-zzq,U2Med,U2MedFellow,U2Med,overall,0.5866666666666667,75,75,0.0,0.0,2026-09-03T03:01:09Z
+chi-bench,chi-bench-v1.0.0,u2med-u2medfellow-zzq,U2Med,U2MedFellow,U2Med,pa_provider,0.52,25,25,0.0,0.0,2026-09-03T03:01:09Z
+chi-bench,chi-bench-v1.0.0,u2med-u2medfellow-zzq,U2Med,U2MedFellow,U2Med,pa_um,0.52,25,25,0.0,0.0,2026-09-03T03:01:09Z
+chi-bench,chi-bench-v1.0.0,u2med-u2medfellow-zzq,U2Med,U2MedFellow,U2Med,cm,0.72,25,25,0.0,0.0,2026-09-03T03:01:09Z
