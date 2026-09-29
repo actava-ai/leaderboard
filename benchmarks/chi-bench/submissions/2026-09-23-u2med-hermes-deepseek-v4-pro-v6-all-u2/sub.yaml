@@ -1,0 +1,26 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: u2med-hermes-deepseek-v4-pro-v6-all-u2
+  team: U2Med
+  contact: gechengze@unisound.com
+  agent: U2MedFellow v6
+  model: openai/deepseek-v4-pro
+  notes: "Workspace judge: claude-opus-4-7."
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 1
+  max_retries: 0
+  timeout_multiplier: 3.0
+  agent_timeout_multiplier: 3.0
+  env_file: .env.hermes-deepseek-v4-full.loaded
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+
+paths:
+  data_root: data
+  output_root: logs/submissions/u2med-hermes-deepseek-v4-pro-v6-all-u2

@@ -1,0 +1,15 @@
+{
+  "chi_bench_git_sha": "f003ed1be9a6855b7271a1bdf91d6d98a37bf436",
+  "image_digest": "sha256:0fbabdb0630077ffa6ebf4ea998ed48f6a41fed86d642d2ff08e6ce4df898050",
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "U2MedFellow v6",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "docker",
+  "started_at": "2026-09-21T01:23:51Z",
+  "finished_at": "2026-09-21T08:56:31Z",
+  "host": "di-20260909194746-9lwxb",
+  "python_version": "3.14.7",
+  "platform": "Linux-5.4.250-2-velinux1u1-amd64-x86_64-with-glibc2.35",
+  "docker_image": "chi-bench:hermes-deepseek-v4-pro-v6"
+}

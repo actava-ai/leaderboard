@@ -1,0 +1,117 @@
+{
+    "id": "9daaa92c-9094-4869-81ac-0f752a70706b",
+    "task_name": "actava-ai/pa_t015_t015_o002_p01_intake_payer",
+    "trial_name": "pa_t015_t015_o002_p01_intake_pay__YWgGWGj",
+    "trial_uri": "file:///fs-ift/med/gechengze/project/chi-bench-clean/logs/submissions/u2med-hermes-deepseek-v4-pro-v6-all-u2/pa_um/u2med-hermes-deepseek-v4-pro-v6-all-u2__pa_um/pa_t015_t015_o002_p01_intake_pay__YWgGWGj",
+    "task_id": {
+        "path": "/fs-ift/med/gechengze/project/chi-bench-clean/data/prior_auth_um/tasks/pa_t015_t015_o002_p01_intake_payer"
+    },
+    "source": null,
+    "task_checksum": "6e45aa07fcf7c26eb6eef91f51028a7c6e8c99c26004ecb9cb03e8fa056a6f84",
+    "config": {
+        "task": {
+            "path": "/fs-ift/med/gechengze/project/chi-bench-clean/data/prior_auth_um/tasks/pa_t015_t015_o002_p01_intake_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t015_t015_o002_p01_intake_pay__YWgGWGj",
+        "trials_dir": "logs/submissions/u2med-hermes-deepseek-v4-pro-v6-all-u2/pa_um/u2med-hermes-deepseek-v4-pro-v6-all-u2__pa_um",
+        "install_only": false,
+        "timeout_multiplier": 3.0,
+        "agent_timeout_multiplier": 3.0,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.u2medfellow_harness:U2MedFellowHarness",
+            "model_name": "openai/deepseek-v4-pro",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://maas-api.hivoice.cn/v1"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "b67c68d0-ca47-4acc-b2c5-515f18b9b157"
+    },
+    "agent_info": {
+        "name": "U2MedFellow v6",
+        "version": "U2MedFellow v6",
+        "model_info": {
+            "name": "deepseek-v4-pro",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 0,
+        "n_cache_tokens": null,
+        "n_output_tokens": 0,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-09-21T03:07:08.752649Z",
+    "finished_at": "2026-09-21T03:11:21.354405Z",
+    "environment_setup": {
+        "started_at": "2026-09-21T03:07:08.816810Z",
+        "finished_at": "2026-09-21T03:07:26.935964Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-09-21T03:07:26.935994Z",
+        "finished_at": "2026-09-21T03:07:29.938145Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-09-21T03:07:29.938248Z",
+        "finished_at": "2026-09-21T03:10:28.463664Z"
+    },
+    "verifier": {
+        "started_at": "2026-09-21T03:10:31.561809Z",
+        "finished_at": "2026-09-21T03:11:20.907066Z"
+    },
+    "step_results": null
+}
