@@ -1,0 +1,117 @@
+{
+    "id": "54d75f40-a98b-4cf9-917a-c52911262b9d",
+    "task_name": "actava-ai/pa_t026_t026_o003_p01_nurse_review_payer",
+    "trial_name": "pa_t026_t026_o003_p01_nurse_revi__mbasWjo",
+    "trial_uri": "file:///home/runner/work/HG-Market-System/HG-Market-System/chi-bench/trials/full75/payer/pa_t026_t026_o003_p01_nurse_review_payer/pa_t026_t026_o003_p01_nurse_revi__mbasWjo",
+    "task_id": {
+        "path": "/home/runner/work/HG-Market-System/HG-Market-System/chi-bench/data/prior_auth_um/tasks/pa_t026_t026_o003_p01_nurse_review_payer"
+    },
+    "source": null,
+    "task_checksum": "182e183d98ab4989058eaeececb2d03eb36527ef27bd6a820149a289f790969b",
+    "config": {
+        "task": {
+            "path": "/home/runner/work/HG-Market-System/HG-Market-System/chi-bench/data/prior_auth_um/tasks/pa_t026_t026_o003_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t026_t026_o003_p01_nurse_revi__mbasWjo",
+        "trials_dir": "/home/runner/work/HG-Market-System/HG-Market-System/chi-bench/trials/full75/payer/pa_t026_t026_o003_p01_nurse_review_payer",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hg_closure_codex_harness:HGClosureCodexHarness",
+            "model_name": "openai/gpt-5.4-mini",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": null
+    },
+    "agent_info": {
+        "name": "hg-closure-codex",
+        "version": "0.160.0",
+        "model_info": {
+            "name": "gpt-5.4-mini",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1942074,
+        "n_cache_tokens": 1816064,
+        "n_output_tokens": 19374,
+        "cost_usd": 0.3178953,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-02T19:24:23.582430Z",
+    "finished_at": "2026-10-02T19:29:59.253151Z",
+    "environment_setup": {
+        "started_at": "2026-10-02T19:24:23.651186Z",
+        "finished_at": "2026-10-02T19:24:54.180983Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-02T19:24:54.181052Z",
+        "finished_at": "2026-10-02T19:25:10.091667Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-02T19:25:10.091776Z",
+        "finished_at": "2026-10-02T19:27:46.784757Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-02T19:27:51.671894Z",
+        "finished_at": "2026-10-02T19:29:56.039098Z"
+    },
+    "step_results": null
+}

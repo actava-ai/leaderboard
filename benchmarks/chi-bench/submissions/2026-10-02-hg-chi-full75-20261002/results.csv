@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,hg-chi-full75-20261002,HG-Market-System,hg-closure-codex,openai/gpt-5.4-mini,overall,0.21333333333333335,75,75,0.35835238799999997,212.59814867999998,2026-10-02T21:37:15Z
+chi-bench,chi-bench-v1.0.0,hg-chi-full75-20261002,HG-Market-System,hg-closure-codex,openai/gpt-5.4-mini,pa_provider,0.44,25,25,0.651814272,386.22932099999997,2026-10-02T21:37:15Z
+chi-bench,chi-bench-v1.0.0,hg-chi-full75-20261002,HG-Market-System,hg-closure-codex,openai/gpt-5.4-mini,pa_um,0.16,25,25,0.22516143,125.64235607999998,2026-10-02T21:37:15Z
+chi-bench,chi-bench-v1.0.0,hg-chi-full75-20261002,HG-Market-System,hg-closure-codex,openai/gpt-5.4-mini,cm,0.04,25,25,0.19808146199999999,125.92276896,2026-10-02T21:37:15Z
