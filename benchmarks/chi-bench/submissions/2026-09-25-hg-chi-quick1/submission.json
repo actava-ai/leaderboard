@@ -1,0 +1,50 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "hg-chi-quick1",
+    "team": "HG Market System",
+    "contact": "private@invalid.local",
+    "agent": "hg-closure-codex",
+    "model": "openai/gpt-5.4-mini",
+    "notes": "Partial one-task provider submission generated from an official pass@1 canary.",
+    "submitted_at": "2026-09-25T01:38:17Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 1,
+      "n_tasks": 1,
+      "pass_at_1": 1.0,
+      "mean_cost_usd": 0.16167165,
+      "mean_walltime_s": 459.609106
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 1,
+        "n_tasks": 1,
+        "pass_at_1": 1.0,
+        "mean_cost_usd": 0.16167165,
+        "mean_walltime_s": 459.609106
+      }
+    },
+    "mean_cost_usd": 0.16167165,
+    "mean_walltime_s": 459.609106
+  },
+  "provenance": {
+    "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": true,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "modal",
+    "started_at": null,
+    "finished_at": null
+  }
+}

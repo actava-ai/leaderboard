@@ -1,0 +1,11 @@
+{
+  "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "modal",
+  "started_at": null,
+  "finished_at": null
+}

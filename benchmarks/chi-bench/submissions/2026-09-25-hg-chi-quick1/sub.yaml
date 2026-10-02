@@ -1,0 +1,20 @@
+schema: chi-bench/submission/v1
+submission:
+  id: hg-chi-quick1
+  team: HG Market System
+  contact: private@invalid.local
+  agent: hg-closure-codex
+  model: openai/gpt-5.4-mini
+  notes: "Partial one-task provider submission generated from an official pass@1 canary."
+run:
+  environment: modal
+  n_attempts: 1
+  concurrency: 1
+  max_retries: 2
+  timeout_multiplier: 2.0
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider]
+paths:
+  data_root: data
+  output_root: logs/submissions/hg-chi-quick1

@@ -1,0 +1,3 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,hg-chi-quick1,HG Market System,hg-closure-codex,openai/gpt-5.4-mini,overall,1.0,1,1,0.16167165,459.609106,2026-09-25T01:38:17Z
+chi-bench,chi-bench-v1.0.0,hg-chi-quick1,HG Market System,hg-closure-codex,openai/gpt-5.4-mini,pa_provider,1.0,1,1,0.16167165,459.609106,2026-09-25T01:38:17Z
