@@ -1,0 +1,29 @@
+schema: chi-bench/submission/v1
+submission:
+  id: hg-chi-full75-20261002
+  team: HG-Market-System
+  contact: https://github.com/hgreco85
+  agent: hg-closure-codex
+  model: openai/gpt-5.4-mini
+  notes: Recovery of completed GitHub Actions run 37043550087; all 75 original verifier
+    rewards retained, including 19 runner exceptions and 3 internal tool failures.
+    No retries or reruns. Agent API cost only; judge/simulator costs are not included.
+    Image digest was not retained. Contact through GitHub hgreco85. Historical run
+    config reconstructed from workflow and result.json.
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 3
+  max_retries: 0
+  timeout_multiplier: 1.0
+  agent_timeout_multiplier: null
+  env_file: .env
+dataset:
+  version: chi-bench-v1.0.0
+  domains:
+  - pa_provider
+  - pa_um
+  - cm
+paths:
+  data_root: data
+  output_root: /tmp/chi-saved-output
