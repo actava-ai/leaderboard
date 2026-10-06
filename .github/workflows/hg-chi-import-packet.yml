@@ -1,0 +1,59 @@
+name: Import HG CHI packet
+
+on:
+  push:
+    branches:
+      - "sub/chi-bench/2026-10-06-hg-gpt54mini-full75-37043550087"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PACKET_URL: "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-2a2c-820e-ae56-336642ae8c39/raw?se=2026-10-06T23%3A23%3A15Z&sp=r&sv=2026-02-06&sr=b&scid=ec6fe217-d09d-59f6-8e94-33e01d142d91&skoid=0a91ee30-885e-46c5-aa98-ae8c7359b1d8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T11%3A25%3A16Z&ske=2026-10-07T11%3A25%3A16Z&sks=b&skv=2026-02-06&sig=Bw3cPj0L53Qy8UcH7DArijljfvWUrnl/BqK5l2m3ocQ%3D"
+      PACKET_DIR: "2026-10-06-hg-gpt54mini-full75-37043550087"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download validated packet artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fL --retry 3 --retry-delay 2 "$PACKET_URL" -o /tmp/hg-chi-packet.zip
+          unzip -q /tmp/hg-chi-packet.zip -d /tmp/hg-packet
+          test -d "/tmp/hg-packet/packet/$PACKET_DIR"
+          cat /tmp/hg-packet/packet-validation.json
+          python - <<'PY'
+          import json
+          d=json.load(open('/tmp/hg-packet/packet-validation.json'))
+          assert d['status']=='valid', d
+          assert not d['errors'], d
+          PY
+
+      - name: Install validator deps
+        run: python -m pip install --quiet jsonschema zstandard
+
+      - name: Copy packet and validate in leaderboard tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          dest="benchmarks/chi-bench/submissions/$PACKET_DIR"
+          test ! -e "$dest"
+          cp -a "/tmp/hg-packet/packet/$PACKET_DIR" "$dest"
+          python scripts/validate.py "$dest"
+
+      - name: Commit final submission-only diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/hg-chi-import-packet.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "benchmarks/chi-bench/submissions/$PACKET_DIR" .github/workflows/hg-chi-import-packet.yml
+          git commit -m "chi-bench: HG · hg-closure-codex · openai/gpt-5.4-mini"
+          git push origin HEAD:"$GITHUB_REF_NAME"
