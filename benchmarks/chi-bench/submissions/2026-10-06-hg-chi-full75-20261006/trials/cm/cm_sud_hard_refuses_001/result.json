@@ -1,0 +1,117 @@
+{
+    "id": "9f05593c-7a75-4482-b009-1e130fc2bc2c",
+    "task_name": "actava-ai/cm_sud_hard_refuses_001",
+    "trial_name": "cm_sud_hard_refuses_001__qLq82Fq",
+    "trial_uri": "file:///home/runner/work/HG-Market-System/HG-Market-System/chi-bench/trials/care-resume/cm_sud_hard_refuses_001/cm_sud_hard_refuses_001__qLq82Fq",
+    "task_id": {
+        "path": "data/care_management/tasks/cm_sud_hard_refuses_001"
+    },
+    "source": null,
+    "task_checksum": "e9377e69811187b43aec45e26f56e92e22a02354dff9b5059a1ae56f99280945",
+    "config": {
+        "task": {
+            "path": "data/care_management/tasks/cm_sud_hard_refuses_001",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "cm_sud_hard_refuses_001__qLq82Fq",
+        "trials_dir": "trials/care-resume/cm_sud_hard_refuses_001",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.hg_closure_codex_harness:HGClosureCodexHarness",
+            "model_name": "openai/gpt-5.4-mini",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "ANTHROPIC_API_KEY": "${ANTHROPIC_API_KEY}"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": null
+    },
+    "agent_info": {
+        "name": "hg-closure-codex",
+        "version": "0.160.1",
+        "model_info": {
+            "name": "gpt-5.4-mini",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4143802,
+        "n_cache_tokens": 4025728,
+        "n_output_tokens": 53432,
+        "cost_usd": 0.6309291,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-06T11:01:26.463640Z",
+    "finished_at": "2026-10-06T11:13:32.209504Z",
+    "environment_setup": {
+        "started_at": "2026-10-06T11:01:26.515637Z",
+        "finished_at": "2026-10-06T11:01:35.097649Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-06T11:01:35.097706Z",
+        "finished_at": "2026-10-06T11:01:47.729776Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-06T11:01:47.729878Z",
+        "finished_at": "2026-10-06T11:08:41.398101Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-06T11:08:44.331876Z",
+        "finished_at": "2026-10-06T11:13:31.105877Z"
+    },
+    "step_results": null
+}

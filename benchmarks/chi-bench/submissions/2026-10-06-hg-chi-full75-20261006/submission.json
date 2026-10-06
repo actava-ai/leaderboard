@@ -1,0 +1,76 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "hg-chi-full75-20261006",
+    "team": "HG-Market-System",
+    "contact": "https://github.com/hgreco85",
+    "agent": "hg-closure-codex",
+    "model": "mixed: openai/gpt-5.6-luna (pa_provider, pa_um) + openai/gpt-5.4-mini (cm)",
+    "notes": "Completed public Full75 assembled without rerunning already verified tasks: 50 PA/UM trials from workflow run 37390621096 plus 15 already verified CM trials from that run and the exact 10 unfinished CM tasks from successful sequential resume run 37444743430. No verifier rewards were edited; interrupted CM attempts from the first run are excluded in favor of their completed resume trials. Provider/UM used openai/gpt-5.6-luna; CM used openai/gpt-5.4-mini. Judge model claude-opus-4-7. Agent API cost only; judge/simulator costs not included.",
+    "submitted_at": "2026-10-06T11:18:00Z"
+  },
+  "dataset": {
+    "name": "chi-bench",
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ]
+  },
+  "results": {
+    "overall": {
+      "pass_at_1": 0.28,
+      "n_trials": 75,
+      "n_tasks": 75,
+      "mean_cost_usd": 0.33176541946666666,
+      "mean_walltime_s": 349.44047122666666
+    },
+    "per_domain": {
+      "pa_provider": {
+        "pass_at_1": 0.44,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_cost_usd": 0.101629252,
+        "mean_walltime_s": 202.70591964
+      },
+      "pa_um": {
+        "pass_at_1": 0.28,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_cost_usd": 0.0869921824,
+        "mean_walltime_s": 281.2458558
+      },
+      "cm": {
+        "pass_at_1": 0.12,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_cost_usd": 0.806674824,
+        "mean_walltime_s": 564.36963824
+      }
+    },
+    "mean_cost_usd": 0.33176541946666666,
+    "mean_walltime_s": 349.44047122666666
+  },
+  "provenance": {
+    "chi_bench_git_sha": "9075be8f1169ebb7fa0a433c64c1d7511080c37a",
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "judge_num_votes": 1,
+    "harness_version": "0.1.0",
+    "hg_source_runs": [
+      {
+        "run_id": 37390621096,
+        "head_sha": "d0d7f72c23a6bf71b325e6cf373c40319ff4963a",
+        "scope": "25 provider + 25 payer + first 15 verified care"
+      },
+      {
+        "run_id": 37444743430,
+        "head_sha": "226e47675520a4408a014edbf8483f64024007ba",
+        "scope": "exact remaining 10 care tasks"
+      }
+    ],
+    "stitched_resume": true,
+    "selection_policy": "Use all 50 verified PA/UM tasks; use the 15 CM tasks that completed verifier-backed in the interrupted Full75; replace only the 10 unfinished CM task slots with their exact resume completions. No completed task was rerun for this packet."
+  }
+}

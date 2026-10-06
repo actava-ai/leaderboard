@@ -1,0 +1,21 @@
+{
+  "chi_bench_git_sha": "9075be8f1169ebb7fa0a433c64c1d7511080c37a",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "judge_num_votes": 1,
+  "harness_version": "0.1.0",
+  "hg_source_runs": [
+    {
+      "run_id": 37390621096,
+      "head_sha": "d0d7f72c23a6bf71b325e6cf373c40319ff4963a",
+      "scope": "25 provider + 25 payer + first 15 verified care"
+    },
+    {
+      "run_id": 37444743430,
+      "head_sha": "226e47675520a4408a014edbf8483f64024007ba",
+      "scope": "exact remaining 10 care tasks"
+    }
+  ],
+  "stitched_resume": true,
+  "selection_policy": "Use all 50 verified PA/UM tasks; use the 15 CM tasks that completed verifier-backed in the interrupted Full75; replace only the 10 unfinished CM task slots with their exact resume completions. No completed task was rerun for this packet."
+}
