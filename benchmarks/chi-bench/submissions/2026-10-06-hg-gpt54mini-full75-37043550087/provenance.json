@@ -1,0 +1,15 @@
+{
+  "chi_bench_git_sha": "9075be8f1169ebb7fa0a433c64c1d7511080c37a",
+  "image_digest": null,
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": true,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "docker",
+  "started_at": "2026-10-02T17:53:45.794996Z",
+  "finished_at": "2026-10-02T20:19:12.531100Z",
+  "source_run": "37043550087",
+  "hg_market_system_sha": "b8d7bcbdc58de471e87dd15b322463f4ffde5346",
+  "judge_num_votes": 1,
+  "historical_artifact_reconstruction": true
+}
