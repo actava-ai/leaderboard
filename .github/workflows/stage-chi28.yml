@@ -1,0 +1,192 @@
+name: Stage CHI-Bench 28pct packet
+
+on:
+  push:
+    branches:
+      - sub/chi-bench/2026-10-06-hg-chi-full75-20261006
+    paths:
+      - .github/workflows/stage-chi28.yml
+
+permissions:
+  contents: write
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: sub/chi-bench/2026-10-06-hg-chi-full75-20261006
+          fetch-depth: 0
+
+      - name: Install pack dependency
+        run: python -m pip install --quiet zstandard
+
+      - name: Download source artifacts
+        env:
+          PROVIDER_URL: "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-d1a0-820e-932e-59f28bbe65d2/raw?se=2026-10-06T11%3A35%3A42Z&sp=r&sv=2026-02-06&sr=b&scid=9384cc67-425e-55ac-a719-a47cbe178891&skoid=0a91ee30-885e-46c5-aa98-ae8c7359b1d8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T01%3A04%3A40Z&ske=2026-10-07T01%3A04%3A40Z&sks=b&skv=2026-02-06&sig=Y4vMDeZ9h8Q%2BLK6fokpXSAZlzaInKr15OxIkhMCU850%3D"
+          PAYER_URL: "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-fd88-820e-a216-0671e1578b7c/raw?se=2026-10-06T11%3A36%3A12Z&sp=r&sv=2026-02-06&sr=b&scid=41021c4e-200b-5e92-8a12-4d4475e544f4&skoid=0a91ee30-885e-46c5-aa98-ae8c7359b1d8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T11%3A25%3A18Z&ske=2026-10-07T11%3A25%3A18Z&sks=b&skv=2026-02-06&sig=WC571FLaAKCSxuUWcYPW5JwVS4LmuVnDKm73S4tnrrI%3D"
+          CARE_PREV_URL: "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-6c78-820e-bf87-a3d479588065/raw?se=2026-10-06T11%3A36%3A17Z&sp=r&sv=2026-02-06&sr=b&scid=038eb722-6f52-5382-8b5c-268738358a2f&skoid=0a91ee30-885e-46c5-aa98-ae8c7359b1d8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T01%3A44%3A36Z&ske=2026-10-07T01%3A44%3A36Z&sks=b&skv=2026-02-06&sig=%2BdjD4orBhz4Gl/ycoVfzc2irH0D5144G6SP8SLQfZXs%3D"
+          CARE_REM_URL: "https://sdmntprbrazilsouth.oaiusercontent.com/files/00000000-e6ac-820e-b929-d2da488373bf/raw?se=2026-10-06T11%3A36%3A20Z&sp=r&sv=2026-02-06&sr=b&scid=bb5d65b8-565d-5fc5-b7cc-c0b036d3258e&skoid=0a91ee30-885e-46c5-aa98-ae8c7359b1d8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-06T11%3A26%3A20Z&ske=2026-10-07T11%3A26%3A20Z&sks=b&skv=2026-02-06&sig=IjwHiOKlwr0Dunr1xDkmXqgHpKPif7oNF6oii1/KY%2B0%3D"
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/chi28
+          curl -fL "$PROVIDER_URL" -o /tmp/chi28/provider.zip
+          curl -fL "$PAYER_URL" -o /tmp/chi28/payer.zip
+          curl -fL "$CARE_PREV_URL" -o /tmp/chi28/careprev.zip
+          curl -fL "$CARE_REM_URL" -o /tmp/chi28/carerem.zip
+          for x in provider payer careprev carerem; do mkdir -p "/tmp/chi28/$x"; unzip -q "/tmp/chi28/$x.zip" -d "/tmp/chi28/$x"; done
+
+      - name: Build exact 75-trial packet
+        run: |
+          cat > /tmp/build_packet.py <<'PY'
+          from pathlib import Path
+          import csv, json, shutil
+          import zstandard as zstd
+
+          ROOT=Path("/tmp/chi28")
+          OUT=Path("benchmarks/chi-bench/submissions/2026-10-06-hg-chi-full75-20261006")
+          OUT.mkdir(parents=True, exist_ok=True)
+          exclude_prev={"cm_mdd_moderate_reluctant_001","cm_metabolic_syndrome_hard_refuses_001","cm_parkinson_hard_refuses_001"}
+
+          def candidates(root):
+              out={}
+              for p in root.rglob("result.json"):
+                  td=p.parent
+                  needed=[td/"verifier/reward.json",td/"verifier/scorecard.json",td/"agent/trajectory.json"]
+                  if not all(x.is_file() for x in needed):
+                      continue
+                  data=json.loads(p.read_text())
+                  task=Path(data["task_id"]["path"]).name
+                  out[task]=td
+              return out
+
+          provider=candidates(ROOT/"provider")
+          payer=candidates(ROOT/"payer")
+          careprev={k:v for k,v in candidates(ROOT/"careprev").items() if k not in exclude_prev}
+          carerem=candidates(ROOT/"carerem")
+          assert len(provider)==25, len(provider)
+          assert len(payer)==25, len(payer)
+          assert len(careprev)==15, len(careprev)
+          assert len(carerem)==10, len(carerem)
+          assert set(careprev).isdisjoint(carerem)
+          care=careprev|carerem
+          assert len(care)==25
+
+          domains={"pa_provider":provider,"pa_um":payer,"cm":care}
+          passes={}
+          cctx=zstd.ZstdCompressor(level=19)
+
+          for dom,mapping in domains.items():
+              pc=0
+              for task,td in sorted(mapping.items()):
+                  dest=OUT/"trials"/dom/task
+                  (dest/"verifier").mkdir(parents=True,exist_ok=True)
+                  (dest/"agent").mkdir(parents=True,exist_ok=True)
+                  shutil.copy2(td/"result.json",dest/"result.json")
+                  shutil.copy2(td/"verifier/scorecard.json",dest/"verifier/scorecard.json")
+                  shutil.copy2(td/"verifier/reward.json",dest/"verifier/reward.json")
+                  reward=float(json.loads((td/"verifier/reward.json").read_text()).get("reward",0))
+                  pc += reward >= 1.0
+                  payload=json.loads((td/"agent/trajectory.json").read_text())
+                  header={k:payload[k] for k in ("schema_version","session_id","agent") if k in payload}
+                  with (dest/"agent/trajectory.jsonl.zst").open("wb") as fh:
+                      with cctx.stream_writer(fh) as w:
+                          w.write((json.dumps({"_atif_header":header},separators=(",",":"))+"\n").encode())
+                          for step in payload.get("steps",[]) or []:
+                              w.write((json.dumps(step,separators=(",",":"))+"\n").encode())
+              passes[dom]=pc
+
+          assert passes=={"pa_provider":11,"pa_um":7,"cm":3},passes
+
+          provenance={
+            "chi_bench_git_sha":"9075be8f1169ebb7fa0a433c64c1d7511080c37a",
+            "image_digest":None,
+            "judge_model":"claude-opus-4-7",
+            "judge_num_votes":1,
+            "harness_version":"0.1.0",
+            "hg_source_runs":[
+              {"run_id":37390621096,"head_sha":"d0d7f72c23a6bf71b325e6cf373c40319ff4963a","scope":"25 provider + 25 payer + first 15 verified care"},
+              {"run_id":37444743430,"head_sha":"226e47675520a4408a014edbf8483f64024007ba","scope":"exact remaining 10 care tasks"}
+            ],
+            "stitched_resume":True,
+            "selection_policy":"Use all 50 verified PA/UM tasks; use the 15 CM tasks that completed verifier-backed in the interrupted Full75; replace only the 10 unfinished CM task slots with their exact resume completions. No completed task was rerun for this packet."
+          }
+          notes="Completed public Full75 assembled without rerunning already verified tasks: 50 PA/UM trials from workflow run 37390621096 plus 15 already verified CM trials from that run and the exact 10 unfinished CM tasks from successful sequential resume run 37444743430. No verifier rewards were edited; interrupted CM attempts from the first run are excluded in favor of their completed resume trials. Provider/UM used openai/gpt-5.6-luna; CM used openai/gpt-5.4-mini. Judge model claude-opus-4-7. Agent API cost only; judge/simulator costs not included."
+          model="mixed: openai/gpt-5.6-luna (pa_provider, pa_um) + openai/gpt-5.4-mini (cm)"
+          scores={
+            "overall":{"pass_at_1":0.28,"n_trials":75,"n_tasks":75,"mean_cost_usd":0.33176541946666666,"mean_walltime_s":349.44047122666666},
+            "per_domain":{
+              "pa_provider":{"pass_at_1":0.44,"n_trials":25,"n_tasks":25,"mean_cost_usd":0.101629252,"mean_walltime_s":202.70591964},
+              "pa_um":{"pass_at_1":0.28,"n_trials":25,"n_tasks":25,"mean_cost_usd":0.0869921824,"mean_walltime_s":281.2458558},
+              "cm":{"pass_at_1":0.12,"n_trials":25,"n_tasks":25,"mean_cost_usd":0.806674824,"mean_walltime_s":564.36963824}
+            },
+            "mean_cost_usd":0.33176541946666666,
+            "mean_walltime_s":349.44047122666666
+          }
+          manifest={
+            "schema":"chi-bench/submission/v1",
+            "submission":{"id":"hg-chi-full75-20261006","team":"HG-Market-System","contact":"https://github.com/hgreco85","agent":"hg-closure-codex","model":model,"notes":notes,"submitted_at":"2026-10-06T11:18:00Z"},
+            "dataset":{"name":"chi-bench","version":"chi-bench-v1.0.0","domains":["pa_provider","pa_um","cm"]},
+            "results":scores,
+            "provenance":provenance
+          }
+          (OUT/"submission.json").write_text(json.dumps(manifest,indent=2)+"\n")
+          (OUT/"provenance.json").write_text(json.dumps(provenance,indent=2)+"\n")
+          sub='''schema: chi-bench/submission/v1
+          submission:
+            id: hg-chi-full75-20261006
+            team: HG-Market-System
+            contact: https://github.com/hgreco85
+            agent: hg-closure-codex
+            model: "mixed: openai/gpt-5.6-luna (pa_provider, pa_um) + openai/gpt-5.4-mini (cm)"
+            notes: >-
+              '''+notes+'''
+          run:
+            environment: docker
+            n_attempts: 1
+            concurrency: 3
+            max_retries: 0
+            timeout_multiplier: 1.0
+          dataset:
+            version: chi-bench-v1.0.0
+            domains:
+            - pa_provider
+            - pa_um
+            - cm
+          paths:
+            data_root: data
+            output_root: reconstructed-from-runs-37390621096-and-37444743430
+          '''
+          import textwrap
+          (OUT/"sub.yaml").write_text(textwrap.dedent(sub))
+          (OUT/"README.md").write_text("""# CHI-Bench submission: hg-chi-full75-20261006
+
+          - Overall: **21/75 = 28.00%**
+          - Provider PA: **11/25 = 44.00%**
+          - Payer UM: **7/25 = 28.00%**
+          - Care Management: **3/25 = 12.00%**
+
+          This packet is the completion of an interrupted Full75. It preserves all previously completed verifier-backed tasks and fills only the 10 unfinished Care slots from the dedicated sequential resume run. No verifier rewards were edited.
+          """)
+          cols=["benchmark","dataset_version","submission_id","team","agent","model","domain","pass_at_1","n_trials","n_tasks","mean_cost_usd","mean_walltime_s","submitted_at"]
+          rows=[]
+          for dom,score in [("overall",scores["overall"]),*scores["per_domain"].items()]:
+              rows.append({"benchmark":"chi-bench","dataset_version":"chi-bench-v1.0.0","submission_id":"hg-chi-full75-20261006","team":"HG-Market-System","agent":"hg-closure-codex","model":model,"domain":dom,**score,"submitted_at":"2026-10-06T11:18:00Z"})
+          with (OUT/"results.csv").open("w",newline="") as fh:
+              w=csv.DictWriter(fh,fieldnames=cols);w.writeheader()
+              for r in rows:w.writerow({k:r.get(k) for k in cols})
+          assert len(list((OUT/"trials").glob("*/*/result.json")))==75
+          print("packet built",passes)
+          PY
+          python /tmp/build_packet.py
+
+      - name: Remove staging workflow and commit packet
+        run: |
+          set -euo pipefail
+          rm -f .github/workflows/stage-chi28.yml
+          git config user.name "hgreco85"
+          git config user.email "104028160+hgreco85@users.noreply.github.com"
+          git add -A
+          git commit -m "CHI-Bench: submit completed Full75 21/75 (28%)"
+          git push origin HEAD:sub/chi-bench/2026-10-06-hg-chi-full75-20261006
