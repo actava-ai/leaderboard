@@ -1,0 +1,145 @@
+{
+  "binary_reward": 1.0,
+  "fractional_reward": 1.0,
+  "passed_checks": 32,
+  "total_checks": 32,
+  "check_scores": {
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 1.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "outcome.determination_decision_matches": 1.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "triage.record_exists": 1.0,
+    "triage.disposition_matches": 1.0,
+    "triage.urgency_matches": 1.0,
+    "triage.gold_card_matches": 1.0,
+    "triage.route_matches": 1.0,
+    "triage.audit": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:evicore_rad_brain_indication": 1.0,
+    "judge.nurse_review:evicore_rad_brain_prior_workup": 1.0,
+    "judge.nurse_review:evicore_rad_brain_protocol": 1.0,
+    "judge.nurse_review:evicore_rad_brain_site_of_service": 1.0,
+    "judge.nurse_review:recommendation": 1.0
+  },
+  "checks": {
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": true,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "outcome.determination_decision_matches": true,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "triage.record_exists": true,
+    "triage.disposition_matches": true,
+    "triage.urgency_matches": true,
+    "triage.gold_card_matches": true,
+    "triage.route_matches": true,
+    "triage.audit": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:evicore_rad_brain_indication": true,
+    "judge.nurse_review:evicore_rad_brain_prior_workup": true,
+    "judge.nurse_review:evicore_rad_brain_protocol": true,
+    "judge.nurse_review:evicore_rad_brain_site_of_service": true,
+    "judge.nurse_review:recommendation": true
+  },
+  "failed_checks": [],
+  "not_applicable_checks": [],
+  "stages": {
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": true,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": true,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true,
+        "outcome.determination_decision_matches": true,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 15,
+      "total_count": 15,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "triage": {
+      "passed": true,
+      "checks": {
+        "triage.record_exists": true,
+        "triage.disposition_matches": true,
+        "triage.urgency_matches": true,
+        "triage.gold_card_matches": true,
+        "triage.route_matches": true,
+        "triage.audit": true
+      },
+      "passed_count": 6,
+      "total_count": 6,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-7D075BE2"
+      }
+    }
+  }
+}
