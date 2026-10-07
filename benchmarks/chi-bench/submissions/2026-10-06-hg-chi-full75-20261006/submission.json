@@ -6,7 +6,7 @@
     "contact": "https://github.com/hgreco85",
     "agent": "hg-closure-codex",
     "model": "mixed: openai/gpt-5.6-luna (pa_provider, pa_um) + openai/gpt-5.4-mini (cm)",
-    "notes": "Completed public Full75 assembled without rerunning already verified tasks: 50 PA/UM trials from workflow run 37390621096 plus 15 already verified CM trials from that run and the exact 10 unfinished CM tasks from successful sequential resume run 37444743430. No verifier rewards were edited; interrupted CM attempts from the first run are excluded in favor of their completed resume trials. Provider/UM used openai/gpt-5.6-luna; CM used openai/gpt-5.4-mini. Judge model claude-opus-4-7. Agent API cost only; judge/simulator costs not included.",
+    "notes": "Completed public Full75 packet, then repaired only the four maintainer-requested affected evidence points on CHI-Bench v1.1.0: Care cm_mdd_hard_refuses_002 was judge-only re-evaluated from the byte-preserved saved final state and adjudicated 0/5 rubrics; Payer P2P t016, t019 and t036 were rerun with the historical Full75 HG agent snapshot and CHI_BENCH_P2P_SIMULATOR_MODEL=claude-sonnet-5 and all remained passes. The other 71 trial artifacts are preserved. Provider/UM agent model openai/gpt-5.6-luna; CM agent model openai/gpt-5.4-mini. Judge model claude-opus-4-7, one vote. Agent API cost only; judge/simulator costs not included.",
     "submitted_at": "2026-10-06T11:18:00Z"
   },
   "dataset": {
@@ -20,7 +20,7 @@
   },
   "results": {
     "overall": {
-      "pass_at_1": 0.28,
+      "pass_at_1": 0.26666666666666666,
       "n_trials": 75,
       "n_tasks": 75,
       "mean_cost_usd": 0.33176541946666666,
@@ -42,7 +42,7 @@
         "mean_walltime_s": 281.2458558
       },
       "cm": {
-        "pass_at_1": 0.12,
+        "pass_at_1": 0.08,
         "n_trials": 25,
         "n_tasks": 25,
         "mean_cost_usd": 0.806674824,
@@ -53,7 +53,7 @@
     "mean_walltime_s": 349.44047122666666
   },
   "provenance": {
-    "chi_bench_git_sha": "9075be8f1169ebb7fa0a433c64c1d7511080c37a",
+    "chi_bench_git_sha": "c05b225bbb408f78a3043b7d40f022255bd38b19",
     "image_digest": null,
     "judge_model": "claude-opus-4-7",
     "judge_num_votes": 1,
@@ -68,9 +68,19 @@
         "run_id": 37444743430,
         "head_sha": "226e47675520a4408a014edbf8483f64024007ba",
         "scope": "exact remaining 10 care tasks"
+      },
+      {
+        "run_id": 37625832254,
+        "head_sha": "36e19b84b64ca59c30acf933de612a04e8f37a16",
+        "scope": "judge-only v1.1.0 repair of cm_mdd_hard_refuses_002 from preserved final state"
+      },
+      {
+        "run_id": 37628570479,
+        "head_sha": "99540ac1274a7ae9c77347ff2233257486cc72aa",
+        "scope": "exact v1.1.0 Payer P2P reruns t016/t019/t036 with claude-sonnet-5"
       }
     ],
     "stitched_resume": true,
-    "selection_policy": "Use all 50 verified PA/UM tasks; use the 15 CM tasks that completed verifier-backed in the interrupted Full75; replace only the 10 unfinished CM task slots with their exact resume completions. No completed task was rerun for this packet."
+    "selection_policy": "Preserve the original completed Full75 packet except for the maintainer-requested affected evidence. Integrate the valid judge-only Care re-evaluation for cm_mdd_hard_refuses_002, which changes that task from pass to fail. Preserve the three historical Payer trial packet files because all three tasks remained passes; attach exact v1.1.0 rerun evidence in repair_evidence.json. Preserve all other 71 trial artifacts exactly."
   }
 }
