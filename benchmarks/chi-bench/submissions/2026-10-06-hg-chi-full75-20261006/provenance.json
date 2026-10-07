@@ -1,5 +1,5 @@
 {
-  "chi_bench_git_sha": "9075be8f1169ebb7fa0a433c64c1d7511080c37a",
+  "chi_bench_git_sha": "c05b225bbb408f78a3043b7d40f022255bd38b19",
   "image_digest": null,
   "judge_model": "claude-opus-4-7",
   "judge_num_votes": 1,
@@ -14,8 +14,19 @@
       "run_id": 37444743430,
       "head_sha": "226e47675520a4408a014edbf8483f64024007ba",
       "scope": "exact remaining 10 care tasks"
+    },
+    {
+      "run_id": 37625832254,
+      "head_sha": "36e19b84b64ca59c30acf933de612a04e8f37a16",
+      "scope": "Care judge-only repair for cm_mdd_hard_refuses_002 from preserved final state"
+    },
+    {
+      "run_id": 37628570479,
+      "head_sha": "99540ac1274a7ae9c77347ff2233257486cc72aa",
+      "scope": "Payer P2P exact reruns t016/t019/t036 with claude-sonnet-5"
     }
   ],
   "stitched_resume": true,
-  "selection_policy": "Use all 50 verified PA/UM tasks; use the 15 CM tasks that completed verifier-backed in the interrupted Full75; replace only the 10 unfinished CM task slots with their exact resume completions. No completed task was rerun for this packet."
+  "selection_policy": "Preserve the original Full75 packet except the maintainer-requested affected evidence. Correct cm_mdd_hard_refuses_002 using the valid v1.1.0 judge-only re-evaluation; retain the existing Payer packet trial files because t016/t019/t036 remained passes, with exact rerun evidence recorded in repair_evidence.json. Preserve all other 71 trial artifacts exactly.",
+  "repair_evidence_file": "repair_evidence.json"
 }
