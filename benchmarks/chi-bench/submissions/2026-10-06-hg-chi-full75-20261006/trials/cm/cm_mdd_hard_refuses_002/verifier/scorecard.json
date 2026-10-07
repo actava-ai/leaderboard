@@ -1,28 +1,28 @@
 {
-  "binary_reward": 1.0,
-  "fractional_reward": 1.0,
+  "binary_reward": 0,
+  "fractional_reward": 0,
   "passed_checks": 14,
-  "total_checks": 14,
+  "total_checks": 19,
   "check_scores": {
-    "cm.assessment.record_exists": 1.0,
-    "cm.assessment.completed": 1.0,
-    "cm.assessment.required_sections_present": 1.0,
-    "cm.care_plan.record_exists": 1.0,
-    "cm.care_plan.finalized": 1.0,
-    "cm.care_plan.problem_count": 1.0,
-    "cm.care_plan.goal_structure": 1.0,
-    "cm.care_plan.intervention_structure": 1.0,
-    "cm.care_plan.escalation_conditions_present": 1.0,
-    "cm.care_plan.follow_up_cadence_present": 1.0,
-    "cm.chart_review.record_exists": 1.0,
-    "cm.cross_stage.target_status": 1.0,
-    "cm.cross_stage.audit_actions": 1.0,
-    "cm.cross_stage.no_forbidden_mutations": 1.0,
-    "judge.cm.chart_review.quality": null,
-    "judge.cm.outreach.quality": null,
-    "judge.cm.assessment.quality": null,
-    "judge.cm.care_plan.quality": null,
-    "judge.cm.stage_coherence": null
+    "cm.assessment.record_exists": 1,
+    "cm.assessment.completed": 1,
+    "cm.assessment.required_sections_present": 1,
+    "cm.care_plan.record_exists": 1,
+    "cm.care_plan.finalized": 1,
+    "cm.care_plan.problem_count": 1,
+    "cm.care_plan.goal_structure": 1,
+    "cm.care_plan.intervention_structure": 1,
+    "cm.care_plan.escalation_conditions_present": 1,
+    "cm.care_plan.follow_up_cadence_present": 1,
+    "cm.chart_review.record_exists": 1,
+    "cm.cross_stage.target_status": 1,
+    "cm.cross_stage.audit_actions": 1,
+    "cm.cross_stage.no_forbidden_mutations": 1,
+    "judge.cm.chart_review.quality": 0,
+    "judge.cm.outreach.quality": 0,
+    "judge.cm.assessment.quality": 0,
+    "judge.cm.care_plan.quality": 0,
+    "judge.cm.stage_coherence": 0
   },
   "checks": {
     "cm.assessment.record_exists": true,
@@ -39,20 +39,20 @@
     "cm.cross_stage.target_status": true,
     "cm.cross_stage.audit_actions": true,
     "cm.cross_stage.no_forbidden_mutations": true,
-    "judge.cm.chart_review.quality": "not_applicable",
-    "judge.cm.outreach.quality": "not_applicable",
-    "judge.cm.assessment.quality": "not_applicable",
-    "judge.cm.care_plan.quality": "not_applicable",
-    "judge.cm.stage_coherence": "not_applicable"
+    "judge.cm.chart_review.quality": false,
+    "judge.cm.outreach.quality": false,
+    "judge.cm.assessment.quality": false,
+    "judge.cm.care_plan.quality": false,
+    "judge.cm.stage_coherence": false
   },
-  "failed_checks": [],
-  "not_applicable_checks": [
+  "failed_checks": [
     "judge.cm.chart_review.quality",
     "judge.cm.outreach.quality",
     "judge.cm.assessment.quality",
     "judge.cm.care_plan.quality",
     "judge.cm.stage_coherence"
   ],
+  "not_applicable_checks": [],
   "stages": {
     "cm_assessment": {
       "passed": true,
@@ -115,5 +115,19 @@
         "case_id": "CM-CASE-CM_MDD_HARD_REFUSES_002"
       }
     }
+  },
+  "v110_judge_repair": {
+    "source_run_id": 37625832254,
+    "source_artifact_id": 11484057950,
+    "source_artifact_digest": "sha256:d41e6e9d58730ff3405c625a79177e30f5a38e77c929ba9d9f44d4951cbc58f7",
+    "runtime_ref": "c05b225bbb408f78a3043b7d40f022255bd38b19",
+    "judge_model": "claude-opus-4-7",
+    "judge_votes": 1,
+    "gate_pass": true,
+    "rubric_yes_count": 0,
+    "rubric_total": 5,
+    "judge_unavailable_reason": null,
+    "source_scorecard_sha256": "ba54f8a0a0feb97890cef9eaf16e2905bc72a3bbae584d72a3c1ca8e934e57c4",
+    "exported_state_sha256": "06cde2195cdfd283d5305552a848067061d06766677a1181c8fe699ed6c17996"
   }
 }
