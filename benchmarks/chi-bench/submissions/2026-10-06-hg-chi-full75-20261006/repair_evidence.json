@@ -1,0 +1,81 @@
+{
+  "schema": "chi-bench/leaderboard-repair-evidence/v1",
+  "repaired_at": "2026-10-07T14:14:19Z",
+  "maintainer_requested_scope": {
+    "care": [
+      "cm_mdd_hard_refuses_002"
+    ],
+    "payer_p2p": [
+      "pa_t016_t016_o001_p01_p2p_payer",
+      "pa_t019_t019_o001_p01_p2p_payer",
+      "pa_t036_t036_o002_p01_p2p_payer"
+    ],
+    "preserved_unaffected_trials": 71
+  },
+  "runtime": {
+    "chi_bench_git_sha": "c05b225bbb408f78a3043b7d40f022255bd38b19",
+    "version": "1.1.0",
+    "dataset_revision": "chi-bench-v1.0.0"
+  },
+  "care": {
+    "run_id": 37625832254,
+    "artifact_id": 11484057950,
+    "artifact_digest": "sha256:d41e6e9d58730ff3405c625a79177e30f5a38e77c929ba9d9f44d4951cbc58f7",
+    "mode": "judge_only_from_preserved_final_state",
+    "judge_model": "claude-opus-4-7",
+    "judge_votes": 1,
+    "binary_reward": 0,
+    "fractional_reward": 0,
+    "rubric_yes_count": 0,
+    "rubric_total": 5,
+    "judge_unavailable_reason": null,
+    "source_scorecard_sha256": "ba54f8a0a0feb97890cef9eaf16e2905bc72a3bbae584d72a3c1ca8e934e57c4",
+    "exported_state_sha256": "06cde2195cdfd283d5305552a848067061d06766677a1181c8fe699ed6c17996"
+  },
+  "payer_p2p": {
+    "run_id": 37628570479,
+    "artifact_id": 11487743870,
+    "artifact_digest": "sha256:84011caf4bb0466f64837d3f326c48ff88c6f2dbb1877ed34c279f7e19c31d01",
+    "historical_hg_agent_ref": "d0d7f72c23a6bf71b325e6cf373c40319ff4963a",
+    "agent": "hg-closure-codex",
+    "agent_model": "openai/gpt-5.6-luna",
+    "p2p_simulator_model": "claude-sonnet-5",
+    "judge_model": "claude-opus-4-7",
+    "judge_votes": 1,
+    "total_openai_agent_cost_usd": 0.16009574,
+    "tasks": [
+      {
+        "task": "pa_t016_t016_o001_p01_p2p_payer",
+        "binary_reward": 1,
+        "fractional_reward": 1,
+        "judge_check_count": 7,
+        "result_sha256": "1a38242206cdd1183ec294c944fad13e3f834047335e240f36549b423a110e07",
+        "scorecard_sha256": "be15c172814b246385261d843bbcaf0541530e2bb5f8c2cc4301db08a37b24f1"
+      },
+      {
+        "task": "pa_t019_t019_o001_p01_p2p_payer",
+        "binary_reward": 1,
+        "fractional_reward": 1,
+        "judge_check_count": 7,
+        "result_sha256": "7cc13cef7f4687ef126cf5acd1141a654f42eb3347950a08ae99f8b7484420b1",
+        "scorecard_sha256": "0694a0df6474fa2e7324778c4671375abca2235665b10da110f3b61eb0240809"
+      },
+      {
+        "task": "pa_t036_t036_o002_p01_p2p_payer",
+        "binary_reward": 1,
+        "fractional_reward": 1,
+        "judge_check_count": 7,
+        "result_sha256": "c9022d0a4b84550c8d30eec65e0cb1305bcc6f9a30d6a677c9fe2bc2ef63ec28",
+        "scorecard_sha256": "3caf95a75efb7253abbe0cbf854b652efc151eede8beb2afa092eead911d229b"
+      }
+    ],
+    "note": "All three historical Payer tasks remained passes. Existing packet trial files are preserved to avoid mixing new textual verifier outputs with old binary trajectories; exact rerun evidence is anchored by this run/artifact and hashes."
+  },
+  "repaired_score": {
+    "provider": "11/25",
+    "payer": "7/25",
+    "care": "2/25",
+    "overall": "20/75",
+    "overall_pct": 26.666666666666668
+  }
+}
