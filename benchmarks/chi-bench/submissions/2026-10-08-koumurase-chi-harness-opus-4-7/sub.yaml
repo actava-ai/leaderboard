@@ -1,0 +1,25 @@
+# chi-harness submission: pa-harness / um-harness / cm-harness dispatched by task id.
+schema: chi-bench/submission/v1
+
+submission:
+  id: koumurase-chi-harness-opus-4-7
+  team: KouMurase
+  contact: murase_k@tokium.jp
+  agent: chi-harness
+  model: anthropic/claude-opus-4-7
+  notes: |
+    Deterministic planners + PreToolUse gates per domain (see docs/pa_harness.md,
+    docs/um_harness.md, docs/cm_harness.md). chi-harness picks the domain harness
+    from the task id prefix.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 1
+  max_retries: 2
+  timeout_multiplier: 2.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]

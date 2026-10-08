@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,koumurase-chi-harness-opus-4-7,KouMurase,chi-harness,anthropic/claude-opus-4-7,overall,0.9466666666666667,75,75,2.46582774,353.4248678,2026-10-08T19:58:11Z
+chi-bench,chi-bench-v1.0.0,koumurase-chi-harness-opus-4-7,KouMurase,chi-harness,anthropic/claude-opus-4-7,pa_provider,1.0,25,25,1.3386008,178.29028419999997,2026-10-08T19:58:11Z
+chi-bench,chi-bench-v1.0.0,koumurase-chi-harness-opus-4-7,KouMurase,chi-harness,anthropic/claude-opus-4-7,pa_um,0.96,25,25,1.86629132,278.24395916000003,2026-10-08T19:58:11Z
+chi-bench,chi-bench-v1.0.0,koumurase-chi-harness-opus-4-7,KouMurase,chi-harness,anthropic/claude-opus-4-7,cm,0.88,25,25,4.1925911000000005,603.74036004,2026-10-08T19:58:11Z
