@@ -1,0 +1,119 @@
+{
+    "id": "1fcda7df-f5b4-4224-9039-941a67c596b0",
+    "task_name": "actava-ai/pa_t035_t035_o001_p01_new_referral_provider",
+    "trial_name": "pa_t035_t035_o001_p01_new_referr__BsV82ev",
+    "trial_uri": "file:///Users/kou_murase/workstation/IEEE_competition/chi-bench/logs/submissions/koumurase-chi-harness-opus-4-7/pa_provider/pa_t035_t035_o001_p01_new_referr__BsV82ev",
+    "task_id": {
+        "path": "data/prior_auth_provider/tasks/pa_t035_t035_o001_p01_new_referral_provider"
+    },
+    "source": null,
+    "task_checksum": "754ae6f3967d0efc0c8d8ebd51d4f88f4901afa7f3a8c2e3b54b16c2ee0073ad",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_provider/tasks/pa_t035_t035_o001_p01_new_referral_provider",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t035_t035_o001_p01_new_referr__BsV82ev",
+        "trials_dir": "logs/submissions/koumurase-chi-harness-opus-4-7/pa_provider",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.chi_harness:ChiHarness",
+            "model_name": "anthropic/claude-opus-4-7",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "CLAUDE_CODE_OAUTH_TOKEN": "${CLAUDE_CODE_OAUTH_TOKEN}",
+                "GEMINI_API_KEY": "${GEMINI_API_KEY}",
+                "OPENROUTER_API_KEY": "${OPENROUTER_API_KEY}"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": null
+    },
+    "agent_info": {
+        "name": "chi-harness",
+        "version": "2.1.273",
+        "model_info": {
+            "name": "claude-opus-4-7",
+            "provider": "anthropic"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 718826,
+        "n_cache_tokens": 682927,
+        "n_output_tokens": 5139,
+        "cost_usd": 0.8287834999999999,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-07T14:55:16.487726Z",
+    "finished_at": "2026-10-07T14:56:52.012037Z",
+    "environment_setup": {
+        "started_at": "2026-10-07T14:55:16.726608Z",
+        "finished_at": "2026-10-07T14:55:24.837778Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-07T14:55:24.837989Z",
+        "finished_at": "2026-10-07T14:55:26.629052Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-07T14:55:26.629404Z",
+        "finished_at": "2026-10-07T14:56:50.080790Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-07T14:56:50.301086Z",
+        "finished_at": "2026-10-07T14:56:51.800448Z"
+    },
+    "step_results": null
+}
