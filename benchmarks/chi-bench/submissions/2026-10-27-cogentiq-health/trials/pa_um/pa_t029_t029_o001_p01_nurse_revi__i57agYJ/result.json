@@ -1,0 +1,53 @@
+{
+    "trial_name": "pa_t029_t029_o001_p01_nurse_revi__i57agYJ",
+    "task_id": {
+        "path": "/tmp/chi_bench-modal-tqab6888/pa_t029_t029_o001_p01_nurse_review_payer"
+    },
+    "task_checksum": "4a7ba0b36780b4c22b017f850b00e8608e14a14052a59eaebc5b24b51524806b",
+    "config": {
+        "task": {
+            "path": "/tmp/chi_bench-modal-tqab6888/pa_t029_t029_o001_p01_nurse_review_payer"
+        },
+        "trial_name": "pa_t029_t029_o001_p01_nurse_revi__i57agYJ",
+        "agent": {
+            "name": "Cogentiq Health",
+            "model_name": "Vaidya-agent-os"
+        }
+    },
+    "agent_info": {
+        "name": "Cogentiq Health",
+        "model_info": {
+            "name": "Vaidya-agent-os"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 4503174,
+        "n_cache_tokens": 4190208,
+        "n_output_tokens": 126736,
+        "cost_usd": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-26T11:05:40.925950Z",
+    "finished_at": "2026-10-26T11:26:18.038449Z",
+    "environment_setup": {
+        "started_at": "2026-10-26T11:05:40.928746Z",
+        "finished_at": "2026-10-26T11:05:59.935905Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-26T11:05:59.935920Z",
+        "finished_at": "2026-10-26T11:06:07.937983Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-26T11:06:07.938066Z",
+        "finished_at": "2026-10-26T11:24:15.815065Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-26T11:24:16.281568Z",
+        "finished_at": "2026-10-26T11:26:16.012903Z"
+    }
+}

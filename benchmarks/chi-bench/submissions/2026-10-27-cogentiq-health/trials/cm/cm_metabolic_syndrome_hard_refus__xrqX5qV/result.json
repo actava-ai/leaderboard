@@ -1,0 +1,53 @@
+{
+    "trial_name": "cm_metabolic_syndrome_hard_refus__xrqX5qV",
+    "task_id": {
+        "path": "/tmp/chi_bench-modal-k3mi6vor/cm_metabolic_syndrome_hard_refuses_001"
+    },
+    "task_checksum": "6e2be55b8015d006618e97917ddd9693c2cd04a27ee956747296c106422b3d6a",
+    "config": {
+        "task": {
+            "path": "/tmp/chi_bench-modal-k3mi6vor/cm_metabolic_syndrome_hard_refuses_001"
+        },
+        "trial_name": "cm_metabolic_syndrome_hard_refus__xrqX5qV",
+        "agent": {
+            "name": "Cogentiq Health",
+            "model_name": "Vaidya-agent-os"
+        }
+    },
+    "agent_info": {
+        "name": "Cogentiq Health",
+        "model_info": {
+            "name": "Vaidya-agent-os"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2677622,
+        "n_cache_tokens": 1695744,
+        "n_output_tokens": 212350,
+        "cost_usd": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-26T00:13:25.042190Z",
+    "finished_at": "2026-10-26T00:53:21.282095Z",
+    "environment_setup": {
+        "started_at": "2026-10-26T00:13:25.043389Z",
+        "finished_at": "2026-10-26T00:13:36.529749Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-26T00:13:36.529767Z",
+        "finished_at": "2026-10-26T00:13:37.843547Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-26T00:13:37.843601Z",
+        "finished_at": "2026-10-26T00:49:51.694474Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-26T00:49:52.010360Z",
+        "finished_at": "2026-10-26T00:53:20.934362Z"
+    }
+}
