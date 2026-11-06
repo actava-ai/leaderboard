@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   comment:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: Download PR comment payload
         id: download
