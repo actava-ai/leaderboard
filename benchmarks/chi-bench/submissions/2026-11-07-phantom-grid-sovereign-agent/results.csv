@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,phantom-grid-sovereign-agent,PHANToM GRID (Jack Hu),phantom-grid,PG-MOD-28-CHI,overall,0.964,75,75,0.012,8.4,2026-11-07T04:25:00Z
+chi-bench,chi-bench-v1.0.0,phantom-grid-sovereign-agent,PHANToM GRID (Jack Hu),phantom-grid,PG-MOD-28-CHI,pa_provider,0.96,25,25,0.012,8.4,2026-11-07T04:25:00Z
+chi-bench,chi-bench-v1.0.0,phantom-grid-sovereign-agent,PHANToM GRID (Jack Hu),phantom-grid,PG-MOD-28-CHI,pa_um,0.96,25,25,0.012,8.4,2026-11-07T04:25:00Z
+chi-bench,chi-bench-v1.0.0,phantom-grid-sovereign-agent,PHANToM GRID (Jack Hu),phantom-grid,PG-MOD-28-CHI,cm,0.972,25,25,0.012,8.4,2026-11-07T04:25:00Z

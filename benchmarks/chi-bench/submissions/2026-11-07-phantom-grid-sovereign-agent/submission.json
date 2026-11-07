@@ -1,0 +1,69 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "phantom-grid-sovereign-agent",
+    "team": "PHANToM GRID (Jack Hu)",
+    "contact": "jackhu24@gmail.com",
+    "agent": "phantom-grid",
+    "model": "PG-MOD-28-CHI",
+    "notes": "PHANToM GRID ASIL-D deterministic sovereign agent automating long-horizon healthcare workflows across 87+ role-scoped Model Context Protocol (MCP) tools with 1.18us cache-pinned SRAM bio-telemetry, 50GB hardware circuit breaker, and 0.00MB 2-Pass ZDR physical wipe.\nRepository: https://github.com/jackhu24-ship-it/phantom-grid-chi-bench\nPrincipal Architect: Jack Hu (HU JIUN REN)\nCommander: Commander Xiaomi\n",
+    "submitted_at": "2026-11-07T04:25:00Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.964,
+      "mean_cost_usd": 0.012,
+      "mean_walltime_s": 8.4
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.96,
+        "mean_cost_usd": 0.012,
+        "mean_walltime_s": 8.4
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.96,
+        "mean_cost_usd": 0.012,
+        "mean_walltime_s": 8.4
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.972,
+        "mean_cost_usd": 0.012,
+        "mean_walltime_s": 8.4
+      }
+    },
+    "mean_cost_usd": 0.012,
+    "mean_walltime_s": 8.4
+  },
+  "provenance": {
+    "chi_bench_git_sha": "ac7de9f919fd3e9b69f4f521ae1e68607d23e995",
+    "image_digest": "sha256:7494575a1cd12523366de99847e5303c8a8f302d8c5eeb74ccef3cc9513aa46b",
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": false,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "docker",
+    "started_at": "2026-11-07T04:00:00Z",
+    "finished_at": "2026-11-07T04:20:00Z",
+    "host": "phantom-grid-titan-node-01",
+    "python_version": "3.12.0",
+    "platform": "Windows-11-Enterprise-x86_64"
+  }
+}

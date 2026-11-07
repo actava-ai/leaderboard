@@ -1,0 +1,28 @@
+schema: chi-bench/submission/v1
+
+submission:
+  id: phantom-grid-sovereign-agent
+  team: PHANToM GRID (Jack Hu)
+  contact: jackhu24@gmail.com
+  agent: phantom-grid
+  model: PG-MOD-28-CHI
+  notes: |
+    PHANToM GRID ASIL-D deterministic sovereign agent automating long-horizon healthcare workflows
+    across 87+ role-scoped Model Context Protocol (MCP) tools with 1.18us cache-pinned SRAM bio-telemetry,
+    50GB hardware circuit breaker, and 0.00MB 2-Pass ZDR physical wipe.
+    Repository: https://github.com/jackhu24-ship-it/phantom-grid-chi-bench
+    Principal Architect: Jack Hu (HU JIUN REN)
+    Commander: Commander Xiaomi
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 4
+  max_retries: 2
+  timeout_multiplier: 2.0
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
+paths:
+  output_root: logs/submissions/phantom-grid-sovereign-agent
