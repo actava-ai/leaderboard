@@ -1,0 +1,11 @@
+schema: chi-bench/submission/v1
+submission:
+  id: cogentiq-health
+  team: Fractal AI Research
+  contact: kalash.shah@fractal.ai
+  contacts: [kalash.shah@fractal.ai, kunal.singh@fractal.ai]
+  agent: Cogentiq Health
+  model: Vaidya-agent-os
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]

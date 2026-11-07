@@ -1,0 +1,53 @@
+{
+    "trial_name": "cm_parkinson_hard_refuses_001__VcNgj7K",
+    "task_id": {
+        "path": "/tmp/chi_bench-modal-k3mi6vor/cm_parkinson_hard_refuses_001"
+    },
+    "task_checksum": "217ea90e7aa1558fb4c7ac4baef8ec3d6630d4cce975df90e0015790bf7f0f5b",
+    "config": {
+        "task": {
+            "path": "/tmp/chi_bench-modal-k3mi6vor/cm_parkinson_hard_refuses_001"
+        },
+        "trial_name": "cm_parkinson_hard_refuses_001__VcNgj7K",
+        "agent": {
+            "name": "Cogentiq Health",
+            "model_name": "Vaidya-agent-os"
+        }
+    },
+    "agent_info": {
+        "name": "Cogentiq Health",
+        "model_info": {
+            "name": "Vaidya-agent-os"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2625084,
+        "n_cache_tokens": 1849344,
+        "n_output_tokens": 177304,
+        "cost_usd": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-26T00:13:24.131712Z",
+    "finished_at": "2026-10-26T00:57:20.147176Z",
+    "environment_setup": {
+        "started_at": "2026-10-26T00:13:24.133176Z",
+        "finished_at": "2026-10-26T00:13:33.842463Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-26T00:13:33.842476Z",
+        "finished_at": "2026-10-26T00:13:34.920874Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-26T00:13:34.920921Z",
+        "finished_at": "2026-10-26T00:54:01.990439Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-26T00:54:02.298716Z",
+        "finished_at": "2026-10-26T00:57:19.844414Z"
+    }
+}

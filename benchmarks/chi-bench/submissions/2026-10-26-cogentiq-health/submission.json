@@ -1,0 +1,54 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "cogentiq-health",
+    "team": "Fractal AI Research",
+    "contact": "kalash.shah@fractal.ai; kunal.singh@fractal.ai",
+    "agent": "Cogentiq Health",
+    "model": "Vaidya-agent-os",
+    "submitted_at": "2026-10-26T13:52:39Z"
+  },
+  "dataset": {
+    "name": "chi-bench",
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ]
+  },
+  "results": {
+    "overall": {
+      "pass_at_1": 0.6133333333333333,
+      "n_trials": 75,
+      "n_tasks": 75,
+      "mean_walltime_s": 1308.9622346533333
+    },
+    "per_domain": {
+      "pa_provider": {
+        "pass_at_1": 0.72,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_walltime_s": 706.493251
+      },
+      "pa_um": {
+        "pass_at_1": 0.52,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_walltime_s": 980.29255804
+      },
+      "cm": {
+        "pass_at_1": 0.6,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "mean_walltime_s": 2240.10089492
+      }
+    }
+  },
+  "provenance": {
+    "chi_bench_git_sha": null,
+    "image_digest": null,
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0"
+  }
+}

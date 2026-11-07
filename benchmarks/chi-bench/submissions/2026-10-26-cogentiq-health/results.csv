@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,cogentiq-health,Fractal AI Research,Cogentiq Health,Vaidya-agent-os,overall,0.6133333333333333,75,75,null,1308.9622346533333,2026-10-26T13:52:39Z
+chi-bench,chi-bench-v1.0.0,cogentiq-health,Fractal AI Research,Cogentiq Health,Vaidya-agent-os,pa_provider,0.72,25,25,null,706.493251,2026-10-26T13:52:39Z
+chi-bench,chi-bench-v1.0.0,cogentiq-health,Fractal AI Research,Cogentiq Health,Vaidya-agent-os,pa_um,0.52,25,25,null,980.29255804,2026-10-26T13:52:39Z
+chi-bench,chi-bench-v1.0.0,cogentiq-health,Fractal AI Research,Cogentiq Health,Vaidya-agent-os,cm,0.6,25,25,null,2240.10089492,2026-10-26T13:52:39Z
