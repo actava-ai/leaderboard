@@ -1,0 +1,55 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "bhan-mimo26-full75",
+    "team": "Bin_Han",
+    "contact": "henry_bin@163.com",
+    "agent": "openai-agents",
+    "model": "mimo-v2.6-pro",
+    "notes": "openai-agents harness via chat_completions against an OpenAI-protocol endpoint.\nA candidate system prompt and a UM completion guard are baked into the image\n(chi-bench:latest). n_attempts=1 per leaderboard policy.\n",
+    "submitted_at": "2026-10-13T08:15:11Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 4,
+      "n_tasks": 4,
+      "pass_at_1": 0.0,
+      "mean_cost_usd": 0.0,
+      "mean_walltime_s": 1141.69351175
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 4,
+        "n_tasks": 4,
+        "pass_at_1": 0.0,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 1141.69351175
+      }
+    },
+    "mean_cost_usd": 0.0,
+    "mean_walltime_s": 1141.69351175
+  },
+  "provenance": {
+    "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
+    "image_digest": "sha256:df5bbad8525c306eaa49844bf6b0b3b6b9d02a6181121150fb6898f0d4da6994",
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0",
+    "code_dirty": true,
+    "dataset_version": "chi-bench-v1.0.0",
+    "environment": "docker",
+    "started_at": "2026-10-13T07:46:56Z",
+    "finished_at": null,
+    "host": "BHan",
+    "python_version": "3.12.14",
+    "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  }
+}

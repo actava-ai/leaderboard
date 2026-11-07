@@ -1,0 +1,3 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,overall,0.0,4,4,0.0,1141.69351175,2026-10-13T08:15:11Z
+chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,pa_provider,0.0,4,4,0.0,1141.69351175,2026-10-13T08:15:11Z

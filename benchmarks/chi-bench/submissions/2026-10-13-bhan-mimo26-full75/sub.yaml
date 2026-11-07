@@ -1,0 +1,26 @@
+# Bin_Han chi-bench full-set submission — mimo-v2.6-pro via openai-agents (chat_completions).
+# Image: chi-bench:latest, candidate prompt + UM guard baked.
+schema: chi-bench/submission/v1
+
+submission:
+  id: bhan-mimo26-full75
+  team: Bin_Han
+  contact: henry_bin@163.com
+  agent: openai-agents
+  model: mimo-v2.6-pro
+  notes: |
+    openai-agents harness via chat_completions against an OpenAI-protocol endpoint.
+    A candidate system prompt and a UM completion guard are baked into the image
+    (chi-bench:latest). n_attempts=1 per leaderboard policy.
+
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 3
+  max_retries: 2
+  timeout_multiplier: 4.0
+  env_file: .env
+
+dataset:
+  version: chi-bench-v1.0.0
+  domains: [pa_provider, pa_um, cm]
