@@ -1,0 +1,115 @@
+{
+    "id": "1b0aecea-bc0b-4957-a092-be8749a151d3",
+    "task_name": "actava-ai/pa_t013_t013_o002_p01_nurse_review_payer",
+    "trial_name": "pa_t013_t013_o002_p01_nurse_revi__cdFEzoM",
+    "trial_uri": "file:///lake1/2026-11-06-u2-med-herms-u2-flash/trials/pa_um/pa_t013_t013_o002_p01_nurse_revi__cdFEzoM",
+    "task_id": {
+        "path": "/lake1/chi-bench-official-20261019/data/prior_auth_um/tasks/pa_t013_t013_o002_p01_nurse_review_payer"
+    },
+    "source": null,
+    "task_checksum": "6eb9b4292ded8550227f7ce4341e326275b25a2c35dd3c039789e89c6b7b4b2b",
+    "config": {
+        "task": {
+            "path": "/lake1/chi-bench-official-20261019/data/prior_auth_um/tasks/pa_t013_t013_o002_p01_nurse_review_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "pa_t013_t013_o002_p01_nurse_revi__cdFEzoM",
+        "trials_dir": "/lake1/2026-11-06-u2-med-herms-u2-flash/trials/pa_um",
+        "install_only": false,
+        "timeout_multiplier": 6.0,
+        "agent_timeout_multiplier": 6.0,
+        "verifier_timeout_multiplier": 6.0,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "adapter.configured_harness:HermesHarness",
+            "model_name": "u2-flash",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {
+                "max_turns": 120
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "adapter.secure_env:Environment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "57f1de1a-5a7e-42b0-91aa-c755eeae8194"
+    },
+    "agent_info": {
+        "name": "hermes",
+        "version": "Hermes Agent v0.17.0 (2026.6.19)\nProject: /usr/local/lib/hermes-agent/venv/lib/python3.12/site-packages\nPython: 3.12.14\nOpenAI SDK: 2.24.0\nUpdate available: 1 commit behind — run 'uv pip install --upgrade hermes-agent'",
+        "model_info": {
+            "name": "u2-flash",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 226807,
+        "n_cache_tokens": 4465792,
+        "n_output_tokens": 40099,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-11-05T13:46:43.121905Z",
+    "finished_at": "2026-11-05T14:02:26.876763Z",
+    "environment_setup": {
+        "started_at": "2026-11-05T13:46:43.214197Z",
+        "finished_at": "2026-11-05T13:48:20.708743Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-11-05T13:48:20.708945Z",
+        "finished_at": "2026-11-05T13:48:25.146104Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-11-05T13:48:25.146463Z",
+        "finished_at": "2026-11-05T13:58:32.285269Z"
+    },
+    "verifier": {
+        "started_at": "2026-11-05T13:58:35.250180Z",
+        "finished_at": "2026-11-05T14:02:26.467216Z"
+    },
+    "step_results": null
+}
