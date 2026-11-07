@@ -1,0 +1,87 @@
+{
+  "binary_reward": 1.0,
+  "fractional_reward": 1.0,
+  "passed_checks": 8,
+  "total_checks": 8,
+  "check_scores": {
+    "new_referral.service_request_created": 1.0,
+    "new_referral.procedure_code": 1.0,
+    "new_referral.required_diagnosis_codes": 1.0,
+    "new_referral.service_type": 1.0,
+    "new_referral.site_of_service": 1.0,
+    "new_referral.case_created": 1.0,
+    "new_referral.case_status": 1.0,
+    "provider_pre_submission.required_documents_present": null,
+    "cross.forward_transitions": 1.0,
+    "judge.provider_pre_submission.submission.service_request": null,
+    "judge.provider_pre_submission.submission.rationale_scope": null
+  },
+  "checks": {
+    "new_referral.service_request_created": true,
+    "new_referral.procedure_code": true,
+    "new_referral.required_diagnosis_codes": true,
+    "new_referral.service_type": true,
+    "new_referral.site_of_service": true,
+    "new_referral.case_created": true,
+    "new_referral.case_status": true,
+    "provider_pre_submission.required_documents_present": "not_applicable",
+    "cross.forward_transitions": true,
+    "judge.provider_pre_submission.submission.service_request": "not_applicable",
+    "judge.provider_pre_submission.submission.rationale_scope": "not_applicable"
+  },
+  "failed_checks": [],
+  "not_applicable_checks": [
+    "provider_pre_submission.required_documents_present",
+    "judge.provider_pre_submission.submission.service_request",
+    "judge.provider_pre_submission.submission.rationale_scope"
+  ],
+  "stages": {
+    "new_referral": {
+      "passed": true,
+      "checks": {
+        "new_referral.service_request_created": true,
+        "new_referral.procedure_code": true,
+        "new_referral.required_diagnosis_codes": true,
+        "new_referral.service_type": true,
+        "new_referral.site_of_service": true,
+        "new_referral.case_created": true,
+        "new_referral.case_status": true
+      },
+      "passed_count": 7,
+      "total_count": 7,
+      "not_applicable_count": 0,
+      "details": {
+        "service_request_id": "SR-001",
+        "service_request_candidate_count": 1,
+        "service_request_resolution": "unique_match",
+        "case_id": "CASE-ACT-001",
+        "case_candidate_count": 1,
+        "case_resolution": "expected_status"
+      }
+    },
+    "provider_pre_submission": {
+      "passed": true,
+      "checks": {
+        "provider_pre_submission.required_documents_present": "not_applicable"
+      },
+      "passed_count": 0,
+      "total_count": 0,
+      "not_applicable_count": 1,
+      "details": {
+        "case_id": "CASE-ACT-001"
+      }
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forward_transitions": true
+      },
+      "passed_count": 1,
+      "total_count": 1,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-ACT-001"
+      }
+    }
+  }
+}
