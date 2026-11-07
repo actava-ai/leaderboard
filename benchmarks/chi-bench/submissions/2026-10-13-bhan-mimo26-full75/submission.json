@@ -7,7 +7,7 @@
     "agent": "openai-agents",
     "model": "mimo-v2.6-pro",
     "notes": "openai-agents harness via chat_completions against an OpenAI-protocol endpoint.\nA candidate system prompt and a UM completion guard are baked into the image\n(chi-bench:latest). n_attempts=1 per leaderboard policy.\n",
-    "submitted_at": "2026-10-13T08:15:11Z"
+    "submitted_at": "2026-11-07T14:57:41Z"
   },
   "dataset": {
     "version": "chi-bench-v1.0.0",
@@ -20,23 +20,37 @@
   },
   "results": {
     "overall": {
-      "n_trials": 4,
-      "n_tasks": 4,
-      "pass_at_1": 0.0,
+      "n_trials": 72,
+      "n_tasks": 72,
+      "pass_at_1": 0.18055555555555555,
       "mean_cost_usd": 0.0,
-      "mean_walltime_s": 1141.69351175
+      "mean_walltime_s": 683.3497001944445
     },
     "per_domain": {
       "pa_provider": {
-        "n_trials": 4,
-        "n_tasks": 4,
-        "pass_at_1": 0.0,
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.16,
         "mean_cost_usd": 0.0,
-        "mean_walltime_s": 1141.69351175
+        "mean_walltime_s": 668.45920276
+      },
+      "pa_um": {
+        "n_trials": 22,
+        "n_tasks": 22,
+        "pass_at_1": 0.36363636363636365,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 1003.3568698636362
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.04,
+        "mean_cost_usd": 0.0,
+        "mean_walltime_s": 416.63388832
       }
     },
     "mean_cost_usd": 0.0,
-    "mean_walltime_s": 1141.69351175
+    "mean_walltime_s": 683.3497001944445
   },
   "provenance": {
     "chi_bench_git_sha": "2395e9e2ae7d42cdf2750dc3e67daeb0e672b910",
@@ -46,8 +60,8 @@
     "code_dirty": true,
     "dataset_version": "chi-bench-v1.0.0",
     "environment": "docker",
-    "started_at": "2026-10-13T07:46:56Z",
-    "finished_at": null,
+    "started_at": "2026-11-07T14:50:21Z",
+    "finished_at": "2026-11-07T14:50:22Z",
     "host": "BHan",
     "python_version": "3.12.14",
     "platform": "Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"

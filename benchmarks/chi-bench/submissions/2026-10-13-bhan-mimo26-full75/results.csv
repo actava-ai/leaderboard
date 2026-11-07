@@ -1,3 +1,5 @@
 benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
-chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,overall,0.0,4,4,0.0,1141.69351175,2026-10-13T08:15:11Z
-chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,pa_provider,0.0,4,4,0.0,1141.69351175,2026-10-13T08:15:11Z
+chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,overall,0.18055555555555555,72,72,0.0,683.3497001944445,2026-11-07T14:57:41Z
+chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,pa_provider,0.16,25,25,0.0,668.45920276,2026-11-07T14:57:41Z
+chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,pa_um,0.36363636363636365,22,22,0.0,1003.3568698636362,2026-11-07T14:57:41Z
+chi-bench,chi-bench-v1.0.0,bhan-mimo26-full75,Bin_Han,openai-agents,mimo-v2.6-pro,cm,0.04,25,25,0.0,416.63388832,2026-11-07T14:57:41Z

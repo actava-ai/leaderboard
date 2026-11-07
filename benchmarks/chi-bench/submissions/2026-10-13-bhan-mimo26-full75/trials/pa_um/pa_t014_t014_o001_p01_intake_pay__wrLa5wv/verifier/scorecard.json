@@ -1,0 +1,142 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.9310344827586207,
+  "passed_checks": 27,
+  "total_checks": 29,
+  "check_scores": {
+    "intake.case_exists": 1.0,
+    "intake.diagnoses_match": 1.0,
+    "intake.provider_npi_matches": 1.0,
+    "intake.line_items_populated": 1.0,
+    "intake.decision_request_complete": 1.0,
+    "intake.decision_member_eligible": 1.0,
+    "intake.decision_service_covered": 1.0,
+    "intake.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 1.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.audit_auth_number": 1.0,
+    "outcome.authorization_number": 1.0,
+    "outcome.clean_determination": 1.0,
+    "triage.record_exists": 1.0,
+    "triage.disposition_matches": 0.0,
+    "triage.urgency_matches": 1.0,
+    "triage.gold_card_matches": 1.0,
+    "triage.route_matches": 0.0,
+    "triage.audit": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0
+  },
+  "checks": {
+    "intake.case_exists": true,
+    "intake.diagnoses_match": true,
+    "intake.provider_npi_matches": true,
+    "intake.line_items_populated": true,
+    "intake.decision_request_complete": true,
+    "intake.decision_member_eligible": true,
+    "intake.decision_service_covered": true,
+    "intake.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": true,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.audit_auth_number": true,
+    "outcome.authorization_number": true,
+    "outcome.clean_determination": true,
+    "triage.record_exists": true,
+    "triage.disposition_matches": false,
+    "triage.urgency_matches": true,
+    "triage.gold_card_matches": true,
+    "triage.route_matches": false,
+    "triage.audit": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true
+  },
+  "failed_checks": [
+    "triage.disposition_matches",
+    "triage.route_matches"
+  ],
+  "not_applicable_checks": [],
+  "stages": {
+    "intake": {
+      "passed": true,
+      "checks": {
+        "intake.case_exists": true,
+        "intake.diagnoses_match": true,
+        "intake.provider_npi_matches": true,
+        "intake.line_items_populated": true,
+        "intake.decision_request_complete": true,
+        "intake.decision_member_eligible": true,
+        "intake.decision_service_covered": true,
+        "intake.audit": true
+      },
+      "passed_count": 8,
+      "total_count": 8,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "outcome": {
+      "passed": true,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": true,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.audit_auth_number": true,
+        "outcome.authorization_number": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 13,
+      "total_count": 13,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "triage": {
+      "passed": false,
+      "checks": {
+        "triage.record_exists": true,
+        "triage.disposition_matches": false,
+        "triage.urgency_matches": true,
+        "triage.gold_card_matches": true,
+        "triage.route_matches": false,
+        "triage.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 6,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-73A33BA7"
+      }
+    }
+  }
+}

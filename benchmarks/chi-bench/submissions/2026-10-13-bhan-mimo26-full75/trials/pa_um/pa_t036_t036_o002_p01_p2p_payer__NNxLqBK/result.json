@@ -1,0 +1,117 @@
+{
+    "id": "73266a5e-333d-4053-9ef5-59111caf3ffb",
+    "task_name": "actava-ai/pa_t036_t036_o002_p01_p2p_payer",
+    "trial_name": "pa_t036_t036_o002_p01_p2p_payer__NNxLqBK",
+    "trial_uri": "file:///root/chi-bench/logs/submissions/bhan-mimo26-full75/pa_um/bhan-mimo26-full75__pa_um/pa_t036_t036_o002_p01_p2p_payer__NNxLqBK",
+    "task_id": {
+        "path": "data/prior_auth_um/tasks/pa_t036_t036_o002_p01_p2p_payer"
+    },
+    "source": "tasks",
+    "task_checksum": "8ddf6ed257293450c50b88a1f5227978052edf2e65effe7339543c159f71c195",
+    "config": {
+        "task": {
+            "path": "data/prior_auth_um/tasks/pa_t036_t036_o002_p01_p2p_payer",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": "tasks"
+        },
+        "trial_name": "pa_t036_t036_o002_p01_p2p_payer__NNxLqBK",
+        "trials_dir": "logs/submissions/bhan-mimo26-full75/pa_um/bhan-mimo26-full75__pa_um",
+        "install_only": false,
+        "timeout_multiplier": 4.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": null,
+            "import_path": "chi_bench.experiment.agents.openai_agents_harness:OpenAIAgentsHarness",
+            "model_name": "mimo-v2.6-pro",
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "resume_trajectory": false,
+            "load_trajectory": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "env": {
+                "OPENAI_API_KEY": "${OPENAI_API_KEY}",
+                "OPENAI_BASE_URL": "https://api.xiaomimimo.com/v1"
+            },
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": null,
+            "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "ff4c75bf-b989-4c32-bbe8-d2d3b53643fb"
+    },
+    "agent_info": {
+        "name": "openai-agents",
+        "version": "0.13.6",
+        "model_info": {
+            "name": "mimo-v2.6-pro",
+            "provider": null
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 2237531,
+        "n_cache_tokens": 2131200,
+        "n_output_tokens": 26219,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-10-13T18:53:16.086169Z",
+    "finished_at": "2026-10-13T19:05:26.524626Z",
+    "environment_setup": {
+        "started_at": "2026-10-13T18:53:16.095714Z",
+        "finished_at": "2026-10-13T18:53:40.086587Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-10-13T18:53:40.086670Z",
+        "finished_at": "2026-10-13T18:53:40.424592Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-10-13T18:53:40.424778Z",
+        "finished_at": "2026-10-13T19:05:22.933560Z"
+    },
+    "verifier": {
+        "started_at": "2026-10-13T19:05:23.196647Z",
+        "finished_at": "2026-10-13T19:05:26.061003Z"
+    },
+    "step_results": null
+}
