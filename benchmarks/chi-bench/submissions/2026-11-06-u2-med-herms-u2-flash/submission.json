@@ -1,0 +1,61 @@
+{
+  "schema": "chi-bench/submission/v1",
+  "submission": {
+    "id": "u2-med-herms-u2-flash",
+    "team": "U2Med",
+    "contact": "muyonglin@unisound.com",
+    "agent": "hermes",
+    "model": "u2-flash",
+    "notes": "u2-med-hermes on u2-flash: U2Med's customized Hermes agent, with domain-specific workflow protocols and MCP support tools across prior authorization, utilization management, and care management. Run configuration: one attempt per task (n_attempts=1), no orchestrator retries (max_retries=0), a 120-turn agent budget, and 6x timeout multipliers. Judge: claude-opus-4-7.\n\nThe execution protocol requires decisions to be grounded in each case's retrieved records, applicable policies, forms, conversation, and saved workflow state. It requires verified patient/case targets before any mutation, explicit treatment of missing or conflicting evidence, and final state read-back. It prohibits access to simulator source, tests, expectations, solutions, and verifier outputs.\n\nPer-domain configuration (same agent and model):\n- Prior authorization (pa_provider): checks request identity, service setting, diagnosis codes, policy applicability, and required forms against retrieved evidence; uses decision validation and state audits to support submission, further evidence collection, or non-submission. 18/25 = 72.0%.\n- Utilization management (pa_um): organizes applicable policy criteria into structured review checklists; tracks nurse/physician reviews, peer-to-peer workflows, and consistency between persisted decisions, final determinations, and correspondence. 12/25 = 48.0%.\n- Care management (cm): combines chart review with outreach that respects consent and uses conversation-budget reminders; preserves unknown, declined, or deferred findings and reconciles assessment documentation with care-plan goals, actions, owners, and follow-up. 21/25 = 84.0%.\n\nOverall: 51/75 = 68.0% on chi-bench-v1.0.0, with 25 tasks per domain. The submitted packet includes one trial per task, native verifier outputs, and compressed agent trajectories.",
+    "submitted_at": "2026-11-06T14:36:43Z"
+  },
+  "dataset": {
+    "version": "chi-bench-v1.0.0",
+    "domains": [
+      "pa_provider",
+      "pa_um",
+      "cm"
+    ],
+    "name": "chi-bench"
+  },
+  "results": {
+    "overall": {
+      "n_trials": 75,
+      "n_tasks": 75,
+      "pass_at_1": 0.68,
+      "mean_cost_usd": 0.09645950590543384,
+      "mean_walltime_s": 899.1736165733332
+    },
+    "per_domain": {
+      "pa_provider": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.72,
+        "mean_cost_usd": 0.07201676552915919,
+        "mean_walltime_s": 632.62735612
+      },
+      "pa_um": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.48,
+        "mean_cost_usd": 0.10949551935537731,
+        "mean_walltime_s": 1054.7579335199998
+      },
+      "cm": {
+        "n_trials": 25,
+        "n_tasks": 25,
+        "pass_at_1": 0.84,
+        "mean_cost_usd": 0.10786623283176504,
+        "mean_walltime_s": 1010.13556008
+      }
+    },
+    "mean_cost_usd": 0.09645950590543384,
+    "mean_walltime_s": 899.1736165733332
+  },
+  "provenance": {
+    "chi_bench_git_sha": "4444a07fa68a4f1623f841a292a54e284fc8e7f7",
+    "image_digest": "sha256:988fd4e554fbfb4d40ab5b11743ce81d49b02e974f32d744c5da78975d074f9d",
+    "judge_model": "claude-opus-4-7",
+    "harness_version": "0.1.0"
+  }
+}

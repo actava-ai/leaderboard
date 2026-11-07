@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,u2-med-herms-u2-flash,U2Med,hermes,u2-flash,overall,0.68,75,75,0.09645950590543384,899.1736165733332,2026-11-06T14:36:43Z
+chi-bench,chi-bench-v1.0.0,u2-med-herms-u2-flash,U2Med,hermes,u2-flash,pa_provider,0.72,25,25,0.07201676552915919,632.62735612,2026-11-06T14:36:43Z
+chi-bench,chi-bench-v1.0.0,u2-med-herms-u2-flash,U2Med,hermes,u2-flash,pa_um,0.48,25,25,0.10949551935537731,1054.7579335199998,2026-11-06T14:36:43Z
+chi-bench,chi-bench-v1.0.0,u2-med-herms-u2-flash,U2Med,hermes,u2-flash,cm,0.84,25,25,0.10786623283176504,1010.13556008,2026-11-06T14:36:43Z
