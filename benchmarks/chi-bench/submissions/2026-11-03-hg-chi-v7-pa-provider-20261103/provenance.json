@@ -1,0 +1,22 @@
+{
+  "chi_bench_git_sha": "33ea4a28f63e26419ca1445ede6553719f0cea98",
+  "image_digest": "sha256:505c610342191bf3d44bde3427b6dac719fe175c4705ace255539d9593f3b351",
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "1.1.0",
+  "code_dirty": false,
+  "dataset_version": "chi-bench-v1.0.0",
+  "dataset_content_sha256": "21a45a6319109c7cef7031bbdf364e7e69efceb9a7a25dee17f718522931093f",
+  "dataset_expected_content_sha256": "21a45a6319109c7cef7031bbdf364e7e69efceb9a7a25dee17f718522931093f",
+  "dataset_content_identity_schema": "chi-bench/dataset-content/v1",
+  "dataset_content_file_count": 1794,
+  "dataset_content_domains": [
+    "pa_provider"
+  ],
+  "environment": "docker",
+  "started_at": "2026-10-29T23:25:32Z",
+  "finished_at": "2026-10-30T01:11:23Z",
+  "host": "Windows",
+  "python_version": "3.12.16",
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "docker_agent_image_digest": "sha256:0ebea6c45325c3c6dc3ae2e220e58f7c75288afa721a63ee1d1dcaf66ea56834"
+}
