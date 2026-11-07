@@ -1,0 +1,159 @@
+{
+  "binary_reward": 0.0,
+  "fractional_reward": 0.9444444444444444,
+  "passed_checks": 34,
+  "total_checks": 36,
+  "check_scores": {
+    "md.decision_exists": 1.0,
+    "md.rationale_present": 1.0,
+    "md.signed_off": 0.0,
+    "md.denial_rationale_present": null,
+    "md.audit": 1.0,
+    "nurse.reviews_exist": 1.0,
+    "nurse.recommendation_exists": 1.0,
+    "nurse.no_unauthorized_denial": 1.0,
+    "nurse.audit": 1.0,
+    "outcome.target_status": 1.0,
+    "outcome.letter_types": 1.0,
+    "outcome.determination_exists": 1.0,
+    "outcome.review_decision_exists": 1.0,
+    "outcome.determination_stage_trace": 1.0,
+    "outcome.determination_finalize_audit": 1.0,
+    "outcome.terminal_transition_exists": 1.0,
+    "outcome.determination_source_exists": 1.0,
+    "outcome.source_recommendation_consistent": 1.0,
+    "outcome.review_decision_matches": 1.0,
+    "outcome.determination_decision_matches": 1.0,
+    "outcome.determination_has_rationale": 1.0,
+    "outcome.clean_determination": 1.0,
+    "cross.forbidden_mutations": 1.0,
+    "cross.forward_transitions": 1.0,
+    "judge.nurse_review:sinus_dx_crs_duration": 0.0,
+    "judge.nurse_review:sinus_dx_cardinal_symptoms": 1.0,
+    "judge.nurse_review:sinus_dx_inflammation": 1.0,
+    "judge.nurse_review:recommendation": 1.0,
+    "judge.md_review:sinus_dx_type": 1.0,
+    "judge.md_review:sinus_dx_laterality": 1.0,
+    "judge.md_review:sinus_intranasal_steroids": 1.0,
+    "judge.md_review:sinus_antibiotics": 1.0,
+    "judge.md_review:sinus_nasal_lavage": 1.0,
+    "judge.md_review:sinus_ct_timing": 1.0,
+    "judge.md_review:sinus_ct_qualifying_findings": 1.0,
+    "judge.md_review:final_decision": 1.0,
+    "judge.md_review:decision_rationale": 1.0
+  },
+  "checks": {
+    "md.decision_exists": true,
+    "md.rationale_present": true,
+    "md.signed_off": false,
+    "md.denial_rationale_present": "not_applicable",
+    "md.audit": true,
+    "nurse.reviews_exist": true,
+    "nurse.recommendation_exists": true,
+    "nurse.no_unauthorized_denial": true,
+    "nurse.audit": true,
+    "outcome.target_status": true,
+    "outcome.letter_types": true,
+    "outcome.determination_exists": true,
+    "outcome.review_decision_exists": true,
+    "outcome.determination_stage_trace": true,
+    "outcome.determination_finalize_audit": true,
+    "outcome.terminal_transition_exists": true,
+    "outcome.determination_source_exists": true,
+    "outcome.source_recommendation_consistent": true,
+    "outcome.review_decision_matches": true,
+    "outcome.determination_decision_matches": true,
+    "outcome.determination_has_rationale": true,
+    "outcome.clean_determination": true,
+    "cross.forbidden_mutations": true,
+    "cross.forward_transitions": true,
+    "judge.nurse_review:sinus_dx_crs_duration": false,
+    "judge.nurse_review:sinus_dx_cardinal_symptoms": true,
+    "judge.nurse_review:sinus_dx_inflammation": true,
+    "judge.nurse_review:recommendation": true,
+    "judge.md_review:sinus_dx_type": true,
+    "judge.md_review:sinus_dx_laterality": true,
+    "judge.md_review:sinus_intranasal_steroids": true,
+    "judge.md_review:sinus_antibiotics": true,
+    "judge.md_review:sinus_nasal_lavage": true,
+    "judge.md_review:sinus_ct_timing": true,
+    "judge.md_review:sinus_ct_qualifying_findings": true,
+    "judge.md_review:final_decision": true,
+    "judge.md_review:decision_rationale": true
+  },
+  "failed_checks": [
+    "md.signed_off",
+    "judge.nurse_review:sinus_dx_crs_duration"
+  ],
+  "not_applicable_checks": [
+    "md.denial_rationale_present"
+  ],
+  "stages": {
+    "md_review": {
+      "passed": false,
+      "checks": {
+        "md.decision_exists": true,
+        "md.rationale_present": true,
+        "md.signed_off": false,
+        "md.denial_rationale_present": "not_applicable",
+        "md.audit": true
+      },
+      "passed_count": 3,
+      "total_count": 4,
+      "not_applicable_count": 1,
+      "details": {
+        "criteria": []
+      }
+    },
+    "nurse_review": {
+      "passed": true,
+      "checks": {
+        "nurse.reviews_exist": true,
+        "nurse.recommendation_exists": true,
+        "nurse.no_unauthorized_denial": true,
+        "nurse.audit": true
+      },
+      "passed_count": 4,
+      "total_count": 4,
+      "not_applicable_count": 0,
+      "details": {
+        "criteria": []
+      }
+    },
+    "outcome": {
+      "passed": true,
+      "checks": {
+        "outcome.target_status": true,
+        "outcome.letter_types": true,
+        "outcome.determination_exists": true,
+        "outcome.review_decision_exists": true,
+        "outcome.determination_stage_trace": true,
+        "outcome.determination_finalize_audit": true,
+        "outcome.terminal_transition_exists": true,
+        "outcome.determination_source_exists": true,
+        "outcome.source_recommendation_consistent": true,
+        "outcome.review_decision_matches": true,
+        "outcome.determination_decision_matches": true,
+        "outcome.determination_has_rationale": true,
+        "outcome.clean_determination": true
+      },
+      "passed_count": 13,
+      "total_count": 13,
+      "not_applicable_count": 0,
+      "details": {}
+    },
+    "cross_stage": {
+      "passed": true,
+      "checks": {
+        "cross.forbidden_mutations": true,
+        "cross.forward_transitions": true
+      },
+      "passed_count": 2,
+      "total_count": 2,
+      "not_applicable_count": 0,
+      "details": {
+        "case_id": "CASE-70FB6F70"
+      }
+    }
+  }
+}

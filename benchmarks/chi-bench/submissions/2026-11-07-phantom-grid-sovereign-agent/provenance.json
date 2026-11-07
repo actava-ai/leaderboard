@@ -1,0 +1,14 @@
+{
+  "chi_bench_git_sha": "ac7de9f919fd3e9b69f4f521ae1e68607d23e995",
+  "image_digest": "sha256:7494575a1cd12523366de99847e5303c8a8f302d8c5eeb74ccef3cc9513aa46b",
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "0.1.0",
+  "code_dirty": false,
+  "dataset_version": "chi-bench-v1.0.0",
+  "environment": "docker",
+  "started_at": "2026-11-07T04:00:00Z",
+  "finished_at": "2026-11-07T04:20:00Z",
+  "host": "phantom-grid-titan-node-01",
+  "python_version": "3.12.0",
+  "platform": "Windows-11-Enterprise-x86_64"
+}
