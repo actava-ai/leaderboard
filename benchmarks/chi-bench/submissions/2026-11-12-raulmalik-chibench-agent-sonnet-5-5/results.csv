@@ -1,0 +1,5 @@
+benchmark,dataset_version,submission_id,team,agent,model,domain,pass_at_1,n_trials,n_tasks,mean_cost_usd,mean_walltime_s,submitted_at
+chi-bench,chi-bench-v1.0.0,raulmalik-chibench-agent-sonnet-5-5,Raul Malik,chibench-agent,anthropic/claude-sonnet-5-5,overall,0.68,75,75,0.0,414.29618653333335,2026-11-12T06:05:40Z
+chi-bench,chi-bench-v1.0.0,raulmalik-chibench-agent-sonnet-5-5,Raul Malik,chibench-agent,anthropic/claude-sonnet-5-5,pa_provider,0.88,25,25,0.0,215.19761108,2026-11-12T06:05:40Z
+chi-bench,chi-bench-v1.0.0,raulmalik-chibench-agent-sonnet-5-5,Raul Malik,chibench-agent,anthropic/claude-sonnet-5-5,pa_um,0.56,25,25,0.0,306.0054142,2026-11-12T06:05:40Z
+chi-bench,chi-bench-v1.0.0,raulmalik-chibench-agent-sonnet-5-5,Raul Malik,chibench-agent,anthropic/claude-sonnet-5-5,cm,0.6,25,25,0.0,721.68553432,2026-11-12T06:05:40Z

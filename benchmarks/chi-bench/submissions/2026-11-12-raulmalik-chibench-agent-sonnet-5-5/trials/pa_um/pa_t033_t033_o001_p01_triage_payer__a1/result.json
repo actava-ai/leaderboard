@@ -1,0 +1,113 @@
+{
+  "id": "8214cb24-2550-40c8-ab30-0ddc9081a226",
+  "task_name": "actava-ai/pa_t033_t033_o001_p01_triage_payer",
+  "trial_name": "pa_t033_t033_o001_p01_triage_pay__nJ6YSVm",
+  "trial_uri": "file:///home/user/work/chibench-agent/upstream/logs/experiments/2026-10-27-702ab00-um25-abl-full-b-702ab00/pa_t033_t033_o001_p01_triage_payer__a1/pa_t033_t033_o001_p01_triage_pay__nJ6YSVm",
+  "task_id": {
+    "path": "data/prior_auth_um/tasks/pa_t033_t033_o001_p01_triage_payer"
+  },
+  "source": null,
+  "task_checksum": "16958f1ea6af5efdcfa6e48eba124b575ac33a69b7ecd5c39ddaeb16807b5664",
+  "config": {
+    "task": {
+      "path": "data/prior_auth_um/tasks/pa_t033_t033_o001_p01_triage_payer",
+      "git_url": null,
+      "git_commit_id": null,
+      "name": null,
+      "ref": null,
+      "overwrite": false,
+      "download_dir": null,
+      "source": null
+    },
+    "trial_name": "pa_t033_t033_o001_p01_triage_pay__nJ6YSVm",
+    "trials_dir": "/home/user/work/chibench-agent/upstream/logs/experiments/2026-10-27-702ab00-um25-abl-full-b-702ab00/pa_t033_t033_o001_p01_triage_payer__a1",
+    "install_only": false,
+    "timeout_multiplier": 1.0,
+    "agent_timeout_multiplier": 2.0,
+    "verifier_timeout_multiplier": null,
+    "agent_setup_timeout_multiplier": null,
+    "environment_build_timeout_multiplier": null,
+    "agent": {
+      "name": null,
+      "import_path": "chi_bench.experiment.agents.chibench_agent_harness:ChibenchAgentHarness",
+      "model_name": null,
+      "n_concurrent": null,
+      "concurrency_group": null,
+      "skills": [],
+      "override_timeout_sec": null,
+      "override_setup_timeout_sec": null,
+      "max_timeout_sec": null,
+      "resume_trajectory": false,
+      "load_trajectory": null,
+      "extra_allowed_hosts": [],
+      "kwargs": {},
+      "env": {
+        "CLAUDE_CODE_OAUTH_TOKEN": "${CLAUDE_CODE_OAUTH_TOKEN}"
+      },
+      "mcp_servers": []
+    },
+    "environment": {
+      "type": null,
+      "import_path": "chi_bench.experiment.docker_env:ChiBenchDockerEnvironment",
+      "force_build": false,
+      "delete": true,
+      "cpu_enforcement_policy": "auto",
+      "memory_enforcement_policy": "auto",
+      "override_cpus": null,
+      "override_memory_mb": null,
+      "override_storage_mb": null,
+      "override_gpus": null,
+      "override_tpu": null,
+      "mounts": null,
+      "extra_docker_compose": [],
+      "kwargs": {},
+      "extra_allowed_hosts": []
+    },
+    "verifier": {
+      "override_timeout_sec": null,
+      "max_timeout_sec": null,
+      "disable": false
+    },
+    "artifacts": [],
+    "extra_instruction_paths": [],
+    "job_id": null
+  },
+  "agent_info": {
+    "name": "chibench-agent",
+    "version": "2.1.219",
+    "model_info": null
+  },
+  "agent_result": {
+    "n_input_tokens": 4056346,
+    "n_cache_tokens": 3882226,
+    "n_output_tokens": 46059,
+    "cost_usd": 2.9000088,
+    "rollout_details": null,
+    "metadata": null
+  },
+  "verifier_result": {
+    "rewards": {
+      "reward": 0.0
+    }
+  },
+  "exception_info": null,
+  "started_at": "2026-10-27T13:53:26.145327Z",
+  "finished_at": "2026-10-27T14:04:27.489924Z",
+  "environment_setup": {
+    "started_at": "2026-10-27T13:53:26.245550Z",
+    "finished_at": "2026-10-27T13:53:33.603336Z"
+  },
+  "agent_setup": {
+    "started_at": "2026-10-27T13:53:33.603614Z",
+    "finished_at": "2026-10-27T13:53:33.818293Z"
+  },
+  "agent_execution": {
+    "started_at": "2026-10-27T13:53:33.818508Z",
+    "finished_at": "2026-10-27T13:59:24.899441Z"
+  },
+  "verifier": {
+    "started_at": "2026-10-27T13:59:25.230964Z",
+    "finished_at": "2026-10-27T14:04:27.351419Z"
+  },
+  "step_results": null
+}

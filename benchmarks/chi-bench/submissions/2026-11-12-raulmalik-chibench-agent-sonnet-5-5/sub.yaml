@@ -1,0 +1,80 @@
+schema: chi-bench/submission/v1
+submission:
+  id: raulmalik-chibench-agent-sonnet-5-5
+  team: Raul Malik
+  contact: me@raulmalik.com
+  agent: chibench-agent
+  model: anthropic/claude-sonnet-5-5
+  notes: 'chibench-agent: the Claude Code engine (CLI 2.1.219) under a control plane of hooks that I wrote for
+
+    the IEEE Big Data Cup 2026 Challenge 07: role scoping, argument validation against the tool schemas,
+
+    per-domain stage graphs, checks before every irreversible call, and a self-review step. One
+
+    configuration and one model (claude-sonnet-5-5) for all three domains. Nothing task-specific is in
+
+    the prompts or the code; prompts refer to handbook paths only.
+
+
+    This packet is one complete pass over the 75 public tasks, one attempt per task, run on 27 Oct 2026
+
+    at harness commit 702ab00 on image 2119196e. Result: 51/75 = 68.0% pass@1 (provider PA 22/25,
+
+    payer UM 14/25, care management 15/25). It is not a selected run: it is the first of three complete
+
+    passes I made on 27 and 28 Oct at three successive commits, which gave 51, 52 and 50 of 75.
+
+
+    Judge: claude-opus-4-7 with 3 votes, the benchmark default. Patient and peer-to-peer simulators at
+
+    the benchmark defaults. Agent time: 1,800 s per trial (timeout multiplier 2.0 over the 900 s task
+
+    cap), the budget the organisers announced for the Challenge''s private evaluation.
+
+
+    How it was run. The agent and the judge ran on a Claude Max subscription; the patient and
+
+    peer-to-peer simulators ran on an API key. The pass ran as five batches because the
+
+    subscription''s session limit was reached twice. Each time, the attempt that was running when the
+
+    limit hit is left out and its task was run once more in the next batch: one UM attempt that had
+
+    made no tool call (the task then passed) and one CM attempt that was cut off after 17 tool calls
+
+    (the task then failed). Counting those two cut-off attempts instead of the reruns gives 50/75.
+
+    provenance.json names both. No other trial was repeated or left out.
+
+
+    Cost. mean_cost_usd reads 0.0 because the benchmark''s price table has no entry for
+
+    claude-sonnet-5-5. Each result.json carries the token counts and Harbor''s cost at API list prices:
+
+    a mean of 3.02 USD per trial (provider PA 2.20, payer UM 2.23, care management 4.62).
+
+
+    Redaction. The handbook is under a data use agreement, so this is the redacted public copy the host
+
+    allowed for the Challenge: results of tool calls that read the handbook are replaced whole, and any
+
+    run of six or more consecutive words that also occurs in the handbook is replaced elsewhere. Every
+
+    replacement is marked "[REDACTED: handbook ...]". Rewards and verdicts are unchanged.
+
+    I keep the unredacted originals and can give them to the organisers.
+
+    '
+run:
+  environment: docker
+  n_attempts: 1
+  concurrency: 1
+  max_retries: 0
+  timeout_multiplier: 2.0
+  env_file: .env
+dataset:
+  version: chi-bench-v1.0.0
+  domains:
+  - pa_provider
+  - pa_um
+  - cm
