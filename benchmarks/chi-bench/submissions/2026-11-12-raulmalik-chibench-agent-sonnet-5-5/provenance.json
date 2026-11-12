@@ -1,0 +1,27 @@
+{
+  "chi_bench_git_sha": "4444a07fa68a4f1623f841a292a54e284fc8e7f7",
+  "image_digest": "sha256:2119196e (short id of chi-bench:latest on 27 Oct 2026)",
+  "judge_model": "claude-opus-4-7",
+  "harness_version": "1.1.0",
+  "judge_num_votes": 3,
+  "harness_repo_commit": "702ab008985d55a998486b30bc9ddb3f172c447b",
+  "source_runs": [
+    "2026-10-27-702ab00-pa25-abl-full-b-702ab00",
+    "2026-10-27-702ab00-um25-abl-full-b-702ab00",
+    "2026-10-27-702ab00-um25r-abl-full-b-702ab00",
+    "2026-10-27-702ab00-cm25-abl-full-b-702ab00",
+    "2026-10-27-702ab00-cm25r-abl-full-b-702ab00"
+  ],
+  "trials_left_out": [
+    "2026-10-27-702ab00-um25-abl-full-b-702ab00/pa_t026_t026_o003_p01_nurse_review_payer__a1: agent hit the subscription usage limit",
+    "2026-10-27-702ab00-cm25-abl-full-b-702ab00/cm_dm_hard_refuses_002__a1: agent hit the subscription usage limit"
+  ],
+  "packaging": "tools/release/leaderboard_packet.py -> chi_bench.experiment.submission.prepare_packet",
+  "redaction": {
+    "rule": "handbook content and credentials removed and marked; rewards unchanged; originals kept privately",
+    "handbook_tool_results_replaced": 728,
+    "handbook_spans_replaced": 11277,
+    "handbook_words_replaced": 236740,
+    "ngram_words": 6
+  }
+}
